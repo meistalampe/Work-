@@ -1,0 +1,100 @@
+
+% Materials and Methods
+\section{Versuchsaufbau}
+Die Grundlage des Versuchsaufbaus ist der virtuelle Raum in dem sich die Versuchsperson während der Durchführung aufhalten wird. Der Raum wurde mit Unity 5.6 von der Firma Unity Technologies erstellt.% google Link zu unity \\
+Der Raum ist ein Würfel mit drei Metern Kantenlänge und einer Wandstärke von einem Zentimeter. Sämtliche Raumoberflächen besitzen den Standard Cube Mesh und einen Neutralen grauen Farbton. Die Umgebung wird mittels vier identischer Lichtquellen beleuchtet. Diese sind vom Typ Spotlight und sind mit einem Winkel von plus neunzig Grad zu der Decke auf den Boden gerichtet. Um eine ausgeglichene Beleuchtung, ohne Überstrahlung, an den Kanten des Raumes zu gewährleisten befinden sich die Lichtquellen in einem Abstand von zwei Metern oberhalb der Raumdecke und ihre Intensität wurde auf achtzig Prozent eingestellt. Für den Benutzer werden die Lichtquellen durch vier Deckenlampen dargestellt.\\
+Die Gestaltung wurde bewusst schlicht gehalten, da die Realitätsnähe nicht im Fokus des Experimentes lag.\\
+Darüber hinaus enthält der virtuelle Raum das Setup für den Freifeldversuch.
+Es besteht aus vier virtuellen Lautsprechern, einem virtuellen Mikrofon, einem visuellen Hinweis und einer zentralen Markierung für den Probanden auf dem Boden.\\
+% AudioSources
+Die Audioquellen, wurden in Form spezieller Game Objects innerhalb der Unity Umgebung implementiert. Diese heißen Audio  Source und sind in der Lage einen beliebigen Audio Clip wiederzugeben\footnote{siehe \cite{UnityManualAudioSource}}.% Unity User Manual AudioSource
+Um die Position jeder Audio Source im Raum erkennen zu können wurden sie jeweils mit dem 3D-Modell eines Lautsprechers verknüpft. Jeder dieser virtuellen Lautsprecher  wurde auf einem kleinen Podest positioniert. Die vier Audioquellen befinden sich auf einer Kreisbahn um die Probanden Markierung mit einem Radius von zwei Metern.\\
+Die Positionen der vier Quellen sind wie folgt:
+\begin{itemize}
+\item Links Lateral: $-90^{\circ}$
+\item Links Frontal: $-30^{\circ}$
+\item Rechts Frontal: $+30^{\circ}$
+\item Rechts Lateral: $+90^{\circ}$
+\end{itemize}
+Der Abstand der virtuellen Lautsprecher zum Boden beträgt 1,20 Meter. \\
+Die Audioquellen sind mithilfe des audio spatializer plugin, welches direkt in Unity implementiert ist, in der Lage die Wiedergabe des Audio Clip so zu beeinflussen, dass dieser seiner Position im virtuellen Raum entsprechend wahrgenommen werden kann. Die Aktivierung dieser Funktion erfolgt über den Unity Audio Manager\footnote{siehe \cite{Spatial}}.\\
+Dieser muss wie folgt konfiguriert werden:
+\begin{itemize}
+\item Default Speaker Mode: Stereo
+\item System Sample Rate: 48000 Hz
+\item Spatializer Plugin: MS HRTF Spatializer
+\end{itemize}
+Die restlichen Einstellmöglichkeiten verbleiben auf den Standardwerten.\\
+Darüber hinaus muss jede der erstellten Audioquellen entsprechend konfiguriert werden.
+\begin{itemize}
+\item Spatialize: On
+\item Volume: 1
+\item Stereo Pan: 0
+\item Spatial Blend: 1
+\item Spread: 0
+\end{itemize}
+Unity bietet dem Nutzer an dieser Stelle mit der Volume Rolloff Einstellung die Möglichkeit jede der oben genannten Parameter innerhalb des Einflussbereichs der Audioquelle, abhängig von der Entfernung des Hörers zur Quelle, zu beeinflussen.\\
+Im Rahmen dieses Aufbaus wurde ein Custom Rolloff gewählt, welcher zu einer Dämpfung des Signals innerhalb eines Radius von acht Metern um die Quelle führt. Dies kann dem Probanden während des Versuch zusätzliche Informationen über seine Entfernung zu der jeweiligen Quelle geben. Die restlichen, der oben genannten Parameter, bleiben innerhalb des gesamten Einflussbereichs der Quelle unverändert.\\
+% AudioListener
+Der von den Audioquellen abgespielte Audio Clip wird von einem virtuellen Mikrophon aufgezeichnet. Dieses Mikrofon ist in Form des Audio Listeners in der Unity Engine implementiert und ist nicht konfigurierbar. Er wurde als eine Komponente des Kopfkamera, der sogenannten camera(ears), angelegt. Somit wird jede Ausgabe der Audioquellen aus der Sicht des Trägers der VR-Brille wahrgenommen.\\
+Der visuelle Hinweis wurde in Form eines grünen Pfeils implementiert. Dieser befindet sich an der Wand des virtuellen Raumes, welche sich hinter den Audioquellen befindet. Seine Position entspricht $0^{\circ}$ auf der Kreisbahn und sein Abstand zum Boden beträgt 1,20 Meter.
+
+\newpage
+Abschließend wurde das HTC Vive kalibriert, der Untersuchungsraum vermessen und ein Stuhl auf der Markierung platziert.
+% Methoden
+\section{Versuchsablauf}
+\subsection{Vorbereitung Proband/in}
+Nachdem der/die Proband/in über den Ablauf informiert wurde wird er/sie angewiesen sich zur Markierung zu begeben und Platz zu nehmen. Anschließend wird ihm/ihr die VR-Brille und Kopfhörer aufgesetzt und entsprechen fixiert.
+
+\subsection{Ablauf}
+Zu Beginn des Experiments werden die Untersuchungsparameter durch den Versuchsleiter eingegeben. Über ein Matlab Programm, welches auch die Eingabe verwaltet, wird das Wiedergabeprotokoll erstellt, die Untersuchungsdaten gespeichert und an Unity übergeben.
+Das Wiedergabeprotokoll wird entsprechend der eingegebenen Parameter automatisch erstellt.
+Für jedes wiederzugebende Signal wird eine zufällige Quelle zur Wiedergabe bestimmt.\\
+Sobald das Protokoll erstellt und and Unity gesendet worden ist kann das Experiment gestartet werden.\\
+Während des Experiments wird der Versuchsperson eine Folge von akustischen Signalen präsentiert. Der/Die Proband/in wird angewiesen nach jeder Signalwiedergabe die Richtung aus der das Signal wahrgenommen wurde anzugeben. Nachdem das Programm gestartet wurde
+wird der ausgewählte Audio Clip in einem fünf Sekunden Intervall von jeweils einer der vier Audioquellen wiedergegeben. Zu jeder Wiedergabe wird der Versuchsperson ein visueller Hinweis in Form einer Richtungsangabe durch einen grünen Pfeil in ihrem Sichtfeld dargeboten. Das Programm ist beendet, wenn die gewünschte Signalanzahl erreicht wurde.
+
+\newpage
+\section{Code}
+\subsection{Matlab}
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+\lstinputlisting{freifeld.m}
+
+\newpage
+\subsection{Unity}
+
+\lstset{language=[Sharp]C,
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+escapeinside={(*@}{@*)},
+commentstyle=\color{greencomments},
+keywordstyle=\color{bluekeywords}\bfseries,
+stringstyle=\color{redstrings},
+basicstyle=\ttfamily
+}
+
+\lstinputlisting{UnityServerLatex.cs}
+
+\newpage
+
+\lstinputlisting{ArrayControlLatex.cs}
+
