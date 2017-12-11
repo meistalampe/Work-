@@ -1,3 +1,5 @@
 git clone 'repository url'  	- creates a copy of the repository at the current location //
 git status 			- can be used in a git repository to get its current status//
 git add 'filename'		- adds any files or changes per name ( file has to be in the folder on the hd)//
+git commit -m "msg"		- commits all changes done to the repository with a message//
+git push			- uploads repository to github.com
