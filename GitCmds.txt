@@ -1,5 +1,22 @@
 git clone 'repository url'  	- creates a copy of the repository at the current location //
 git status 			- can be used in a git repository to get its current status//
 git add 'filename'		- adds any files or changes per name ( file has to be in the folder on the hd)//
+git add . or git add -A 	- adds everything inside the repository//
 git commit -m "msg"		- commits all changes done to the repository with a message//
 git push			- uploads repository to github.com
+git pull 			- download from a repository on github.com into your repository on the hd// 
+
+every upload routine consists of the following commands:
+git add  			- even if you changed a file that is already in the repository
+git commit -m			- always add a message (exception after a merge conflict use git commit)
+git push
+
+work routine:
+git pull
+work
+git add
+git commit -m
+git push
+
+cave:
+press 'esc'  enter ':wq' get out of commit
