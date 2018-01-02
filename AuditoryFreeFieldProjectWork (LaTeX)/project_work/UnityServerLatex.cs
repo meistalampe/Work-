@@ -3,8 +3,8 @@
 // author: Dominik Limbach
 // date: 01.11.2017
 
-// description:    the program will read data from the stream and store
-//                 crucial information into variables
+// description: the program will read data from the stream and store
+// crucial information into variables
 
 
 using System.Collections;

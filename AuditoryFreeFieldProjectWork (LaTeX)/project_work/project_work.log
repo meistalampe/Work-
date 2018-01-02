@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  30 DEC 2017 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  2 JAN 2018 14:55
 entering extended mode
 **./project_work.tex
 (project_work.tex
@@ -1087,7 +1087,7 @@ LaTeX Info: Redefining \nameref on input line 75.
 
 \c@lstlisting=\count178
 
-<images/logo.pdf, id=62, 495.8525pt x 449.68pt>
+<images/logo.pdf, id=58, 495.8525pt x 449.68pt>
 File: images/logo.pdf Graphic file (type pdf)
  <use images/logo.pdf>
 Package pdftex.def Info: images/logo.pdf used on input line 78.
@@ -1139,7 +1139,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 124.
 
-<images/cc_by_nc_nd.png, id=79, 516.9714pt x 125.268pt>
+<images/cc_by_nc_nd.png, id=75, 516.9714pt x 125.268pt>
 File: images/cc_by_nc_nd.png Graphic file (type png)
 
 <use images/cc_by_nc_nd.png>
@@ -1201,28 +1201,22 @@ chapter 2.
 
 ]
 chapter 3.
-(chapters/materials_and_methods.tex
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 14.
- [7
+(chapters/materials_and_methods.tex [7
 
 ]
-Overfull \hbox (0.10394pt too wide) in paragraph at lines 36--41
-\T1/lmr/m/n/12 (-20) Unity bi-etet dem Nutzer an dieser Stelle mit der Vol-ume 
-Rolloff Ein-stel-lung die Möglichkeit
- []
-
-[8] [9] [10] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 77.
-
-(freifeld.m [11] [12]) [13]
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 16.
+ [8] [9] [10]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 95.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 84.
+ (freifeld.m
+[11] [12]) [13] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 102.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1243,24 +1237,14 @@ chapter 4.
 chapter 5.
 (chapters/conclusions_and_future_work.tex) [21
 
-]
-Package tocbasic Info: character protrusion at lof deactivated on input line 21
-9.
- (project_work.lof)
-\tf@lof=\write8
-\openout8 = `project_work.lof'.
-
- [22
-
-]
-(project_work.bbl)
+] (project_work.bbl)
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
-[23
+[22
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
@@ -1268,14 +1252,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
 Package rerunfilecheck Info: File `project_work.out' has not changed.
-(rerunfilecheck)             Checksum: 5A1A519F199C7F64BA0F710624DF6746;859.
+(rerunfilecheck)             Checksum: 5FCC20E091622331AC66942CFCAF127B;806.
  ) 
 Here is how much of TeX's memory you used:
- 21263 strings out of 493328
- 349775 string characters out of 3139118
- 729088 words of memory out of 3000000
- 23965 multiletter control sequences out of 15000+200000
- 74310 words of font info for 92 fonts, out of 3000000 for 9000
+ 21248 strings out of 493328
+ 349559 string characters out of 3139118
+ 737088 words of memory out of 3000000
+ 23959 multiletter control sequences out of 15000+200000
+ 74223 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,8n,72p,8825b,2345s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -1292,9 +1276,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on project_work.pdf (23 pages, 564625 bytes).
+Output written on project_work.pdf (22 pages, 563328 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 390 named destinations out of 1000 (max. 500000)
- 22147 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 687 PDF objects out of 1000 (max. 8388607)
+ 386 named destinations out of 1000 (max. 500000)
+ 22139 words of extra memory for PDF output out of 24883 (max. 10000000)
 

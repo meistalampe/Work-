@@ -3,9 +3,9 @@
  // author: Dominik Limbach
  // date: 01.11.2017
  
- // description:    the program controls the activation of both arrow and audio sources
- //                 it will gather the protokoll information from the UnityServer script
- //                 and execute the protokoll
+ // description: the program controls the activation of both arrow and audio sources
+ // it will gather the protokoll information from the UnityServer script
+ // and execute the protokoll
 
 
 

@@ -2,12 +2,10 @@
 % Saarland University of Applied Sciences
 % author: Dominik Limbach
 % date: 01.11.2017
-% 
-% description:  program that reads the connection information from the target
-%               pc, establishes a tcp/ip connection, requests
-%               input (user data,exam parameter), creates a exam protokoll
-%               and then saves the data before sending it to the
-%               destination
+% description: program that reads the connection information 
+% from the target pc, establishes a tcp/ip connection, requests
+% input (user data,exam parameter), creates a exam protokoll
+% and then saves the data before sending it to the destination
 
 clc;
 clear;

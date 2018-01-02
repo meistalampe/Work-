@@ -12,5 +12,4 @@
 \contentsline {subsection}{\numberline {3.3.2}Unity}{14}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}Discussion}{20}{chapter.4}
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{21}{chapter.5}
-\contentsline {chapter}{List of Figures}{22}{chapter.5}
-\contentsline {chapter}{Bibliography}{23}{chapter*.3}
+\contentsline {chapter}{Bibliography}{22}{chapter.5}
