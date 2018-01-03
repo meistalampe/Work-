@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5782.9014"
+   height="3812.6104"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Design Elements.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3810">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3812" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3814" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter3793"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.8230897"
+         id="feGaussianBlur3795" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3983"
+       x="-0.12075495"
+       width="1.2415099"
+       y="-0.0085371267"
+       height="1.0170743"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.5704834"
+         id="feGaussianBlur3985" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3788"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="16.820123"
+         id="feGaussianBlur3790" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3810"
+       id="linearGradient3816"
+       x1="6794.6855"
+       y1="-1871.2394"
+       x2="9270.9922"
+       y2="-1871.2394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.31006776,-3709.3139,-1109.5372)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35000001"
+     inkscape:cx="599.02919"
+     inkscape:cy="1886.2917"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="false"
+     inkscape:showpageshadow="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(160.75183,2520.9445)">
+    <rect
+       style="opacity:0.83164984;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter3788)"
+       id="rect2992-1"
+       width="4342.8569"
+       height="720"
+       x="1238.5487"
+       y="-2402.0715" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect3915-1"
+       width="936.15472"
+       height="3714.7039"
+       x="-2888.1538"
+       y="1182.6479"
+       inkscape:export-filename="C:\Users\Manuel Kohl\Documents\Studium\Rhetorik\Vorlage\agenda_background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect3915"
+       width="936.15472"
+       height="3714.7039"
+       x="-136.77168"
+       y="-2478.6873"
+       inkscape:export-filename="C:\Users\Studenten\Desktop\PowerPoint Templates (Presentations)\Images\Design Elements.png"
+       inkscape:export-xdpi="149.9752"
+       inkscape:export-ydpi="149.9752" />
+    <rect
+       style="fill:#00457d;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="926.36401"
+       height="191.36151"
+       x="-139.13132"
+       y="-763.31433"
+       rx="0"
+       ry="0" />
+    <path
+       style="opacity:0.70033671;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3983)"
+       d="m 313.14728,432.25858 -16.41497,16.41498 16.41497,15.5311 0,655.36544 22.81008,0 0,-1306.35803 -22.7991,0 c -0.026,134.939548 -0.011,484.10697 -0.011,619.04651 z"
+       id="path3797-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       transform="matrix(2.8807108,0,0,2.8807108,-130.67504,-1958.1772)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 777.23164,-712.80358 -47.28678,47.28681 47.28678,44.74061 0,1879.87906 157.1378,0 0,-3764.2918 -157.10617,0 c -0.0749,388.7218 -0.0317,1403.6635 -0.0317,1792.38532 z"
+       id="path3797"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect2992"
+       width="4476.0132"
+       height="816.90948"
+       x="1146.8114"
+       y="-2507.437" />
+    <rect
+       style="fill:url(#linearGradient3816);fill-opacity:1;stroke:none"
+       id="rect2992-7"
+       width="4342.8569"
+       height="312.33853"
+       x="1194.3661"
+       y="-1845.9175" />
+    <rect
+       style="fill:none;stroke:none"
+       id="rect3899"
+       width="2897.1428"
+       height="257.14285"
+       x="2662.8574"
+       y="-1833.3521"
+       inkscape:export-filename="C:\Users\Manuel Kohl\Documents\Studium\Masterstudium BMT\SNN-Unit\Gradient Headline.png"
+       inkscape:export-xdpi="31.850004"
+       inkscape:export-ydpi="31.850004" />
+  </g>
+</svg>
