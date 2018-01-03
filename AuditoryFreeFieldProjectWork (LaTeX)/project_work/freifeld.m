@@ -22,8 +22,8 @@ tcpIpClient = tcpip(ipAdress,portNumber,'NetworkRole','Client');
 % input messages
 lastname_prompt ='Enter a last name. \n';
 name_prompt = 'Enter a name. \n';
-birthdate_prompt = 'Enter a birth date. (DD.MM:YYYY) \n';
-examdate_prompt = 'Enter a date. (DD.MM:YYYY) \n';
+birthdate_prompt = 'Enter a birth date. (DD.MM.YYYY) \n';
+examdate_prompt = 'Enter a date. (DD.MM.YYYY) \n';
 arrow_prompt = 'Do you want the signal position and the sign position to match? (yes = true , no = false)\n';
 signal_prompt = 'How many repetitions would you like to run? Please enter integer value.\n';
 Error_prompt = 'Wrong input.Please enter a value of the correct type.\n';
@@ -90,7 +90,7 @@ end
 %save user_file
 filename = 'auditoryExam.mat';
 save(filename,'last_name','name','date_birth','date_exam','numberSignals',...
-'linked','audioPosition','signPosition');
+'linked','audioPosition','arrowPosition');
 
 % prepare data to send
 data = [numberSignals ,audioPosition ,arrowPosition];
