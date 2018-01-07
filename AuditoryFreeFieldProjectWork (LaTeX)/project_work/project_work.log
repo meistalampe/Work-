@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  3 JAN 2018 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  4 JAN 2018 14:09
 entering extended mode
 **./project_work.tex
 (project_work.tex
@@ -1258,7 +1258,7 @@ Package rerunfilecheck Info: File `project_work.out' has not changed.
 Here is how much of TeX's memory you used:
  21374 strings out of 493328
  351261 string characters out of 3139118
- 738088 words of memory out of 3000000
+ 738091 words of memory out of 3000000
  24012 multiletter control sequences out of 15000+200000
  74405 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1277,7 +1277,7 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on project_work.pdf (24 pages, 576638 bytes).
+Output written on project_work.pdf (24 pages, 576634 bytes).
 PDF statistics:
  769 PDF objects out of 1000 (max. 8388607)
  449 named destinations out of 1000 (max. 500000)
