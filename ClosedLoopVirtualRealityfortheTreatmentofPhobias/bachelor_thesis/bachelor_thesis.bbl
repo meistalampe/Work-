@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Sigma-Aldrich Co. LLC}(2015)]{Sig15}
+{Sigma-Aldrich Co. LLC}.
+\newblock {Syringe Needle Gauge Chart}, June 1, 2015.
+\newblock URL
+  \url{http://www.sigmaaldrich.com/chemistry/stockroom-reagents/learning-center/technical-library/needle-gauge-chart.html}.
+
+\end{thebibliography}
