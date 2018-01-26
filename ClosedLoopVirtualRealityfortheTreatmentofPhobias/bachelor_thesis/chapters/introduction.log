@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  22 JAN 2018 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.17)  23 JAN 2018 09:32
 entering extended mode
 **./introduction.tex
 (introduction.tex
-LaTeX2e <2017-04-15>
+LaTeX2e <2016/03/31> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ! Undefined control sequence.
 l.4 \section
@@ -128,19 +128,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no - in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -246,7 +234,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.11 g
-      ive thanks to
+      ive thanks to\\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -481,10 +469,16 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no , in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no k in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -498,12 +492,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 18--21
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--20
 []
  []
 
 ! Undefined control sequence.
-l.22 \subsection
+l.21 \subsection
                 {Stress}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -518,7 +512,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \subsection{S
+l.21 \subsection{S
                   tress}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -592,13 +586,13 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 22--24
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--23
 []
  []
 
 ! Undefined control sequence.
-l.25 \subsection
-                {Electrodermal Activity,Galvanic Skin Response}
+l.24 \subsection
+                {Galvanic Skin Response}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -612,33 +606,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \subsection{E
-                  lectrodermal Activity,Galvanic Skin Response}
+l.24 \subsection{G
+                  alvanic Skin Response}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no E in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no , in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -781,7 +753,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--27
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--26
 []
  []
 
@@ -792,7 +764,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 -
+l.27 -
        illustration of a typical gsr signal and explanation of its component...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -874,9 +846,10 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no c in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 28--29
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--28
 []
  []
 
@@ -887,8 +860,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 -
-       how and where is gsr usually measured? why there?
+l.29 -
+       how and where is gsr usually measured? why there?\\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -935,12 +908,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ? in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 30--31
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--30
 []
  []
 
 ! Undefined control sequence.
-l.32 \subsection
+l.31 \subsection
                 {Exposure Therapy}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -955,7 +928,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \subsection{E
+l.31 \subsection{E
                   xposure Therapy}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1078,11 +1051,11 @@ Missing character: There is no ? in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 6 strings out of 493328
- 112 string characters out of 3139118
- 53405 words of memory out of 3000000
- 3640 multiletter control sequences out of 15000+200000
+ 6 strings out of 493335
+ 112 string characters out of 3136674
+ 54225 words of memory out of 3000000
+ 3635 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 5i,0n,4p,160b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,4p,162b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

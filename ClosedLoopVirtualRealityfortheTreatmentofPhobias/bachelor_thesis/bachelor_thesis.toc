@@ -2,23 +2,27 @@
 \contentsline {chapter}{Abstract}{1}{chapter*.1}
 \contentsline {chapter}{Zusammenfassung}{2}{chapter*.2}
 \contentsline {chapter}{Declaration}{3}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motivation}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}Acknowledgments}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}Theoretical Background}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Acrophobia}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Stress}{5}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Electrodermal Activity,Galvanic Skin Response}{5}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Exposure Therapy}{6}{subsection.1.3.4}
-\contentsline {chapter}{\numberline {2}Problem Analysis and Goals}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}State of the Art}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Recent Advances in Research}{8}{section.2.2}
-\contentsline {chapter}{\numberline {3}Materials and Methods}{9}{chapter.3}
-\contentsline {chapter}{\numberline {4}Results}{10}{chapter.4}
-\contentsline {chapter}{\numberline {5}Discussion}{11}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{12}{chapter.6}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{13}{appendix.A}
-\contentsline {chapter}{List of Figures}{14}{table.A.1}
-\contentsline {chapter}{List of Tables}{15}{chapter*.5}
-\contentsline {chapter}{List of Abbreviations}{15}{chapter*.6}
-\contentsline {chapter}{Bibliography}{16}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}Acknowledgments}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Theoretical Background}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Acrophobia}{6}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Stress}{6}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Galvanic Skin Response}{7}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Exposure Therapy}{7}{subsection.1.3.4}
+\contentsline {chapter}{\numberline {2}Problem Analysis and Goals}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}State of the Art}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Recent Advances in Research}{9}{section.2.2}
+\contentsline {chapter}{\numberline {3}Materials and Methods}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Materials}{10}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Setup}{10}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Procedure(Paradigm)}{10}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Methods}{10}{section.3.2}
+\contentsline {chapter}{\numberline {4}Results}{12}{chapter.4}
+\contentsline {chapter}{\numberline {5}Discussion}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{14}{chapter.6}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{15}{appendix.A}
+\contentsline {chapter}{List of Figures}{16}{table.A.1}
+\contentsline {chapter}{List of Tables}{17}{chapter*.5}
+\contentsline {chapter}{List of Abbreviations}{17}{chapter*.6}
+\contentsline {chapter}{Bibliography}{18}{chapter*.6}
