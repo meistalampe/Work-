@@ -1,9 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Burdea, G.C. and Coiffet, P.}(2003)]{burdea2003virtual}
+{Burdea, G.C. and Coiffet, P.}
+\newblock \emph{Virtual Reality Technology}.
+\newblock Number Bd. 1 in Virtual Reality Technology. Wiley, 2003.
+\newblock ISBN 9780471360896.
+\newblock URL \url{https://books.google.de/books?id=0xWgPZbcz4AC}.
 
 \bibitem[{Sigma-Aldrich Co. LLC}(2015)]{Sig15}
 {Sigma-Aldrich Co. LLC}.
