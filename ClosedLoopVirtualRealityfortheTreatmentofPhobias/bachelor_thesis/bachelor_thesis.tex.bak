@@ -29,9 +29,9 @@
 \usepackage{amsmath}
 \usepackage[acronym]{glossaries}
 \usepackage[numbers, square]{natbib}
+%\usepackage{bibentry}
+%\nobibliography*
 \usepackage{microtype}
-
-\usepackage{blindtext} % Remove this later
 
 \usepackage[
 	pdftitle={Bachelor Thesis},
@@ -124,24 +124,6 @@
 
 \newpage
 
-
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-\setcounter{page}{1}
-
-\input{chapters/abstract}
-
-\newpage
-
-
-\chapter*{Zusammenfassung}
-\addcontentsline{toc}{chapter}{Zusammenfassung}
-
-\input{chapters/zusammenfassung}
-
-
-\newpage
-
 \chapter*{Declaration}
 \addcontentsline{toc}{chapter}{Declaration}
 
@@ -160,6 +142,27 @@ Dominik Limbach
 
 \newpage
 
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\setcounter{page}{1}
+
+\input{chapters/abstract}
+
+\newpage
+
+
+\chapter*{Zusammenfassung}
+\addcontentsline{toc}{chapter}{Zusammenfassung}
+
+\input{chapters/zusammenfassung}
+
+\newpage
+
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+\newpage
+
 \renewcommand{\contentsname}{Contents}
 \hypersetup{linkcolor=black}
 \tableofcontents
@@ -171,11 +174,6 @@ Dominik Limbach
 \chapter{Introduction}
 
 \input{chapters/introduction}
-
-
-\chapter{Problem Analysis and Goals}
-
-\input{chapters/problem_analysis_and_goals}
 
 
 \chapter{Materials and Methods}
