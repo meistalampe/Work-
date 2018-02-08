@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %% file header
 
 % filename:     gsr_processing
@@ -246,3 +247,5 @@ gsrfilter = filterGSR( signal,time ,Fs,filepath);
 % legend('boxoff')
 % hold off;
 
+=======
+>>>>>>> e2c633de908f55818ecb5ca09472fad30775baf2
