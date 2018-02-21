@@ -5,12 +5,9 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Thom and Boucsein(2013)]{thom2013elektrodermale}
-E.~Thom and W.~Boucsein.
-\newblock \emph{Elektrodermale Aktivit{\"a}t: Grundlagen, Methoden und
-  Anwendungen}.
-\newblock Springer Berlin Heidelberg, 2013.
-\newblock ISBN 9783662069684.
-\newblock URL \url{https://books.google.de/books?id=\_mrvBgAAQBAJ}.
+\bibitem[Cacioppo et~al.(2007)Cacioppo, Tassinary, and Berntson]{HANDBOOKPP}
+J.T. Cacioppo, L.G. Tassinary, and G.G Berntson.
+\newblock \emph{Handbook of Psychophysiology}.
+\newblock Cambridge University Press, 2007.
 
 \end{thebibliography}
