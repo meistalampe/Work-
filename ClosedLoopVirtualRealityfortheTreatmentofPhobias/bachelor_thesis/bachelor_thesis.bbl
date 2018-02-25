@@ -1,9 +1,17 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Boucsein(2013)]{boucsein2013electrodermal}
+W.~Boucsein.
+\newblock \emph{Electrodermal Activity}.
+\newblock The Springer Series in Behavioral Psychophysiology and Medicine.
+  Springer US, 2013.
+\newblock ISBN 9781475750935.
+\newblock URL \url{https://books.google.de/books?id=0hXrBwAAQBAJ}.
 
 \bibitem[Cacioppo et~al.(2007)Cacioppo, Tassinary, and Berntson]{HANDBOOKPP}
 J.T. Cacioppo, L.G. Tassinary, and G.G Berntson.
