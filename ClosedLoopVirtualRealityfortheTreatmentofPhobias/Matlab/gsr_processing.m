@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 %% file header
 
 % filename:     gsr_processing
