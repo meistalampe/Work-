@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  25 FEB 2018 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  27 FEB 2018 00:06
 entering extended mode
 **./bachelor_thesis.tex
 (bachelor_thesis.tex
@@ -1154,10 +1154,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--21
 File: images/skinLayers.png Graphic file (type png)
 
 <use images/skinLayers.png>
-Package pdftex.def Info: images/skinLayers.png used on input line 96.
+Package pdftex.def Info: images/skinLayers.png used on input line 91.
 (pdftex.def)             Requested size: 358.50612pt x 216.25253pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--107
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
 
  []
 
@@ -1166,13 +1166,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--107
 File: images/skinDermis.png Graphic file (type png)
 
 <use images/skinDermis.png>
-Package pdftex.def Info: images/skinDermis.png used on input line 113.
+Package pdftex.def Info: images/skinDermis.png used on input line 108.
 (pdftex.def)             Requested size: 313.69029pt x 271.15454pt.
 
 ! Undefined control sequence.
 <recently read> \cm 
                     
-l.119 ...h an average of 233 sweat glands per $\cm
+l.114 ...h an average of 233 sweat glands per $\cm
                                                   ^{2}$ on the hands and 620...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1183,7 +1183,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \cm 
                     
-l.119 ...{2}$ on the hands and 620 glands per $\cm
+l.114 ...{2}$ on the hands and 620 glands per $\cm
                                                   ^{2}$ in adult's skin (Mil...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1196,33 +1196,33 @@ and I'll forget about whatever was undefined.
 File: images/skinAnatomy.png Graphic file (type png)
 
 <use images/skinAnatomy.png>
-Package pdftex.def Info: images/skinAnatomy.png used on input line 124.
+Package pdftex.def Info: images/skinAnatomy.png used on input line 119.
 (pdftex.def)             Requested size: 313.69029pt x 243.93532pt.
 
 <images/skinGlabrous.png, id=227, 371.13657pt x 413.29407pt>
 File: images/skinGlabrous.png Graphic file (type png)
 
 <use images/skinGlabrous.png>
-Package pdftex.def Info: images/skinGlabrous.png used on input line 135.
+Package pdftex.def Info: images/skinGlabrous.png used on input line 130.
 (pdftex.def)             Requested size: 313.69029pt x 349.32771pt.
  [11 <./images/skinAnatomy.png>] [12 <./images/skinGlabrous.png>] <images/symPa
 thway.png, id=244, 529.98pt x 308.65312pt>
 File: images/symPathway.png Graphic file (type png)
 
 <use images/symPathway.png>
-Package pdftex.def Info: images/symPathway.png used on input line 153.
+Package pdftex.def Info: images/symPathway.png used on input line 148.
 (pdftex.def)             Requested size: 313.69029pt x 182.68776pt.
  [13 <./images/symPathway.png>]
 <images/zns.png, id=255, 392.96812pt x 395.97937pt>
 File: images/zns.png Graphic file (type png)
  <use images/zns.png>
-Package pdftex.def Info: images/zns.png used on input line 165.
+Package pdftex.def Info: images/zns.png used on input line 160.
 (pdftex.def)             Requested size: 358.50612pt x 361.27832pt.
 
 ! Undefined control sequence.
 <recently read> \degree 
                         
-l.173 ...rease in skin temperature of 7-8 $\degree
+l.168 ...rease in skin temperature of 7-8 $\degree
                                                    C$ within the range of 25...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1233,7 +1233,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \degree 
                         
-l.173 ...ree C$ within the range of 25-39 $\degree
+l.168 ...ree C$ within the range of 25-39 $\degree
                                                    C$. In spite of the diffu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1241,47 +1241,301 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[14 <./images/zns.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+[14 <./images/zns.png>] [15]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.200 ...ce is siemens (S), where 1 S = 1/1 \Omega
+                                                  . According to the skin re...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.200 ...use the value of the series resistor ($R_
+                                                  {s}$) is constant, the vol...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (710.8077pt too wide) in paragraph at lines 200--201
+[]\T1/lmr/m/n/12 (-20) The unit of con-duc-tance is siemens (S), where 1 S = 1/
+1 $\OT1/lmr/m/n/12 (-20) 
+\OML/lmm/m/it/12 :Accordingtotheskinresistanceusuallybeingintheordersofk\OT1/lm
+r/m/n/12 (-20) 
+\OML/lmm/m/it/12 orM\OT1/lmr/m/n/12 (-20) 
+\OML/lmm/m/it/12 ; theconductanceisverysmallandoftenmeasuredinunitsofS:Because
+thevalueoftheseriesresistor\OT1/lmr/m/n/12 (-20) ($\T1/lmr/m/n/12 (-20) R$[]$)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-[15]
-! Undefined control sequence.
-<recently read> \micro 
-                       
-l.189 ...ressed in units of micro Siemens ($\micro
-                                                   S$).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+! Misplaced alignment tab character &.
+l.215 ...he size of the electrode metal (Grimnes &
+                                                   Martinsen, 2008, p.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-) [16]
+[16] <images/electrodePlacement.png, id=284, 253.69781pt x 268.00125pt>
+File: images/electrodePlacement.png Graphic file (type png)
+
+<use images/electrodePlacement.png>
+Package pdftex.def Info: images/electrodePlacement.png used on input line 223.
+(pdftex.def)             Requested size: 224.06548pt x 236.70467pt.
+
+! Illegal parameter number in definition of \GetTitleStringResult.
+<to be read again> 
+                   1
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \GetTitleStringResult.
+<to be read again> 
+                   2
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \GetTitleStringResult.
+<to be read again> 
+                   3
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \GTS@GlobalString.
+<to be read again> 
+                   1
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \GTS@GlobalString.
+<to be read again> 
+                   2
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \GTS@GlobalString.
+<to be read again> 
+                   3
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \@tempa.
+<to be read again> 
+                   1
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \@tempa.
+<to be read again> 
+                   2
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \@tempa.
+<to be read again> 
+                   3
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   1
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   2
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   3
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \caption@tempa.
+<to be read again> 
+                   1
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \caption@tempa.
+<to be read again> 
+                   2
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \caption@tempa.
+<to be read again> 
+                   3
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<argument> ...ents for recording EDA. Placement ##
+                                                  1 involves volar surfaces ...
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<argument> ...es of medial phalanges, placement ##
+                                                  2 involves volar surfaces ...
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<argument> ...f distal phalanges, and placement ##
+                                                  3 involves thenar and hypo...
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...ents for recording EDA. Placement ##
+                                                  1 involves volar surfaces ...
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...es of medial phalanges, placement ##
+                                                  2 involves volar surfaces ...
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...f distal phalanges, and placement ##
+                                                  3 involves thenar and hypo...
+l.224 ...ar eminences of palms.\citep{HANDBOOKPP}}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.228 ...skin. In addition, the placement method #
+                                                  2 should be preferred over...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.228 ...thod #2 should be preferred over method #
+                                                  1 because of the greater r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.228 ...ivity (Scerbo, Freedman, Raine, Dawson, &
+                                                   Venables, 1992, cited by ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+) [17] [18 <./images/electrodePlacement.png>]
 chapter 2.
 (chapters/materials_and_methods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-) [17
+) [19
 
-] [18]
+] [20]
 chapter 3.
-(chapters/results.tex) [19
+(chapters/results.tex) [21
 
 ]
 chapter 4.
-(chapters/discussion.tex) [20
+(chapters/discussion.tex) [22
 
 ]
 chapter 5.
-(chapters/conclusions_and_future_work.tex) (chapters/appendix.tex [21
+(chapters/conclusions_and_future_work.tex) (chapters/appendix.tex [23
 
 ]
 chapter A.
-) [22
+) [24
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 20
@@ -1292,11 +1546,131 @@ Overfull \hbox (12.75331pt too wide) in paragraph at lines 5--5
 us lay-ers of glabrous skin.(Adapted 
  []
 
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...ents for recording EDA. Placement ##
+                                                  ######1 involves volar sur...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...ts for recording EDA. Placement ####
+                                                  ####1 involves volar surfa...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ... for recording EDA. Placement ######
+                                                  ##1 involves volar surface...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...or recording EDA. Placement ########
+                                                  1 involves volar surfaces ...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...es of medial phalanges, placement ##
+                                                  ######2 involves volar sur...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ... of medial phalanges, placement ####
+                                                  ####2 involves volar surfa...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...f medial phalanges, placement ######
+                                                  ##2 involves volar surface...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...medial phalanges, placement ########
+                                                  2 involves volar surfaces ...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...f distal phalanges, and placement ##
+                                                  ######3 involves thenar an...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...distal phalanges, and placement ####
+                                                  ####3 involves thenar and ...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...stal phalanges, and placement ######
+                                                  ##3 involves thenar and hy...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...al phalanges, and placement ########
+                                                  3 involves thenar and hypo...
+l.9 ...HANDBOOKPP}\relax }}{18}{figure.caption.19}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 )
 \tf@lof=\write8
 \openout8 = `bachelor_thesis.lof'.
 
- [23
+ [25
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 21
@@ -1307,7 +1681,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 21
 
 
 No file bachelor_thesis.gls.
-[24
+[26
 
 ] (bachelor_thesis.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
@@ -1320,7 +1694,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
- [25
+ [27
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
@@ -1328,34 +1702,34 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A67F4C14C5F288D38C0B73EA7E89E49D;1613.
+(rerunfilecheck)             Checksum: FCF6E4618D32CA09664A7CC6ED191C71;1613.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18249 strings out of 493328
- 310074 string characters out of 3139118
- 566638 words of memory out of 3000000
- 21289 multiletter control sequences out of 15000+200000
- 51917 words of font info for 85 fonts, out of 3000000 for 9000
+ 18271 strings out of 493328
+ 310420 string characters out of 3139118
+ 567000 words of memory out of 3000000
+ 21294 multiletter control sequences out of 15000+200000
+ 52186 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,8n,77p,8828b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
-vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
 .enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt
-12.pfb>
-Output written on bachelor_thesis.pdf (28 pages, 1718519 bytes).
+ic/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on bachelor_thesis.pdf (30 pages, 1774049 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 15105 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 15110 words of extra memory for PDF output out of 17280 (max. 10000000)
 
