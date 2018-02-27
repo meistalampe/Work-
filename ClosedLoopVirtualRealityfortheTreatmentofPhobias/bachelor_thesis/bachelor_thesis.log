@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  27 FEB 2018 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  27 FEB 2018 04:39
 entering extended mode
 **./bachelor_thesis.tex
 (bachelor_thesis.tex
@@ -1242,34 +1242,6 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [14 <./images/zns.png>] [15]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.200 ...ce is siemens (S), where 1 S = 1/1 \Omega
-                                                  . According to the skin re...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.200 ...use the value of the series resistor ($R_
-                                                  {s}$) is constant, the vol...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (710.8077pt too wide) in paragraph at lines 200--201
-[]\T1/lmr/m/n/12 (-20) The unit of con-duc-tance is siemens (S), where 1 S = 1/
-1 $\OT1/lmr/m/n/12 (-20) 
-\OML/lmm/m/it/12 :Accordingtotheskinresistanceusuallybeingintheordersofk\OT1/lm
-r/m/n/12 (-20) 
-\OML/lmm/m/it/12 orM\OT1/lmr/m/n/12 (-20) 
-\OML/lmm/m/it/12 ; theconductanceisverysmallandoftenmeasuredinunitsofS:Because
-thevalueoftheseriesresistor\OT1/lmr/m/n/12 (-20) ($\T1/lmr/m/n/12 (-20) R$[]$)
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
@@ -1512,30 +1484,36 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-) [17] [18 <./images/electrodePlacement.png>]
+[17] <images/SCR.png, id=294, 292.84406pt x 173.14688pt>
+File: images/SCR.png Graphic file (type png)
+ <use images/SCR.png>
+Package pdftex.def Info: images/SCR.png used on input line 239.
+(pdftex.def)             Requested size: 313.69029pt x 185.4899pt.
+
+[18 <./images/electrodePlacement.png>]) [19 <./images/SCR.png>] [20]
 chapter 2.
 (chapters/materials_and_methods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-) [19
+) [21
 
-] [20]
+] [22]
 chapter 3.
-(chapters/results.tex) [21
+(chapters/results.tex) [23
 
 ]
 chapter 4.
-(chapters/discussion.tex) [22
+(chapters/discussion.tex) [24
 
 ]
 chapter 5.
-(chapters/conclusions_and_future_work.tex) (chapters/appendix.tex [23
+(chapters/conclusions_and_future_work.tex) (chapters/appendix.tex [25
 
 ]
 chapter A.
-) [24
+) [26
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 20
@@ -1670,7 +1648,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 \tf@lof=\write8
 \openout8 = `bachelor_thesis.lof'.
 
- [25
+ [27
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 21
@@ -1681,7 +1659,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 21
 
 
 No file bachelor_thesis.gls.
-[26
+[28
 
 ] (bachelor_thesis.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
@@ -1694,7 +1672,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
- [27
+ [29
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
@@ -1702,20 +1680,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FCF6E4618D32CA09664A7CC6ED191C71;1613.
+(rerunfilecheck)             Checksum: B9BF9423BDB8AFAA1246B3103CF77607;1613.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18271 strings out of 493328
- 310420 string characters out of 3139118
- 567000 words of memory out of 3000000
- 21294 multiletter control sequences out of 15000+200000
- 52186 words of font info for 88 fonts, out of 3000000 for 9000
+ 18285 strings out of 493328
+ 310594 string characters out of 3139118
+ 567101 words of memory out of 3000000
+ 21299 multiletter control sequences out of 15000+200000
+ 52364 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,8n,77p,8828b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,8n,77p,8828b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -1727,9 +1705,9 @@ ic/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
 KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on bachelor_thesis.pdf (30 pages, 1774049 bytes).
+Output written on bachelor_thesis.pdf (32 pages, 1802076 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 15110 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 15115 words of extra memory for PDF output out of 17280 (max. 10000000)
 

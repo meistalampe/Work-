@@ -197,7 +197,7 @@ Consequently, the conductance is proportional to the current flow through the sk
 I = U \cdot G_{p}
 \end{equation}
 
-The unit of conductance is siemens (S), where 1 S = 1/1 \Omega. According to the skin resistance usually being in the orders of k\Omega or M\Omega , the conductance is very small and often measured in units of \mu S. Because the value of the series resistor ($R_{s}$) is constant, the voltage drop across $R_{s}$ is proportional to the current flow I. 
+The unit of conductance is siemens ($S$), where 1 $S$ = 1/1 $\Omega$. According to the skin resistance usually being in the orders of $k\Omega$ or $M\Omega$ , the conductance is very small and often measured in units of $\mu S$. Because the value of the series resistor ($R_{s}$) is constant, the voltage drop across $R_{s}$ is proportional to the current flow I. 
 
 \begin{equation}
 U = I \cdot R_{s}
@@ -227,7 +227,27 @@ Psychophysiological recordings rely on nonthermoregulatory electrodermal phenome
 
 It is suggested to place electrodes on the palm of the nondominant hand, presuming it is not as likely to have horny skin. In addition, the placement method #2 should be preferred over method #1 because of the greater responsivity (Scerbo, Freedman, Raine, Dawson, & Venables, 1992, cited by Boucsein et al., 2012) and the greater sweat gland activity of the distal phalanges, compared to the other placement sites(Freedman et al.,1994, cited by Boucsein et al., 2012).\\
 If both hands are not available for recording, EDA can also be measured at the inner site of the foot , over the abductor hallucis muscle adjacent to the sole and in between the proximal phalanx of the big toe and a point directly beneath the ankle (Boucsein et al., 2012). In case of exosomatic recording, there is usually no further pretreatment of the skin needed than washing the recording site with warm water.
-\subsubsection*{Recording Devices}
+
+\subsubsection{Signal Evaluation}
+The EDA signal consists of two components, the slow, tonic skin conductance level (SCL) and the faster, phasic skin conductance response (SCR), which need to be addressed separately during the evaluation of the signal.
+
+\subsubsection*{Phasic Electrodermal Measures}
+Electrodermal responses (EDRs) are short-lasting changes in EDA. They can be elicited by a distinct stimulus or occur without previous stimuli, therefore being called nonspecific EDRs (NS-EDRs). NS-EDRs are considered a tonic measure, meaning they are used to index EDA over a certain time period. In both cases the signal curve follows a certain pattern.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/SCR.png}
+\caption{Graphical representation of principal EDA components.\citep{HANDBOOKPP}}
+\label{SCRImg}
+\end{figure}
+
+As shown in figure \ref{SCRImg}, there is a characteristic rise from the initial level to a peak, followed by a slower decline. In case of an elicited EDR the time that passes from the stimulus to the onset of the EDR is called latency (EDR lat.), which usually ranges from 1-4 seconds. As pointed out by Boucsein et al. (2012), "Latencies longer than 4 s may occur, but latencies shorter than 1 s should be treated with caution because of systemimmanent temporal delays, such as time required for processing the stimulus, autonomic nervous system nerve conduction to the sweat glands, and penetration of sweat through the ducts to the epidermis"(p. 9). Following the latency, there is an ascent time from the initial level to the peak, which typically varies between 0.5 and 5 seconds (Grings, 1974, cited by Boucsein et al., 2012). The peak amplitude (EDR amp.) is reached. To determine the exact value of EDR amp., it is necessary to locate the onset point. Usually, this is done by stepping back along the SCR curve and finding the point of maximum curvature.
+%In case of SC measurement, the amplitude is expressed in microsiemens units and is often logarithmically or square-root transformed in order to normalize data.
+At times it can be important to determine whether a response has occurred. The occurrence is therefore defined in terms of a minimum amplitude, that has to be reached in order for the event to be counted as a response. This is especially true for NS-EDRs. In the past the threshold value for the minimum amplitude was commonly set to 0.05 $\mu S$. Whereas nowadays, with computerized scoring of EDR records, the definition of the minimum amplitudes has been set as low as 0.01 $\mu S$. It is important to keep in mind, that choosing such a low value might lead to equipment related noise being scored as a response. After the peak deflection, the recovery begins. In this phase the electrodermal reading declines. The recovery is a much slower process than the rise. This is caused by the increase in conductivity of the corneum, elicited by sweat, in the time period following EDRs. There are certain way points, which are usually determined, e.g. the half time recovery (EDR rec.t/2), which is the time that passes until half of the amplitude has recovered. As the recovery proceeds the EDR is concluded.
+
+%show table SCR
+\subsubsection*{Tonic Electrodermal Measures}
+The measures of the relatively long-term tonic EDA states can be divided into two basic principles, the skin conductance level (SCL) and nonspecific skin conductance responses (NS-SCRs). SCL refers to the level of conductance in the absence of phasic SCRs. To guarantee a distortion-free measurement of SCL, all event and artifact related SCRs have to be detected and removed. SCL is typically expressed in units of microsiemens and computed as a mean of several measurements, taken during specific time periods.
 
 
 \subsection{Exposure Therapy}
