@@ -27,14 +27,13 @@ public class ArrayControl : MonoBehaviour
     public int arraySize; // Defines size of arrayAudio and arrayArrow according to the imported numberSignals
     private bool beeingHandled; // Bool for the subroutine
     public int numberSpeakers; // Number of speakers available
+    
 
-    public GameObject scriptObject; UnityServer getAudioPositions, getArrowPositions, getNumberSignals; // Variables for imported Variables
+    public GameObject scriptObject; UnityServer getData; // Variables for imported Variables
 
     void Awake()
     {
-        getAudioPositions = scriptObject.GetComponent<UnityServer>();
-        getArrowPositions = scriptObject.GetComponent<UnityServer>();
-        getNumberSignals = scriptObject.GetComponent<UnityServer>();        
+        getData = scriptObject.GetComponent<UnityServer>();             
     }
 
     void Start()
@@ -56,19 +55,23 @@ public class ArrayControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-        arraySize = getNumberSignals.numberSignals;
+        arraySize = getData.numberSignals;
         arrayArrow = new Int32[arraySize];
         arrayAudio = new Int32[arraySize];
+        
                
         for (int i = 0; i < arraySize; i++)
         {
-            arrayAudio[i] = getAudioPositions.audioPositions[i];
-            arrayArrow[i] = getArrowPositions.arrowPositions[i];
+            arrayAudio[i] = getData.audioPositions[i];
+            arrayArrow[i] = getData.arrowPositions[i];
         }
 
-        if (Input.GetKey(KeyCode.Space) && beeingHandled == false)
+
+        //if (Input.GetKey(KeyCode.Space) && beeingHandled == false)
+        if (getData.playSound == true && beeingHandled == false)
         {
-            StartCoroutine(HandleIt());   
+            StartCoroutine(HandleIt());
+            getData.playSound = false;
         }        
     }
 
@@ -139,7 +142,7 @@ public class ArrayControl : MonoBehaviour
                 audioSource[3].PlayOneShot(sound);                
             }
   
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(2.0f);
         }
         
         beeingHandled = false;

@@ -27,10 +27,16 @@ public class UnityServer : MonoBehaviour
     public int numberSignals;
     public Int32[] audioPositions;
     public Int32[] arrowPositions;
+    public bool playSound;
+    public int counter;
+    
 
     private void Awake()
     {   
-        numberSignals = 5;                          
+        numberSignals = 5;
+        playSound = false;
+        counter = 0;
+        
         audioPositions = new Int32[numberSignals];
         arrowPositions = new Int32[numberSignals];
     }
@@ -67,13 +73,20 @@ public class UnityServer : MonoBehaviour
             arrowPositions = new Int32[numberSignals];
 
             // extract data from stream
+           
             for (int i = 0; i < numberSignals; i++)
             {
                 // extract the audio positions
                 audioPositions[i] = Convert.ToInt32(data[i + 1]);
                 // extract the arrow positions
                 arrowPositions[i] = Convert.ToInt32(data[i + 1 + numberSignals]);
-            }    
+                counter = i;            
+            }
+           
+            playSound = Convert.ToBoolean(data[counter + 2 + numberSignals]);
+            
+
+
 
         }
     }
