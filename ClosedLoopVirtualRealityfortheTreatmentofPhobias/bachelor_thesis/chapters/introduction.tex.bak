@@ -61,11 +61,7 @@ In this chapter, we will give a brief introduction to the field of anxiety disor
 %%- secretory theory, by tarchanoff relates EDA to sweat gland activity, supported through Darrow 1927 who showed a close relation of the sweat secretion and EDA
 %%-scr begins about 1 s earlier than moisture would appear on the skin surface -> gland activity not sweat on the skin itself is critical for EDA
 %%- palmar sweat glands are innervated by the sympathetic chain of the autonomic nervous system -> EDA reflects sympathetic activation
-%%- In fact, we would date the beginning of
-%%the modern era of EDA research to the early 1970s when
-%%Lykken and Venables proposed standardized techniques
-%%of recording skin conductance and standardized units of
-%%measurement
+
 %%- Another issue of central importance concerns the psychological
 %%significance of EDA. From the beginning, this
 %%response system has been closely linked with the psychological
@@ -80,22 +76,11 @@ In this chapter, we will give a brief introduction to the field of anxiety disor
 %%authors also related phasic SCRs to attention, noting that
 %%such responses are sensitive to stimulus novelty, intensity,
 %%and significance.
-%%- Anatomical and physiological basis:
-%%- There are two forms of sweat glands in the human
-%%body: the apocrine, which have been less studied, and
-%%the eccrine, which have been of primary interest to psychophysiologists.
-%%The primary function of most eccrine
-%%sweat glands is thermoregulation. However, those located
-%%on the palmar and plantar surfaces are thought to be more
-%%related to grasping behavior than to evaporative cooling
-%%(Edelberg, 1972a) and they have been suggested to be more
-%%responsive to psychologically significant stimuli than to
-%%thermal stimuli.\\
 
 Electrodermal activity (EDA) is a collective term for all electrical phenomena in the skin, which was first introduced by Johnson and Lubin (1966). This includes active and passive electrical properties, caused by skin functions and skin structure as well as the appendages of the skin.%(Thom and Boucsein, 2013). 
 The skin appendages are structures formed by skin-derived cells such as hair, nails, sebaceous glands and sweat glands. EDA is one of the most commonly used response systems in psychophysiological research. This is due to its relative ease of measurement and its sensitivity to psychophysiological states and processes. The following section will provide a brief overview of EDA, ranging from physical and psychological context to recording and quantification methods.
 
-\subsubsection*{Anatomical basis} 
+\subsubsection{Anatomical basis} 
 This section will elaborate on the anatomical aspects of the human skin and will cover all the parts and appendages, that are needed to understand the principles of EDA. The skin or cutis is the biggest organ of the human body and inherits many different functions, which are essential for survival. It primarily acts as a selective barrier, preventing the entry of foreign matter and enables the passage of materials from the bloodstream to the exterior of the body. Other than protection, it is involved in thermoregulation, cutaneous circulation and immunologic protection.  
 The anatomical structure of the skin is similar in most regions of the body. Although, specialized regions of skin, such as the palms and soles may be resembling in structure, they possess modified characteristics.%(Bolognia et al., 2003)
 
@@ -118,24 +103,15 @@ The dermal layer, closest to the epidermis is called the papillary stratum. Othe
 %subcutis
 The subcutis, or hypodermis, is located beneath the dermis and is composed of loose connective tissue. It serves as a connection between the skin and the connective tissue of the muscles, allowing for good horizontal mobility of the skin. The subcutis also serves as a thermal and mechanical insulation layer, due to its ability to store fat. In addition to this it, contains nerves and vessels, which supply the skin with nutrition and information, as well as the hair follicles and secretory part of the glands.   
 
-
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/skinDermis.png}
 \caption{A artificial cross-section of the skin. It combines a sweat gland in ridged skin (left) and a hair together with a sebacous gland in polygonal skin (right).\citep{boucsein2013electrodermal}}
 \label{DermisImg}
 \end{figure} 
+
 %recap link to sweat glands
-The figure \ref{layerImg} shows an example of a typical profile of glabrous (hairless) skin. This specific form of skin can be found on the palms of the hands and the soles of the feet. Areas, both of which, are frequently mechanically stressed and differ greatly from the rest of the body.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.7\textwidth]{images/skinGlabrous.png}
-\caption{A cross-section of the layered construction of the glabrous human skin. An eccrine\citep{boucsein2013electrodermal}}
-\label{layerImg}
-\end{figure}
-
-
+The left side of figure \ref{DermisImg} shows an example for a typical profile of glabrous (hairless) skin. This specific form of skin differs in its horizontal structure. During early embryonal development specific patterns are formed by ridge formation. Ridged skin can be found on the palms of the hands and the soles of the feet. Areas, both of which, are frequently mechanically stressed and also have been found to have the highest densities of sweat glands, with an average of 233 sweat glands per $\cm^{2}$ on the hands and 620 glands per $\cm^{2}$ in adult's skin (Millington and Wilkinson 1983 in Boucsein, 2013). Sweat gland are considered to be exocrine glands, which is due to the fact that they secrete directly onto the surface of the skin. There are two types of human sweat glands, eccrine and apocrine, the majority being of the first type. The secretions of eccrine glands only contain negligible amounts of cytoplasm from the glandular cells. As there are no apocrine sweat glands located on the palmar skin, which is the most common location for EDA measurement, this section will only focus on eccrine sweat glands. The main purpose of eccrine sweat glands is to regulate the body temperature. With the exception of the palmar and plantar glands, which are thought to rather take part in grasping behavior (Edelberg, 1972, cited by Cacioppo et al., 2007). Further all eccrine sweat glands are believed to be more responsive to psychologically significant stimuli and therefore to be involved in emotional sweating. Emotional sweating is primarily observable in areas with a high density of eccrine sweat glands, such as hands and feet. Therefore, making these region particularly interesting for EDA measurement, concerning the effect of psychophysiological stimuli. Before elaborating on the connection between electrodermal activity and sweat gland activity, it is useful to consider the anatomy of the glands first.
 
 
 \begin{figure}[ht]
@@ -145,10 +121,176 @@ The figure \ref{layerImg} shows an example of a typical profile of glabrous (hai
 \label{layerImg}
 \end{figure}
 
+Figure \ref{layerImg} shows the anatomy of an eccrine sweat gland in glabrous skin. It consists of the  secretory portion, the coiled compact body of the gland, and the sweat duct. The sweat duct, which is the excretory portion of the gland, is a long tube reaching all the way to the stratum corneum, forming a small pore on the surface of the skin. It passes through the dermis in a relatively straight line but ends up spiraling through the epidermis (Edelberg, 1972, cited by Cacioppo et al., 2007). Imagining sweat glands as a set of variable resistors wired in parallel, helps to understand their influence on electrodermal activity. As sweat rises in the ducts their electrical resistance is constantly reduced, resulting in noticeable changes in electrodermal activity. The amount of sweat and the number of glands that are currently active, and therefore the electrodermal activity depends on the degree of activation of the sympathetic division of the autonomic nervous system.
+
+% innervation
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/skinGlabrous.png}
+\caption{A cross-section of the layered construction of the glabrous human skin containing an eccrine sweat gland, in its glomerulus, together with its straight dermal and irregularly coiled epidermal duct. A part of the reticular layer has been omitted due to its size in relation to the rest. \citep{boucsein2013electrodermal}}
+\label{layerImg}
+\end{figure}
+
+% physiology
+\subsubsection{Physiological basis}
+According to the previous section, focusing on the anatomical aspects, this section will outline only the physiological mechanisms required to understand electrodermal mechanisms. 
+% efferent innervation of the skin
+The autonomic nervous system (ANS) is a complex systems of nerves that regulates involuntary and unconscious actions. The emphasis of this section will be its thermoregulatory aspects, which also involve the skin and sweat glands. 
+There are a number of efferent vegetative fibers in the human skin, including sympathetic fibers, innervating the secretory segment of the eccrine sweat glands, and vasoconstrictive efferences for the blood vessels. Originating from the brain, the efferent sympathetic nerves descend in the anterolateral part of the spinal cord in close proximity to the pyramidal tract. They are switched over in the lateral horn and leave the spinal cord through its ventral root. Alongside motoric fibers, the preganglionic sympathetic fibers travel via the white communicating ramus to the sympathetic trunk. From this point the neuronal activity will be distributed to various levels of the sympathetic trunk, causing one preganglionic fiber to reach up to 16 postganglionic neurons. The postganglionic fibers exit the sympathetic trunk through the gray communicating ramus and from there spread into the periphery, eventually reaching the skin.
 
 
+% sweat gland innervation
+Human sweat glands have predominantly sympathetic cholinergic innervation from sudomotor fibers originating in the sympathetic chain. The secretory part of the gland is surrounded by a dense plexus of sympathetic fibers. This allows for a wide distribution of ANS activity. The sudorisecretory fibers form a smooth bundle between the lateral pyramidal tract and the anterolateral tract. They end at the preganglionic sudorisecretory neurons and run right next to the other sympathetic fibers.  Although the sympathetic system is represented in various locations of the brain, the hypothalamus is considered to be the controlling entity of all vegetative functions. This includes sweat secretion and vasomotor activity. However, the central innervation of sweat gland activity is not limited to the hypothalamus. There are several centers, which are located in different levels of the central nervous system and partly independent of one another. The cortex, the basal ganglia, diencephalic structures such as thalamus and hypothalamus, the limbic system and brain stem areas are considered possible origins of sympathetic activity (Boucsein, 2013).
 
-% -functions of the skin -heat regulation -sweat gland activity 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/symPathway.png}
+\caption{Skin afferents and efferents at spinal cord level and connections with ascending and descending pathways. ---: motoric pathway, -.-: sympathetic efferents. \citep{boucsein2013electrodermal}}
+\label{symPathImg}
+\end{figure}
+
+\subsubsection{Physiology underlying electrodermal activity}
+
+Studies, measuring sympathetic action potentials in peripheral nerves while simultaneously recording EDA, have shown a high correlation between bursts of sympathetic nerve activity and the phasic skin conductance response (Wallin, 1981 in Cacioppo et al., 2007). Because there are many excitatory and inhibitory influences on the sympathetic system, located in various parts of the brain, there also are a variety of neural mechanisms and pathways involved into the central control of EDA.
+In a review on CNS elicitation of EDA, Boucsein (2013) concludes that there are two different origins above reticular level, which were already suggested by Edelberg (1972): a limbic-hypothalamatic source, which is also thermoregulatory and emotionally influenced, and a premotor-basal ganglia source, eliciting electrodermal concomitants of the preparation of specific motor actions. In addition, Boucsein suggests a third reticular modulating system, mediating EDA changes appearing with variations of general arousal (see figure \ref{znsImg}). Further, an inhibitory EDA system has been located in the bulbar level of the reticular formation.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{images/zns.png}
+\caption{Central elicitation of EDA in humans. 1: Ipsilateral influences from the limbic system via hypothalamic thermoregulatory areas; 2: Contralateral influences from premotor cortical and basal ganglia areas; 3: Reticular influences. Dashed: Connections within the limbic system.\citep{boucsein2013electrodermal}}
+\label{znsImg}
+\end{figure}
+
+% properties of skin and sweat glands influencing EDA
+% eda boucsein 35,36 falls sie mal wieder auftauchen
+However, there are also properties of the skin, influencing the EDA, which have to be considered, especially local physiological phenomena related to sweat gland activity. Considering the vertical structure of the skin, there is a significant difference in conductivity. Both the dermis and the subcutis are tissues with strong blood supply and interstitial fluid. Therefore their elictrical conductivity is much higher than the conductivity of the epidermal layer, which forms a diffusional as well as an electrical barrier. There has been some discussion concerning the exact localization of an epidermal diffusional barrier, which has been reviewed in detail by Fowles (1986)(Boucsein, 2013). However, most of the findings suggest that the entire stratum corneum is forming the barrier, with the exception of its desquamating surface cells(Jarret,1980, cited by Boucsein, 2013). 
+It is to mention that, under normal physiological conditions, the skin temperature is causing changes in permeability of the skin. Fowles (1986) pointed out that the permeability for water doubles with an increase in skin temperature of 7-8 $\degree C$ within the range of 25-39 $\degree C$. In spite of the diffusional barrier and without activity of the sweat glands, there is always a continuous transmission of water in the skin, directed from the dermis to the outside of the body. This causes the corneum to be always partially hydrated. However, there is a distinct relationship between the relative humidity of the air and the corneal hydration.
+Thiele (1981) also showed a dependency of corneal thickness on the relative humidity of the air. As mentioned above there are differences in conductivity in the different skin layers. The barrier, formed by the outer epidermal layers, is penetrated by the sweat gland ducts, which act as diffusional and electrical shunts.
+Other than these properties, concerning the resistance, living tissue has capacitative features which are related to the activity of its membranes. While tissue conductivity is mainly responsible for tonic EDA and, in small parts, contributes to phasic electrodermal phenomena with rather slow recovery, active membrane processes following a nerve impulse are prone to eliciting electrodermal responses with fast recovery (Boucsein, 2013).
+
+\subsubsection{Principles of Electrodermal Measurement}
+%Currently there are two basic methods of recording, the exosomatic and the endosomatic method. Whereas with the endosomatic method only changes in the potential of the skin are recorded, the exosomatic method relies on an external current to record changes in the skin resistance. This section will focus on the exosomatic method, for it being the current method of choice (Fowles et al.,1981, cited by Cacioppo et al., 2007), and describe the measurement of skin conductance level (SCL) and skin conductance response (SCR), which is the reciprocal of the skin resistance response.\\
+%
+%Electrodermal activity is measured, by passing a small current through two electrodes, which are placed on the surface of the skin. The physical principal, standing behind this measurement, is Ohm's law. It states that the skin resistance (R) is equal to the voltage (V) applied between to electrodes placed on the surface, divided by the current (I) passing through the skin.
+%\begin{center}
+%\begin{equation} \label{OhmsLaw}
+%R = V/I \qquad ,[R] = \Omega 
+%\end{equation}
+%\end{center}
+%
+%There are two concepts to current physiological recording systems. If the current is held constant then the voltage between the two electrodes can be measured. The voltage will vary directly with the skin resistance. Alternatively, if the voltage is held constant the current can be measured. The current will vary directly with the reciprocal of the skin resistance, or skin conductance. The skin conductance is expressed in units of Siemens and measures of skin conductance are usually expressed in units of micro Siemens ($\micro S$). Currently, physiological recording systems that use a constant voltage are the most prevalent for the direct recording of skin conductance.
+
+There are three different methods of measuring EDA: the endosomatic method, which does not rely on the application of an external current, and two exosomatic methods, which apply either direct current or alternating current. For the past couple of decades the measurement of EDA as skin conductance, using a direct current, constant voltage methodology with silver-silver chloride (Ag/AgCL) electrodes and an electrolyte of sodium or potassium chloride has been the most prevalent method in EDA literature (Boucsein et al., 2012). Thus, the present section will focus on this method. Typically, a small voltage (e.g., 0.5V) is applied to two electrodes, which are placed on the sound surface of the skin, and a small resistor (e.g., 200 to 1000 $\Omega$) is connected in series with the skin.  To avoid any electrocardiogram artifacts, the electrodes should be placed on the same body side. Because the skin resistance exceeds the resistance of the resistor by far, its   effect on the current flow inside the circuit can be neglected, when measuring the current flow. Hence, when applying Ohm's law, the current (I) flow between the electrodes, and therefore through the resistor, is equal to the voltage (U) divided by the Resistance of the skin ($R_{p}$).
+
+\begin{equation} \label{OhmsLaw}
+I = U / R_{p}
+\end{equation}
+
+Because the voltage has a constant value, the current changes in proportion to the reciprocal of the resistance, which is called conductance ($G_{p}$).  
+
+\begin{equation}
+I \approx 1/R_{p} 
+\end{equation}
+Consequently, the conductance is proportional to the current flow through the skin.
+\begin{equation} \label{IG}
+I = U \cdot G_{p}
+\end{equation}
+
+The unit of conductance is siemens ($S$), where 1 $S$ = 1/1 $\Omega$. According to the skin resistance usually being in the orders of $k\Omega$ or $M\Omega$ , the conductance is very small and often measured in units of $\mu S$. Because the value of the series resistor ($R_{s}$) is constant, the voltage drop across $R_{s}$ is proportional to the current flow I. 
+
+\begin{equation}
+U = I \cdot R_{s}
+\end{equation}
+
+Considering, the proportionality of I and $G_{p}$, as shown in \ref{IG} it becomes clear that changes in U can be monitored to provide precise index of variations in the skin conductance.\\
+
+\subsubsection{Techniques of Electrodermal Recording}
+
+This section will give a brief overview on possible requirements for electrodermal recording, such as special electrodes, electrode gels and recording devices.
+
+\subsubsection*{Electrodes}
+Electrodes are a biomedical sensor system. Electrodermal recording typically relies on metal electrodes. However, metal being a generic term, as it is corroded at the surface of the electrode. Different metals will cause different stages of corrosion. Therefore, when measuring EDA with a direct current ,it is of great importance to use two electrodes of the same material, eliminating eventual potential differences. In exosomatic recording, using a direct current, the electrode pair is connected to an external voltage. Thus, turning them into anode and cathode in an electric system, which are polarized by electrolysis.
+The standard electrodes, used in electrodermal recording, are sintered silver-silver chloride (Ag/AgCL) electrodes, which minimize both the polarization of the electrode and the bias potential between the electrodes.
+The most common form of EDA electrodes consist of a metal ring, which is embedded in a cylindrical plastic case. The space between metal and skin is filled with an electrode gel, which usually contains a chloride salt like NaCl. The concentrations of the electrode gel is chosen in the range of 0.050-0.075 molar to resemble the NaCl concentration in human sweat. Therefore, the concentration of the gel will remain stable when mixed with sweat. When using an electrolyte, it is recommended to fix the electrodes to the skin at least 5-10 minutes before starting the recording. This will eliminate an initial  baseline drift in the EDA recording, caused by the electrolyte penetrating the stratum corneum and the sweat ducts. Further the electrode-skin impedance is greatly influenced by the size of the electrolyte-skin contact area and not the size of the electrode metal (Grimnes & Martinsen, 2008, p.
+270, cited by Boucsein et al.,2012). Therefore it is important to give special attention to the electrode fixation, guaranteeing a sufficient electrode-skin contact and a minimization of movement artifacts.
+
+\subsubsection*{Recording Sites}
+Psychophysiological recordings rely on nonthermoregulatory electrodermal phenomena, which can be most reliably recorded from glabrous skin. Thus making the palms of the hands and the soles of the feet the preferred recording sites for EDA. There are three different ways to place the electrodes when recording EDA on the hand (see Figure \ref{PalmImg}).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{images/electrodePlacement.png}
+\caption{Three electrode placements for recording EDA. Placement #1 involves volar surfaces of medial phalanges, placement #2 involves volar surfaces of distal phalanges, and placement #3 involves thenar and hypothenar eminences of palms.\citep{HANDBOOKPP}}
+\label{PalmImg}
+\end{figure}
+
+It is suggested to place electrodes on the palm of the nondominant hand, presuming it is not as likely to have horny skin. In addition, the placement method #2 should be preferred over method #1 because of the greater responsivity (Scerbo, Freedman, Raine, Dawson, & Venables, 1992, cited by Boucsein et al., 2012) and the greater sweat gland activity of the distal phalanges, compared to the other placement sites(Freedman et al.,1994, cited by Boucsein et al., 2012).\\
+If both hands are not available for recording, EDA can also be measured at the inner site of the foot , over the abductor hallucis muscle adjacent to the sole and in between the proximal phalanx of the big toe and a point directly beneath the ankle (Boucsein et al., 2012). In case of exosomatic recording, there is usually no further pretreatment of the skin needed than washing the recording site with warm water.
+
+\subsubsection{Signal Evaluation}
+The EDA signal consists of two components, the slow, tonic skin conductance level (SCL) and the faster, phasic skin conductance response (SCR), which need to be addressed separately during the evaluation of the signal.
+
+\subsubsection*{Phasic Electrodermal Measures}
+Electrodermal responses (EDRs) are short-lasting changes in EDA. They can be elicited by a distinct stimulus or occur without previous stimuli, therefore being called nonspecific EDRs (NS-EDRs). NS-EDRs are considered a tonic measure, meaning they are used to index EDA over a certain time period. In both cases the signal curve follows a certain pattern.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/SCR.png}
+\caption{Graphical representation of principal EDA components.\citep{HANDBOOKPP}}
+\label{SCRImg}
+\end{figure}
+
+As shown in figure \ref{SCRImg}, there is a characteristic rise from the initial level to a peak, followed by a slower decline. In case of an elicited EDR the time that passes from the stimulus to the onset of the EDR is called latency (EDR lat.), which usually ranges from 1-4 seconds. As pointed out by Boucsein et al. (2012), "Latencies longer than 4 s may occur, but latencies shorter than 1 s should be treated with caution because of systemimmanent temporal delays, such as time required for processing the stimulus, autonomic nervous system nerve conduction to the sweat glands, and penetration of sweat through the ducts to the epidermis"(p. 9). Following the latency, there is an ascent time from the initial level to the peak, which typically varies between 0.5 and 5 seconds (Grings, 1974, cited by Boucsein et al., 2012). The peak amplitude (EDR amp.) is reached. To determine the exact value of EDR amp., it is necessary to locate the onset point. Usually, this is done by stepping back along the SCR curve and finding the point of maximum curvature.
+%In case of SC measurement, the amplitude is expressed in microsiemens units and is often logarithmically or square-root transformed in order to normalize data.
+At times it can be important to determine whether a response has occurred. The occurrence is therefore defined in terms of a minimum amplitude, that has to be reached in order for the event to be counted as a response. This is especially true for NS-EDRs. In the past the threshold value for the minimum amplitude was commonly set to 0.05 $\mu S$. Whereas nowadays, with computerized scoring of EDR records, the definition of the minimum amplitudes has been set as low as 0.01 $\mu S$. It is important to keep in mind, that choosing such a low value might lead to equipment related noise being scored as a response. After the peak deflection, the recovery begins. In this phase the electrodermal reading declines. The recovery is a much slower process than the rise. This is caused by the increase in conductivity of the corneum, elicited by sweat, in the time period following EDRs. There are certain way points, which are usually determined, e.g. the half time recovery (EDR rec.t/2), which is the time that passes until half of the amplitude has recovered. As the recovery proceeds the EDR is concluded.
+
+%show table SCR
+\subsubsection*{Tonic Electrodermal Measures}
+The measures of the relatively long-term tonic EDA states can be divided into two basic principles, the skin conductance level (SCL) and nonspecific skin conductance responses (NS-SCRs). SCL refers to the level of conductance in the absence of phasic SCRs. To guarantee a distortion-free measurement of SCL, all event and artifact related SCRs have to be detected and removed. SCL is typically expressed in units of microsiemens and computed as a mean of several measurements, taken during specific time periods.
+NS-SCRs on the other hand are phasic increases in skin conductance that resemble the elicited SCRs. However, they are considered to be tonic components of the EDA signal. The reasoning behind this is the absence of a distinct stimulus, related to their occurrence. According to SCL, NS-SCRs can be recording in periods without or in between a stimulus presentation, e.g. a resting phase. NS-SCRs usually are expressed in number of responses per time interval, most commonly per minute. As mentioned before it is important to define a threshold to determine which responses will be rated as such.\\
+
+\subsubsection{Psychological and Social Context of EDA}
+%SCL and NS-SCRs have been widely used as indices of sympathetic nervous system arousal.
+This section is based on a review of the psychological an social factors that have been shown to influence EDA, done by Cacioppo et al. (2007). Three different types of paradigm have been reviewed: (1) those that involve the presentation of discrete stimuli, (2) those that involve the presentation of continuous stimuli, and (3) those that involve examining the correlates of individual differences in EDA. The present section will briefly cover the first two types.
+
+\textbf{Effects of discrete stimuli.} There are a number of stimuli attributes to which the SCR is sensitive, including stimulus novelty, arousal content, significance, intensity and surprise. Although it may be impossible to identify an isolated SCR as an "attentional" response or an "anxiety" response, it is however possible, to interpret the psychological meaning of a SCR by providing a strict experimental paradigm. The better controlled the experimental paradigm, the more conclusive the interpretation. If there is only one attribute of the stimuli changing during the experiment, such as intensity, elicited SCRs can be matched more precisely and therefor allow a better interpretation of the psychological process involved. For example, the International Affective Picture System (IAPS), which has been developed by Lang et al. (1998), consists of a variety of pictures that are rated for both their arousal-producing quality and their valence. The valence scale ranges from strongly positive to strongly negative pictures. SCRs elicited by the use of the IAPS have been found to be related to the arousal dimension, with responses increasing  in magnitude as arousal rating increased for both positively valenced and negatively valenced pictures(Lang et al.,1993 , cited by Cacioppo et al.,2007). 
+
+\textbf{Effects of continuous stimuli.} In contrast to the brief, discrete stimuli, as reviewed earlier, continuous stimuli are rather long-lasting and can be thought of as modulating changes in tonic arousal. In this context SCL and the frequency of NS-SCRs provide the most useful measures of EDA, because they can be measured over long periods of time. There are certain continuous stimulus situation which will reliably produce an increase in EDA. One example that can be mentioned here is performing a task. Performing as well as anticipating almost any task will cause an increase of both SCL and the NS-SCR frequency. This has already been shown by different studies. Lacey et al. (1963) recorded palmar SCL during rest and during anticipation and performance of eight different tasks. They confirmed an increase of SCL in every task situation. According to the results the SCL rose by one $\mu S$ during anticipation and by another one or two $\mu S$ during performance, when compared to the resting level. Other findings suggest that situations in which strong emotions are elicited also increase tonic EDA arousal. Ax(1953) created genuine states of fear and anger in his subjects by causing them to believe to feel in danger of a high-voltage shock due to equipment malfunction or by treating them in a rude fashion. Both SCL and NS-SCRs rose during the fear as well as the anger conditions (Cacioppo et al., 2007). \\
+
+% evtl convlusion
+% EPILOGUE
+%EDA is a sensitive peripheral index of sympathetic nervous
+%system activity that has proven to be a useful psychophysiological
+%tool with wide applicability. Social and behavioral
+%scientists have found that tonic EDA is useful to investigate
+%general states of arousal and/or alertness, and that the
+%phasic SCR is useful to study multifaceted attentional processes,
+%as well as individual differences in both the normal
+%and abnormal spectrum ( zitat aus Cacioppo 2007)
+In conclusion, EDA is a sensitive peripheral index of sympathetic nervous system activity. As mentioned above, the eccrine sweat glands are entirely under sympathetic control and therefore increases in both SCL and SCR mirror tonic and phasic sympathetic activation. EDA provides for a relatively direct and inexpensive measure that comes with great utility and can be used as an reliable indicator of arousal and attention.
+
+
+\subsection{Electrocardiogram}
+
+\subsubsection{Anatomical and Physiological Basis}
+The cardiovascular system consists of two main components, the heart, which functions as a pump, and the vasculature, as a distribution system, that together ensure a constant blood supply throughout the whole body. The heart provides a steady flow of oxygenated blood, by sending blood into the lungs (pulmonary circulation) and then to the rest of the body (systemic circulation).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/CVS.png}
+\caption{Ventral perspective of the systemic and pulmonary circulation.Lighter gray areas indicate oxygenated blood and darker gray areas indicate deoxygenated blood.\citep{HANDBOOKPP}}
+\label{CVSImg}
+\end{figure}
+
+As can be seen on figure \ref{CVSImg} the deoxygenated blood returns to the heart through the superior and inferior vena cava. After passing the right atrium the venous blood reaches the right ventricle of the heart, from where it is pumped into the lungs for re-oxygenation purposes. Completing the pulmonary circulation, the oxygenated blood returns to the heart through pulmonary veins, reaching the left atrium first and finally the left ventricle. From here the blood is pumped into the aorta and distributed in the rest of the body. On its way to the periphery the blood passes through ever smaller vessels, starting with large arteries, which later branch into smaller arterioles and finally into capillaries. The capillaries are small, thin walled vessels from which oxygen, nutrients and waste products, such as carbon dioxide, are exchanged with the tissue. Leaving the capillaries, the blood returns to the heart again through the venous part of the systemic circulation. After passing the slightly larger venules the blood flows into increasingly larger veins until it reaches the vena cava and the circle closes.\\
+
+The human heart can be divided into four chambers, two on either side. Each of the sides consists of an atrium at the top, or rostral, half and a ventricle at the bottom, or caudal, half. The heart contains three different types of cardiac muscle tissue, atrial and ventricular muscle fibers as well as specialized conducting fibers. The muscle fibers primarily serve the pumping function of the heart but also form a syncytium. This means, the tissue is electrically coupled in a way that allows for a rapid spread of depolarization along the longitudinal axis of the heart. There are two separate syncytiums, the atrial and the ventricular one, which are connected by an electrical conducting system. Although they are electrically connected it is crucial that both portions of the heart function as separate pumping units and all chambers are coordinated, in a way where the ventricular action is always triggered shortly after the atrial action.\\
+This challenge is met by a special conducting system, formed out of specialized conducting fibers, which is embedded into the cardiac muscle tissue. The contraction of the heart can be triggered by the depolarization of two nodes of electrically active tissue, the first one being the sinoatrial (SA) node followed by the atrioventricular (AV) node. The SA node, serves as the pacemaker of the heart and is located inside the wall of the right atrium right beneath the entering point of the vena cava superior.  
+%"The SA node is the pacemaker because the speed of spontaneous depolarization of this node is typically faster than that of the AV node, and hence generally controls the rate of the beat" HandbookPP
+A system of internodal, conductive fibers connects the two nodes. The depolarization wave is transported into the ventricles by passing the bundle of His, which branches into the left and right bundles of Purkinje fibers. These fibers pass through the interventricular septum and deliver the depolarization into the rest of the ventricles.
+
+\textbf{The cardiac cycle.}
 
 \subsection{Exposure Therapy}
 %what is exposure therapy?\\ 
