@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,5 +17,13 @@ W.~Boucsein.
 J.T. Cacioppo, L.G. Tassinary, and G.G Berntson.
 \newblock \emph{Handbook of Psychophysiology}.
 \newblock Cambridge University Press, 2007.
+
+\bibitem[Goldberger et~al.(2017)Goldberger, Goldberger, and
+  Shvilkin]{GOLDBERGER2017}
+A.L. Goldberger, Z.D. Goldberger, and A.~Shvilkin.
+\newblock \emph{Clinical Electrocardiography: A Simplified Approach E-Book}.
+\newblock Elsevier Health Sciences, 2017.
+\newblock ISBN 9780323508773.
+\newblock URL \url{https://books.google.de/books?id=q59tDgAAQBAJ}.
 
 \end{thebibliography}

@@ -15,23 +15,26 @@
 \contentsline {subsubsection}{\nonumberline Techniques of Electrodermal Recording}{16}{section*.16}
 \contentsline {subsubsection}{\nonumberline Signal Evaluation}{17}{section*.20}
 \contentsline {subsubsection}{\nonumberline Psychological and Social Context of EDA}{20}{section*.24}
-\contentsline {subsection}{\numberline {1.1.4}Electrocardiogramm}{21}{subsection.1.1.4}
-\contentsline {subsubsection}{\nonumberline Anatomical and Physiological Basis}{21}{section*.25}
-\contentsline {subsection}{\numberline {1.1.5}Exposure Therapy}{22}{subsection.1.1.5}
-\contentsline {section}{\numberline {1.2}General}{22}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}State of the Art}{22}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Recent Advances in Research}{22}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Problem Analysis and Goals}{22}{section.1.3}
-\contentsline {chapter}{\numberline {2}Materials and Methods}{24}{chapter.2}
-\contentsline {section}{\numberline {2.1}Materials}{24}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Setup}{24}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Procedure(Paradigm)}{24}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Methods}{24}{section.2.2}
-\contentsline {chapter}{\numberline {3}Results}{26}{chapter.3}
-\contentsline {chapter}{\numberline {4}Discussion}{27}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{28}{chapter.5}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{29}{appendix.A}
-\contentsline {chapter}{List of Figures}{30}{appendix.A}
-\contentsline {chapter}{List of Tables}{31}{chapter*.27}
-\contentsline {chapter}{List of Abbreviations}{31}{chapter*.28}
-\contentsline {chapter}{Bibliography}{32}{chapter*.28}
+\contentsline {subsection}{\numberline {1.1.4}Electrocardiogram}{22}{subsection.1.1.4}
+\contentsline {subsubsection}{\nonumberline Anatomical and Physiological Basis}{22}{section*.25}
+\contentsline {subsubsection}{\nonumberline ECG Measurement}{24}{section*.29}
+\contentsline {subsubsection}{\nonumberline ECG Signal components}{25}{section*.30}
+\contentsline {subsubsection}{\nonumberline Psychophysiological Measurements}{27}{section*.32}
+\contentsline {subsection}{\numberline {1.1.5}Exposure Therapy}{29}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}General}{29}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}State of the Art}{29}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Recent Advances in Research}{29}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Problem Analysis and Goals}{29}{section.1.3}
+\contentsline {chapter}{\numberline {2}Materials and Methods}{30}{chapter.2}
+\contentsline {section}{\numberline {2.1}Materials}{30}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Setup}{30}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Procedure(Paradigm)}{30}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Methods}{30}{section.2.2}
+\contentsline {chapter}{\numberline {3}Results}{32}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discussion}{33}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{34}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{35}{appendix.A}
+\contentsline {chapter}{List of Figures}{36}{appendix.A}
+\contentsline {chapter}{List of Tables}{38}{chapter*.33}
+\contentsline {chapter}{List of Abbreviations}{38}{chapter*.34}
+\contentsline {chapter}{Bibliography}{39}{chapter*.34}
