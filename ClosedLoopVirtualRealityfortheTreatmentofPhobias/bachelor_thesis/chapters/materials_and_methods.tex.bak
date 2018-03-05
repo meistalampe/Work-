@@ -1,14 +1,80 @@
 
 % Materials and Methods
+%6. Summary of Publication Recommendations
+%Published reports must contain sufficient detail to allow other
+%experimenters to try to replicate the reported results and to help
+%explain failures of replication. Given the limited space that journals
+%provide, recommendations will be summarized below for both
+%necessary and optional recording and environmental procedures to
+%be reported in publications of studies using EDA.
+%First and above all, the method of measurement has to be specified:
+%endosomatic or exosomatic, direct or alternating current (if
+%any) applied to the skin, and constant voltage or constant current.
+%The applied voltage (or current) must be noted. If commercially
+%available instrumentation has been used, the manufacturer and
+%instrument type should be mentioned. Furthermore, calibration
+%procedures should be specified.
+%Second, methods of signal conditioning and storage need to be
+%specified, including procedures for separating EDL from EDRs,
+%if applied, time constants of amplifiers, separate grounding procedures,
+%if used, A/D conversion rate, and sampling frequency
+%(for EDL and EDRs if stored separately).
+%Third, recording sites should be specified for active and inactive
+%electrodes (if applicable). If the sites were pretreated, the procedure
+%should be reported in detail. Also essential is providing details for
+%electrodes and electrolytes that were used, such as electrode metal
+%(e.g., sintered Ag/AgCl), area of contact (either in square centimeters
+%or diameter), method of fixation (e.g., double-sided adhesive
+%tape), details of the used electrolyte, such as type of gel or base,
+%ionic type and concentration (e.g., 0.08 M or 0.5% NaCl), or, in the
+%case of disposable electrodes, brand and type plus as much of the
+%above mentioned information as is available from the manufacturer. It is important to know how long electrodes were attached
+%before the recording started and how long they stayed in place.
+%Details of how polarization was controlled and how electrodes
+%were stored should be given if available. In the case of DC recording,
+%we recommend using a polarity reversal switch between segments
+%within a session.
+%Fourth, signal evaluation needs to be reported in detail, whereas
+%the sampling rate (for tonic and phasic measures separately, if
+%different) and specification of time windows for tonic and phasic
+%measures (e.g., latency windows for EDR onset being 1–4 s after
+%stimulus onset) are mandatory. For EDRs, a minimum amplitude
+%criterion must be specified and reported (e.g., 0.01 mS for SCRs to
+%be scored). The standard terminology mentioned in Section 3
+%should be adhered to. The term EDR magnitude should be reserved
+%for the average amplitude calculated from a series of responses that
+%include zero amplitudes. Any treatment of superimposed EDRs
+%should be specified. Methods of detection and elimination of
+%recording artifacts should be described if applicable.
+%Besides the usual details to be reported about procedures for
+%laboratory and field settings, it is important for EDA measurement
+%to specify baseline conditions in detail, including length and statistical
+%treatment during EDAdata evaluation. The gender, age, and
+%ethnicity of the participants (e.g., number, range or mean, and
+%standard deviation) are essential for comparison with EDA results
+%from other studies. Medication or drug use (including caffeine
+%intake before participation in the study) need to be reported as well.
+%Clothing as well as inside and outside temperatures and their possible
+%changes during the recording periods should be reported in as
+%much detail as possible. If available (e.g., in case of room airconditioning),
+%relative humidity should be reported as well.
 
 \section{Materials}
-mention the SNNU and the lab where the study takes place
-
+% mention the SNNU and the lab where the study takes place
+All experiments and measurements were conducted within the facilities of Systems Neuroscience and Neurotechnology Unit, especially the Green Lab, which is located at the Saarland University Hospital. 
 
 \subsection{Setup}
-- description of the therapy setup\\
-- graphic 1, shows a patient inside the defined treatment area, wearing VR-Headset, the lighthouse system, eeg and gsr sensors, connection to the pc controlled by the physician
+The virtual environment was p
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{images/setup.png}
+\caption{Closed-loop virtual reality system.}
+\label{setupImg}
+\end{figure}
+\subsubsection{Therapy environment}
+
+We have designed our virtual height situation around the concept of a closed room featuring a descending floor. A design, which has been chosen specifically over different approaches that have been used in the past. 
 
 \subsection{Procedure(Paradigm)}
 - how many subjects did participate?\\
@@ -26,3 +92,8 @@ mention the SNNU and the lab where the study takes place
 how is it presented to the user?\\
 - description of how the VR is controlled by the user(which parameters can be influenced)
 - graphic of control chain
+
+
+
+
+-ECG processing frequency domain methods PSD (in task force , reason which method to pick)
