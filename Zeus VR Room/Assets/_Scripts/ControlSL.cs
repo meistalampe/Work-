@@ -24,7 +24,7 @@ public class ControlSL : MonoBehaviour {
         
         if (input.lightEvent == true)
         {
-            spot.range = 10;
+            spot.range = 13;
             switch (input.lightColor)
             {
                 case 0:
@@ -69,7 +69,7 @@ public class ControlSL : MonoBehaviour {
                     break;
             }
             
-            spot.range = 15;
+            spot.range = 13;
             spot.enabled = true;
 
         }

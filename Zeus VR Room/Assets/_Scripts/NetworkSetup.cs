@@ -184,7 +184,7 @@ public class NetworkSetup : MonoBehaviour
         range = 0;
         depthDefault = 1.0f;
         ubDefault = 1.0f;
-        lbDefault = 30.0f;
+        lbDefault = 40.0f;
         speedDefault = 0.5f;
 
         lightEvent = false;
@@ -244,7 +244,7 @@ public class NetworkSetup : MonoBehaviour
                 physician.upperBorder = Convert.ToSingle(data[4]);
                 physician.lowerBorder = Convert.ToSingle(data[5]);
 
-                if (Convert.ToSingle(data[6]) <= 2.0 && Convert.ToSingle(data[6]) > 0.0)
+                if (Convert.ToSingle(data[6]) <= 3.0 && Convert.ToSingle(data[6]) > 0.0)
                 {
                     physician.speed = Convert.ToSingle(data[6]);
                 }

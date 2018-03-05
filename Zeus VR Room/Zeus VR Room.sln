@@ -1,11 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeus VR Room.Plugins", "Zeus VR Room.Plugins.csproj", "{84F0F1D9-2754-1BCD-AE61-2E503FA21EB2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeus VR Room", "Zeus VR Room.csproj", "{E08D7D21-BF75-7E53-3B9F-0695AA02991E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeus VR Room.Editor.Plugins", "Zeus VR Room.Editor.Plugins.csproj", "{8E9EBE67-90E1-2CEF-8010-EDF18CC2834D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeus VR Room.Editor", "Zeus VR Room.Editor.csproj", "{0D524546-F7E5-845B-CCE9-AAE7D0AD6D3C}"
 EndProject
@@ -15,18 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{84F0F1D9-2754-1BCD-AE61-2E503FA21EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84F0F1D9-2754-1BCD-AE61-2E503FA21EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84F0F1D9-2754-1BCD-AE61-2E503FA21EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84F0F1D9-2754-1BCD-AE61-2E503FA21EB2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E08D7D21-BF75-7E53-3B9F-0695AA02991E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E08D7D21-BF75-7E53-3B9F-0695AA02991E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E08D7D21-BF75-7E53-3B9F-0695AA02991E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E08D7D21-BF75-7E53-3B9F-0695AA02991E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E9EBE67-90E1-2CEF-8010-EDF18CC2834D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E9EBE67-90E1-2CEF-8010-EDF18CC2834D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E9EBE67-90E1-2CEF-8010-EDF18CC2834D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E9EBE67-90E1-2CEF-8010-EDF18CC2834D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0D524546-F7E5-845B-CCE9-AAE7D0AD6D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0D524546-F7E5-845B-CCE9-AAE7D0AD6D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D524546-F7E5-845B-CCE9-AAE7D0AD6D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU

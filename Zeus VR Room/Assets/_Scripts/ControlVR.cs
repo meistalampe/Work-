@@ -81,7 +81,7 @@ public class ControlVR : MonoBehaviour
                     
                 }
 
-                if(getData.input.lowerBorder < 30.0f)
+                if(getData.input.lowerBorder < 40.0f)
                 {
                     maxDepth = getData.input.lowerBorder * sign;
                 }

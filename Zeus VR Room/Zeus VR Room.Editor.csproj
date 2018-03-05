@@ -138,17 +138,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Zeus VR Room.Plugins.csproj">
-      <Project>{84F0F1D9-2754-1BCD-AE61-2E503FA21EB2}</Project>
-      <Name>Zeus VR Room.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="Zeus VR Room.csproj">
       <Project>{E08D7D21-BF75-7E53-3B9F-0695AA02991E}</Project>
       <Name>Zeus VR Room</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zeus VR Room.Editor.Plugins.csproj">
-      <Project>{8E9EBE67-90E1-2CEF-8010-EDF18CC2834D}</Project>
-      <Name>Zeus VR Room.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -236,6 +228,12 @@
     <Compile Include="Assets\ProCore\ProBuilder\Editor\pb_MissingScriptEditor.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\Editor\pb_Preferences.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\Editor\pb_ScenePostProcessor.cs" />
+    <Compile Include="Assets\StandardAssets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\StandardAssets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
+    <Compile Include="Assets\StandardAssets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
+    <Compile Include="Assets\StandardAssets\Editor\Water\Water4\SpecularLightingEditor.cs" />
+    <Compile Include="Assets\StandardAssets\Editor\Water\Water4\WaterBaseEditor.cs" />
+    <Compile Include="Assets\StandardAssets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Preferences.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
@@ -309,46 +307,46 @@
     <None Include="Assets\ProCore\ProBuilder\readme.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Sci-Fi Styled Modular Pack\Readme.txt" />
-    <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Readme.txt" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-    <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
-    <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
-    <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
-    <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
-    <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
-    <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-    <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
-    <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
-    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-    <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
-    <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+    <None Include="Assets\StandardAssets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\StandardAssets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\StandardAssets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\StandardAssets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\StandardAssets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\StandardAssets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Readme.txt" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\StandardAssets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\StandardAssets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\StandardAssets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\StandardAssets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\StandardAssets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\StandardAssets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\StandardAssets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+    <None Include="Assets\StandardAssets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\StandardAssets\Effects\ToonShading\Shaders\ToonLit.shader" />
+    <None Include="Assets\StandardAssets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\StandardAssets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\StandardAssets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\StandardAssets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\StandardAssets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+    <None Include="Assets\StandardAssets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\StandardAssets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\StandardAssets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\StandardAssets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\StandardAssets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\StandardAssets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\StandardAssets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+    <None Include="Assets\StandardAssets\Vehicles\Aircraft\AircraftGuidelines.txt" />
+    <None Include="Assets\StandardAssets\Vehicles\Car\CarGuidelines.txt" />
+    <None Include="Assets\StandardAssets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+    <None Include="Assets\StandardAssets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+    <None Include="Assets\StandardAssets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />

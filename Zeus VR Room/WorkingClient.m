@@ -98,7 +98,7 @@ while therapyStop == false
         
         valid_input = false;
         
-       while valid_input == false;
+       while valid_input == false
        fprintf('VRET control program \n' );
        fprintf('******************** \n');
 
@@ -132,7 +132,7 @@ while therapyStop == false
      physicianDepth = 0.0;
      reaction = 0;
      physicianUB = 1.0;
-     physicianLB = 30.0;
+     physicianLB = 40.0;
      
      lightEvent = false;
      lightColor = 0;
@@ -170,7 +170,7 @@ while therapyStop == false
             fprintf('Your choice h. \n');
            
             physicianActivity = true;
-            physicianLB = 30.0;
+            physicianLB = 40.0;
             physicianUB = 1.0;
             reaction = 3;
             speed = 0.7;
@@ -180,7 +180,7 @@ while therapyStop == false
             while valid_input == false
             inp_height = input(prompt_height);
             
-                if inp_height >= 1.0 && inp_height <= 30.0
+                if inp_height >= 1.0 && inp_height <= 40.0
                     
                     fprintf('Height will be changed to:');
                     disp(inp_height);
@@ -214,7 +214,7 @@ while therapyStop == false
                 inp_auto(1) = input(prompt_auto1);
                 inp_auto(2) = input(prompt_auto2);
                 
-                    if inp_auto(1) >= 1.0 && inp_auto(2) <= 30.0 && inp_auto(1) < inp_auto(2)  
+                    if inp_auto(1) >= 1.0 && inp_auto(2) <= 40.0 && inp_auto(1) < inp_auto(2)  
                     physicianUB = inp_auto(1);
                     physicianLB = inp_auto(2);
                     fprintf('Upper border will be changed to:');
@@ -230,7 +230,7 @@ while therapyStop == false
                     
                     else 
                     physicianUB = 1.0;
-                    physicianLB = 30.0;
+                    physicianLB = 40.0;
                     fprintf('Invalid entry. Borders set to default. Please try again. \n');
                     valid_input = false;
                     end
@@ -337,7 +337,7 @@ while therapyStop == false
         case 's'
             fprintf('Your choice s. \n');
             fprintf('Abort therapy. \n ');          
-            
+             
             %trigger
             time_delta(input_count) = toc(tStart);
             trigger_store(input_count) = trigger_stop;
@@ -346,7 +346,7 @@ while therapyStop == false
             physicianActivity = true;
             range = 0;
             physicianUB = 1.0;
-            physicianLB = 30.0;
+            physicianLB = 40.0;
             reaction = 4;
             physicianDepth = 1.0;
             speed = 2.0;

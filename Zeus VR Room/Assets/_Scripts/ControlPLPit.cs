@@ -30,7 +30,7 @@ public class ControlPLPit : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(gd.depth >= (pitlightTransform.position.y - 2.0f))
+        if(gd.depth >= (pitlightTransform.position.y - 1.5f))
         {
             point.enabled = false;
         }
@@ -41,7 +41,7 @@ public class ControlPLPit : MonoBehaviour {
 
         if(input.lightEvent == false)
         {
-            point.intensity = 2.0f;
+            point.intensity = 2.5f;
         }
         else
         {           
