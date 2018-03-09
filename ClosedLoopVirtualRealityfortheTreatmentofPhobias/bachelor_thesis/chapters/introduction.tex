@@ -20,33 +20,43 @@ Past studies have shown a strong psychophysiological arousal in in-vivo exposure
 To prove this hypothesis, we designed a virtual environment for the treatment of acrophobia that is sufficiently adaptable to various degrees of acrophobia. We will show the effectiveness of our system based on a subjective rating as well as heart rate and skin conductance measurements. Further we will deploy our virtual environment in a closed loop virtual reality system, featuring multiple control units. We will conduct a experiment simulating the effect of real-time physiology based decision making by using a remote-controlled virtual reality.\\
 
 
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%Suffering from a specific phobia such as acrophobia can be a huge interference with daily life. Those affected are often experiencing a slow progressing self-limitation fueled by their fear resulting in a declining quality of life. For people afflicted with acrophobia a therapy can therefor be life-changing.\\
-%Typically a therapy is designed to help patients face their fears and practice coping strategies resulting in reducing the fear altogether. However, conducting a traditional exposure therapy can be particularly risky for the patient.
-%Virtual reality guided exposure therapy offers the possibility to treat patients in a controlled environment and eliminate the risk of injury. Furthermore virtual reality assisted treatment represents a safer and cost-efficient alternative that has great potential in improving phobia treatment based on its flexibility.\\
-%For example a in-vivo therapy consists of many different steps based on the initial extent of a patients fear and requires just as many individual stimulating situations. On the contrary one well designed virtual setup can easily adapt to all therapy stages and therefor be more convenient.\\
 
 \section{Theoretical Background}
 
 In this chapter, we will give a brief introduction to the field of anxiety disorders, especially specific phobias and the associated therapy concept, which is exposure therapy. The first part will contain fundamentals on phobias, exposure therapy and the concept of fear. Furthermore we will elaborate on the psychophysiological influences of stress and anxiety on certain parts of the human body and functions as well as methods of determination in physiological measurement. The second part will recapitulate recent approaches on virtual reality exposure therapy and analyze existing problems. 
 
-\subsection{Acrophobia} 
-%definition of fear and specific phobias,prevalence, evolutionary 	 purpose(fight or flight),connection fear to stress
-%Vertigo and nausea are only two of the symptoms many people are all too familiar with when confronted with height. Acrophobia or fear of heights is one of the most common anxiety disorders and is widespread in today's society.
-%According to the work of Kapfhammer et al. (2014) roughly one third of the German population will at one point in their life be afflicted by visual height intolerance (vHI). Although  considering such high numbers it comes as a surprise that only about 11\% of susceptible individuals are willing to consult a doctor(Kapfhammer et al. 2014).
-%Epidemiological research showing a peak in incidence around the second decade ( Huppert et al. 2012, Agras et al. 1969) and  
+\subsection{Fear and Phobia} 
+Why are we afraid? Over the course of history there has been one distinct answer to this question - survival. If we could not fear we would not be able to survive. Missing the ability to recognize and react appropriately to dangerous situations would spell doom on us as a species. From the beginning of human evolution, those that feared the right things survived and therefore were able to pass on their genes. Doing so, the trait of fear and the response to said fear were also passed on, ensuring the future survival of the race. In today's times humans no longer have to survive in the wild. However, fear is still rooted deep in our brains, serving the same purpose. Therefore "the decision to not take that shortcut through the deserted alley at midnight is based on a rational fear that promotes survival"\cite{LAYTON}. But what actually is fear? In a review of Öhman's work (2000) Fink describes fear as an "activated, aversive emotional state that serves to motivate attempts to cope with events that provide threats to the survival or well-being of organisms" (Öhman, 2000, cited by Fink, 2010). These coping attempts involve defensive behaviors such as immobility, escape and attack, of which the latter two are typically described as the flight or fight response. Although not as obvious, there are far more aspects to a fear response than the observable behavior, especially physiological responses. However, how we react to a certain fear stimulus heavily depends on the immediate situation. Because fear is strongly related to the activation of the autonomic nervous system, our response is therefore depending on the direction of this activation. For example if we face a non imminent threat, which appears stationary, we generally tend to respond calm and collected, redirecting our attention towards the potential threat stimulus. Whereas, in a situation with an imminent or approaching danger, the sympathetic branch of the autonomic nervous system is activated, which is accompanied by heart rate acceleration, blood pressure increase and release of catecholamines from the adrenal medulla. This allows for physical peak performance and we respond with flight or fight. \\ 
 
- 
-\subsection{Stress}
-%definition of stress, ways of stress perception (eustress and distress)
+\textbf{Fear Measures.}Considering the importance of fear to the human evolution it comes as no surprise that fear and, more specifically, the assessment of fear have been frequent subjects to a number of studies. There are many different ways to measure fear, most of which are derived from the specific components of fear. Other than interviewing the subject and assessing their subjective fear rating there are measures that directly derive fear indices from effectors innervated by the autonomic nervous system. Several of these measures, such as heart rate deceleration and skin conductance response, are primarily associated with the increased attentiveness in the initial states of fear. Measures, such as heart rate and blood pressure on the other hand, reflect the sympathetic mobilization (Fink, 2010). It is to mention that these measures are not necessarily intercorrelated, even when assessing the effects of the same fear stimulus. This is because a fear response is rather a combination of different and partially independent response components, which are sensitive to multiple modulating parameters.\\
+
+\textbf{Fear stimuli.} In general a fear stimulus can be described as an event, situation or object that provides a threat to the integrity of a person, either in a physical or in a psychological sense. Fear stimuli can be divided into physical, animal and social stimuli (Fink, 2010). In the interest of the present thesis we will focus on stimuli that originate from the physical environment, especially those that have provided a recurrent threat throughout the human evolution and therefore prove highly effective in eliciting fear and associated flight attempts. Fitting this pattern are physical stimuli such as wide open spaces, darkness and heights. \\
+The intensity of a stimulus is a key component regarding the strength of the elicited fear reaction. It is modulated by a number of factors such as distance to the stimulus, stimulus predictability and movement of the stimulus. For example a close or approaching stimulus, which was not expected would elicit the highest amount of fear. In addition to the evolutionary stimuli there are, so-called, learned stimuli, which are former neutral stimuli that acquired their fear-eliciting power through learning. Fear learning typically occurs when the neutral stimulus and a natural fear triggering stimulus are presented at the same time and the fear may be transferred.
+
+There are however instances where fear exceeds its purpose and becomes pathological. An intense, involuntary and irrational fear of a specific stimulus, that causes a maladaptive avoidance is called a phobia (Fink, 2010). According to the three kinds of stimuli phobias are also classified into three categories, of which we will focus on the specific phobias. A specific phobia is an intense fear elicited by an encounter with a specific object or situation.
+
+\subsubsection{The Neurophysiology of Fear} 
+As mentioned above fear is a protection mechanism that is rooted in our brain. The neural network that controls the fear response as well as the learning of fear was found to be built around the amygdala. The amygdala was identified as a part of the limbic system, which is associated with emotion and can be described as a collection of interconnected nuclei in the anterior temporal lobe (Fink, 2010). Its primary function is the evaluation of threats by filtering sensory information from the cortex and the subcortical structures such as the thalamus. These two routes of information delivery have been described as the high and the low route. The low route is a monosynaptic connection between the thalamus and the amygdala. Therefore the information conveyed by this route reaches the amygdala faster than the information conveyed by the polysynaptic high route, allowing for a defense response to start even before the threat stimulus is confirmed by the full cortical analysis. Thus, only the low route is considered necessary for fear elicitation and fear learning. Once the threats have been evaluated by the lateral and basolateral nuclei of the amygdala the information is passed on to the central nucleus from where the efferent aspects of the fear response are controlled. Through neural pathways, leading to the lateral hypothalamus,  sympathetically controlled responses, such as heart-rate acceleration and skin conductance responses, and parasympathetically dominated responses, such as heart-rate deceleration, are then activated and therefore complete the fear response.
+
+\subsubsection{Acrophobia}
+Vertigo and nausea are only two of the symptoms many people are all too familiar with when confronted with height. Acrophobia, or fear of heights, is one of the most common anxiety disorders and is widespread in today's society. According to the work of Kapfhammer et al. (2014) roughly one third of the German population will at one point in their life be afflicted by visual height intolerance (vHI).
+%
+%Further epidemiological studies show a lifetime prevalence of 28.5\% for vHI and 6.4\% for acrophobia alone and only 11\% of susceptible people consulting a doctor (Huppert et al., 2013; Kapfhammer et al.,2015).\\
+
+
+
+\subsection{Exposure Therapy}
+%what is exposure therapy?\\ 
+%when is it used? \\
+%how is it done?\\
+%what is needed for it to be successful? \\
+%how effective is it?\\
+%
+%Suffering from a specific phobia such as acrophobia can be a huge interference with daily life. Those affected are often experiencing a slow progressing self-limitation fueled by their fear resulting in a declining quality of life. For people afflicted with acrophobia a therapy can therefor be life-changing.\\
+%Typically a therapy is designed to help patients face their fears and practice coping strategies resulting in reducing the fear altogether. However, conducting a traditional exposure therapy can be particularly risky for the patient.
+%Virtual reality guided exposure therapy offers the possibility to treat patients in a controlled environment and eliminate the risk of injury. Furthermore virtual reality assisted treatment represents a safer and cost-efficient alternative that has great potential in improving phobia treatment based on its flexibility.\\
+%For example a in-vivo therapy consists of many different steps based on the initial extent of a patients fear and requires just as many individual stimulating situations. On the contrary one well designed virtual setup can easily adapt to all therapy stages and therefor be more convenient.\\
 
 \subsection{Electrodermal Activity}
 %%short explanation, influences(autonomic nervous system), role as method  to register physiological correlates of mental states like stress\\
@@ -113,7 +123,6 @@ The subcutis, or hypodermis, is located beneath the dermis and is composed of lo
 %recap link to sweat glands
 The left side of figure \ref{DermisImg} shows an example for a typical profile of glabrous (hairless) skin. This specific form of skin differs in its horizontal structure. During early embryonal development specific patterns are formed by ridge formation. Ridged skin can be found on the palms of the hands and the soles of the feet. Areas, both of which, are frequently mechanically stressed and also have been found to have the highest densities of sweat glands, with an average of 233 sweat glands per $cm^{2}$ on the hands and 620 glands per $cm^{2}$ in adult's skin (Millington and Wilkinson 1983 in Boucsein, 2013). Sweat gland are considered to be exocrine glands, which is due to the fact that they secrete directly onto the surface of the skin. There are two types of human sweat glands, eccrine and apocrine, the majority being of the first type. The secretions of eccrine glands only contain negligible amounts of cytoplasm from the glandular cells. As there are no apocrine sweat glands located on the palmar skin, which is the most common location for EDA measurement, this section will only focus on eccrine sweat glands. The main purpose of eccrine sweat glands is to regulate the body temperature. With the exception of the palmar and plantar glands, which are thought to rather take part in grasping behavior (Edelberg, 1972, cited by Cacioppo et al., 2007). Further all eccrine sweat glands are believed to be more responsive to psychologically significant stimuli and therefore to be involved in emotional sweating. Emotional sweating is primarily observable in areas with a high density of eccrine sweat glands, such as hands and feet. Therefore, making these region particularly interesting for EDA measurement, concerning the effect of psychophysiological stimuli. Before elaborating on the connection between electrodermal activity and sweat gland activity, it is useful to consider the anatomy of the glands first.
 
-
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/skinAnatomy.png}
@@ -150,7 +159,7 @@ Human sweat glands have predominantly sympathetic cholinergic innervation from s
 \label{symPathImg}
 \end{figure}
 
-\subsubsection{Physiology underlying electrodermal activity}
+\subsubsection{Physiology of Electrodermal Activity}
 
 Studies, measuring sympathetic action potentials in peripheral nerves while simultaneously recording EDA, have shown a high correlation between bursts of sympathetic nerve activity and the phasic skin conductance response (Wallin, 1981 in Cacioppo et al., 2007). Because there are many excitatory and inhibitory influences on the sympathetic system, located in various parts of the brain, there also are a variety of neural mechanisms and pathways involved into the central control of EDA.
 In a review on CNS elicitation of EDA, Boucsein (2013) concludes that there are two different origins above reticular level, which were already suggested by Edelberg (1972): a limbic-hypothalamatic source, which is also thermoregulatory and emotionally influenced, and a premotor-basal ganglia source, eliciting electrodermal concomitants of the preparation of specific motor actions. In addition, Boucsein suggests a third reticular modulating system, mediating EDA changes appearing with variations of general arousal (see figure \ref{znsImg}). Further, an inhibitory EDA system has been located in the bulbar level of the reticular formation.
@@ -289,7 +298,6 @@ This challenge is met by a special conducting system, formed out of specialized 
 A system of internodal, conductive fibers connects the two nodes. The depolarization wave is transported into the ventricles by passing the bundle of His, which branches into the left and right bundles and then transition into the Purkinje fibers. These fibers pass through the interventricular septum and deliver the depolarization into the rest of the ventricles.\\
 The cardiac cycle is a term that describes all events that occur in the heart from one beat to the next (see figure \ref{cycleImg}). The cycle is divided into two main phases, the diastole and systole. During the systole the pumps and the blood is evacuated into the arteries, whereas the heart will be filled again during the diastole. The electrocardiogram (ECG) is the graphical representation of the electrical potential produced by the electrical current passing through the heart. It is recorded via electrodes positioned on the body surface and displayed in forms of so called waves or deflections (Abdullah, 2014).
 
-
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/ecg.png}
@@ -325,7 +333,7 @@ As mentioned above, the ECG is a graph that represents cardiac electrical activi
 %1992; Kline et al., 1998) that are independent of, and can
 %be as large as, autonomic effects (Rashba et al., 2002).
 
-\subsubsection{ECG Signal components}
+\subsubsection{ECG Signal Components}
 The present section is based on the work of Goldberger et al. (2017) and will briefly outline all components of an ECG signal. The clinical ECG graph consists of three different component types, waveforms, intervals and segments. Their distribution is specified by the 5-4-3 rule, which states that there are five waveforms (P, QRS, ST, T and U), four sets of intervals (PR, QRS, QT/QTc and RR/PP) and three segments (PR, ST and TP)(Goldberger et al., 2017).
 
 \begin{figure}[ht]
@@ -364,14 +372,6 @@ difference between the longest and shortest NN interval(Task Force, 1996). Frequ
 Non-linear phenomena are determined by a number of complex interactions of haemodynamic, electrophysiological and humoral variables, as well as autonomic and central nervous regulations (Task Force, 1996). Although a  variety of techniques has been applied to determine non-linear properties no major breakthrough in the field of HRV analysis has been achieved yet. 
 
 
-
-\subsection{Exposure Therapy}
-%what is exposure therapy?\\ 
-%when is it used? \\
-%how is it done?\\
-%what is needed for it to be successful? \\
-%how effective is it?\\
-%
 \section{General}
 \subsection{State of the Art}
 \subsection{Recent Advances in Research}

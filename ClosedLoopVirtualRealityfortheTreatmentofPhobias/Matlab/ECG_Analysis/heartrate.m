@@ -1,12 +1,10 @@
-function [ heartrate,MeanRR,SDNN,RMSSD,mean_heartrate,std_heartrate,heartrate_coe,peakInterval,peakInterval_time ] = heartrate(signal,time,Fs,filepath)
+function [ heartrate,MeanRR,SDNN,RMSSD,mean_heartrate,std_heartrate,heartrate_coe,peakInterval,peakInterval_time ] = heartrate(signal,time,Fs)
 % You need the kernel.mat data to run this function!! 
 % This function finds R wave peaks in ecg signal and calculates the heartrate signal.
 % It analyses the RR Intervals with by doing a lomb spectral analysis.
 
-
-
 % load kernel
-load kernel.mat;
+load('kernel.mat','kernelqrs_norm');
 
 % create logistic sigmoid function
 tu = quantile(signal, 0.99);
@@ -31,7 +29,7 @@ ylabel 'voltage [\muV]';
 legend('signal','signal after using kernel and logistic fkt')
 hold off;
 grid on;
-
+ 
 % find all R wavemagnitudes
 [pks,locs_Rwave] = findpeaks(ecgRspikes,'MinPeakHeight',0.9,...
                                     'MinPeakDistance',150);
@@ -48,10 +46,6 @@ legend('ECG Signal',' R waves')
 xlabel('Samples')
 ylabel('R waves')
 title('R waves')
-
-
-savefig([filepath filesep 'AmplitudesECG']);
-saveas(gcf, [filepath filesep 'AmplitudesECG'], 'eps');
 
 % locs_Rwave in time domain
 locs_time = locs_Rwave ./ Fs;
@@ -148,10 +142,6 @@ xlabel(a2,'Time(s)')
 ylabel(a1,'ECG')
 ylabel(a2,'HRV (Hz)')
 
-
-savefig([filepath filesep 'HRV,ECG']);
-saveas(gcf, [filepath filesep 'HRV,ECG'], 'eps');
-
 figure;
 hist(peakInterval_time);
 title 'histogram of the peak separations in seconds';
@@ -159,16 +149,8 @@ grid on;
 xlabel('Sampling interval (s)');
 ylabel('RR distribution');
 
-
-savefig([filepath filesep 'Histogram']);
-saveas(gcf, [filepath filesep 'Histogram'], 'eps');
-
 figure;
 plomb(HRV,tHRV,'Pd',[0.95, 0.5]);
-
-
-savefig([filepath filesep 'Lomb Analyse']);
-saveas(gcf, [filepath filesep 'Lomb Analyse'], 'eps');
 
 % The dashed lines denote 95
 % and 50% detection probabilities.
@@ -229,18 +211,11 @@ xlabel 'time [sec]';
 ylabel 'heartrate [beats/min]';
 xlim([start stop]);
 
-
-
-savefig([filepath filesep 'heartrate']);
-saveas(gcf, [filepath filesep 'heartrate'], 'eps');
-
 %% statistic values heartrate
 % calculate the variation coefficient,mean value and standard deviation of the heartrate
 mean_heartrate = mean(heartrate);
 std_heartrate = std(heartrate);
 heartrate_coe = (std_heartrate * 100) /mean_heartrate;
-
-
 
 
 end
