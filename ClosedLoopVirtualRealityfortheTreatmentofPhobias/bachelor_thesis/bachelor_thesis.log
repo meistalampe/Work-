@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  9 MAR 2018 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  11 MAR 2018 17:17
 entering extended mode
 **./bachelor_thesis.tex
 (bachelor_thesis.tex
@@ -1035,7 +1035,7 @@ LaTeX Info: Redefining \nameref on input line 64.
 \openout6 = `bachelor_thesis.out'.
 
 
-<images/logo.pdf, id=113, 495.8525pt x 449.68pt>
+<images/logo.pdf, id=129, 495.8525pt x 449.68pt>
 File: images/logo.pdf Graphic file (type pdf)
  <use images/logo.pdf>
 Package pdftex.def Info: images/logo.pdf used on input line 67.
@@ -1087,7 +1087,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 113.
 
-<images/cc_by_nc_nd.png, id=130, 516.9714pt x 125.268pt>
+<images/cc_by_nc_nd.png, id=146, 516.9714pt x 125.268pt>
 File: images/cc_by_nc_nd.png Graphic file (type png)
 
 <use images/cc_by_nc_nd.png>
@@ -1148,136 +1148,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--21
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-[8] [9] <images/skinLayers.png, id=211, 331.99031pt x 200.24812pt>
+[8] [9] [10] [11] <images/skinLayers.png, id=242, 331.99031pt x 200.24812pt>
 File: images/skinLayers.png Graphic file (type png)
 
 <use images/skinLayers.png>
-Package pdftex.def Info: images/skinLayers.png used on input line 100.
+Package pdftex.def Info: images/skinLayers.png used on input line 105.
 (pdftex.def)             Requested size: 358.50612pt x 216.25253pt.
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
 
  []
 
-[11 <./images/skinLayers.png>]
-<images/skinDermis.png, id=228, 475.17525pt x 410.7345pt>
+[12 <./images/skinLayers.png>]
+<images/skinDermis.png, id=253, 475.17525pt x 410.7345pt>
 File: images/skinDermis.png Graphic file (type png)
 
 <use images/skinDermis.png>
-Package pdftex.def Info: images/skinDermis.png used on input line 117.
+Package pdftex.def Info: images/skinDermis.png used on input line 122.
 (pdftex.def)             Requested size: 313.69029pt x 271.15454pt.
- [12 <./images/skinDermis.png>]
-<images/skinAnatomy.png, id=239, 572.1375pt x 444.91219pt>
+ [13]
+<images/skinAnatomy.png, id=264, 572.1375pt x 444.91219pt>
 File: images/skinAnatomy.png Graphic file (type png)
 
 <use images/skinAnatomy.png>
-Package pdftex.def Info: images/skinAnatomy.png used on input line 128.
+Package pdftex.def Info: images/skinAnatomy.png used on input line 132.
 (pdftex.def)             Requested size: 313.69029pt x 243.93532pt.
- [13 <./images/skinAnatomy.png>]
-<images/skinGlabrous.png, id=250, 371.13657pt x 413.29407pt>
+ [14 <./images/skinDermis.png>]
+<images/skinGlabrous.png, id=274, 371.13657pt x 413.29407pt>
 File: images/skinGlabrous.png Graphic file (type png)
 
 <use images/skinGlabrous.png>
-Package pdftex.def Info: images/skinGlabrous.png used on input line 139.
+Package pdftex.def Info: images/skinGlabrous.png used on input line 143.
 (pdftex.def)             Requested size: 313.69029pt x 349.32771pt.
- [14 <./images/skinGlabrous.png>]
-<images/symPathway.png, id=260, 529.98pt x 308.65312pt>
+ [15 <./images/skinAnatomy.png>] [16 <./images/skinGlabrous.png>] <images/symPa
+thway.png, id=291, 529.98pt x 308.65312pt>
 File: images/symPathway.png Graphic file (type png)
 
 <use images/symPathway.png>
-Package pdftex.def Info: images/symPathway.png used on input line 157.
+Package pdftex.def Info: images/symPathway.png used on input line 161.
 (pdftex.def)             Requested size: 313.69029pt x 182.68776pt.
- [15 <./images/symPathway.png>]
-<images/zns.png, id=270, 392.96812pt x 395.97937pt>
+
+<images/zns.png, id=295, 392.96812pt x 395.97937pt>
 File: images/zns.png Graphic file (type png)
  <use images/zns.png>
-Package pdftex.def Info: images/zns.png used on input line 169.
+Package pdftex.def Info: images/zns.png used on input line 173.
 (pdftex.def)             Requested size: 358.50612pt x 361.27832pt.
 
-[16] [17 <./images/zns.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+[17 <./images/symPathway.png>] [18 <./images/zns.png>] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-[18] <images/electrodePlacement.png, id=301, 253.69781pt x 268.00125pt>
+[20] <images/electrodePlacement.png, id=331, 253.69781pt x 268.00125pt>
 File: images/electrodePlacement.png Graphic file (type png)
 
 <use images/electrodePlacement.png>
-Package pdftex.def Info: images/electrodePlacement.png used on input line 230.
+Package pdftex.def Info: images/electrodePlacement.png used on input line 234.
 (pdftex.def)             Requested size: 224.06548pt x 236.70467pt.
- [19]
-<images/SCR.png, id=310, 292.84406pt x 173.14688pt>
+ [21 <./images/electrodePlacement.png>]
+<images/SCR.png, id=341, 292.84406pt x 173.14688pt>
 File: images/SCR.png Graphic file (type png)
  <use images/SCR.png>
-Package pdftex.def Info: images/SCR.png used on input line 246.
+Package pdftex.def Info: images/SCR.png used on input line 250.
 (pdftex.def)             Requested size: 313.69029pt x 185.4899pt.
 
-[20 <./images/electrodePlacement.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+[22 <./images/SCR.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
-[21 <./images/SCR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-[22] [23] <images/CVS.png, id=338, 373.395pt x 478.03593pt>
+[24] [25] <images/CVS.png, id=368, 373.395pt x 478.03593pt>
 File: images/CVS.png Graphic file (type png)
 
 <use images/CVS.png>
-Package pdftex.def Info: images/CVS.png used on input line 288.
+Package pdftex.def Info: images/CVS.png used on input line 292.
 (pdftex.def)             Requested size: 313.69029pt x 401.61308pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
-[24 <./images/CVS.png>] <images/ecg.png, id=350, 470.50781pt x 225.84375pt>
+[26 <./images/CVS.png>] <images/ecg.png, id=380, 470.50781pt x 225.84375pt>
 File: images/ecg.png Graphic file (type png)
 
 <use images/ecg.png>
-Package pdftex.def Info: images/ecg.png used on input line 304.
+Package pdftex.def Info: images/ecg.png used on input line 307.
 (pdftex.def)             Requested size: 313.69029pt x 150.57016pt.
- [25]
-<images/cycleImg.png, id=358, 676.02562pt x 470.50781pt>
+ [27]
+<images/cycleImg.png, id=388, 676.02562pt x 470.50781pt>
 File: images/cycleImg.png Graphic file (type png)
 
 <use images/cycleImg.png>
-Package pdftex.def Info: images/cycleImg.png used on input line 313.
+Package pdftex.def Info: images/cycleImg.png used on input line 316.
 (pdftex.def)             Requested size: 403.31511pt x 280.71304pt.
- [26 <./images/ecg.png>]
-<images/ecgcomp.png, id=369, 573.64313pt x 278.54062pt>
+ [28 <./images/ecg.png>]
+<images/ecgcomp.png, id=400, 573.64313pt x 278.54062pt>
 File: images/ecgcomp.png Graphic file (type png)
 
 <use images/ecgcomp.png>
-Package pdftex.def Info: images/ecgcomp.png used on input line 342.
+Package pdftex.def Info: images/ecgcomp.png used on input line 345.
 (pdftex.def)             Requested size: 403.31511pt x 195.83987pt.
- [27 <./images/cycleImg.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+ [29 <./images/cycleImg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-[28 <./images/ecgcomp.png>] [29]) [30] [31]
+[30 <./images/ecgcomp.png>] [31]) [32] [33]
 chapter 2.
-(chapters/materials_and_methods.tex [32
+(chapters/materials_and_methods.tex [34
 
 ]
-<images/setup.png, id=407, 867.24pt x 672.26157pt>
+<images/setup.png, id=438, 867.24pt x 672.26157pt>
 File: images/setup.png Graphic file (type png)
  <use images/setup.png>
 Package pdftex.def Info: images/setup.png used on input line 84.
@@ -1287,21 +1287,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--94
 
  []
 
-[33 <./images/setup.png>]) [34]
+[35 <./images/setup.png>]) [36]
 chapter 3.
-(chapters/results.tex) [35
+(chapters/results.tex) [37
 
 ]
 chapter 4.
-(chapters/discussion.tex) [36
+(chapters/discussion.tex) [38
 
 ]
 chapter 5.
-(chapters/conclusions_and_future_work.tex) (chapters/appendix.tex [37
+(chapters/conclusions_and_future_work.tex) (chapters/appendix.tex [39
 
 ]
 chapter A.
-) [38
+) [40
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 20
@@ -1312,13 +1312,13 @@ Overfull \hbox (12.75331pt too wide) in paragraph at lines 5--5
 us lay-ers of glabrous skin.(Adapted 
  []
 
-[39
+[41
 
 ])
 \tf@lof=\write8
 \openout8 = `bachelor_thesis.lof'.
 
- [40]
+ [42]
 Package tocbasic Info: character protrusion at lot deactivated on input line 21
 4.
  (bachelor_thesis.lot)
@@ -1327,7 +1327,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 21
 
 
 No file bachelor_thesis.gls.
-[41
+[43
 
 ] (bachelor_thesis.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 17.
@@ -1340,7 +1340,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
- [42
+ [44
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
@@ -1348,13 +1348,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3028AD5B0A899EAB882D11B3D18A9228;1725.
+(rerunfilecheck)             Checksum: 7CDCB86792E0A2EBC6327C893FD09890;1986.
  ) 
 Here is how much of TeX's memory you used:
- 18362 strings out of 493328
- 311714 string characters out of 3139118
- 569312 words of memory out of 3000000
- 21334 multiletter control sequences out of 15000+200000
+ 18374 strings out of 493328
+ 311876 string characters out of 3139118
+ 569314 words of memory out of 3000000
+ 21338 multiletter control sequences out of 15000+200000
  58602 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,8n,77p,8828b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1370,9 +1370,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on bachelor_thesis.pdf (45 pages, 2395026 bytes).
+Output written on bachelor_thesis.pdf (47 pages, 2403845 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
- 16172 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 16204 words of extra memory for PDF output out of 17280 (max. 10000000)
 
