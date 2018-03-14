@@ -7,6 +7,7 @@ public class FloorStart : MonoBehaviour {
     private float step;
     public float speed;
     private float transformZ;
+    public int position;
 
     public GameObject scriptObject; NetworkSetup getData;
 
@@ -22,6 +23,7 @@ public class FloorStart : MonoBehaviour {
         speed = getData.speedDefault;
         transformZ = 0.0f;
         transformFloor.position = new Vector3(0.014f, 0.0f, transformZ);
+        position = 0;
     }
 	
 	// Update is called once per frame
@@ -29,14 +31,31 @@ public class FloorStart : MonoBehaviour {
     {
         speed = getData.speedDefault;
         step = speed * Time.deltaTime;
+        position = getData.targetPositionFloor;
 
-        if (getData.introSequence == true)
+        if (getData.openFloorSequence == true)
         {
-            transformZ = 4.8f;
+            switch(position)
+            { 
+                case 0: // closed
+                transformZ = 0.0f;
+                break;
+                case 1: // 1/3 open
+                transformZ = -1.6f;
+                break;
+                case 2: // 2/3 open
+                transformZ = -3.2f;
+                break;
+                case 3: // open
+                transformZ = -4.8f;
+                break;
+            }
+
             transformFloor.position = Vector3.MoveTowards(transformFloor.position, new Vector3(0.014f, 0.0f , transformZ), step);
         }
         else
         {
+            position = 0;
             transformZ = 0.0f;
             transformFloor.position = Vector3.MoveTowards(transformFloor.position, new Vector3(0.014f, 0.0f, transformZ), step);
         }

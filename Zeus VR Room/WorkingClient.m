@@ -23,7 +23,6 @@
 clc;
 clear;
 
-
 % create tcp object, set Port,assign Networkrole Client 
 tcpipClient = tcpip('localhost',8632,'NetworkRole','Client');
 set(tcpipClient,'Timeout',30);
@@ -35,10 +34,12 @@ prompt_light_color = 'Change color to red [3], blue [2], green [1], white [0] \n
 prompt_auto_exit = 'Do you want to continue auto mode? [Y]/[N] \n';
 prompt_auto1 = 'Enter upper border. \n';
 prompt_auto2 = 'Enter lower border. \n';
-prompt_height = 'Enter height value of type double. \n';
-prompt_start = 'To start the therapy please press [G].\n';
+prompt_height = 'Enter height value of type double [e.g. 30.0 = 30m]. \n';
+prompt_openFloorPos = 'How far do you want to open the floor? \n[0= closed, 1= 1/3 open, 2= 2/3 open, 3 = fully open] \n'; 
+prompt_start = 'To open the floor press. [G].\n';
 prompt_stop = 'Do you want to stop the therapy? [Y]/[N]\n';
 prompt_set_trigger = 'Trigger has been set.';
+prompt_width = 'Choose Bridge Width.\n[0 = 0.25m, 1= 0.5m, 2= 0.75m, 3= 1.0m]\n';
 
 % input verification
 valid_input = false;
@@ -78,6 +79,9 @@ trigger_position = 4.0;
 % data[6] = Int32 speed
 % data[7] = bool lightEvent
 % data[8] = int lightColor
+% data[9] = bool controlSequence
+% data[10] = int openFloorPosition
+% data[11] = int bridgeWidth
 
 time_delta = zeros(1,250);
 trigger_store = zeros(1,250);
@@ -96,12 +100,15 @@ while therapyStop == false
     
     if playSequence == false
         
-        valid_input = false;
+       valid_input = false;
         
        while valid_input == false
        fprintf('VRET control program \n' );
        fprintf('******************** \n');
-
+       inp_fop = input(prompt_openFloorPos);
+       
+       openFloorPos = inp_fop;
+       
        inp_start = input(prompt_start,'s');
 
            if inp_start == 'g'
@@ -119,6 +126,7 @@ while therapyStop == false
                speed = 2;
            else
                playSequence = false;
+               openFloorPos = 0;
                valid_input = false;
                fprintf('Invalid input. Please try again. \n');
            end
@@ -137,9 +145,10 @@ while therapyStop == false
      lightEvent = false;
      lightColor = 0;
      
+     bridgeWidth = 1;
      
      data = [physicianActivity range physicianDepth reaction physicianUB ...
-        physicianLB speed lightEvent lightColor playSequence];
+        physicianLB speed lightEvent lightColor playSequence openFloorPos bridgeWidth];
 
      fopen(tcpipClient);
      fwrite(tcpipClient,data);
@@ -153,12 +162,14 @@ while therapyStop == false
     fprintf('VRET control program \n' );
     fprintf('******************** \n');
     fprintf('Choose one of the following: \n');
-    fprintf('1. Change height [H]\n');
-    fprintf('2. Change mode [M] \n');
-    fprintf('3. Turn light on/off [L] \n');
-    fprintf('4. Change light Color [C] \n');
-    fprintf('6. Set position trigger [T] \n');
-    fprintf('5. Stop therapy [S] \n');  
+    fprintf('1. Set Height [H]\n');
+    fprintf('2. Change Mode [M] (BETA) \n');
+    fprintf('3. Turn Light on/off [L] \n');
+    fprintf('4. Set Light Color [C] \n');
+    fprintf('5. Set Position Trigger [T] \n');
+    fprintf('6. Set Floor Position [O] \n'); 
+    fprintf('7. Set Bridge Width [W] \n'); 
+    fprintf('8. Stop Therapy [S] \n');  
     fprintf('******************** \n');
     
 
@@ -243,9 +254,8 @@ while therapyStop == false
                 while loop_auto == true
                     reaction = randi([1,2],1,1);
 
-                    data = [physicianActivity range physicianDepth reaction physicianUB ...
-                    physicianLB speed lightEvent lightColor playSequence];
-
+                 data = [physicianActivity range physicianDepth reaction physicianUB ...
+                        physicianLB speed lightEvent lightColor playSequence openFloorPos bridgeWidth];
                     fopen(tcpipClient);
                     fwrite(tcpipClient,data);
                     fclose(tcpipClient);
@@ -329,6 +339,22 @@ while therapyStop == false
             
             end
             
+        case 'w'
+            
+            inp_width = input(prompt_width);
+            
+            if inp_width <= 4 && inp_width >= 0
+                bridgeWidth = inp_width;
+            else
+                fprintf('Invalid choice. Please try again.');
+                bridgeWidth = 1;
+            end
+            
+        case 'o'
+            inp_openPos = input(prompt_openFloorPos);
+            
+            openFloorPos = inp_openPos;
+            
         case 't'
             %trigger
             time_delta(input_count) = toc(tStart);
@@ -354,9 +380,10 @@ while therapyStop == false
             lightColor = 0;
             
             playSequence = false;
-               
+            openFloorPos = 0;
+            
             data = [physicianActivity range physicianDepth reaction physicianUB ...
-                physicianLB speed lightEvent lightColor playSequence];
+                physicianLB speed lightEvent lightColor playSequence openFloorPos bridgeWidth];
         
             fopen(tcpipClient);
             fwrite(tcpipClient,data);
@@ -388,7 +415,7 @@ while therapyStop == false
     end
     
     data = [physicianActivity range physicianDepth reaction physicianUB ...
-        physicianLB speed lightEvent lightColor playSequence];
+        physicianLB speed lightEvent lightColor playSequence openFloorPos bridgeWidth];
         
     fopen(tcpipClient);
     fwrite(tcpipClient,data);

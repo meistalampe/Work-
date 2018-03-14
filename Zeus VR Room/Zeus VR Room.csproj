@@ -352,6 +352,7 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
     <Compile Include="Assets\_Scripts\ArrayControl.cs" />
+    <Compile Include="Assets\_Scripts\BridgeControl.cs" />
     <Compile Include="Assets\_Scripts\ConrolPL.cs" />
     <Compile Include="Assets\_Scripts\ControlPLPit.cs" />
     <Compile Include="Assets\_Scripts\ControlSL.cs" />

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/main_lightreset.unity
+- path: Assets/_Scenes/VRET.unity
   isLoaded: 1
   isActive: 1

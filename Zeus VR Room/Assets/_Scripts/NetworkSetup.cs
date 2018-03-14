@@ -163,7 +163,20 @@ public class NetworkSetup : MonoBehaviour
     public float speedDefault;
     public bool lightEvent;
     public int lightColor;
-    public bool introSequence;
+    public bool openFloorSequence;
+    public int targetPositionFloor;
+    // floor positions
+    // 0 = closed
+    // 1 = 1/3 open
+    // 2 = 2/3 open
+    // 3 = fully open
+    public int bridgeWidth;
+    // width
+    // 0 = 0.25f
+    // 1 = 0.5f
+    // 2 = 0.75f
+    // 3 = 1.0f
+
     // reaction values:
     // 4 = abort , init value
     // 3 = move to
@@ -190,7 +203,9 @@ public class NetworkSetup : MonoBehaviour
         lightEvent = false;
         lightColor = 0;
 
-        introSequence = false;
+        openFloorSequence = false;
+        targetPositionFloor = 0;
+        bridgeWidth = 1;
 
         ai = new User(depthDefault, 4, ubDefault, lbDefault, speedDefault);
         physician = ai;
@@ -231,11 +246,17 @@ public class NetworkSetup : MonoBehaviour
             // data[6] = float speed
             // data[7] = bool lightEvent
             // data[8] = int lightColor
+            // data[9] = bool openFloorSequence
+            // data[10] = int targetPositionFloor
+            // data[11] = int bridgeWidth
+
             physicianActivity = Convert.ToBoolean(data[0]);
             range = Convert.ToInt32(data[1]);
             lightEvent = Convert.ToBoolean(data[7]);
             lightColor = Convert.ToInt32(data[8]);
-            introSequence = Convert.ToBoolean(data[9]);
+            openFloorSequence = Convert.ToBoolean(data[9]);
+            targetPositionFloor = Convert.ToInt32(data[10]);
+            bridgeWidth = Convert.ToInt32(data[11]);
 
             if (physicianActivity == true)
             {
