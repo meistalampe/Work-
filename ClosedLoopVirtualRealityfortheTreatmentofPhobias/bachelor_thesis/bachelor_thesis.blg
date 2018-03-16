@@ -1,12 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: bachelor_thesis.aux
 Case mismatch error between cite keys KAPFHAMMER2015 and Kapfhammer2015
----line 157 of file bachelor_thesis.aux
+---line 144 of file bachelor_thesis.aux
  : \citation{KAPFHAMMER2015
  :                         }
 I'm skipping whatever remains of this command
 The style file: unsrtnat.bst
 Database file #1: bibliography/bibliography.bib
-Warning--empty year in LAYTON2005
+Warning--entry type for "LAYTON2005" isn't style-file defined
+--line 1 of file bibliography/bibliography.bib
 Warning--empty year in DSMIV1994
 Warning--empty year in bologniadermatology
 Warning--empty year in bologniadermatology

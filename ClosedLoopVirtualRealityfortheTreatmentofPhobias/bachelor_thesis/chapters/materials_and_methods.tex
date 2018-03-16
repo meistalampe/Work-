@@ -125,16 +125,41 @@ In the early design phase the CMU was conceptualized as a part of the VRU, but i
 As mentioned in section \ref{CMU} the data acquisition is handled by a separate computer. However, all programs were designed to function on any device, capable of running the software in this section. 
 
 \subsubsection{Unity}
-Unity is a game development platform, which can be used to create high-quality 3D games and deploy them across a variety of platforms, mobile phones, tablets and desktop computers. The user is enabled to directly target a VR device through the implemented Unity VR Software Development Kits (SDK). The VR environment is built by creating game objects, such as structures and lights, and placing them inside a three dimensional virtual space or importing prefabricated assets from the Asset Store. Each game object can be equipped with a number of components to fit the user's needs. One of the most important aspects to the Unity platform is its scripting API giving the user control over the game environment . This is accomplished by C\# scripts, which are created in Visual Studio 2017 and then attached to the  specific game objects. As a game development platform Unity naturally is provided with an extensive networking environment, including UDP and TCP/IP for communication with external devices. In addition the support, offered to the user in form of the Unity Manual and Scripting API as well as the Asset Store, is sufficient to allow even non-professionals to create their own projects.
+Unity is a game development platform, which can be used to create high-quality 3D games and deploy them across a variety of platforms, mobile phones, tablets and desktop computers. The user is enabled to directly target a VR device through the implemented Unity VR Software Development Kits (SDK). The VR environment is built by creating game objects, such as structures and lights, and placing them inside a three dimensional virtual space or importing prefabricated assets from the Asset Store. Each game object can be equipped with a number of components to fit the user's needs. One of the most important aspects to the Unity platform is its scripting API giving the user control over the game environment . This is accomplished by C\# scripts, which are created in Visual Studio 2017 and then attached to the  specific game objects. As a game development platform Unity naturally is provided with an extensive networking environment, including UDP and TCP/IP, which can be used for communication with external devices. In addition the support, offered to the user in form of the Unity Manual and Scripting API as well as the Asset Store, is sufficient to allow even non-professionals to create their own projects.
 
 \subsubsection{Matlab}
 Matlab is a software, which was created to solve mathematical problems. It is used for data acquisition and processing as well as feature extraction from the measured signals.
-  
-  
 
 \subsection{Virtual Environment}
-We have designed our virtual height situation around the concept of a closed room featuring a descending floor. A design, which has been chosen specifically over past approaches for a number of reasons. 
-   
+As mentioned earlier there are two major requirements that must be met to successfully treat phobias with virtual exposure, fear elicitation and emotional processing. To elicit fear in the subjects we have to ensure that adequate stimuli are offered in our virtual environment. We therefore have implemented three different stimuli in our virtual height scenario. The virtual environment was designed around the concept of a descending floor inside a closed room. In the default configuration, which is shown in figure \ref{VRdefaultImg}, a neutral environment is provided.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/RoomDefault.png}
+\caption{A side view of the VR room in its default configuration.}
+\label{VRdefaultImg}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/RoomDefaultTop.png}
+\caption{A top view of the VR room in its default configuration.}
+\label{VRdefaultTopImg}
+\end{figure}
+
+This configuration is used at the start of the session to conduct baseline measures and to allow for acclimation to the virtual reality. The first stimulus that is presented to the patient is the opening of the floor, which is shown in figure \ref{OpenImg}. Initially the floor was programmed to open completely. This was later adapted in regard to a recommendation by the psychiatry department. It was suggested that the ability to gradually move the floor to the side and therefore provide a form of minimal stimulation could be particularly useful in the treatment of very severe cases of acrophobia. Thus, two additional steps were implemented at the one third and two third mark of the full opening distance.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/OpenComparison.png}
+\caption{A comparison of the different stages of floor opening.}
+\label{OpenImg}
+\end{figure}
+
+The actual height challenge as well as the two remaining stimuli are revealed once the floor has been opened up. The patient is then confronted with a narrow bridge located above a descendable platform that is initially positioned 1m below floor-level (see \ref{OpenImg}, D).
+
+
+
 
 \subsection{Virtual Reality Exposure}
 To display the virtual environment, a powerful computer(Intel(R) Core(TM) i7-3770, 3.4 GHz and 8 GB RAM) and an Nvidia GeForce GTX 1080 graphics card with 8 GB of dedicated memory (GDDR5X) were used in combination with the HTC-Vive Head-Mounted Display (HMD). The Dual AMOLED displays (3,6" diagonal) of the HMD provided for a high-resolution presentation of the virtual world, with 1080x1200 pixel on each eye. The distance between the pupils was manually adjusted for each participant by means of a knob on the HMD. The Lighthouse Tracking-System, created by the company Valve, allowed to track participant's motion during the exposure in an area of maximal 5 by 5 meter and to project their movement in the virtual environment. The Tracking-System consisted of two stationary sensors, positioned in opposing corners at a height of roughly 2 m, and all the sensors, which were attached to the HMD and the controller by HTC. Due to limited space the exposure area was restricted to an area of 3,5 by 3,5 meter. The program, which was used to remotely control the virtual environment, was written with the Matlab software version R2015a. The virtual environment itself was created with Unity version 5.6.1f1 personal. % mention laptop which is used to run the CMU and data presentation
@@ -146,9 +171,6 @@ By this a therapist is enabled to communicate with the patient inside VR as if h
 \subsubsection{Closed Loop Setup}
 The setup, which was used to conduct the experiment, is composed of three major components, interacting with each other in a closed loop fashion (see figure \ref{setupImg}). The virtual environment is ran on the VR-Unit (VRU) and presented to the subjects through the HMD. Inside the virtual reality the fear triggering stimulus is applied, causing a sympathetic reaction in the subject. This reaction is measured by the bitalino device, in the form of an ECG and GSR signal, and then sent to the control and measurement unit (CMU) via bluetooth. This data is processed by the CMU and displayed, in real-time, for the user to evaluate. Based on the visual input, provided by the CMU, a decision to alter the virtual environment can be made by the user.  
 
-
-
-
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{images/setup.png}
@@ -158,7 +180,7 @@ The setup, which was used to conduct the experiment, is composed of three major 
 
 
 
-
+\newpage
 \section{Methods}\label{Methods}
 % methods
 - main objective is the measurement of gsr during the therapy and the evaluation of the gsr data concerning the stress of the patient during the therapy\\

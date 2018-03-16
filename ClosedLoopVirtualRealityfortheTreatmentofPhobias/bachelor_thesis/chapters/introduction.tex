@@ -3,7 +3,6 @@
 
 
 \section{Motivation}
-
 Anxiety disorders, such as acrophobia, can be a huge interference in many aspects of daily life. Although the severity of the phobia may vary from one individual to another, affected individuals are often experiencing a slowly progressing self-limitation fueled by their fear, resulting in a steadily declining quality of life. At this point a well executed therapy is the only chance for the phobic to overcome his fear and return to a normal way of life. Although, in-vivo exposure has proven to be an efficient treatment, the majority of phobics hesitate to accept therapy. This comes as no surprise, considering a traditional exposure therapy involves a direct confrontation with the fear stimulus. In addition, therapy is often held in an unfamiliar and dangerous environment, involving a genuine risk of injury. A fact which is intimidating for most people, but especially for patients with fear of heights. A virtual reality exposure on the other hand offers the possibility to treat patients in a controlled environment, eliminating the risk of injury and making it more likely to be accepted by the patient. Additionally, VR therapy systems become equally appealing for therapists considering technical advances have lowered the initial costs substantially and the amount of time and effort that can be saved by VR treatment.
 Despite all this however, many physicians are still resilient, when it comes to VR therapy.
 In cooperation with the Psychiatry Department of the University Hospital Homburg we want to develop a VR treatment system for acrophobia that fits the needs of the therapist and provides for a simple and efficient solution to conduct quality therapy.
@@ -20,15 +19,16 @@ In cooperation with the Psychiatry Department of the University Hospital Homburg
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Theoretical Background}
-
 In this chapter, we will give a brief introduction to the field of anxiety disorders, especially specific phobias and the associated therapy concept, which is exposure therapy. The first part will contain fundamentals on phobias, exposure therapy and the concept of fear. Furthermore we will elaborate on the psychophysiological influences of stress and anxiety on certain parts of the human body and functions as well as methods of determination in physiological measurement. The second part will recapitulate recent approaches on virtual reality exposure therapy and analyze existing problems. 
 
 \subsection{Fear and Phobia} 
-Why are we afraid? Over the course of history there has been one distinct answer to this question - survival. If we could not fear we would not be able to survive. Missing the ability to recognize and react appropriately to dangerous situations would spell doom on us as a species. From the beginning of human evolution, those that feared the right things survived and therefore were able to pass on their genes. Doing so, the trait of fear and the response to said fear were also passed on, ensuring the future survival of the race. In today's times humans no longer have to survive in the wild. However, fear is still rooted deep in our brains, serving the same purpose. Therefore "the decision to not take that shortcut through the deserted alley at midnight is based on a rational fear that promotes survival" \cite{LAYTON2005}. But what actually is fear? In a review of Öhman's work (2000) Fink describes fear as an "activated, aversive emotional state that serves to motivate attempts to cope with events that provide threats to the survival or well-being of organisms" \cite{FINK2010}. These coping attempts involve defensive behaviors such as immobility, escape and attack, of which the latter two are typically described as the flight or fight response. Although not as obvious, there are far more aspects to a fear response than the observable behavior, especially physiological responses. However, how we react to a certain fear stimulus heavily depends on the immediate situation. Because fear is strongly related to the activation of the autonomic nervous system, our response is therefore depending on the direction of this activation. For example if we face a non imminent threat, which appears stationary, we generally tend to respond calm and collected, redirecting our attention towards the potential threat stimulus. Whereas, in a situation with an imminent or approaching danger, the sympathetic branch of the autonomic nervous system is activated, which is accompanied by heart rate acceleration, blood pressure increase and release of catecholamines from the adrenal medulla. This allows for physical peak performance and we respond with flight or fight. \\ 
+Why are we afraid? Over the course of history there has been one distinct answer to this question - survival. If we could not fear we would not be able to survive. Missing the ability to recognize and react appropriately to dangerous situations would spell doom on us as a species. From the beginning of human evolution, those that feared the right things survived and therefore were able to pass on their genes. Doing so, the trait of fear and the response to said fear were also passed on, ensuring the future survival of the race. In today's times humans no longer have to survive in the wild. However, fear is still rooted deep in our brains, serving the same purpose. Therefore "the decision to not take that shortcut through the deserted alley at midnight is based on a rational fear that promotes survival" \cite{LAYTON2005}. But what actually is fear? In a review of Öhman's work (2000) Fink describes fear as an "activated, aversive emotional state that serves to motivate attempts to cope with events that provide threats to the survival or well-being of organisms" \cite{FINK2010}. These coping attempts involve defensive behaviors such as immobility, escape and attack, of which the latter two are typically described as the flight or fight response. Although not as obvious, there are far more aspects to a fear response than the observable behavior, especially physiological responses. However, how we react to a certain fear stimulus heavily depends on the immediate situation. Because fear is strongly related to the activation of the autonomic nervous system, our response is therefore depending on the direction of this activation. For example if we face a non imminent threat, which appears stationary, we generally tend to respond calm and collected, redirecting our attention towards the potential threat stimulus. Whereas, in a situation with an imminent or approaching danger, the sympathetic branch of the autonomic nervous system is activated, which is accompanied by heart rate acceleration, blood pressure increase and release of catecholamines from the adrenal medulla. This allows for physical peak performance and we respond with flight or fight.
 
-\textbf{Fear Measures.} Considering the importance of fear to the human evolution it comes as no surprise that fear and, more specifically, the assessment of fear have been frequent subjects to a number of studies. There are many different ways to measure fear, most of which are derived from the specific components of fear. Other than interviewing the subject and assessing their subjective fear rating there are measures that directly derive fear indices from effectors innervated by the autonomic nervous system. Several of these measures, such as heart rate deceleration and skin conductance response, are primarily associated with the increased attentiveness in the initial states of fear. Measures, such as heart rate and blood pressure on the other hand, reflect the sympathetic mobilization \cite{FINK2010}. It is to mention that these measures are not necessarily intercorrelated, even when assessing the effects of the same fear stimulus. This is because a fear response is rather a combination of different and partially independent response components, which are sensitive to multiple modulating parameters.\\
+\subsubsection{Fear Measures} 
+Considering the importance of fear to the human evolution it comes as no surprise that fear and, more specifically, the assessment of fear have been frequent subjects to a number of studies. There are many different ways to measure fear, most of which are derived from the specific components of fear. Other than interviewing the subject and assessing their subjective fear rating there are measures that directly derive fear indices from effectors innervated by the autonomic nervous system. Several of these measures, such as heart rate deceleration and skin conductance response, are primarily associated with the increased attentiveness in the initial states of fear. Measures, such as heart rate and blood pressure on the other hand, reflect the sympathetic mobilization \cite{FINK2010}. It is to mention that these measures are not necessarily intercorrelated, even when assessing the effects of the same fear stimulus. This is because a fear response is rather a combination of different and partially independent response components, which are sensitive to multiple modulating parameters.
 
-\textbf{Fear stimuli.} In general a fear stimulus can be described as an event, situation or object that provides a threat to the integrity of a person, either in a physical or in a psychological sense. Fear stimuli can be divided into physical, animal and social stimuli \cite{FINK2010}. In the interest of the present thesis we will focus on stimuli that originate from the physical environment, especially those that have provided a recurrent threat throughout the human evolution and therefore prove highly effective in eliciting fear and associated flight attempts. Fitting this pattern are physical stimuli such as wide open spaces, darkness and heights. \\
+\subsubsection{Fear stimuli} 
+In general a fear stimulus can be described as an event, situation or object that provides a threat to the integrity of a person, either in a physical or in a psychological sense. Fear stimuli can be divided into physical, animal and social stimuli \cite{FINK2010}. In the interest of the present thesis we will focus on stimuli that originate from the physical environment, especially those that have provided a recurrent threat throughout the human evolution and therefore prove highly effective in eliciting fear and associated flight attempts. Fitting this pattern are physical stimuli such as wide open spaces, darkness and heights. \\
 The intensity of a stimulus is a key component regarding the strength of the elicited fear reaction. It is modulated by a number of factors such as distance to the stimulus, stimulus predictability and movement of the stimulus. For example a close or approaching stimulus, which was not expected would elicit the highest amount of fear. In addition to the evolutionary stimuli there are, so-called, learned stimuli, which are former neutral stimuli that acquired their fear-eliciting power through learning. Fear learning typically occurs when the neutral stimulus and a natural fear triggering stimulus are presented at the same time and the fear may be transferred.
 
 \subsubsection{The Neurophysiology of Fear} 
@@ -53,9 +53,7 @@ Acrophobia, which is an extreme or irrational fear of heights, is considered a s
 %how is it done?\\
 %what is needed for it to be successful? \\
 %how effective is it?\\
-
 Anxiety disorders occur when neutral stimuli become threatening and therefor cause irrational fear and avoidance, in the afflicted individuals. Exposure therapy is a treatment procedure, which is designed to reduce pathological fear and avoidance of the feared object or situation by intentionally confronting the patient with the feared stimulus in an otherwise safe environment. Foa and Kozak (1986) suggested this effect to be achieved through emotional processing. Emotional processing can be described as a process by which accurate information is implemented into the fear structure and alters the pathological elements in the structure. However, more recent studies suggest that exposure therapy rather creates competing structures that do not include pathological associations among stimulus, response and meaning representation instead of altering existing ones \cite{o2012cognitive}. Further, O'Donohue and Fisher (2012) described two major conditions that are necessary for emotional processing to be successful and fear reduction to occur. "First, the fear structure must be activated for it to be available for modification. Second, new information that is incompatible with the pathological elements of the fear structure must be available and incorporated into the pathological memory structure (or form a new nonpathological competing structure)" \cite{o2012cognitive}. Exposure therapy efficiently satisfies both conditions as approaching the feared object or situation is likely to trigger the fear structure and at the same time  providing corrective information through the absence of dreaded consequences, allowing for a successful learning process.
-
 
 \subsection{Electrodermal Activity}
 %%short explanation, influences(autonomic nervous system), role as method  to register physiological correlates of mental states like stress\\
@@ -93,12 +91,12 @@ The skin appendages are structures formed by skin-derived cells such as hair, na
 This section will elaborate on the anatomical aspects of the human skin and will cover all the parts and appendages, that are needed to understand the principles of EDA. The skin or cutis is the biggest organ of the human body and inherits many different functions, which are essential for survival. It primarily acts as a selective barrier, preventing the entry of foreign matter and enables the passage of materials from the bloodstream to the exterior of the body. Other than protection, it is involved in thermoregulation, cutaneous circulation and immunologic protection.  
 The anatomical structure of the skin is similar in most regions of the body. Although, specialized regions of skin, such as the palms and soles may be resembling in structure, they possess modified characteristics \cite{bologniadermatology}.%(Bolognia et al., 2003)
 
-The human skin is composed of two clearly distinguishable layers, the epidermis that serves as a protective barrier and the dermis that provides nutrition. The cutaneous structures are vertically arranged and located on top of the subcutaneous tissue. Figure \ref{layerTab} shows a representation of each of the layers and their general spatial configuration among themselves.
+The human skin is composed of two clearly distinguishable layers, the epidermis that serves as a protective barrier and the dermis that provides nutrition. The cutaneous structures are vertically arranged and located on top of the subcutaneous tissue. Figure \ref{layerTab} shows a representation of each of the layers and their general spatial configuration among themselves. However, the zonal layering is not distinct in every skin region (e.g., the stratum lucidum is only clearly recognizable on the palmar and plantar skin areas)\citep{boucsein2013electrodermal}.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{images/skinLayers.png}
-\caption{The Layers of the skin.The zonal layering is not so distinct in every skin region. Note that the stratum lucidum is only clearly recognizable on the palmar and plantar skin areas.\citep{boucsein2013electrodermal}}
+\caption{The Layers of the skin.}
 \label{layerTab}
 \end{figure}
 
@@ -115,8 +113,9 @@ The subcutis, or hypodermis, is located beneath the dermis and is composed of lo
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/skinDermis.png}
-\caption{A artificial cross-section of the skin. It combines a sweat gland in ridged skin (left) and a hair together with a sebacous gland in polygonal skin (right).\citep{boucsein2013electrodermal}}
+\caption{A artificial cross-section of the skin, combining a sweat gland in ridged skin (left) and a hair together with a sebacous gland in polygonal skin (right).}
 \label{DermisImg}
+%\citep{boucsein2013electrodermal}
 \end{figure} 
 
 %recap link to sweat glands
@@ -125,20 +124,21 @@ The left side of figure \ref{DermisImg} shows an example for a typical profile o
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/skinAnatomy.png}
-\caption{Anatomy of the eccrine sweat gland in various layers of glabrous skin.(Adapted from Hassett, 1978)\citep{HANDBOOKPP}}
+\caption{Anatomy of the eccrine sweat gland in various layers of glabrous skin.(Adapted from Hassett, 1978)}
 \label{layerImg}
+%\citep{HANDBOOKPP}
 \end{figure}
 
 Figure \ref{layerImg} shows the anatomy of an eccrine sweat gland in glabrous skin. It consists of the  secretory portion, the coiled compact body of the gland, and the sweat duct. The sweat duct, which is the excretory portion of the gland, is a long tube reaching all the way to the stratum corneum, forming a small pore on the surface of the skin. It passes through the dermis in a relatively straight line but ends up spiraling through the epidermis \cite{HANDBOOKPP}. Imagining sweat glands as a set of variable resistors wired in parallel, helps to understand their influence on electrodermal activity. As sweat rises in the ducts their electrical resistance is constantly reduced, resulting in noticeable changes in electrodermal activity. The amount of sweat and the number of glands that are currently active, and therefore the electrodermal activity depends on the degree of activation of the sympathetic division of the autonomic nervous system.
 
 % innervation
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.7\textwidth]{images/skinGlabrous.png}
-\caption{A cross-section of the layered construction of the glabrous human skin containing an eccrine sweat gland, in its glomerulus, together with its straight dermal and irregularly coiled epidermal duct. A part of the reticular layer has been omitted due to its size in relation to the rest. \citep{boucsein2013electrodermal}}
-\label{glabImg}
-\end{figure}
+%
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=0.7\textwidth]{images/skinGlabrous.png}
+%\caption{A cross-section of the layered construction of the glabrous human skin containing an eccrine sweat gland, in its glomerulus, together with its straight dermal and irregularly coiled epidermal duct. A part of the reticular layer has been omitted due to its size in relation to the rest. \citep{boucsein2013electrodermal}}
+%\label{glabImg}
+%\end{figure}
 
 % physiology
 \subsubsection{Physiological basis}
@@ -146,28 +146,27 @@ According to the previous section, focusing on the anatomical aspects, this sect
 % efferent innervation of the skin
 The autonomic nervous system (ANS) is a complex systems of nerves that regulates involuntary and unconscious actions. The emphasis of this section will be its thermoregulatory aspects, which also involve the skin and sweat glands. 
 There are a number of efferent vegetative fibers in the human skin, including sympathetic fibers, innervating the secretory segment of the eccrine sweat glands, and vasoconstrictive efferences for the blood vessels. Originating from the brain, the efferent sympathetic nerves descend in the anterolateral part of the spinal cord in close proximity to the pyramidal tract. They are switched over in the lateral horn and leave the spinal cord through its ventral root. Alongside motoric fibers, the preganglionic sympathetic fibers travel via the white communicating ramus to the sympathetic trunk. From this point the neuronal activity will be distributed to various levels of the sympathetic trunk, causing one preganglionic fiber to reach up to 16 postganglionic neurons. The postganglionic fibers exit the sympathetic trunk through the gray communicating ramus and from there spread into the periphery, eventually reaching the skin.
-
-
 % sweat gland innervation
 Human sweat glands have predominantly sympathetic cholinergic innervation from sudomotor fibers originating in the sympathetic chain. The secretory part of the gland is surrounded by a dense plexus of sympathetic fibers. This allows for a wide distribution of ANS activity. The sudorisecretory fibers form a smooth bundle between the lateral pyramidal tract and the anterolateral tract. They end at the preganglionic sudorisecretory neurons and run right next to the other sympathetic fibers.  Although the sympathetic system is represented in various locations of the brain, the hypothalamus is considered to be the controlling entity of all vegetative functions. This includes sweat secretion and vasomotor activity. However, the central innervation of sweat gland activity is not limited to the hypothalamus. There are several centers, which are located in different levels of the central nervous system and partly independent of one another. The cortex, the basal ganglia, diencephalic structures such as thalamus and hypothalamus, the limbic system and brain stem areas are considered possible origins of sympathetic activity \citep{boucsein2013electrodermal}.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/symPathway.png}
-\caption{Skin afferents and efferents at spinal cord level and connections with ascending and descending pathways. ---: motoric pathway, -.-: sympathetic efferents. \citep{boucsein2013electrodermal}}
+\caption{Skin afferents and efferents at spinal cord level and connections with ascending and descending pathways. ---: motoric pathway, -.-: sympathetic efferents. }
 \label{symPathImg}
+%\citep{boucsein2013electrodermal}
 \end{figure}
 
 \subsubsection{Physiology of Electrodermal Activity}
-
 Studies, measuring sympathetic action potentials in peripheral nerves while simultaneously recording EDA, have shown a high correlation between bursts of sympathetic nerve activity and the phasic skin conductance response \cite{HANDBOOKPP}. Because there are many excitatory and inhibitory influences on the sympathetic system, located in various parts of the brain, there also are a variety of neural mechanisms and pathways involved into the central control of EDA.
 In a review on CNS elicitation of EDA, Boucsein (2013) concludes that there are two different origins above reticular level: a limbic-hypothalamatic source, which is also thermoregulatory and emotionally influenced, and a premotor-basal ganglia source, eliciting electrodermal concomitants of the preparation of specific motor actions. In addition, Boucsein suggests a third reticular modulating system, mediating EDA changes appearing with variations of general arousal (see figure \ref{znsImg}). Further, an inhibitory EDA system has been located in the bulbar level of the reticular formation.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{images/zns.png}
-\caption{Central elicitation of EDA in humans. 1: Ipsilateral influences from the limbic system via hypothalamic thermoregulatory areas; 2: Contralateral influences from premotor cortical and basal ganglia areas; 3: Reticular influences. Dashed: Connections within the limbic system.\citep{boucsein2013electrodermal}}
+\caption{Central elicitation of EDA in humans. 1: Ipsilateral influences from the limbic system via hypothalamic thermoregulatory areas; 2: Contralateral influences from premotor cortical and basal ganglia areas; 3: Reticular influences. Dashed: Connections within the limbic system.}
 \label{znsImg}
+%\citep{boucsein2013electrodermal}
 \end{figure}
 
 % properties of skin and sweat glands influencing EDA
@@ -187,7 +186,6 @@ Other than these properties, concerning the resistance, living tissue has capaci
 %\end{center}
 %
 %There are two concepts to current physiological recording systems. If the current is held constant then the voltage between the two electrodes can be measured. The voltage will vary directly with the skin resistance. Alternatively, if the voltage is held constant the current can be measured. The current will vary directly with the reciprocal of the skin resistance, or skin conductance. The skin conductance is expressed in units of Siemens and measures of skin conductance are usually expressed in units of micro Siemens ($\micro S$). Currently, physiological recording systems that use a constant voltage are the most prevalent for the direct recording of skin conductance.
-
 There are three different methods of measuring EDA: the endosomatic method, which does not rely on the application of an external current, and two exosomatic methods, which apply either direct current or alternating current. For the past couple of decades the measurement of EDA as skin conductance, using a direct current, constant voltage methodology with silver-silver chloride (Ag/AgCL) electrodes and an electrolyte of sodium or potassium chloride has been the most prevalent method in EDA literature \citep{boucsein2012electrodermal}. Thus, the present section will focus on this method. Typically, a small voltage (e.g., 0.5V) is applied to two electrodes, which are placed on the sound surface of the skin, and a small resistor (e.g., 200 to 1000 $\Omega$) is connected in series with the skin.  To avoid any electrocardiogram artifacts, the electrodes should be placed on the same body side. Because the skin resistance exceeds the resistance of the resistor by far, its   effect on the current flow inside the circuit can be neglected, when measuring the current flow. Hence, when applying Ohm's law, the current (I) flow between the electrodes, and therefore through the resistor, is equal to the voltage (U) divided by the Resistance of the skin ($R_{p}$).
 
 \begin{equation} \label{OhmsLaw}
@@ -213,37 +211,39 @@ U = I \cdot R_{s}
 Considering, the proportionality of I and $G_{p}$, as shown in \ref{IG} it becomes clear that changes in U can be monitored to provide precise index of variations in the skin conductance.\\
 
 \subsubsection{Techniques of Electrodermal Recording}
-
 This section will give a brief overview on possible requirements for electrodermal recording, such as special electrodes, electrode gels and recording devices.
 
-\subsubsection*{Electrodes}
+\subsubsection{Electrodes}
 Electrodes are a biomedical sensor system. Electrodermal recording typically relies on metal electrodes. However, metal being a generic term, as it is corroded at the surface of the electrode. Different metals will cause different stages of corrosion. Therefore, when measuring EDA with a direct current ,it is of great importance to use two electrodes of the same material, eliminating eventual potential differences. In exosomatic recording, using a direct current, the electrode pair is connected to an external voltage. Thus, turning them into anode and cathode in an electric system, which are polarized by electrolysis.
 The standard electrodes, used in electrodermal recording, are sintered silver-silver chloride (Ag/AgCL) electrodes, which minimize both the polarization of the electrode and the bias potential between the electrodes. The most common form of EDA electrodes consist of a metal ring, which is embedded in a cylindrical plastic case. The space between metal and skin is filled with an electrode gel, which usually contains a chloride salt like NaCl. The concentrations of the electrode gel is chosen in the range of 0.050-0.075 molar to resemble the NaCl concentration in human sweat. Therefore, the concentration of the gel will remain stable when mixed with sweat. When using an electrolyte, it is recommended to fix the electrodes to the skin at least 5-10 minutes before starting the recording. This will eliminate an initial  baseline drift in the EDA recording, caused by the electrolyte penetrating the stratum corneum and the sweat ducts. Further the electrode-skin impedance is greatly influenced by the size of the electrolyte-skin contact area and not the size of the electrode metal \citep{boucsein2012electrodermal}. Therefore it is important to give special attention to the electrode fixation, guaranteeing a sufficient electrode-skin contact and a minimization of movement artifacts.
 
-\subsubsection*{Recording Sites}
+\subsubsection{Recording Sites}
 Psychophysiological recordings rely on nonthermoregulatory electrodermal phenomena, which can be most reliably recorded from glabrous skin. Thus making the palms of the hands and the soles of the feet the preferred recording sites for EDA. There are three different ways to place the electrodes when recording EDA on the hand (see Figure \ref{PalmImg}).
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.5\textwidth]{images/electrodePlacement.png}
-\caption{Three electrode placements for recording EDA. Placement \# 1 involves volar surfaces of medial phalanges, placement \# 2 involves volar surfaces of distal phalanges, and placement \# 3 involves thenar and hypothenar eminences of palms.\citep{HANDBOOKPP}}
+\caption{Three electrode placements for recording EDA.}
 \label{PalmImg}
 \end{figure}
 
-It is suggested to place electrodes on the palm of the nondominant hand, presuming it is not as likely to have horny skin. In addition, the placement method \# 2 should be preferred over method \# 1 because of the greater responsivity (Scerbo, Freedman, Raine, Dawson and Venables, 1992, cited by Boucsein et al., 2012) and the greater sweat gland activity of the distal phalanges, compared to the other placement sites(Freedman et al.,1994, cited by Boucsein et al., 2012).\\
+Placement \# 1 involves volar surfaces of medial phalanges, placement \# 2 involves volar surfaces of distal phalanges, and placement \# 3 involves thenar and hypothenar eminences of palms \citep{HANDBOOKPP}.
+%It is suggested to place electrodes on the palm of the nondominant hand, presuming it is not as likely to have horny skin. In addition, the placement method \# 2 should be preferred over method \# 1 because of the greater responsivity (Scerbo, Freedman, Raine, Dawson and Venables, 1992, cited by Boucsein et al., 2012) and the greater sweat gland activity of the distal phalanges, compared to the other placement sites(Freedman et al.,1994, cited by Boucsein et al., 2012).\\
+It is suggested to place electrodes on the palm of the nondominant hand, presuming it is not as likely to have as much horny skin. In addition, the placement method \# 2 should be preferred over method \# 1 because of the greater responsivity and the greater sweat gland activity of the distal phalanges, compared to the other placement sites \citep{boucsein2012electrodermal}.\\
 If both hands are not available for recording, EDA can also be measured at the inner site of the foot , over the abductor hallucis muscle adjacent to the sole and in between the proximal phalanx of the big toe and a point directly beneath the ankle \citep{boucsein2012electrodermal}. In case of exosomatic recording, there is usually no further pretreatment of the skin needed than washing the recording site with warm water.
 
 \subsubsection{Signal Evaluation}
 The EDA signal consists of two components, the slow, tonic skin conductance level (SCL) and the faster, phasic skin conductance response (SCR), which need to be addressed separately during the evaluation of the signal.
 
-\subsubsection*{Phasic Electrodermal Measures}
+\subsubsection{Phasic Electrodermal Measures}
 Electrodermal responses (EDRs) are short-lasting changes in EDA. They can be elicited by a distinct stimulus or occur without previous stimuli, therefore being called nonspecific EDRs (NS-EDRs). NS-EDRs are considered a tonic measure, meaning they are used to index EDA over a certain time period. In both cases the signal curve follows a certain pattern.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/SCR.png}
-\caption{Graphical representation of principal EDA components.\citep{HANDBOOKPP}}
+\caption{Graphical representation of principal EDA components.}
 \label{SCRImg}
+%\citep{HANDBOOKPP}
 \end{figure}
 
 As shown in figure \ref{SCRImg}, there is a characteristic rise from the initial level to a peak, followed by a slower decline. In case of an elicited EDR the time that passes from the stimulus to the onset of the EDR is called latency (EDR lat.), which usually ranges from 1-4 seconds. As pointed out by Boucsein et al. (2012), latencies greater than 4 seconds may occur, but latencies under 1 second should be treated with caution because of system immanent temporal delays, such as time required for stimulus processing, autonomic nervous system nerve conduction to the sweat glands, and penetration of sweat through the ducts to the epidermis. Following the latency, there is an ascent time from the initial level to the peak, which typically varies between 0.5 and 5 seconds \citep{boucsein2012electrodermal}. The peak amplitude (EDR amp.) is reached. To determine the exact value of EDR amp., it is necessary to locate the onset point. Usually, this is done by stepping back along the SCR curve and finding the point of maximum curvature.
@@ -251,17 +251,19 @@ As shown in figure \ref{SCRImg}, there is a characteristic rise from the initial
 At times it can be important to determine whether a response has occurred. The occurrence is therefore defined in terms of a minimum amplitude, that has to be reached in order for the event to be counted as a response. This is especially true for NS-EDRs. In the past the threshold value for the minimum amplitude was commonly set to 0.05 $\mu S$. Whereas nowadays, with computerized scoring of EDR records, the definition of the minimum amplitudes has been set as low as 0.01 $\mu S$. It is important to keep in mind, that choosing such a low value might lead to equipment related noise being scored as a response. After the peak deflection, the recovery begins. In this phase the electrodermal reading declines. The recovery is a much slower process than the rise. This is caused by the increase in conductivity of the corneum, elicited by sweat, in the time period following EDRs. There are certain way points, which are usually determined, e.g. the half time recovery (EDR rec.t/2), which is the time that passes until half of the amplitude has recovered. As the recovery proceeds the EDR is concluded.
 
 %show table SCR
-\subsubsection*{Tonic Electrodermal Measures}
+\subsubsection{Tonic Electrodermal Measures}
 The measures of the relatively long-term tonic EDA states can be divided into two basic principles, the skin conductance level (SCL) and nonspecific skin conductance responses (NS-SCRs). SCL refers to the level of conductance in the absence of phasic SCRs. To guarantee a distortion-free measurement of SCL, all event and artifact related SCRs have to be detected and removed. SCL is typically expressed in units of microsiemens and computed as a mean of several measurements, taken during specific time periods.
-NS-SCRs on the other hand are phasic increases in skin conductance that resemble the elicited SCRs. However, they are considered to be tonic components of the EDA signal. The reasoning behind this is the absence of a distinct stimulus, related to their occurrence. According to SCL, NS-SCRs can be recording in periods without or in between a stimulus presentation, e.g. a resting phase. NS-SCRs usually are expressed in number of responses per time interval, most commonly per minute. As mentioned before it is important to define a threshold to determine which responses will be rated as such.\\
+NS-SCRs on the other hand are phasic increases in skin conductance that resemble the elicited SCRs. However, they are considered to be tonic components of the EDA signal. The reasoning behind this is the absence of a distinct stimulus, related to their occurrence. According to SCL, NS-SCRs can be recording in periods without or in between a stimulus presentation, e.g. a resting phase. NS-SCRs usually are expressed in number of responses per time interval, most commonly per minute. As mentioned before it is important to define a threshold to determine which responses will be rated as such.
 
 \subsubsection{Psychological and Social Context of EDA}
 %SCL and NS-SCRs have been widely used as indices of sympathetic nervous system arousal.
 This section is based on a review of the psychological an social factors that have been shown to influence EDA, done by Cacioppo et al. (2007). Three different types of paradigm have been reviewed: (1) those that involve the presentation of discrete stimuli, (2) those that involve the presentation of continuous stimuli, and (3) those that involve examining the correlates of individual differences in EDA. The present section will briefly cover the first two types.
 
-\textbf{Effects of discrete stimuli.} There are a number of stimuli attributes to which the SCR is sensitive, including stimulus novelty, arousal content, significance, intensity and surprise. Although it may be impossible to identify an isolated SCR as an "attentional" response or an "anxiety" response, it is however possible, to interpret the psychological meaning of a SCR by providing a strict experimental paradigm. The better controlled the experimental paradigm, the more conclusive the interpretation. If there is only one attribute of the stimuli changing during the experiment, such as intensity, elicited SCRs can be matched more precisely and therefor allow a better interpretation of the psychological process involved. For example, the International Affective Picture System (IAPS), which has been developed by Lang et al. (1998), consists of a variety of pictures that are rated for both their arousal-producing quality and their valence. The valence scale ranges from strongly positive to strongly negative pictures. SCRs elicited by the use of the IAPS have been found to be related to the arousal dimension, with responses increasing  in magnitude as arousal rating increased for both positively valenced and negatively valenced pictures \cite{HANDBOOKPP}.
+\subsubsection{Effects of discrete stimuli} 
+There are a number of stimuli attributes to which the SCR is sensitive, including stimulus novelty, arousal content, significance, intensity and surprise. Although it may be impossible to identify an isolated SCR as an "attentional" response or an "anxiety" response, it is however possible, to interpret the psychological meaning of a SCR by providing a strict experimental paradigm. The better controlled the experimental paradigm, the more conclusive the interpretation. If there is only one attribute of the stimuli changing during the experiment, such as intensity, elicited SCRs can be matched more precisely and therefor allow a better interpretation of the psychological process involved. For example, the International Affective Picture System (IAPS), which has been developed by Lang et al. (1998), consists of a variety of pictures that are rated for both their arousal-producing quality and their valence. The valence scale ranges from strongly positive to strongly negative pictures. SCRs elicited by the use of the IAPS have been found to be related to the arousal dimension, with responses increasing  in magnitude as arousal rating increased for both positively valenced and negatively valenced pictures \cite{HANDBOOKPP}.
 
-\textbf{Effects of continuous stimuli.} In contrast to the brief, discrete stimuli, as reviewed earlier, continuous stimuli are rather long-lasting and can be thought of as modulating changes in tonic arousal. In this context SCL and the frequency of NS-SCRs provide the most useful measures of EDA, because they can be measured over long periods of time. There are certain continuous stimulus situation which will reliably produce an increase in EDA. One example that can be mentioned here is performing a task. Performing as well as anticipating almost any task will cause an increase of both SCL and the NS-SCR frequency. This has already been shown by the following studies, which have been reviewed by Caciappo et al. (2007). Lacey et al. (1963) recorded palmar SCL during rest and during anticipation and performance of eight different tasks. They confirmed an increase of SCL in every task situation. According to the results the SCL rose by one $\mu S$ during anticipation and by another one or two $\mu S$ during performance, when compared to the resting level. Other findings suggest that situations in which strong emotions are elicited also increase tonic EDA arousal. Ax(1953) created genuine states of fear and anger in his subjects by causing them to believe to feel in danger of a high-voltage shock due to equipment malfunction or by treating them in a rude fashion. Both SCL and NS-SCRs rose during the fear as well as the anger conditions \cite{HANDBOOKPP}. \\
+\subsubsection{Effects of continuous stimuli} 
+In contrast to the brief, discrete stimuli, as reviewed earlier, continuous stimuli are rather long-lasting and can be thought of as modulating changes in tonic arousal. In this context SCL and the frequency of NS-SCRs provide the most useful measures of EDA, because they can be measured over long periods of time. There are certain continuous stimulus situation which will reliably produce an increase in EDA. One example that can be mentioned here is performing a task. Performing as well as anticipating almost any task will cause an increase of both SCL and the NS-SCR frequency. This has already been shown by the following studies, which have been reviewed by Caciappo et al. (2007). Lacey et al. (1963) recorded palmar SCL during rest and during anticipation and performance of eight different tasks. They confirmed an increase of SCL in every task situation. According to the results the SCL rose by one $\mu S$ during anticipation and by another one or two $\mu S$ during performance, when compared to the resting level. Other findings suggest that situations in which strong emotions are elicited also increase tonic EDA arousal. Ax(1953) created genuine states of fear and anger in his subjects by causing them to believe to feel in danger of a high-voltage shock due to equipment malfunction or by treating them in a rude fashion. Both SCL and NS-SCRs rose during the fear as well as the anger conditions \cite{HANDBOOKPP}. 
 
 % evtl conclusion
 % EPILOGUE
@@ -273,7 +275,8 @@ This section is based on a review of the psychological an social factors that ha
 %phasic SCR is useful to study multifaceted attentional processes,
 %as well as individual differences in both the normal
 %and abnormal spectrum ( zitat aus Cacioppo 2007)
-In conclusion, EDA is a sensitive peripheral index of sympathetic nervous system activity. As mentioned above, the eccrine sweat glands are entirely under sympathetic control and therefore increases in both SCL and SCR mirror tonic and phasic sympathetic activation. EDA provides for a relatively direct and inexpensive measure that comes with great utility and can be used as an reliable indicator of arousal and attention.
+\subsubsection{Conclusion}
+In conclusion, EDA serves as a sensitive peripheral index of sympathetic nervous system activity. As mentioned above, the eccrine sweat glands are entirely under sympathetic control and therefore increases in both SCL and SCR mirror tonic and phasic sympathetic activation. EDA provides for a relatively direct and inexpensive measure that comes with great utility and can be used as an reliable indicator of arousal and attention.
 \newpage
 
 \subsection{Electrocardiogram}
@@ -284,12 +287,12 @@ The cardiovascular system consists of two main components, the heart, which func
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/CVS.png}
-\caption{Ventral perspective of the systemic and pulmonary circulation.Lighter gray areas indicate oxygenated blood and darker gray areas indicate deoxygenated blood.\citep{HANDBOOKPP}}
+\caption{Ventral perspective of the systemic and pulmonary circulation. Lighter gray areas indicate oxygenated blood and darker gray areas indicate deoxygenated blood.}
 \label{CVSImg}
+%\citep{HANDBOOKPP}
 \end{figure}
 
 As can be seen on figure \ref{CVSImg} the deoxygenated blood returns to the heart through the superior and inferior vena cava. After passing the right atrium the venous blood reaches the right ventricle of the heart, from where it is pumped into the lungs for re-oxygenation purposes. Completing the pulmonary circulation, the oxygenated blood returns to the heart through pulmonary veins, reaching the left atrium first and finally the left ventricle. From here the blood is pumped into the aorta and distributed in the rest of the body. On its way to the periphery the blood passes through ever smaller vessels, starting with large arteries, which later branch into smaller arterioles and finally into capillaries. The capillaries are small, thin walled vessels from which oxygen, nutrients and waste products, such as carbon dioxide, are exchanged with the tissue. Leaving the capillaries, the blood returns to the heart again through the venous part of the systemic circulation. After passing the slightly larger venules the blood flows into increasingly larger veins until it reaches the vena cava and the circle closes.\\
-
 The human heart can be divided into four chambers, two on either side. Each of the sides consists of an atrium at the top, or rostral, half and a ventricle at the bottom, or caudal, half. The heart contains three different types of cardiac muscle tissue, atrial and ventricular muscle fibers as well as specialized conducting fibers. The muscle fibers primarily serve the pumping function of the heart but also form a syncytium. This means, the tissue is electrically coupled in a way that allows for a rapid spread of depolarization along the longitudinal axis of the heart. There are two separate syncytiums, the atrial and the ventricular one, which are connected by an electrical conducting system. Although they are electrically connected it is crucial that both portions of the heart function as separate pumping units and all chambers are coordinated, in a way where the ventricular action is always triggered shortly after the atrial action.\\
 This challenge is met by a special conducting system, formed out of specialized conducting fibers, which is embedded into the cardiac muscle tissue. The contraction of the heart can be triggered by the depolarization of two nodes of electrically active tissue, the first one being the sinoatrial (SA) node followed by the atrioventricular (AV) node. The SA node, serves as the pacemaker of the heart and is located inside the wall of the right atrium right beneath the entering point of the vena cava superior.  
 %"The SA node is the pacemaker because the speed of spontaneous depolarization of this node is typically faster than that of the AV node, and hence generally controls the rate of the beat" HandbookPP
@@ -299,8 +302,9 @@ The cardiac cycle is a term that describes all events that occur in the heart fr
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\textwidth]{images/ecg.png}
-\caption{A: General morphology of the ECG showing P, Q, R, S, and T components, the PR, ST and QRS intervals, the st segment, and the T wave amplitude; B: The heart, conducting system, and Einthoven's triangle. Open arrows indicate the direction of propagation of electrical activation and the associated component of the ECG.\citep{HANDBOOKPP}}
+\caption{A: General morphology of the ECG showing P, Q, R, S, and T components, the PR, ST and QRS intervals, the st segment, and the T wave amplitude; B: The heart, conducting system, and Einthoven's triangle. Open arrows indicate the direction of propagation of electrical activation and the associated component of the ECG.}
 \label{ecgImg}
+%\citep{HANDBOOKPP}
 \end{figure}
 
 The cycle starts with the depolarization of the SA node during the final stage of the diastole. The process of the depolarization wave passing through the atrial muscle tissue corresponds to the P wave of the ECG. Following the P wave is the atrial contraction, during which the QRS complex appears in the ECG. This complex reflects the contraction of the ventricles and the demarcation of the onset of the systole. During the contraction, the intraventricular pressure reaches levels high enough to close the AV valves, which are located between the atria and the ventricles. After the ventricular contraction has ended the ventricular pressure will start to drop again, eventually causing it to fall below the atrial pressure and allowing the AV valves to open and the blood to fill the ventricles. However, once the the ventricular pressure exceeds the aortic pressure the aortic valve opens and blood is evacuated into the systemic circulation. In the latter part of the ventricular contraction phase the ventricles repolarize, creating the T wave in the ECG and initiating the relaxation of the ventricles as well as the onset of diastole. 
@@ -308,15 +312,15 @@ The cycle starts with the depolarization of the SA node during the final stage o
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.9\textwidth]{images/cycleImg.png}
-\caption{The graphic shows two full cardiac cylces for various aspects, which can be seen on the right.\citep{HANDBOOKPP}}
+\caption{The graphic shows two full cardiac cylces for various aspects, which can be seen on the right.}
 \label{cycleImg}
+%\citep{HANDBOOKPP}
 \end{figure}
 
 %\subsubsection{Autonomic control}
 %The cardiovascular system is under the control of both branches of the autonomic nervous system, the sympathetic and the parasympathetic branch.
 
 \subsubsection{ECG Measurement}
-
 As mentioned above, the ECG is a graph that represents cardiac electrical activity from one instant to another. The ECG pictures the heartbeat in the form of a time-voltage chart. The general study of ECGs, including its clinical applications and technological aspects, is called electrocardiography \cite{GOLDBERGER2017}. Accordingly, the device, used to measure and display the conventional (12-lead) ECG, is called an electrocardiograph. It records the cardiac electrical activity through electrodes, which are positioned selectively on the body surface. Current ECGs most commonly use disposable self-adhesive silver-silver chloride electrodes, which were traditionally placed on the limbs. These extremity leads can be represented by the Einthoven triangle (see Figure \ref{ecgImg}B). As illustrated there are six leads in total, three unipolar leads, which are taken of the right arm ($aV_{R}$), the left arm ($aV_{L}$) and the left leg ($aV_{F}$), as well as three bipolar leads, taken between I: left arm - right arm, II: left leg - right arm and III: left leg -left arm, with the right leg being the ground. Typically these leads are approximated by placing the electrodes on the torso instead of the limbs. In clinical cardiology, a series of unipolar precordial chest leads are usually added to provide a variety of distinct electrical perspectives on certain heart events. These leads start from the right lower peristernal region, with the first lead being labeled V1, and extend laterally to the left (V2-V6). However, for most psychophysiological applications a simpler configuration, such as lead II, will suffice as they still yield a large enough R wave \citep{HANDBOOKPP}. 
 %The amplitude of the T wave (see Figure 8.3A) has been
 %proposed as a measure of sympathetic control of the heart,
@@ -337,23 +341,26 @@ The present section is based on the work of Goldberger et al. (2017) and will br
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.9\textwidth]{images/ecgcomp.png}
-\caption{Summary of all major components of the ECG graph. Note that ST can be considered as both a waveform and a segment.\citep{GOLDBERGER2017}}
+\caption{Summary of all major components of the ECG graph.}
 \label{ecgcompImg}
+%\citep{GOLDBERGER2017}
 \end{figure}
 
-\textbf{Waveforms.} The five basic ECG waveforms are named alphabetically, starting with the P wave, which represents atrial depolarization. The QRS waveform, which is often referred to as QRS complex, represents the ventricular depolarization. The ST and T wave represent the ventricular repolarization, eventually resulting in the U wave depicting the final stage of said repolarization. The atrial repolarization is generally not observed, because of the small amplitudes of the atrial ST segment and atrial T wave. Together these waveforms represent a complete cycle of the electrical activity of the heartbeat.\\
+\textbf{Waveforms}\\ 
+The five basic ECG waveforms are named alphabetically, starting with the P wave, which represents atrial depolarization. The QRS waveform, which is often referred to as QRS complex, represents the ventricular depolarization. The ST and T wave represent the ventricular repolarization, eventually resulting in the U wave depicting the final stage of said repolarization. The atrial repolarization is generally not observed, because of the small amplitudes of the atrial ST segment and atrial T wave. Together these waveforms represent a complete cycle of the electrical activity of the heartbeat.\\
 
-\textbf{Segments.} As mentioned before there are three basic segments contained in the ECG graph, which are defined as the spaces between two waveforms. The PR segment is defined as the distance between the end of the P wave and the start of the QRS complex. It marks the start of atrial repolarization, which is continued throughout the QRS complex and ending during the ST segment. The ST segment spreads from the end of the QRS complex to the beginning of the T wave. TP segment connects the end of the T wave with the beginning of the P wave of the next cycle. This segment represents the electrical resting state and is typically used as a baseline reference for PR and ST deviation assessment in clinical diagnostics.\\
+\textbf{Segments}\\ 
+As mentioned before there are three basic segments contained in the ECG graph, which are defined as the spaces between two waveforms. The PR segment is defined as the distance between the end of the P wave and the start of the QRS complex. It marks the start of atrial repolarization, which is continued throughout the QRS complex and ending during the ST segment. The ST segment spreads from the end of the QRS complex to the beginning of the T wave. TP segment connects the end of the T wave with the beginning of the P wave of the next cycle. This segment represents the electrical resting state and is typically used as a baseline reference for PR and ST deviation assessment in clinical diagnostics.\\
 
-\textbf{Intervals.} Per definition intervals are parts of the ECG that include a minimum of one entire waveform. The PR interval is measured from the beginning of the P wave to the beginning of the QRS complex and is followed by the QRS interval, which lasts until the end of the same QRS complex. The QT interval is defined from the start of the QRS complex to the end of the T wave. The RR interval is the last of the four and lasts for an entire heart cycle, starting and ending at a predefined point in the QRS complex, which is often referred to as the R point. It can be used to calculate the instantaneous heart rate (HRi) in the following manor.
+\textbf{Intervals}\\
+ Per definition intervals are parts of the ECG that include a minimum of one entire waveform. The PR interval is measured from the beginning of the P wave to the beginning of the QRS complex and is followed by the QRS interval, which lasts until the end of the same QRS complex. The QT interval is defined from the start of the QRS complex to the end of the T wave. The RR interval is the last of the four and lasts for an entire heart cycle, starting and ending at a predefined point in the QRS complex, which is often referred to as the R point. It can be used to calculate the instantaneous heart rate (HRi) in the following manor.
 
 \begin{equation}
 HRi = 60 / RR \qquad \text{,RR in units of seconds}	
 \end{equation}
 
-\subsubsection{Psychophysiological Measurements}
-
-\textbf{Heart rate and heart period.} The heart period (HP) is the time in milliseconds between two heart beats. It is usually determined by measuring the distance between to successive R spikes in an ECG, due to their prominence in comparison to the other components. The heart rate (HR) is a more common way when communicating heart activity. Typically the heart rate is given in beats per minute (bpm) and can be determined by calculating the reciprocal of the heart period.
+\subsubsection{Heart Rate and Heart Period}
+The heart period (HP) is the time in milliseconds between two heart beats. It is usually determined by measuring the distance between to successive R spikes in an ECG, due to their prominence in comparison to the other components. The heart rate (HR) is a more common way when communicating heart activity. Typically the heart rate is given in beats per minute (bpm) and can be determined by calculating the reciprocal of the heart period.
 
 \begin{equation}
 HR = 60000 / HP
@@ -361,13 +368,13 @@ HR = 60000 / HP
 
 There are incidents however, in which heart rate and period are not linear. As mentioned by Caciappo et al. (2007) "Berntson and colleagues (1995) reviewed literature across several mammalian species, including humans, showing that the relationship between changes in activity of the parasympathetic and sympathetic autonomic branches and heart period are more nearly linear than the relationship between activity in either branch and heart rate". This means that certain change in activation of either branch of the ANS will result in an equal change in heart period, whereas the same is not true for heart rate. It is important to mention that the change in heart period is independent from the baseline heart period at the time. For example,  raising the stimulation frequency of the vagal nerve by 2 Hz in dogs, results in a change of 70-72 msec in heart period, regardless of the baseline heart period being either 875 msec or 350 msec. In contrast, applying a 2 Hz change in parasympathetic activation resulted in different heart rate changes for either baseline. Heart rate of dogs with a heart period baseline of 875 msec changed by 5.1 bpm and by 29.2 bpm for a 350 msec baseline \citep{HANDBOOKPP}. Therefore the choice of the metric can heavily influence the outcome of an experiment. Bernston et al. (1995) recommended heart rate as the metric of choice when changes in cardiac functions are likely to be caused by autonomic effects and when those changes vary widely as a result of an experimental manipulation or between groups because errors caused by the nonlinear relationship between autonomic inputs and heart rate can be significant and result in misinterpretations of the data \citep{HANDBOOKPP}.
 
-\textbf{Heart rate variability.} The oscillation in the interval between consecutive heart beats as well as the oscillation between consecutive instantaneous heart rates is called heart rate variability (HRV)(Task Force of the European Society of Cardiology the North American Society of Pacing Electrophysiology, 1996 ; from now on Task Force).
+\subsubsection{Heart Rate Variability}
+The oscillation in the interval between consecutive heart beats as well as the oscillation between consecutive instantaneous heart rates is called heart rate variability (HRV)(Task Force of the European Society of Cardiology the North American Society of Pacing Electrophysiology, 1996 ; from now on Task Force).
 Measures of the HRV can be divided into three general groups, the time domain methods, the frequency domain methods and non-linear methods. Time based methods determine either the HR at any given point in time, by calculating the HRi, or the intervals between successive normal complexes, by detecting the so called normal-to-normal (NN) intervals.
 Simple time–domain variables that can be calculated include the mean NN interval, the mean heart rate and the
 difference between the longest and shortest NN interval(Task Force, 1996). Frequency domain methods on the other hand decompose the overall heart period variance into specifiable frequency bands \citep{HANDBOOKPP}. A common approach are power spectral density (PSD) analysis, which are based on a Fast Fourier Transform (FFT) of the HRV and provide basic information on how power distributes as a function of frequency. When considering only short time HRV recordings ranging from 2 to 5 minutes three major spectral components can be distinguished. There are very low frequency (VLF), low frequency (LF) and high frequency (HF) components \cite{TASK1996}. The distribution of the power and the central frequency of each frequency band vary in regard to changes in autonomic modulation of the heart period. In general high-frequency HRV is mostly attributable to variations in the parasympathetic control associated with respiration and is commonly used as an index of vagal control of the heart \citep{HANDBOOKPP}. Whereas low-frequency HRV's psychological significance remains a controversial topic. Contrary to the assumption of LF HRV being related to cardiac sympathetic activity it seems to rather  reflect both sympathetic and vagal influences related to baroreflex mechanisms \cite{BERNTSON1997}.
 
 Non-linear phenomena are determined by a number of complex interactions of haemodynamic, electrophysiological and humoral variables, as well as autonomic and central nervous regulations \cite{TASK1996}. Although a  variety of techniques has been applied to determine non-linear properties no major breakthrough in the field of HRV analysis has been achieved yet. 
-
 
 \section{General}
 \subsection{Related Work}

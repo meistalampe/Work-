@@ -7,23 +7,33 @@
 \contentsline {section}{\numberline {1.1}Motivation}{6}{section.1.1}
 \contentsline {section}{\numberline {1.2}Theoretical Background}{6}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Fear and Phobia}{7}{subsection.1.2.1}
-\contentsline {subsubsection}{\nonumberline The Neurophysiology of Fear}{8}{section*.6}
-\contentsline {subsubsection}{\nonumberline Specific Phobia}{9}{section*.7}
-\contentsline {subsubsection}{\nonumberline Acrophobia}{9}{section*.8}
+\contentsline {subsubsection}{\nonumberline Fear Measures}{7}{section*.6}
+\contentsline {subsubsection}{\nonumberline Fear stimuli}{8}{section*.7}
+\contentsline {subsubsection}{\nonumberline The Neurophysiology of Fear}{8}{section*.8}
+\contentsline {subsubsection}{\nonumberline Specific Phobia}{9}{section*.9}
+\contentsline {subsubsection}{\nonumberline Acrophobia}{10}{section*.10}
 \contentsline {subsection}{\numberline {1.2.2}Exposure Therapy}{10}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Electrodermal Activity}{10}{subsection.1.2.3}
-\contentsline {subsubsection}{\nonumberline Anatomical basis}{11}{section*.9}
-\contentsline {subsubsection}{\nonumberline Physiological basis}{14}{section*.14}
-\contentsline {subsubsection}{\nonumberline Physiology of Electrodermal Activity}{16}{section*.16}
-\contentsline {subsubsection}{\nonumberline Principles of Electrodermal Measurement}{18}{section*.18}
-\contentsline {subsubsection}{\nonumberline Techniques of Electrodermal Recording}{19}{section*.19}
-\contentsline {subsubsection}{\nonumberline Signal Evaluation}{20}{section*.23}
-\contentsline {subsubsection}{\nonumberline Psychological and Social Context of EDA}{22}{section*.27}
+\contentsline {subsection}{\numberline {1.2.3}Electrodermal Activity}{11}{subsection.1.2.3}
+\contentsline {subsubsection}{\nonumberline Anatomical basis}{11}{section*.11}
+\contentsline {subsubsection}{\nonumberline Physiological basis}{14}{section*.15}
+\contentsline {subsubsection}{\nonumberline Physiology of Electrodermal Activity}{16}{section*.17}
+\contentsline {subsubsection}{\nonumberline Principles of Electrodermal Measurement}{17}{section*.19}
+\contentsline {subsubsection}{\nonumberline Techniques of Electrodermal Recording}{18}{section*.20}
+\contentsline {subsubsection}{\nonumberline Electrodes}{18}{section*.21}
+\contentsline {subsubsection}{\nonumberline Recording Sites}{19}{section*.22}
+\contentsline {subsubsection}{\nonumberline Signal Evaluation}{20}{section*.24}
+\contentsline {subsubsection}{\nonumberline Phasic Electrodermal Measures}{20}{section*.25}
+\contentsline {subsubsection}{\nonumberline Tonic Electrodermal Measures}{21}{section*.27}
+\contentsline {subsubsection}{\nonumberline Psychological and Social Context of EDA}{22}{section*.28}
+\contentsline {subsubsection}{\nonumberline Effects of discrete stimuli}{22}{section*.29}
+\contentsline {subsubsection}{\nonumberline Effects of continuous stimuli}{22}{section*.30}
+\contentsline {subsubsection}{\nonumberline Conclusion}{23}{section*.31}
 \contentsline {subsection}{\numberline {1.2.4}Electrocardiogram}{24}{subsection.1.2.4}
-\contentsline {subsubsection}{\nonumberline Anatomical and Physiological Basis}{24}{section*.28}
-\contentsline {subsubsection}{\nonumberline ECG Measurement}{26}{section*.32}
-\contentsline {subsubsection}{\nonumberline ECG Signal Components}{27}{section*.33}
-\contentsline {subsubsection}{\nonumberline Psychophysiological Measurements}{29}{section*.35}
+\contentsline {subsubsection}{\nonumberline Anatomical and Physiological Basis}{24}{section*.32}
+\contentsline {subsubsection}{\nonumberline ECG Measurement}{26}{section*.36}
+\contentsline {subsubsection}{\nonumberline ECG Signal Components}{27}{section*.37}
+\contentsline {subsubsection}{\nonumberline Heart Rate and Heart Period}{29}{section*.39}
+\contentsline {subsubsection}{\nonumberline Heart Rate Variability}{30}{section*.40}
 \contentsline {section}{\numberline {1.3}General}{30}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Related Work}{30}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Problem Analysis and Goals}{32}{subsection.1.3.2}
@@ -32,29 +42,29 @@
 \contentsline {subsection}{\numberline {2.1.1}Participants}{34}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}System Components}{34}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Hardware}{34}{subsection.2.1.3}
-\contentsline {subsubsection}{\nonumberline HTC Vive}{34}{section*.36}
-\contentsline {subsubsection}{\nonumberline BITalino}{35}{section*.37}
-\contentsline {subsubsection}{\nonumberline VR Unit (VRU)}{36}{section*.38}
-\contentsline {subsubsection}{\nonumberline Control and Measurement Unit (CMU)}{37}{section*.39}
+\contentsline {subsubsection}{\nonumberline HTC Vive}{34}{section*.41}
+\contentsline {subsubsection}{\nonumberline BITalino}{35}{section*.42}
+\contentsline {subsubsection}{\nonumberline VR Unit (VRU)}{36}{section*.43}
+\contentsline {subsubsection}{\nonumberline Control and Measurement Unit (CMU)}{37}{section*.44}
 \contentsline {subsection}{\numberline {2.1.4}Software}{37}{subsection.2.1.4}
-\contentsline {subsubsection}{\nonumberline Unity}{37}{section*.40}
-\contentsline {subsubsection}{\nonumberline Matlab}{37}{section*.41}
-\contentsline {subsection}{\numberline {2.1.5}Virtual Reality Exposure}{38}{subsection.2.1.5}
-\contentsline {subsubsection}{\nonumberline Virtual Environment}{38}{section*.42}
-\contentsline {subsubsection}{\nonumberline Closed Loop Setup}{38}{section*.43}
-\contentsline {section}{\numberline {2.2}Methods}{39}{section.2.2}
+\contentsline {subsubsection}{\nonumberline Unity}{37}{section*.45}
+\contentsline {subsubsection}{\nonumberline Matlab}{37}{section*.46}
+\contentsline {subsection}{\numberline {2.1.5}Virtual Environment}{38}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Virtual Reality Exposure}{39}{subsection.2.1.6}
+\contentsline {subsubsection}{\nonumberline Closed Loop Setup}{39}{section*.50}
+\contentsline {section}{\numberline {2.2}Methods}{40}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}VR Control}{40}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Signal Measurement}{40}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Signal Processing}{40}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Feature Extraction}{40}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Procedure}{40}{subsection.2.2.5}
-\contentsline {subsubsection}{\nonumberline Subject instruction}{40}{section*.45}
-\contentsline {subsubsection}{\nonumberline VR initialization}{40}{section*.46}
-\contentsline {chapter}{\numberline {3}Results}{41}{chapter.3}
-\contentsline {chapter}{\numberline {4}Discussion}{42}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{43}{chapter.5}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{44}{appendix.A}
-\contentsline {chapter}{List of Figures}{45}{appendix.A}
-\contentsline {chapter}{List of Tables}{47}{chapter*.47}
-\contentsline {chapter}{List of Abbreviations}{47}{chapter*.48}
-\contentsline {chapter}{Bibliography}{48}{chapter*.48}
+\contentsline {subsubsection}{\nonumberline Subject instruction}{41}{section*.52}
+\contentsline {subsubsection}{\nonumberline VR initialization}{41}{section*.53}
+\contentsline {chapter}{\numberline {3}Results}{45}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discussion}{46}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{47}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{48}{appendix.A}
+\contentsline {chapter}{List of Figures}{49}{appendix.A}
+\contentsline {chapter}{List of Tables}{50}{chapter*.54}
+\contentsline {chapter}{List of Abbreviations}{50}{chapter*.55}
+\contentsline {chapter}{Bibliography}{51}{chapter*.55}

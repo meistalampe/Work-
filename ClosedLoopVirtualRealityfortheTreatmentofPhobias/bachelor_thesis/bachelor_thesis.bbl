@@ -1,12 +1,15 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[LAY()]{LAYTON2005}
-
+\bibitem[Layton(2005)]{LAYTON2005}
+J.~Layton.
+\newblock How fear works, 2005.
+\newblock URL
+  \url{<https://science.howstuffworks.com/life/inside-the-mind/emotions/fear.htm>}.
 
 \bibitem[Fink(2010)]{FINK2010}
 G.~Fink.
@@ -88,12 +91,10 @@ Electrophysiology Task~Force of~the European Society of Cardiology the North
 \newblock Heart rate variability.
 \newblock \emph{Circulation}, 1996.
 
-\bibitem[BERNTSON et~al.(1997)BERNTSON, THOMAS~BIGGER, ECKBERG, GROSSMAN,
-  KAUFMANN, MALIK, NAGARAJA, PORGES, SAUL, STONE, and VAN
-  DER~MOLEN]{BERNTSON1997}
-GARY~G. BERNTSON, J.~THOMAS~BIGGER, DWAIN~L. ECKBERG, PAUL GROSSMAN, PETER~G.
-  KAUFMANN, MAREK MALIK, HAIKADY~N. NAGARAJA, STEPHEN~W. PORGES, J.~PHILIP
-  SAUL, PETER~H. STONE, and MAUROTS~W. VAN DER~MOLEN.
+\bibitem[Bernston et~al.(1997)Bernston, Bigger, Eckberg, Grossman, Kaufmann,
+  Malik, Nagaraja, Porges, Saul, Stone, and Van Der~Molen]{BERNTSON1997}
+G.G. Bernston, T.J. Bigger, D.L. Eckberg, P.~Grossman, P.G. Kaufmann, M.~Malik,
+  H.N. Nagaraja, S.W. Porges, J.P. Saul, P.H. Stone, and M.W. Van Der~Molen.
 \newblock Heart rate variability: Origins, methods, and interpretive caveats.
 \newblock \emph{Psychophysiology}, 34\penalty0 (6):\penalty0 623--648, 1997.
 \newblock ISSN 1469-8986.
@@ -210,5 +211,12 @@ J.~Diemer, N.~Lohkamp, A.~Mühlberger, and P.~Zwanzger.
   heightchallenge—effects in patients with acrophobia and healthy controls.
 \newblock \emph{Journal of Anxiety Disorders}, 37:\penalty0 30--39, 2016.
 \newblock \doi{http://dx.doi.org/10.1016/j.janxdis.2015.10.007}.
+
+\bibitem[Emmelkamp et~al.(2001)Emmelkamp, Bruynzeel, Drost, and Van
+  Der~Mast]{EMMELKAMP2001}
+P.M.G. Emmelkamp, M.~Bruynzeel, L.~Drost, and C.A.P.G. Van Der~Mast.
+\newblock Virtual reality treatment in acrophobia: A comparison with exposure
+  in vivo.
+\newblock \emph{CYBERPSYCHOLOGY & BEHAVIOR}, 2001.
 
 \end{thebibliography}
