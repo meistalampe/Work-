@@ -63,8 +63,6 @@
 % mention the SNNU and the lab where the study takes place
 All experiments and measurements were conducted within the facilities of Systems Neuroscience and Neurotechnology Unit, especially the Green Lab, which is located at the Saarland University Hospital. 
 
-\subsection{Participants}
-
 \subsection{System Components}
 %In this section all the components that are necessary to run the virtual reality system are described.
 % It is to mention that the used parts were primarily selected in regard to their availability and the system as a whole was kept as cost-efficient as possible. The system can therefore be very appealing to a variety of users, in need of a low-budget treatment system, suited to be operated in limited spaces.
@@ -125,86 +123,122 @@ In the early design phase the CMU was conceptualized as a part of the VRU, but i
 As mentioned in section \ref{CMU} the data acquisition is handled by a separate computer. However, all programs were designed to function on any device, capable of running the software in this section. 
 
 \subsubsection{Unity}
-Unity is a game development platform, which can be used to create high-quality 3D games and deploy them across a variety of platforms, mobile phones, tablets and desktop computers. The user is enabled to directly target a VR device through the implemented Unity VR Software Development Kits (SDK). The VR environment is built by creating game objects, such as structures and lights, and placing them inside a three dimensional virtual space or importing prefabricated assets from the Asset Store. Each game object can be equipped with a number of components to fit the user's needs. One of the most important aspects to the Unity platform is its scripting API giving the user control over the game environment . This is accomplished by C\# scripts, which are created in Visual Studio 2017 and then attached to the  specific game objects. As a game development platform Unity naturally is provided with an extensive networking environment, including UDP and TCP/IP, which can be used for communication with external devices. In addition the support, offered to the user in form of the Unity Manual and Scripting API as well as the Asset Store, is sufficient to allow even non-professionals to create their own projects.
+Unity is a game development platform, which can be used to create high-quality 3D games and deploy them across a variety of platforms, mobile phones, tablets and desktop computers. The user is enabled to directly target a VR device through the implemented Unity VR Software Development Kits (SDK). The VR environment is built by creating game objects, such as structures and lights, and placing them inside a three dimensional virtual space or importing prefabricated assets from the Asset Store. Each game object can be equipped with a number of components to fit the user's needs. One of the most important aspects to the Unity platform is its scripting API that gives the user control over the game environment. This is accomplished by C\# scripts, which are created in Visual Studio 2017 and then attached to the  specific game objects. As a game development platform Unity naturally is provided with an extensive networking environment, including UDP and TCP/IP, which can be used for communication with external devices. In addition the support, offered to the user in form of the Unity Manual and Scripting API as well as the Asset Store, is sufficient to allow even non-professionals to create their own projects.
 
 \subsubsection{Matlab}
 Matlab is a software, which was created to solve mathematical problems. It is used for data acquisition and processing as well as feature extraction from the measured signals.
 
 \subsection{Virtual Environment}
-As mentioned earlier there are two major requirements that must be met to successfully treat phobias with virtual exposure, fear elicitation and emotional processing. To elicit fear in the subjects we have to ensure that adequate stimuli are offered in our virtual environment. We therefore have implemented three different stimuli in our virtual height scenario. The virtual environment was designed around the concept of a descending floor inside a closed room. In the default configuration, which is shown in figure \ref{VRdefaultImg}, a neutral environment is provided.
+As mentioned earlier there are two major requirements that must be met to successfully treat phobias with virtual exposure, fear elicitation and emotional processing. To elicit fear in the subjects we have to ensure that adequate stimuli are offered in our virtual environment. We therefore have implemented three different ways to adapt the difficulty of our virtual height scenario. The virtual environment was designed around the concept of a descending floor inside a closed room. In the default configuration, which is shown in figure \ref{VRdefaultImg}, a neutral environment is provided.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.9\textwidth]{images/RoomDefault.png}
+\includegraphics[width=0.7\textwidth]{images/RoomDefault.png}
 \caption{A side view of the VR room in its default configuration.}
 \label{VRdefaultImg}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.9\textwidth]{images/RoomDefaultTop.png}
+\includegraphics[width=0.7\textwidth]{images/RoomDefaultTop.png}
 \caption{A top view of the VR room in its default configuration.}
 \label{VRdefaultTopImg}
 \end{figure}
 
 This configuration is used at the start of the session to conduct baseline measures and to allow for acclimation to the virtual reality. The first stimulus that is presented to the patient is the opening of the floor, which is shown in figure \ref{OpenImg}. Initially the floor was programmed to open completely. This was later adapted in regard to a recommendation by the psychiatry department. It was suggested that the ability to gradually move the floor to the side and therefore provide a form of minimal stimulation could be particularly useful in the treatment of very severe cases of acrophobia. Thus, two additional steps were implemented at the one third and two third mark of the full opening distance.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.9\textwidth]{images/OpenComparison.png}
-\caption{A comparison of the different stages of floor opening.}
+\includegraphics[width=0.7\textwidth]{images/OpenComparison.png}
+\caption{Comparison of the different stages of floor opening.}
 \label{OpenImg}
 \end{figure}
 
-The actual height challenge as well as the two remaining stimuli are revealed once the floor has been opened up. The patient is then confronted with a narrow bridge located above a descendable platform that is initially positioned 1m below floor-level (see \ref{OpenImg}, D).
-
-
-
-
-\subsection{Virtual Reality Exposure}
-To display the virtual environment, a powerful computer(Intel(R) Core(TM) i7-3770, 3.4 GHz and 8 GB RAM) and an Nvidia GeForce GTX 1080 graphics card with 8 GB of dedicated memory (GDDR5X) were used in combination with the HTC-Vive Head-Mounted Display (HMD). The Dual AMOLED displays (3,6" diagonal) of the HMD provided for a high-resolution presentation of the virtual world, with 1080x1200 pixel on each eye. The distance between the pupils was manually adjusted for each participant by means of a knob on the HMD. The Lighthouse Tracking-System, created by the company Valve, allowed to track participant's motion during the exposure in an area of maximal 5 by 5 meter and to project their movement in the virtual environment. The Tracking-System consisted of two stationary sensors, positioned in opposing corners at a height of roughly 2 m, and all the sensors, which were attached to the HMD and the controller by HTC. Due to limited space the exposure area was restricted to an area of 3,5 by 3,5 meter. The program, which was used to remotely control the virtual environment, was written with the Matlab software version R2015a. The virtual environment itself was created with Unity version 5.6.1f1 personal. % mention laptop which is used to run the CMU and data presentation
-% Bitalino
-We chose this device primarily for the convenience of wireless data transmission, higher maneuverability and less distraction for the user. 
-By this a therapist is enabled to communicate with the patient inside VR as if he was there himself and improve the therapy.
-
-
-\subsubsection{Closed Loop Setup}
-The setup, which was used to conduct the experiment, is composed of three major components, interacting with each other in a closed loop fashion (see figure \ref{setupImg}). The virtual environment is ran on the VR-Unit (VRU) and presented to the subjects through the HMD. Inside the virtual reality the fear triggering stimulus is applied, causing a sympathetic reaction in the subject. This reaction is measured by the bitalino device, in the form of an ECG and GSR signal, and then sent to the control and measurement unit (CMU) via bluetooth. This data is processed by the CMU and displayed, in real-time, for the user to evaluate. Based on the visual input, provided by the CMU, a decision to alter the virtual environment can be made by the user.  
+The actual height challenge as well as the two remaining stimuli are revealed once the floor has been opened up. The patient is then confronted with a narrow bridge located above a descendable platform that is initially positioned 1m below floor-level (see \ref{OpenImg}, D). During therapy patients are asked to cross the bridge in order to confront their fear. A task, which in this state of the virtual environment, is considered to be of a lower difficulty. However, the difficulty can be adapted to each individual by alterations made to the strength of the primary stimulus, the depth. The platform can be lowered to a depth of up to 40m, enabling a degree of stimulation that could hardly be achieved in in-vivo exposure. But there are also precautions to be made to guarantee that the full extend of this stimulus can be perceived by the patients.
+For instance there are no natural light-sources in a closed room scenario. Therefore the virtual room has to be equipped with an operant lighting system. We have applied 4 ceiling lamps that each are featured with 2 different light-sources, a point and a spotlight. Point lights are located at a certain point inside the virtual space and send out light, which is equally distributed, in all directions. The intensity of the eradiated light is diminished with increasing distance to the source, eventually reaching zero at the a specific range, which was set to 13m. We have used point lights to simulate the natural patterns of light in close proximity to a big surface lamp. The glow of the light bulb itself was recreated by using a material property called emission, causing light to be emitted directly from an object's surface to which the material has been applied. Spotlights too have a specified location and range but are used to illuminate a constrained angle, resulting in a cone shaped region of illumination. In addition to the previously mentioned range specific intensity drop off, the intensity of the spotlight is reduced from the inside to the outside of the light cone, causing a fade effect in the outskirts region, the so called penumbra. We have used spotlights with a range of 13m and an angle of 165 degrees to light the room as well as the initial section of the pit. As the platform is lowered beyond this range it is obscured by shadows and becomes less visible. Therefore we have implemented additional light-sources that are activated and deactivated according to the current platform position. Thus, the platform is sufficiently illuminated at all times (see \ref{DepthImg}, C and D).
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{images/setup.png}
+\includegraphics[width=0.7\textwidth]{images/DepthComparison.png}
+\caption{Illustration of 4 different platform position.}
+\label{DepthImg}
+\end{figure}
+
+In figure \ref{DepthImg} four different depths, subsidiary for four stimulus intensities, are displayed: A = 1m, B = 8m, C = 25m and D = 40m. It has to be mentioned that those depths only were chosen to illustrate different therapy difficulties whereas the depth can be freely changed in steps of 1m. Earlier we have talked about the immersion being disrupted by changing scenes during the session. To counter this phenomena, we have programmed the transition phase between difficulties to be smooth and gradually instead of the floor being abruptly teleported to the new target location. 
+The third available method of increasing the difficulty is an alteration to the width of the bridge. This also was implemented after a suggestion of the psychiatrists involved, improving the adaptability of our system. Similar to the opening of the floor we have decided for a total of four different widths, ranging from 25cm to 1m (see \ref{BridgeImg}).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/BridgeComparison.png}
+\caption{Comparison of the different widths of the bridge.}
+\label{BridgeImg}
+\end{figure}
+
+As full control is given over these three variables the therapist is enabled to adjust the exposure a every degree of fear. 
+The methods that were used to enable control of the virtual environment are explained in section \ref{VRControl}.
+
+\subsection{Virtual Reality Setup}
+To display the virtual environment, a powerful computer(Intel(R) Core(TM) i7-3770, 3.4 GHz and 8 GB RAM) and an Nvidia GeForce GTX 1080 graphics card with 8 GB of dedicated memory (GDDR5X) were used in combination with the HTC-Vive Head-Mounted Display (HMD). The Dual AMOLED displays (3.6" diagonal) of the HMD provided for a high-resolution presentation of the virtual world, with 1080x1200 pixel on each eye. The distance between the pupils was manually adjusted for each participant by means of a knob on the HMD to guarantee clear vision. 
+% The Lighthouse Tracking-System, created by the company Valve, allowed to track participant's motion during the exposure in an area of maximal 5 by 5 meter and to project their movement in the virtual environment., and all the sensors, which were attached to the HMD and the controller by HTC. 
+Two base stations of the Lighthouse system were positioned in opposing corners at a height of roughly 2 m. Due to limited space, the exposure area was restricted to an area of 3.5 by 3.5 meter. The program, which was used to remotely control the virtual environment, was written with the Matlab software version R2015a and run on a Laptop (Intel(R) Core(TM) i5 6200U, 2x2.3 GHz and 8 GB Ram). The virtual environment was run on the desktop computer, using Unity version 5.6.1f1 personal. Both machines were connected through a closed network. We have used the BITalino device to record the physiological data and send it to our Laptop via a Bluetooth connection. We have chosen this device primarily for the convenience of wireless data transmission, higher maneuverability and less distraction for the patient. 
+
+\subsubsection{Closed Loop Information Flow}
+The key concept of our system was the adaptability of the virtual experience to the therapist standards as well as the individual standard. To achieve our goal we built our system in a way that information is constantly exchanged between the single components.
+The setup is composed of four major components that can be divided into two groups according to their function. Either the information is delivered to the subject (VRU and HMD) or retrieved from the subject and presented to the user (CMU and BITalino) (see figure \ref{setupImg}).\\ 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{images/setup.png}
 \caption{Closed-loop virtual reality system. The grey line illustrates the closed loop information flow.}
 \label{setupImg}
 \end{figure}
 
+The virtual environment was run on the VRU and presented to the subjects through the HMD. Inside the virtual environment the fear triggering stimulus was applied, causing a sympathetic reaction in the subject. This reaction was measured by the BITalino device, in the form of an ECG and GSR signal, and then sent to the control and measurement unit (CMU) via Bluetooth. Afterwards the data was processed by the CMU and displayed, in real-time, for the user to evaluate. Simultaneously the virtual world was displayed to a monitor, which allowed the user to see the perspective of the subject during the exposure. Based on the visual input, a decision to alter the virtual experience could be made by the user. This information was then submitted to the VRU, causing the virtual environment to react accordingly and therefore closing the information loop.
 
 
 \newpage
 \section{Methods}\label{Methods}
 % methods
-- main objective is the measurement of gsr during the therapy and the evaluation of the gsr data concerning the stress of the patient during the therapy\\
-- how is the gsr information processed and evaluated?\\
-how is it presented to the user?\\
-- description of how the VR is controlled by the user(which parameters can be influenced)
-- graphic of control chain
-\subsection{VR Control}\label{VRControl}
-\subsection{Signal Measurement}
-\subsection{Signal Processing}
-\subsection{Feature Extraction}
+%- main objective is the measurement of gsr during the therapy and the evaluation of the gsr data concerning the stress of the patient during the therapy\\
+%- how is the gsr information processed and evaluated?\\
+%how is it presented to the user?\\
+%- description of how the VR is controlled by the user(which parameters can be influenced)
+%- graphic of control chain
+
+\subsection{Participants}
 \subsection{Procedure}
-- how many subjects did participate?\\
-- which tasks did the patients fullfill? (cross the bridge etc.)\\
-- duration of the experiment\\
-
-- description of the virtual environment, the procedure (baseline measurement,VRET in detail)\\ 
-- pictures that show the VE in it's starting state as well as it's therapy state (descended floor)\\
-- description of how the VR is controlled by the user(which parameters can be influenced)
-
-
--ECG processing frequency domain methods PSD (in task force , reason which method to pick)
-
 \subsubsection{Subject instruction}
 Additionally the infrared connection between the base stations of the Lighthouse-System and the HMD should be kept intact at all time
 \subsubsection{VR initialization}
 %https://docs.unity3d.com/Manual/VROverview.html
+
+\subsection{Virtual Reality Control}\label{VRControl}
+One of the major challenges, we were confronted with during this project, was to find a method that would allow for a reliable information transport between VRU and CMU. We have decided on a TCP/IP solution for this problem. This allowed for a loss-free data transmission between the two terminals. 
+%The connection between server and client is established by assigning a specific port and IP-addresses.
+
+We used the Unity network engine to create a server script that reads incoming data streams, sent to the VRU's IP-address and the specific port 8632. The received data was read into a string format
+
+
+- variables in the array , tabelle vllt--- array slot, variable name, variable type, possible values
+\subsubsection{Information}
+\subsection{Data Acquisition}
+We obtained high-resolution (1000Hz) ECG and EDA measures for the entirety of the experiment, which lasted 20 minutes on average, using the BITalino (r)evolution. For EDA two electrodes were applied to the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the thorax according to figure \ref{SetupImg}. The data was send to the CMU and saved in text format. Afterwards the data was processed for further evaluation, using Matlab.
+
+\subsection{Data Processing}
+-load from txt
+-adjust from raw
+-filter
+
+\subsubsection{Feature Extraction}
+
+%- how many subjects did participate?\\
+%- which tasks did the patients fullfill? (cross the bridge etc.)\\
+%- duration of the experiment\\
+%
+%- description of the virtual environment, the procedure (baseline measurement,VRET in detail)\\ 
+%- pictures that show the VE in it's starting state as well as it's therapy state (descended floor)\\
+%- description of how the VR is controlled by the user(which parameters can be influenced)
+%
+%
+%-ECG processing frequency domain methods PSD (in task force , reason which method to pick)
+

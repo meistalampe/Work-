@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  17 MAR 2018 00:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  18 MAR 2018 19:18
 entering extended mode
 **./bachelor_thesis.tex
 (bachelor_thesis.tex
@@ -1245,23 +1245,23 @@ Package natbib Warning: Citation `KAPFHAMMER2015' on page 30 undefined on input
 chapter 2.
 (chapters/materials_and_methods.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 71.
+(Font)              <10> on input line 69.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 71.
+(Font)              <7> on input line 69.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 71.
+(Font)              <5> on input line 69.
  [34
 
 ]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 79.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 77.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
@@ -1269,43 +1269,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--118
 File: images/RoomDefault.png Graphic file (type png)
 
 <use images/RoomDefault.png>
-Package pdftex.def Info: images/RoomDefault.png used on input line 138.
-(pdftex.def)             Requested size: 403.31511pt x 262.19952pt.
+Package pdftex.def Info: images/RoomDefault.png used on input line 136.
+(pdftex.def)             Requested size: 313.69029pt x 203.92828pt.
 
 <images/RoomDefaultTop.png, id=547, 630.10406pt x 691.08188pt>
 File: images/RoomDefaultTop.png Graphic file (type png)
 
 <use images/RoomDefaultTop.png>
-Package pdftex.def Info: images/RoomDefaultTop.png used on input line 145.
-(pdftex.def)             Requested size: 403.31511pt x 442.34361pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package pdftex.def Info: images/RoomDefaultTop.png used on input line 143.
+(pdftex.def)             Requested size: 313.69029pt x 344.0427pt.
 
 <images/OpenComparison.png, id=549, 749.80125pt x 551.05875pt>
 File: images/OpenComparison.png Graphic file (type png)
 
 <use images/OpenComparison.png>
-Package pdftex.def Info: images/OpenComparison.png used on input line 154.
-(pdftex.def)             Requested size: 403.31511pt x 296.41533pt.
+Package pdftex.def Info: images/OpenComparison.png used on input line 152.
+(pdftex.def)             Requested size: 313.69029pt x 230.54338pt.
+ [38 <./images/RoomDefault.png>] [39 <./images/RoomDefaultTop.png>]
+<images/DepthComparison.png, id=565, 752.8125pt x 558.58687pt>
+File: images/DepthComparison.png Graphic file (type png)
 
+<use images/DepthComparison.png>
+Package pdftex.def Info: images/DepthComparison.png used on input line 162.
+(pdftex.def)             Requested size: 313.69029pt x 232.76384pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<images/BridgeComparison.png, id=568, 752.0597pt x 560.0925pt>
+File: images/BridgeComparison.png Graphic file (type png)
 
-[38 <./images/RoomDefault.png>]
-<images/setup.png, id=559, 867.24pt x 672.26157pt>
-File: images/setup.png Graphic file (type png)
- <use images/setup.png>
-Package pdftex.def Info: images/setup.png used on input line 176.
-(pdftex.def)             Requested size: 358.50612pt x 277.90627pt.
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 196--199
+<use images/BridgeComparison.png>
+Package pdftex.def Info: images/BridgeComparison.png used on input line 172.
+(pdftex.def)             Requested size: 313.69029pt x 233.622pt.
+ [40 <./images/OpenComparison.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
-[40]) [41] [42 <./images/RoomDefaultTop.png>] [43 <./images/OpenComparison.png>
-] [44 <./images/setup.png>]
+[41 <./images/DepthComparison.png>]
+<images/setup.png, id=583, 867.24pt x 672.26157pt>
+File: images/setup.png Graphic file (type png)
+ <use images/setup.png>
+Package pdftex.def Info: images/setup.png used on input line 191.
+(pdftex.def)             Requested size: 403.31511pt x 312.63942pt.
+
+[42 <./images/BridgeComparison.png>] [43 <./images/setup.png>]
+
+LaTeX Warning: Reference `SetupImg' on page 44 undefined on input line 223.
+
+) [44]
 chapter 3.
 (chapters/results.tex) [45
 
@@ -1395,13 +1405,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C3272D1FA65AD227CCDA42FFC62ABF50;2237.
+(rerunfilecheck)             Checksum: D17E5E23C8F5C17D29ABAA5F5A04CAC6;2245.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 18580 strings out of 493328
- 315295 string characters out of 3139118
- 571417 words of memory out of 3000000
- 21463 multiletter control sequences out of 15000+200000
+ 18596 strings out of 493328
+ 315660 string characters out of 3139118
+ 571593 words of memory out of 3000000
+ 21474 multiletter control sequences out of 15000+200000
  76347 words of font info for 114 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,8n,77p,8828b,573s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1418,9 +1432,9 @@ KTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmtt12.pfb>
-Output written on bachelor_thesis.pdf (56 pages, 7354933 bytes).
+Output written on bachelor_thesis.pdf (56 pages, 10037075 bytes).
 PDF statistics:
- 768 PDF objects out of 1000 (max. 8388607)
- 174 named destinations out of 1000 (max. 500000)
- 21878 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 780 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 500000)
+ 21888 words of extra memory for PDF output out of 24883 (max. 10000000)
 

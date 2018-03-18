@@ -184,7 +184,7 @@ while therapyStop == false
             physicianLB = 40.0;
             physicianUB = 1.0;
             reaction = 3;
-            speed = 0.7;
+            speed = 0.5;
             
             valid_input = false;
             
