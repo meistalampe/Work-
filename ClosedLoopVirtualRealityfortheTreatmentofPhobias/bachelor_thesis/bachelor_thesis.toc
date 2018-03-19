@@ -43,30 +43,30 @@
 \contentsline {subsection}{\numberline {2.1.2}Hardware}{34}{subsection.2.1.2}
 \contentsline {subsubsection}{\nonumberline HTC Vive}{34}{section*.41}
 \contentsline {subsubsection}{\nonumberline BITalino}{35}{section*.42}
-\contentsline {subsubsection}{\nonumberline VR Unit (VRU)}{36}{section*.43}
-\contentsline {subsubsection}{\nonumberline Control and Measurement Unit (CMU)}{37}{section*.44}
+\contentsline {subsubsection}{\nonumberline VR Unit (VRU)}{37}{section*.44}
+\contentsline {subsubsection}{\nonumberline Control and Measurement Unit (CMU)}{37}{section*.45}
 \contentsline {subsection}{\numberline {2.1.3}Software}{37}{subsection.2.1.3}
-\contentsline {subsubsection}{\nonumberline Unity}{37}{section*.45}
-\contentsline {subsubsection}{\nonumberline Matlab}{37}{section*.46}
+\contentsline {subsubsection}{\nonumberline Unity}{37}{section*.46}
+\contentsline {subsubsection}{\nonumberline Matlab}{38}{section*.47}
 \contentsline {subsection}{\numberline {2.1.4}Virtual Environment}{38}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}Virtual Reality Setup}{41}{subsection.2.1.5}
-\contentsline {subsubsection}{\nonumberline Closed Loop Information Flow}{42}{section*.52}
+\contentsline {subsubsection}{\nonumberline Closed Loop Information Flow}{42}{section*.53}
 \contentsline {section}{\numberline {2.2}Methods}{43}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Participants}{43}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Procedure}{43}{subsection.2.2.2}
-\contentsline {subsubsection}{\nonumberline Subject instruction}{43}{section*.54}
-\contentsline {subsubsection}{\nonumberline VR initialization}{44}{section*.55}
-\contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{44}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{44}{subsection.2.2.4}
+\contentsline {subsubsection}{\nonumberline Subject instruction}{43}{section*.55}
+\contentsline {subsubsection}{\nonumberline VR initialization}{43}{section*.56}
+\contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{43}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{45}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Data Processing}{45}{subsection.2.2.5}
-\contentsline {subsubsection}{\nonumberline General Processing}{45}{section*.56}
-\contentsline {subsubsection}{\nonumberline EDA Processing}{47}{section*.59}
-\contentsline {subsubsection}{\nonumberline ECG Processing}{47}{section*.60}
+\contentsline {subsubsection}{\nonumberline General Processing}{45}{section*.57}
+\contentsline {subsubsection}{\nonumberline EDA Processing}{47}{section*.60}
+\contentsline {subsubsection}{\nonumberline ECG Processing}{47}{section*.61}
 \contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{47}{subsection.2.2.6}
-\contentsline {chapter}{\numberline {3}Results}{48}{chapter.3}
-\contentsline {chapter}{\numberline {4}Discussion}{49}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{50}{chapter.5}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{51}{appendix.A}
-\contentsline {chapter}{List of Figures}{52}{appendix.A}
-\contentsline {chapter}{List of Tables}{53}{chapter*.61}
-\contentsline {chapter}{Bibliography}{54}{chapter*.62}
+\contentsline {chapter}{\numberline {3}Results}{49}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discussion}{50}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{51}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{52}{appendix.A}
+\contentsline {chapter}{List of Figures}{53}{appendix.A}
+\contentsline {chapter}{List of Tables}{55}{chapter*.62}
+\contentsline {chapter}{Bibliography}{56}{chapter*.63}

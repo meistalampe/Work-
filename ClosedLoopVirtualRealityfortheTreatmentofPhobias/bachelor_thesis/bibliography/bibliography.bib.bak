@@ -1,9 +1,77 @@
+@online{LAYTON2005,
+author = {Layton, J.},
+title = {How Fear Works},
+year = {2005},
+url = {<https://science.howstuffworks.com/life/inside-the-mind/emotions/fear.htm>},
+OPTdate = {last visited 7 March 2018},
+}
+ 
+@book{o2012cognitive,
+  title={Cognitive Behavior Therapy: Core Principles for Practice},
+  author={O'Donohue, W.T. and Fisher, J.E.},
+  isbn={9781118228876},
+  lccn={2011041536},
+  url={https://books.google.de/books?id=qawT0W2MJI8C},
+  year={2012},
+  publisher={Wiley},
+}
+
+
+@Manual{DSMIV1994,
+title = {Diagnostic and Statistical Manual of Mental Disorders},
+OPTorganization = {American Psychiatric Association},
+OPTaddress = {Washington DC},
+OPTedition = {Fourth Edition},
+OPTyear = {1994},
+}
+
+
 @Book{HANDBOOKPP,
 author = {Cacioppo, J.T. and Tassinary, L.G. and Berntson, G.G},
 title = {Handbook of Psychophysiology},
 publisher = {Cambridge University Press},
 year = {2007},
-OPTedition = {Third Edition},
+}
+
+@book{GOLDBERGER2017,
+  title={Clinical Electrocardiography: A Simplified Approach E-Book},
+  author={Goldberger, A.L. and Goldberger, Z.D. and Shvilkin, A.},
+  isbn={9780323508773},
+  url={https://books.google.de/books?id=q59tDgAAQBAJ},
+  year={2017},
+  publisher={Elsevier Health Sciences},
+}
+
+@book{FINK2010,
+  title={Stress Consequences: Mental, Neuropsychological and Socioeconomic},
+  author={Fink, G.},
+  isbn={9780123751751},
+  url={https://books.google.de/books?id=E20HsuKHxaEC},
+  year={2010},
+  publisher={Elsevier Science},
+}
+
+
+@Article{BERNSTON1995,
+author = {Bernston, G.G. and Cacioppo, J.T. and Quigley, K.S.},
+title = {The metrics of cardiac chronotropism: Biometric perspectives},
+journal = {Psychophysiology},
+year = {1995},
+OPTvolume = {32},
+OPTnumber = {2},
+OPTpages = {162-171},
+}
+
+
+
+
+@book{ABDULLA2014,
+  title={ECG in Medical Practice},
+  author={Abdullah, ABM},
+  isbn={9789351520061},
+  url={https://books.google.de/books?id=cC2HAwAAQBAJ},
+  year={2014},
+  publisher={Jaypee Brothers,Medical Publishers Pvt. Limited},
 }
 
 @book{bologniadermatology,
@@ -11,7 +79,7 @@ OPTedition = {Third Edition},
   author={Bolognia, J.L. and Jean L. Bolognia, J.L.J.R.P.R. and Jorizzo, J.L. and Rapini, R.P.},
   isbn={9789997638991},
   url={https://books.google.de/books?id=f2IwYiyh3YUC},
-  publisher={Elsevier Health Sciences}
+  publisher={Elsevier Health Sciences},
 }
 
 @book{boucsein2013electrodermal,
@@ -21,11 +89,21 @@ OPTedition = {Third Edition},
   series={The Springer Series in Behavioral Psychophysiology and Medicine},
   url={https://books.google.de/books?id=0hXrBwAAQBAJ},
   year={2013},
+  publisher={Springer US},
+}
+@book{boucsein2012electrodermal,
+  title={Electrodermal Activity},
+  author={Boucsein, W.},
+  isbn={9781461411260},
+  lccn={2011939059},
+  series={The Springer series in behavioral psychophysiology and medicine},
+  url={https://books.google.de/books?id=6N6rnOEZEEoC},
+  year={2012},
   publisher={Springer US}
 }
 
 
-@article{AGRAS1969151,
+@article{AGRAS1969,
 title = "The epidemiology of common fears and phobia",
 journal = "Comprehensive Psychiatry",
 volume = "10",
@@ -49,7 +127,7 @@ author = "Alpers, G. W. and Sell, R."
 }
 
 
-@article{BUTLER200617,
+@article{BUTLER2006,
 title = "The empirical status of cognitive-behavioral therapy: A review of meta-analyses",
 journal = "Clinical Psychology Review",
 volume = "26",
@@ -73,7 +151,7 @@ url = "http://psycnet.apa.org/record/1984-32085-001",
 author = "Butler, G. and Cullington, A. and Munby, M. and Amies, P. and Gelder, M."
 }
 
-@article{CHOY2007266,
+@article{CHOY2007,
 title = "Treatment of specific phobia in adults",
 journal = "Clinical Psychology Review",
 volume = "27",
@@ -83,7 +161,7 @@ year = "2007",
 issn = "0272-7358",
 doi = "https://doi.org/10.1016/j.cpr.2006.10.002",
 url = "http://www.sciencedirect.com/science/article/pii/S0272735806001164",
-author = "Choy, Y. and Fyer, A. J. and Lipsitz, J. D.",
+author = "Choy, Y. and Fyer, A. J. and Lipsitz, J. D."
 }
 
 @article{DERUBEIS1998,
@@ -98,17 +176,17 @@ author = "DeRubeis, R. J. and Crits-Christoph, P."
 }
 
 @article{DIEMER2016,
-title = "DisordersFear and physiological arousal during a virtual heightchallenge—effects in patients with acrophobia and healthy controls",
+title = "Fear and physiological arousal during a virtual heightchallenge—effects in patients with acrophobia and healthy controls",
 journal = "Journal of Anxiety Disorders",
 volume = "37",
 pages = "30-39",
 year = "2016",
-author = "Diemer, J. and Lohkamp, N. and Mühlberger, A. and Zwanzger, P."
+author = "Diemer, J. and Lohkamp, N. and Mühlberger, A. and Zwanzger, P.",
 doi = "http://dx.doi.org/10.1016/j.janxdis.2015.10.007"
 }
 
 
-@article{EMMELKAMP2002509,
+@article{EMMELKAMP2002,
 title = "Virtual reality treatment versus exposure in vivo: a comparative evaluation in acrophobia",
 journal = "Behaviour Research and Therapy",
 volume = "40",
@@ -118,12 +196,22 @@ year = "2002",
 issn = "0005-7967",
 doi = "https://doi.org/10.1016/S0005-7967(01)00023-7",
 url = "http://www.sciencedirect.com/science/article/pii/S0005796701000237",
-author = "Emmelkamp, P.M.G. and Krijn, M. and Hulsbosch,  A. M.  and de Vries, S. and Schuemie, M. J. and van der Mast, C.A.P.G.",
+author = "Emmelkamp, P.M.G. and Krijn, M. and Hulsbosch,  A. M.  and de Vries, S. and Schuemie, M. J. and van der Mast, C.A.P.G."
 }
+
+@article{EMMELKAMP2001,
+author = {Emmelkamp, P.M.G. and Bruynzeel, M. and Drost, L. and Van Der Mast, C.A.P.G.},
+title = {Virtual Reality Treatment in Acrophobia: A Comparison with Exposure in Vivo},
+journal = {CyberPsychology and Behavior},
+year = {2001},
+OPTvolume = {4},
+OPTnumber = {3},
+}
+
 
 @article{GARCIA2007,
 title = "Comparing Acceptance and Refusal Rates of Virtual Reality Exposure vs. In Vivo Exposure by Patients with Specific Phobias",
-journal = "CyberPsychology & Behavior",
+journal = "CyberPsychology and Behavior",
 volume = "10",
 number = "5",
 pages = "722-724",
@@ -132,7 +220,7 @@ doi = "https://doi.org/10.1089/cpb.2007.9962",
 author = "Garcia-Palacios, A. and Botella, C. and Hoffman, H. and Fabregat, S."
 }
 
-@Article{Huppert2013,
+@article{HUPPERT2013,
 author= "Huppert, D. and Grill, E. and Brandt, T.",
 title= "Down on heights? One in three has visual height intolerance",
 journal="Journal of Neurology",
@@ -147,22 +235,35 @@ doi="10.1007/s00415-012-6685-1",
 url="https://doi.org/10.1007/s00415-012-6685-1"
 }
 
-@Article{Kapfhammer2015,
-author="Kapfhammer, H.-P. and Huppert, D. and Grill, E. and Fitz, W. and Brandt, T.",
-title="Visual height intolerance and acrophobia: clinical characteristics and comorbidity patterns",
-journal="European Archives of Psychiatry and Clinical Neuroscience",
-year="2015",
-month="Aug",
-day="01",
-volume="265",
-number="5",
-pages="375--385",
-issn="1433-8491",
-doi="10.1007/s00406-014-0548-y",
-url="https://doi.org/10.1007/s00406-014-0548-y"
+@article{KAPFHAMMER2015,
+author= "Kapfhammer, H.-P. and Huppert, D. and Grill, E. and Fitz, W. and Brandt, T.",
+title= "Visual height intolerance and acrophobia: clinical characteristics and comorbidity patterns",
+journal= "European Archives of Psychiatry and Clinical Neuroscience",
+year= "2015",
+month= "Aug",
+day= "01",
+volume= "265",
+number= "5",
+pages= "375--385",
+issn= "1433-8491",
+doi= "10.1007/s00406-014-0548-y",
+url= "https://doi.org/10.1007/s00406-014-0548-y"
 }
 
-@article{KESSLER,
+@article{KESSLER2005,
+author = {Kessler, R.C. and Berglund, P. and Demler, O. and Jin, R. and Merikangas, K.R. and Walters, E.E.},
+title = {Lifetime prevalence and age-of-onset distributions of dsm-iv disorders in the national comorbidity survey replication},
+journal = {Archives of General Psychiatry},
+volume = {62},
+number = {6},
+pages = {593-602},
+year = {2005},
+doi = {10.1001/archpsyc.62.6.593},
+URL = { + http://dx.doi.org/10.1001/archpsyc.62.6.593},
+eprint = {/data/journals/psych/5219/yoa40305.pdf}
+}
+
+@article{KESSLER1994,
 author = {Kessler, R.C. and McGonagle, K.A. and Zhao, S. and et al},
 title = {Lifetime and 12-month prevalence of dsm-iii-r psychiatric disorders in the united states: Results from the national comorbidity survey},
 journal = {Archives of General Psychiatry},
@@ -172,10 +273,10 @@ pages = {8-19},
 year = {1994},
 doi = {10.1001/archpsyc.1994.03950010008002},
 URL = { + http://dx.doi.org/10.1001/archpsyc.1994.03950010008002},
-eprint = {/data/journals/psych/12561/archpsyc_51_1_002.pdf}
+eprint = {/data/journals/psych/12561/archpsyc_51_1_002.pdf},
 }
 
-@article {JCLP:JCLP10261,
+@article {CAVANAGH2004,
 author = {Cavanagh, K. and Shapiro, D. A.},
 title = {Computer treatment for common mental health problems},
 journal = {Journal of Clinical Psychology},
@@ -185,30 +286,30 @@ publisher = {Wiley Subscription Services, Inc., A Wiley Company},
 issn = {1097-4679},
 url = {http://dx.doi.org/10.1002/jclp.10261},
 doi = {10.1002/jclp.10261},
-pages = {239--251},
+pages = {239-251},
 year = {2004},
 }
 
 @article{RIVA2003,
-title = "VIRTUAL ENVIRONMENTS IN CLINICAL PSYCHOLOGY",
-journal = "Psychotherapy: Theory, Research, Practice, Training",
-volume = "40",
-number = "1/2",
-pages = "68-76",
-year = "2003",
-doi = "https://doi.org/10.1037/0033-3204.40.1/2.68",
-author = "Riva, G."
+title = {Virtual environments in clinical psychology},
+journal = {Psychotherapy: Theory, Research, Practice, Training},
+volume = {40},
+number = {1/2},
+pages = {68-76},
+year = {2003},
+doi = {https://doi.org/10.1037/0033-3204.40.1/2.68},
+author = {Riva, G.},
 }
 
 @article{ROTHBAUM1995,
-title = "Effectiveness of computer-generated (virtual reality) graded exposure in the treatment of acrophobia",
-journal = "The American Journal of Psychiatry",
-volume = "152",
-number = "4",
-pages = "626-628",
-year = "1995",
-doi = "https://doi.org/10.1176/ajp.152.4.626",
-author = "Rothbaum, B.O. and Hodges, L.F. and Kooper, R. and Opdyke, D. and Williford, J.S. and North, M."
+title = {Effectiveness of computer-generated (virtual reality) graded exposure in the treatment of acrophobia},
+journal = {The American Journal of Psychiatry},
+volume = {152},
+number = {4},
+pages = {626-628},
+year = {1995},
+doi = {https://doi.org/10.1176/ajp.152.4.626},
+author = {Rothbaum, B.O. and Hodges, L.F. and Kooper, R. and Opdyke, D. and Williford, J.S. and North, M.},
 }
 
 @article{ROTHBAUM2000,
@@ -240,3 +341,130 @@ pages = "51-56",
 year = "2011",
 author = "Meyerbröker, K. and Morina, N. and Kerkhof, G. and Emmelkamp, P.M."
 }
+
+
+@Article{TASK1996,
+author = {Electrophysiology Task Force of the European Society of Cardiology the North American Society of Pacing},
+title = {Heart Rate Variability},
+journal = {Circulation},
+year = {1996},
+}
+
+@Article{LEVY2016,
+author = {Levy, F. and Leboucher, P. and Rautureau, G. and Jouvent, R.},
+title = {E-virtual reality exposure therapy in acrophobia: A pilot study},
+journal = {Journal of Telemedicine and Telecare},
+year = {2016},
+OPTvolume = {22},
+OPTnumber = {4},
+OPTpages = {215-220},
+}
+@Article{NESSE1985,
+author = {Nesse, M.R. and Curtis, G.C. and Thyer, B.A. and McCann, D.S. and Hubert-Smith, M.J. and Knopf, R.F.},
+title = {Endocrine and Cardiovascular Responses During
+Phobic Anxiety},
+journal = {Psychosomatic Medicine},
+year = {1985},
+OPTvolume = {47},
+OPTnumber = {1},
+}
+% crossreferences used
+@Article{FREEDMAN1994,
+author = {Freedman, L. W. and Scarpa-Scerbo, A. and Dawson, M. E. and Raine, A. and McClure,
+W. O. and Venables, P. H.},
+title = {The relationship of sweat gland count
+to electrodermal activity},
+journal = {Psychophysiology},
+year = {1994},
+}
+
+@Article{SCERBO1992,
+author = {Scerbo, A. S. and Freedman, L. W. and Raine, A. and Dawson, M. E. and Venables,P. H.},
+title = {A major effect of recording site on measurement of electrodermal activity},
+journal = {Psychophysiology},
+year = {1992},
+}
+
+@TechReport{LANG1998,
+author = {Lang, P. J. and Bradley, M. M. and Cuthbert, B. N.},
+title = {International affective picture system (IAPS): Technical Manual and Affective Ratings},
+institution = {Center for Research in Psychophysiology, University of
+Florida, Gainesville},
+year = {1998},
+}
+
+@article {LANG1993,
+author = {LANG, PETER J. and GREENWALD, MARK K. and BRADLEY, MARGARET M. and HAMM, ALFONS O.},
+title = {Looking at pictures: Affective, facial, visceral, and behavioral reactions},
+journal = {Psychophysiology},
+volume = {30},
+number = {3},
+publisher = {Blackwell Publishing Ltd},
+issn = {1469-8986},
+url = {http://dx.doi.org/10.1111/j.1469-8986.1993.tb03352.x},
+doi = {10.1111/j.1469-8986.1993.tb03352.x},
+pages = {261--273},
+keywords = {Emotion, Pictures, Pleasure, Arousal, Interest, Facial expression, Heart rate, Skin conductance, Personality, Imagery ability, Aesthetic behavior, Communications},
+year = {1993},
+}
+
+@Article{AX1953,
+author = {Ax, A.},
+title = {The physiological differentiation between fear and
+anger in humans},
+journal = {Psychosomatic Medicine},
+year = {1953},
+}
+
+@Article{LACEY1963,
+author = {Lacey, J. I. and Kagan, J. and Lacey, B. C. and Moss, H. A.},
+title = {The visceral level: Situational determinants and behavioral correlates of autonomic response patterns. In P. H. Knapp (Ed.), Expression of the Emotions in Man},
+journal = {New York: International Universities Press},
+year = {1963},
+}
+
+@article{PARKER1984,
+title = "Vagal stimulation and cardiac slowing",
+journal = "Journal of the Autonomic Nervous System",
+volume = "11",
+number = "2",
+pages = "226 - 231",
+year = "1984",
+issn = "0165-1838",
+doi = "https://doi.org/10.1016/0165-1838(84)90080-8",
+url = "http://www.sciencedirect.com/science/article/pii/0165183884900808",
+author = "Pamela Parker and B.G. Celler and Erica K. Potter and D.I. McCloskey",
+keywords = "vagus, heart rate, pulse interval"
+}
+
+@article {BERNTSON1997,
+author = "Bernston, G.G. and Bigger, T.J. and Eckberg, D.L. and Grossman, P. and Kaufmann, P.G. and Malik, M. and Nagaraja, H.N. and Porges, S.W. and Saul, J.P. and Stone, P.H. and Van Der Molen, M.W.",
+title = {Heart rate variability: Origins, methods, and interpretive caveats},
+journal = {Psychophysiology},
+volume = {34},
+number = {6},
+publisher = {Blackwell Publishing Ltd},
+issn = {1469-8986},
+url = {http://dx.doi.org/10.1111/j.1469-8986.1997.tb02140.x},
+doi = {10.1111/j.1469-8986.1997.tb02140.x},
+pages = {623--648},
+keywords = {autonomic nervous system, Cardiac chronotropic control, Electrocardiogram, Heart rate, Methodology, Parasympathetic, Respiratory sinus arrhythmia, Sympathetic, Vagal tone},
+year = {1997},
+}
+
+@article {Montano1826,
+author = {Montano, N and Ruscone, T G and Porta, A and Lombardi, F and Pagani, M and Malliani, A},
+title = {Power spectrum analysis of heart rate variability to assess the changes in sympathovagal balance during graded orthostatic tilt.},
+volume = {90},
+number = {4},
+pages = {1826--1831},
+year = {1994},
+doi = {10.1161/01.CIR.90.4.1826},
+publisher = {American Heart Association, Inc.},
+abstract = {BACKGROUND The powers of the low-frequency (LF) and high-frequency (HF) oscillations characterizing heart rate variability (HRV) appear to reflect, in their reciprocal relationship, changes in the state of the sympathovagal balance occurring during numerous physiological and pathophysiological conditions. However, no adequate information is available on the quantitative resolution of this methodology.METHODS AND RESULTS We studied 22 healthy volunteers (median age, 46.5 years) who were subjected after a rest period to a series of passive head-up tilt steps randomly chosen from the following angles: 15 degrees, 30 degrees, 45 degrees, 60 degrees, and 90 degrees. From the continuous ECG, after appropriate analog-to-digital conversion, a personal computer was used to compute, with an autoregressive methodology, time and frequency domain indexes of RR interval variability. Spectral and cross-spectral analysis with the simultaneously recorded respiratory signal excluded its contribution to LF. Age was significantly correlated to variance and to the absolute values in milliseconds squared of very-low-frequency (VLF), LF, and HF components. The tilt angle was correlated to both LF and HF (expressed in normalized units [nu]) and to the LF-to-HF ratio (r = .78, -.72, and .68; respectively). Lower levels of correlation were found with HF (in ms2) and RR interval. No correlation was present between tilt angle and variance, VLF, or LF (in ms2). Individual analysis confirmed that the use of nu provided the greatest consistency of results.CONCLUSIONS Spectral analysis of HRV, using nu or LF-to-HF ratio, appears to be capable of providing a noninvasive quantitative evaluation of graded changes in the state of the sympathovagal balance.},
+issn = {0009-7322},
+URL = {http://circ.ahajournals.org/content/90/4/1826},
+eprint = {http://circ.ahajournals.org/content/90/4/1826.full.pdf},
+journal = {Circulation},
+}
+

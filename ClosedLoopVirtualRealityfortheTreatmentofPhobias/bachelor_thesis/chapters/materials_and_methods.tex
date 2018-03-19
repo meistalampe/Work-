@@ -88,6 +88,13 @@ To guarantee a satisfying experience a minimum room size of 2m x 1.5m with a max
 \subsubsection{BITalino}
 The BITalino (r)evolution Plugged kit is an innovative low-cost toolkit that was developed for rapid prototyping of wearable devices and biomedical signal acquisition. The main board, or BITalino Core, is comprised of for major components, the Microcontroller (MCU) Block, the Bluetooth Block, the Power Block with the device's own LiPo battery and the UC-E6 connectors. The MCU features 12 ports, which are divided into 8 analog and 4 digital ports. Of the 7 separately included BITalino sensors, which are connected via cable, only the EDA sensor and the ECG sensor were used. The data is recorded with one of the 4 preset sampling rates and then sent to the user's computer, via a Bluetooth connection. The BITalino is supported by a number of platforms, such Matlab and Unity, allowing for easy implementation in almost any data acquisition process.\\
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{images/BitOverview.png}
+\caption{Graphical overview of the BITalino device including all functional blocks.}
+\label{bitImg}
+\end{figure}
+
 \textbf{Specifications}
 \begin{itemize}
 \item Analog Ports: 4 in (10-bit) + 2 in (6-bit) + 1 auxiliary in (battery) + 1 out (8-bit)
@@ -250,9 +257,26 @@ In this section all methods that were applied to the measured data in preparatio
 %-load from txt
 The initial step was to import the text file, into which the data was saved, to the Matlab program. The recorded raw data was then extracted and stored into a one-dimensional array, allowing for further editing.
 %raw data adjustment
+The second step was the raw data adjustment where we converted the sampled data into units of micro Siemens. The values were sampled from channels A1 and A2 of the BITalino device, for EDA and ECG respectively, and 10 bit coded (see \ref{BitImg}).
+The adjustment was achieved by applying the transfer functions given in the sensor's data sheets.
 
+\begin{equation}\label{transfECG}
+ECG(mV) = \frac{\frac{ADC}{2^{n}}-\frac{1}{2}}{G_{ECG}} \cdot VCC \cdot 1000 
+\end{equation}
 
-
+This process is shown in the equation above. To obtain the ECG data in units of mV from the sampled raw data (ADC), we had to include the operating voltage (VCC) of 3.3V and the sensor gain ($G_{ECG}$) of 1100 as well as the number of bits of the channel (n) into the calculations.
+Accordingly, we conducted adjustments to the EDA raw data, using the following transfer function. Again ADC, VCC and n were the sampled raw data, operating voltage and number of bits of the channel, respectively. 
+ 
+\begin{equation}\label{transfEDA}
+EDA (\mu S) = \frac{\frac{ADC}{2^{n}}}{0.132} \cdot VCC
+\end{equation}
+%\begin{equation}\label{transfEDA}
+%R(M\Omega) = 1-\frac{ADC}{2^{n}}
+%\end{equation}
+%
+%\begin{equation}\label{transfEDA1}
+%EDA(\mu S) = \frac{1}{R(M\Omega)}
+%\end{equation}
 %-cutoff
 To negate signal artifacts at the start of the measurement the first 20 seconds of data were cut off, by removing an equivalent number of samples from the array. The number of samples was calculated using the following equation, with N = number of samples, Fs = sampling frequency and t = removed time interval.
 
@@ -298,14 +322,18 @@ The result was a frequency domain representation of the raw signal data, accordi
 \label{fftEDAImg}
 \end{figure}
 
+Once the general preprocessing of the data was finished we continued by applying individual methods to each data set.
+
+\subsubsection{ECG Processing}
+%-filter
+In regard to the result of the fft analysis we decided to use 
 \subsubsection{EDA Processing}
-%-adjust from raw
+
 %-filter
 
 %-substract baseline
-\subsubsection{ECG Processing}
-%-adjust from raw
-%-filter
+
+
 \subsection{Feature Extraction}
 %-time vector
 % first step visual inspection of the signal
