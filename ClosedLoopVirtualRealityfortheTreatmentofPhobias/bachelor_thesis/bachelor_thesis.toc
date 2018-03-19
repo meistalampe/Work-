@@ -60,14 +60,13 @@
 \contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{44}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Data Processing}{45}{subsection.2.2.5}
 \contentsline {subsubsection}{\nonumberline General Processing}{45}{section*.56}
-\contentsline {subsubsection}{\nonumberline EDA Processing}{45}{section*.57}
-\contentsline {subsubsection}{\nonumberline ECG Processing}{45}{section*.58}
-\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{45}{subsection.2.2.6}
-\contentsline {chapter}{\numberline {3}Results}{46}{chapter.3}
-\contentsline {chapter}{\numberline {4}Discussion}{47}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{48}{chapter.5}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{49}{appendix.A}
-\contentsline {chapter}{List of Figures}{50}{appendix.A}
-\contentsline {chapter}{List of Tables}{51}{chapter*.59}
-\contentsline {chapter}{List of Abbreviations}{51}{chapter*.60}
-\contentsline {chapter}{Bibliography}{52}{chapter*.60}
+\contentsline {subsubsection}{\nonumberline EDA Processing}{47}{section*.59}
+\contentsline {subsubsection}{\nonumberline ECG Processing}{47}{section*.60}
+\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{47}{subsection.2.2.6}
+\contentsline {chapter}{\numberline {3}Results}{48}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discussion}{49}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{50}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{51}{appendix.A}
+\contentsline {chapter}{List of Figures}{52}{appendix.A}
+\contentsline {chapter}{List of Tables}{53}{chapter*.61}
+\contentsline {chapter}{Bibliography}{54}{chapter*.62}
