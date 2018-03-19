@@ -115,7 +115,7 @@ a) the CMU (see \ref{CMU}) is located in the same local network as the VRU\\
 b) the functions of VRU and CMU are handled by a single computer\footnote{If this variant is used, a Bluetooth adapter is required to connect to the BITalino device.}\\[10pt]
  
 \subsubsection{Control and Measurement Unit (CMU)}\label{CMU}
-In the early design phase the CMU was conceptualized as a part of the VRU, but it was then separated in regard to its intended use as a mobile control device, for the therapist to use during therapy. However, in our experiment a Laptop served as CMU. The CMU enables the user to submit orders to the VRU, control the BITalino, as well as to view the preprocessed Data. To find detailed explanations to the functions mentioned above, see \ref{Methods}.
+In the early design phase the CMU was conceptualized as a part of the VRU, but it was then separated in regard to its intended use as a mobile control device for the therapist during the therapy. However, in our experiment a Laptop served as CMU. The CMU enables the user to submit orders to the VRU, control the BITalino, as well as to view the preprocessed Data. To find detailed explanations to the functions mentioned above, see \ref{Methods}.
 
 %\subsubsection*{Conclusion}
 %In conclusion it can be said that the system at hand certainly is built to perform on a minimum budget but also be applicable to a number of clinical applications, particularly the treatment of phobias
@@ -215,21 +215,65 @@ Additionally the infrared connection between the base stations of the Lighthouse
 \subsection{Virtual Reality Control}\label{VRControl}
 One of the major challenges, we were confronted with during this project, was to find a method that would allow for a reliable information transport between VRU and CMU. We have decided on a TCP/IP solution for this problem. This allowed for a loss-free data transmission between the two terminals. 
 %The connection between server and client is established by assigning a specific port and IP-addresses.
+We used Microsoft Visual Studio to create a server in form of a script that reads incoming data streams, sent to the VRU's IP-address. The server was programmed to accept data from any client sending data to the specific port 8632. The data, contained in the stream, could only be read in sequential blocks. These blocks then had to be encoded into a sequence of bytes. Finally, by using specific converting methods for each data type, the information was extracted from the byte array and stored into the assigned variables. Since the script was attached to a game object inside the Unity environment we were able to make these variables accessible to the rest of the virtual reality and thus control certain game objects, such as the floor or the lighting. To control game objects or more precisely a certain aspect of them additional scripts were needed. These control scripts were designed to access the respective component of the game object we wanted to control and frequently update the component's variables with the values retrieved from the server script. For example if information was sent to lower the platform, the associated script would load the position variable of the transform component of the platform and override the current value with the new value, which was imported from the server script. Once this happened the changes to the game objects were immediately applied and therefore the virtual experience was altered.\\
 
-We used the Unity network engine to create a server script that reads incoming data streams, sent to the VRU's IP-address and the specific port 8632. The received data was read into a string format
+As mentioned earlier the server is built to accept data from any client. However, one additional condition had to be met to guarantee the information could be understood by the server. The data had to be sent as an array, containing all 12 variables in a specific order. During the experiment the data was sent from the CMU, using Matlab. Similar to the Unity server we have created a Matlab client that allowed the user to enter the desired values and then automatically built and sent the data array.
 
+%
+%\begin{table}[h]
+% \caption{Data Array}
+% \begin{tabular}{|c|c|c|c|}
+% 	Position & Variable & Type & Values \\
+% 	1 &  &  & \\
+% 	2 &  &  & \\
+% 	3 &  &  & \\
+% 	4 &  &  & \\
+% 	5 &  &  & \\
+% 	6 &  &  & \\
+% 	7 &  &  & \\
+% 	8 &  &  & \\
+% 	9 &  &  & \\
+% 	10 &  &  & \\
+% 	11 &  &  & \\
+% 	12 &  &  & \\
+% \end{tabular}
+% \label{dataArray}
+% \end{table}
 
-- variables in the array , tabelle vllt--- array slot, variable name, variable type, possible values
-\subsubsection{Information}
 \subsection{Data Acquisition}
-We obtained high-resolution (1000Hz) ECG and EDA measures for the entirety of the experiment, which lasted 20 minutes on average, using the BITalino (r)evolution. For EDA two electrodes were applied to the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the thorax according to figure \ref{SetupImg}. The data was send to the CMU and saved in text format. Afterwards the data was processed for further evaluation, using Matlab.
+We obtained high-resolution (1000Hz) ECG and EDA measures for the entirety of the experiment, which lasted 20 minutes on average, using the BITalino (r)evolution. For EDA two electrodes were applied to the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the thorax according to figure \ref{setupImg}. The data was send to the CMU and saved in text format. Afterwards the data was processed for further evaluation, using Matlab.
 
 \subsection{Data Processing}
--load from txt
--adjust from raw
--filter
+In this section all methods that were applied to the measured data in preparation for the feature extraction. This section is divided into two parts, general processing that was done to both data sets and individual processing methods for each ECG and EDA.
 
-\subsubsection{Feature Extraction}
+\subsubsection{General Processing}
+%-load from txt
+The initial step was to import the text file, into which the data was saved, to the Matlab program. The recorded raw data was then extracted and stored into a one-dimensional array, allowing for further editing.
+%-cutoff
+To negate signal artifacts at the start of the measurement the first 20 seconds of data were cut off, by removing an equivalent number of samples from the array. The number of samples was calculated using the following equation, with N = number of samples, Fs = sampling frequency and t = removed time interval.
+
+\begin{equation}\label{NumberSamples}
+N = Fs * t
+\end{equation} 
+
+%-fft
+\begin{align}\label{fft}
+&X(j) = \frac{1}{n} \sum\limits_{k=1}^n Y(k) W_{n}^{-(j-1)(k-1)} \\
+&W_{n} = e^{(-2\pi t)/n}
+\end{align} 
+
+\subsubsection{EDA Processing}
+%-adjust from raw
+%-filter
+
+%-substract baseline
+\subsubsection{ECG Processing}
+%-adjust from raw
+%-filter
+\subsection{Feature Extraction}
+%-time vector
+
+
 
 %- how many subjects did participate?\\
 %- which tasks did the patients fullfill? (cross the bridge etc.)\\

@@ -57,15 +57,17 @@
 \contentsline {subsubsection}{\nonumberline Subject instruction}{43}{section*.54}
 \contentsline {subsubsection}{\nonumberline VR initialization}{44}{section*.55}
 \contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{44}{subsection.2.2.3}
-\contentsline {subsubsection}{\nonumberline Information}{44}{section*.56}
 \contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{44}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Signal Processing}{44}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{44}{subsection.2.2.6}
-\contentsline {chapter}{\numberline {3}Results}{45}{chapter.3}
-\contentsline {chapter}{\numberline {4}Discussion}{46}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{47}{chapter.5}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{48}{appendix.A}
-\contentsline {chapter}{List of Figures}{49}{appendix.A}
-\contentsline {chapter}{List of Tables}{50}{chapter*.57}
-\contentsline {chapter}{List of Abbreviations}{50}{chapter*.58}
-\contentsline {chapter}{Bibliography}{51}{chapter*.58}
+\contentsline {subsection}{\numberline {2.2.5}Data Processing}{45}{subsection.2.2.5}
+\contentsline {subsubsection}{\nonumberline General Processing}{45}{section*.56}
+\contentsline {subsubsection}{\nonumberline EDA Processing}{45}{section*.57}
+\contentsline {subsubsection}{\nonumberline ECG Processing}{45}{section*.58}
+\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{45}{subsection.2.2.6}
+\contentsline {chapter}{\numberline {3}Results}{46}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discussion}{47}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{48}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{49}{appendix.A}
+\contentsline {chapter}{List of Figures}{50}{appendix.A}
+\contentsline {chapter}{List of Tables}{51}{chapter*.59}
+\contentsline {chapter}{List of Abbreviations}{51}{chapter*.60}
+\contentsline {chapter}{Bibliography}{52}{chapter*.60}
