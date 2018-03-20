@@ -18,21 +18,21 @@ dlg_title = 'Input';
 num_lines = 1;
 answer = inputdlg(prompt,dlg_title,num_lines);
 
-fprintf('Processing...\n');
-
 % answers
-s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
+%s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
+s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
 s2 = answer{1,1};
 signalname = strcat(s1,s2);
 
 Fs = str2double(answer{2,1});
 channel = str2double(answer(3,1));
-filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
-
+% filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
+filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
 % load
 % dlmread needs a filename, the delimiter, the number of rows of the
 % header, and the starting row to read
-data = dlmread(signalname,'\t', 3, 0);
+% data = dlmread(signalname,'\t', 3, 0);
+ data = dlmread(signalname,',', 3, 0);
 % the signal is extracted from the data matrix, channel number needed
 signal = data(:,channel);
 nSamples = length(data);
@@ -54,7 +54,8 @@ signal_adj = ((((signal./(2.^10))-0.5) .* 3.3)./ 1100) .* 1000;
 % ########################################################################
 
 % calculate number of samples to remove
-cSamples = 20*Fs;
+ct = 3;
+cSamples = ct*Fs;
 % remove cSamples from both ends
 signal_co = signal_adj(cSamples:(end-cSamples));
 time_co = time(cSamples:(end-cSamples));
@@ -207,7 +208,17 @@ legend('ECG signal','Q-wave','R-wave','S-wave','Q-pre','S-post');
 
 %% Feature extraction own
 
+[pks,locs,w,p] = findpeaks(signal_filt,'MinPeakHeight',0.9,...
+                                    'MinPeakDistance',500);
 
+figure;
+hold on;
+plot(signal_filt);
+plot(locs,pks,'+');
+title 'pks'
+xlabel 'samples'
+ylabel 'amp'
+hold off;
 
 
 
