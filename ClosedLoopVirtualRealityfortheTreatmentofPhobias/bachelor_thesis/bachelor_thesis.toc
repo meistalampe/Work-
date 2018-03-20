@@ -60,8 +60,8 @@
 \contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{45}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Data Processing}{45}{subsection.2.2.5}
 \contentsline {subsubsection}{\nonumberline General Processing}{45}{section*.57}
-\contentsline {subsubsection}{\nonumberline EDA Processing}{47}{section*.60}
-\contentsline {subsubsection}{\nonumberline ECG Processing}{47}{section*.61}
+\contentsline {subsubsection}{\nonumberline ECG Processing}{47}{section*.60}
+\contentsline {subsubsection}{\nonumberline EDA Processing}{47}{section*.61}
 \contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{47}{subsection.2.2.6}
 \contentsline {chapter}{\numberline {3}Results}{49}{chapter.3}
 \contentsline {chapter}{\numberline {4}Discussion}{50}{chapter.4}

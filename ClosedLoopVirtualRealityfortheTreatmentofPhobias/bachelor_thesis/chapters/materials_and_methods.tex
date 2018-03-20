@@ -257,8 +257,8 @@ In this section all methods that were applied to the measured data in preparatio
 %-load from txt
 The initial step was to import the text file, into which the data was saved, to the Matlab program. The recorded raw data was then extracted and stored into a one-dimensional array, allowing for further editing.
 %raw data adjustment
-The second step was the raw data adjustment where we converted the sampled data into units of micro Siemens. The values were sampled from channels A1 and A2 of the BITalino device, for EDA and ECG respectively, and 10 bit coded (see \ref{BitImg}).
-The adjustment was achieved by applying the transfer functions given in the sensor's data sheets.
+The second step was raw data adjustment. Where we converted the sampled data into units of micro Siemens. The values were sampled from channels A1 and A2 of the BITalino device, for EDA and ECG respectively, and 10 bit coded (see \ref{BitImg}).
+The adjustment was achieved by applying the transfer functions given in the sensor's data sheet.
 
 \begin{equation}\label{transfECG}
 ECG(mV) = \frac{\frac{ADC}{2^{n}}-\frac{1}{2}}{G_{ECG}} \cdot VCC \cdot 1000 
@@ -285,7 +285,7 @@ N = Fs * t
 \end{equation} 
 
 %-fft
-After cutting, the signals had to be filtered to ensure quality feature extraction was possible. Therefore we have analyzed the signal in regard to its frequency components using a fast Fourier transform (FFT) algorithm \ref{fft1}. The discrete Fourier transform (DFT) was computed by the predefined Matlab function \ref{fft}, which returned the n-point DFT for a time domain signal vector X. To increase the performance of the fft we have specified the transform length as the power of 2 value closest to the signal length L. 
+After cutting, the signals had to be filtered to ensure quality feature extraction was possible. Therefore we have analyzed the signal in regard to its frequency components using a fast Fourier transform (FFT) algorithm \ref{fft1}. The discrete Fourier transform (DFT) was computed with the predefined Matlab function \ref{fft}, which returned the n-point DFT for a time domain signal vector X. To increase the performance of the fft we have specified the transform length as the power of 2 value closest to the signal length L. We then defined the frequency domain (0Hz-500Hz) and plotted the unique frequencies P.
 
 \begin{equation}\label{fft}
 Y = fft(X,n) \\
@@ -306,7 +306,7 @@ W_{n} = e^{(-2\pi t)/n}
 \end{equation}
 is one of n roots of unity.\\
 
-The result was a frequency domain representation of the raw signal data, according to which the noise filters were designed. An example of a typical EDA measure is shown in figure \ref{rawEDAImg}. Using the FFT we were able to locate noise frequencies, such as the 50 Hz main hum, and potential movement artifacts in the higher frequency areas (see figure \ref{fftEDAImg}).
+The result was a frequency domain representation of the raw signal data, according to which the noise filters were designed. An example of a typical EDA measure is shown in figure \ref{rawEDAImg}. Using the FFT we were able to locate noise frequencies, such as the 50 Hz power line interference, and potential movement artifacts in the higher frequency areas (see figure \ref{fftEDAImg}).
 
 \begin{figure}[ht]
 \centering
@@ -322,14 +322,20 @@ The result was a frequency domain representation of the raw signal data, accordi
 \label{fftEDAImg}
 \end{figure}
 
-Once the general preprocessing of the data was finished we continued by applying individual methods to each data set.
+Once the general preprocessing of the data was finished we continued by applying specific filtering methods to each signal in regard to the FFT results.
 
 \subsubsection{ECG Processing}
 %-filter
-In regard to the result of the fft analysis we decided to use 
+Our main goal was to enhance the ECG signal for optimized feature extraction, particularly heart rate (HR) and heart rate variation (HRV). We therefore have tried two different approaches of filtering. The first method involved a Savitzky-Golay FIR smoothing filter that was part of an algorithm specifically designed for the BITalino device and recommended by the producing company. Savitzky-Golay filter are usually used on signals that have a large frequency span even without noise. Considering that, frequencies from 0.01Hz to 250Hz are contained in a typical ECG signal it seemed appropriate to use it \cite{tan2013digital}.
+The second method was based on literature and the evaluation of the frequency analysis.
+As the frequency analysis had shown a spike at 50 Hz, which was most likely caused by the power line interference, we applied a notch filter with a notch frequency f0 of 50Hz and a notch width of 0,1 Hz to eliminate the 50Hz hum from our signal.
+In addition to this we had to remove muscle noise, which may occured at approximately 40Hz and removed the effects of a possible DC drift \cite{tan2013digital}.
+After detrending, using the Matlab function \textit{detrend(X)} we used a Butterworth bandpass filter with a bandpass from 5 Hz to 26 Hz and filter order 4. This filter provided a magnitude response that is maximally flat in the passband and monotonic overall.  
+
 \subsubsection{EDA Processing}
 
 %-filter
+
 
 %-substract baseline
 
