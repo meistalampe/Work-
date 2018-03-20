@@ -19,15 +19,15 @@ num_lines = 1;
 answer = inputdlg(prompt,dlg_title,num_lines);
 
 % answers
-%s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
-s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
+s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
+%s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
 s2 = answer{1,1};
 signalname = strcat(s1,s2);
 
 Fs = str2double(answer{2,1});
 channel = str2double(answer(3,1));
-% filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
-filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
+ filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
+%filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
 % load
 % dlmread needs a filename, the delimiter, the number of rows of the
 % header, and the starting row to read
@@ -47,6 +47,7 @@ time = linspace(0,signalTime,nSamples);
 % ########################################################################
 
 % Scale the signal per the specifications of the sensor
+%signal_adj = ((((signal./((2.^10)-1))-0.5) .* 3.3)./ 1100) .* 1000;
 signal_adj = ((((signal./(2.^10))-0.5) .* 3.3)./ 1100) .* 1000;
 
 % ########################################################################
@@ -54,7 +55,7 @@ signal_adj = ((((signal./(2.^10))-0.5) .* 3.3)./ 1100) .* 1000;
 % ########################################################################
 
 % calculate number of samples to remove
-ct = 3;
+ct = 15;
 cSamples = ct*Fs;
 % remove cSamples from both ends
 signal_co = signal_adj(cSamples:(end-cSamples));
@@ -88,8 +89,6 @@ title('ECG in Frequency Domain')
 xlabel('Frequency (f)')
 ylabel('|P(f)|')
 
-
-
 % ########################################################################
 % detrend
 % ########################################################################
@@ -116,27 +115,28 @@ notchZeros = [exp( sqrt(-1)*pi*freqRatio ), exp( -sqrt(-1)*pi*freqRatio )];
 
 % Compute poles
 notchPoles = (1-notchWidth) * notchZeros;
-
-figure;
-zplane(notchZeros.', notchPoles.');
+% 
+% figure;
+% zplane(notchZeros.', notchPoles.');
 
 b = poly( notchZeros ); % Get moving average filter coefficients
 a = poly( notchPoles ); % Get autoregressive filter coefficients
-
-figure;
-freqz(b,a,32000,Fs)
+% 
+% figure;
+% freqz(b,a,32000,Fs)
 
 % apply notch filter
 signal_notch = filter(b,a,signal_dt);
 
+% signal_notch = notch50Hz(signal_dt);
 % create bandpass filter
-[b, a] = butter(4, [5 26]/Fn);
+[b, a] = butter(4, [5 24]/Fn);
 % fvtool(b,a);
 
 % apply bandpass filter
 signal_filt = filtfilt(b, a,signal_notch);
-
-% plot filtered signal
+% signal_filt = sgolayfilt(signal_notch, 7, 41);
+%plot filtered signal
 
 figure;
 hold on;
@@ -146,81 +146,156 @@ xlabel 'time [s]';
 ylabel 'voltage [mV] ';
 hold off;
 
-% Filter the scaled signal using a Savitzky-Golay filter
-ECG_data = sgolayfilt(signal_co, 7, 35);
+% ########################################################################
+% normalize
+% ########################################################################
 
+% cut artifacts that fake maxima
+signal_filt(550*Fs:end) = [];
+time_co(550*Fs:end) = [];
 
-%% Feature extraction Bit way
-t = 1:length(ECG_data);
-[~,locs_Rwave] = findpeaks(ECG_data,'MinPeakHeight',0.9,...
-                                    'MinPeakDistance',500);
+signal_min = min(signal_filt);
+signal_max = max(signal_filt);
+signal_mag = abs(signal_min-signal_max);
+signal_norm = (signal_filt - signal_min)./signal_mag;
 
-% Remove Edge Wave Data
-locs_Rwave(locs_Rwave < 150 | locs_Rwave > (length(ECG_data) - 150)) = [];
-locs_Qwave = zeros(length(locs_Rwave),1);
-locs_Swave = zeros(length(locs_Rwave),1);
-locs_Qpre  = zeros(length(locs_Rwave),1);
-locs_Spost = zeros(length(locs_Rwave),1);
-QRS = zeros(length(locs_Rwave),1);
-
-% Find Q and S waves in the signal
-for ii = 1:length(locs_Rwave)
-    window = ECG_data((locs_Rwave(ii)-80):(locs_Rwave(ii)+80));
-    [d_peaks, locs_peaks] = findpeaks(-window, 'MinPeakDistance',40);
-    [d,i] = sort(d_peaks, 'descend');
-    locs_Qwave(ii) = locs_peaks(i(1))+(locs_Rwave(ii)-80);
-    locs_Swave(ii) = locs_peaks(i(2))+(locs_Rwave(ii)-80);
-    [d_QRS, locs_QRS] = findpeaks(window, 'MinPeakDistance', 10);
-    [max_d, max_i] = max(d_QRS);
-    locs_Q_flat = locs_QRS(max_i-1);
-    locs_S_flat = locs_QRS(max_i+1);
-    locs_Qpre(ii)  = locs_Q_flat+(locs_Rwave(ii)-80);
-    locs_Spost(ii) = locs_S_flat+(locs_Rwave(ii)-80);
-    QRS(ii) = locs_S_flat - locs_Q_flat;
-end
-
-% Calculate the heart rate
-myqrs = median(QRS);
-myheartrate = 60 ./ (median(diff(locs_Rwave)) ./ 1000);
-
-locs_all = [locs_Qwave; locs_Rwave; locs_Swave; locs_Qpre; locs_Spost];
-ECG_all  = ECG_data(locs_all);
-
-[d,i] = sort(locs_all);
-ECG_sort = ECG_all(i);
-
-%Visualize the Raw Data and Measured Heart Rate
-
-figure
-hold on
-plot(t,ECG_data);
-plot(locs_Qwave,ECG_data(locs_Qwave),'rs','MarkerFaceColor','g');
-plot(locs_Rwave,ECG_data(locs_Rwave),'rv','MarkerFaceColor','r');
-plot(locs_Swave,ECG_data(locs_Swave),'rs','MarkerFaceColor','b');
-plot(locs_Qpre, ECG_data(locs_Qpre), 'r>','MarkerFaceColor','c');
-plot(locs_Spost,ECG_data(locs_Spost),'r<','MarkerFaceColor','m');
-grid on
-% Adjust the plot to show 8 seconds worth of measurements
-ylim([-1 2]);
-title(sprintf('QRS = %f ms,  Heart Rate = %f / min', myqrs, myheartrate));
-xlabel('Samples'); ylabel('Voltage(mV)')
-legend('ECG signal','Q-wave','R-wave','S-wave','Q-pre','S-post');
+% square
+% signal_square = signal_norm .^2;
 
 %% Feature extraction own
 
-[pks,locs,w,p] = findpeaks(signal_filt,'MinPeakHeight',0.9,...
-                                    'MinPeakDistance',500);
+[pks,locs,w,p] = findpeaks(signal_norm,'MinPeakHeight',0.6);
 
 figure;
 hold on;
-plot(signal_filt);
-plot(locs,pks,'+');
-title 'pks'
+plot(signal_norm);
+plot(locs,signal_norm(locs),'rv','MarkerFaceColor','r');
+%plot(locs,pks,'o');
+title 'R-spikes'
 xlabel 'samples'
-ylabel 'amp'
+ylabel 'normalized amplitude'
 hold off;
 
+%% RR-distance
 
+signal_diff = diff(locs);
+signal_diff = signal_diff ./Fs ;
+
+
+%% instantaneous HR
+iHR = zeros(1,length(signal_diff));
+for i = 1:length(signal_diff)
+iHR(i) = 60 / signal_diff(i);
+end
+
+figure;
+hold on;
+plot(iHR);
+title 'iHR'
+xlabel 'samples'
+ylabel 'iHR'
+hold off;
+
+% locs in time domain
+locs_time = locs ./ Fs;
+
+% calculate the distances between the R waves in Samples
+peakInterval = diff(locs);
+peakInterval_time = diff(locs_time);
+
+% create a vector with heartrate data
+heartrate_calc = zeros(1,length(peakInterval));
+
+% calculate the heartrate
+for u = 1:length(peakInterval)
+    
+    heartrate_calc(u) = (Fs/peakInterval(u))*60;
+end
+
+% create a vector heartrateSample
+heartrateSample  = zeros(1,length(peakInterval));
+
+% position the calculated heartarte value to the right sample
+for v = 1:length(peakInterval)
+    
+    heartrateSample(v) = ceil(locs(v) + (peakInterval(v)/2));
+end
+
+
+% create vector with the same length as trial with the heartrate data
+% fill it with the heartrate values at the right sample points
+
+ counter = 1;
+ heart_int = zeros(1,length(signal_norm));
+ 
+ 
+ for z = 1:max(heartrateSample)
+     
+    if (heartrateSample(counter) == z)
+     
+       heart_int(z) = heartrate_calc(counter);
+       counter = counter +1;
+        
+    end   
+ end
+ 
+ valuepositions = find(heart_int > 0);
+ first_position = valuepositions(1);
+ last_position  = valuepositions(end);
+ 
+ % Fill the rest of the vector with interpolated values for displaying
+for l =  first_position : last_position
+
+    % values smaller than 50 b/m  -> bradykardie (heart_int(l) < 50)
+    if heart_int(l+1) == 0   
+        
+        heart_int(l+1) = heart_int(l);
+    end
+
+end
+
+
+heartrate = heart_int;
+
+
+
+%% lomb scargle power plot
+% of the RR Interval data with gaps
+% The typical frequency bands of interest in HRV spectra are:
+% 
+% Very Low Frequency (VLF), from 3.3 to 40 mHz,
+% Low Frequency (LF), from 40 to 150 mHz,
+% High Frequency (HF), from 150 to 400 mHz.
+
+% These bands approximately confine the frequency ranges of the distinct 
+% biological regulatory mechanisms that contribute to HRV.
+% Fluctuations in any of these bands have biological significance.
+
+
+% Derive the HRV signal
+tHRV = locs_time(2:end);
+HRV = 1./peakInterval_time;
+
+% Plot the signals
+figure;
+plot(tHRV,HRV)
+xlabel('Time(s)')
+ylabel('HRV (Hz)')
+
+figure;
+hist(peakInterval_time);
+title 'histogram of the peak separations in seconds';
+grid on;
+xlabel('Sampling interval (s)');
+ylabel('RR distribution');
+
+figure;
+plomb(HRV,tHRV,'Pd',[0.95, 0.5]);
+
+% The dashed lines denote 95
+% and 50% detection probabilities.
+%These thresholds measure the statistical significance of peaks. 
+%The spectrum shows peaks in all three bands of interest listed above.
 
 %% Code Storage
 % % filtering ecg

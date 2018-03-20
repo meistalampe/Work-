@@ -3,6 +3,9 @@ function [ heartrate,MeanRR,SDNN,RMSSD,mean_heartrate,std_heartrate,heartrate_co
 % This function finds R wave peaks in ecg signal and calculates the heartrate signal.
 % It analyses the RR Intervals with by doing a lomb spectral analysis.
 
+signal  = signal_filt;
+time = time_co;
+Fs = 100;
 % load kernel
 load('kernel.mat','kernelqrs_norm');
 
@@ -31,7 +34,7 @@ hold off;
 grid on;
  
 % find all R wavemagnitudes
-[pks,locs_Rwave] = findpeaks(ecgRspikes,'MinPeakHeight',0.9,...
+[pks,locs_Rwave] = findpeaks(ecgRspikes,'MinPeakHeight',0.3,...
                                     'MinPeakDistance',150);
  
                                                                                        
