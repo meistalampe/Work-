@@ -13,146 +13,105 @@ clear;
 close all;  
 
 % dialogbox settings
-prompt = {'Enter signal name:','Enter Sampling Frequency:','Enter Channel Number:'};
+prompt = {'Enter signal name:','Enter Sampling Frequency:','Enter Channel Number:','Enter baseline name:'};
 dlg_title = 'Input';
 num_lines = 1;
 answer = inputdlg(prompt,dlg_title,num_lines);
 
 % answers
-s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
-%s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Raw Data Archive\';
+%s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
 s2 = answer{1,1};
 signalname = strcat(s1,s2);
 
+%b1 ='F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+b1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+b2 = answer{4,1};
+baselinename = strcat(b1,b2);
+
 Fs = str2double(answer{2,1});
 channel = str2double(answer(3,1));
- filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
-%filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\ECG_Analysis\Save folder';
-% load
+%filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
+filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
+
+
+% load raw data
 % dlmread needs a filename, the delimiter, the number of rows of the
 % header, and the starting row to read
-% data = dlmread(signalname,'\t', 3, 0);
- data = dlmread(signalname,',', 3, 0);
+
+
+% tab separated read
+% signal_data = dlmread(signalname,'\t', 3, 0);
+ baseline_data = dlmread(baselinename,'\t', 3, 0);
+
+% comma separated read
+signal_data = dlmread(signalname,',', 3, 0);
+%baseline_data = dlmread(baselinename,',', 3, 0);
+
 % the signal is extracted from the data matrix, channel number needed
-signal = data(:,channel);
-nSamples = length(data);
-signalTime = nSamples/Fs;
+signal = signal_data(:,channel);
+nSamples = length(signal_data);
+
+baseline = baseline_data(:,6);
+bSamples = length(baseline_data);
+
+nSignalTime = nSamples/Fs;
+bSignalTime = bSamples/Fs;  % baseline must be sampled with the same frequency
+
 % create a timeline starting at 0 and with the length of the signal
-time = linspace(0,signalTime,nSamples);
-% time = 0:1/Fs:signalTime;
-%% PreProcessing Data
- 
-% ########################################################################
-% data adjustment
-% ########################################################################
+ntime = linspace(0,nSignalTime,nSamples);
+btime = linspace(0,bSignalTime,bSamples);
 
-% Scale the signal per the specifications of the sensor
-%signal_adj = ((((signal./((2.^10)-1))-0.5) .* 3.3)./ 1100) .* 1000;
-signal_adj = ((((signal./(2.^10))-0.5) .* 3.3)./ 1100) .* 1000;
-
-% ########################################################################
-% cutoff
-% ########################################################################
-
-% calculate number of samples to remove
-ct = 15;
-cSamples = ct*Fs;
-% remove cSamples from both ends
-signal_co = signal_adj(cSamples:(end-cSamples));
-time_co = time(cSamples:(end-cSamples));
-
-% plot adjusted and cut signal
-
-figure;
-plot(time_co,signal_co);
-title('ECG Time Domain')
-xlabel('Time (t)')
-ylabel('X(t)')
-
-% ########################################################################
-% fft
-% ########################################################################
-
-L = length(time_co);
-n = 2^nextpow2(L);
-% Convert the Signal to the frequency domain.
-Y = fft(signal_co,n);
-% Define the frequency domain and plot the unique frequencies.
-f = Fs*(0:(n/2))/n;
-P = abs(Y/n);
-
-% plot frequency domain representation Y
-
-figure;
-plot(f,P(1:n/2+1)) 
-title('ECG in Frequency Domain')
-xlabel('Frequency (f)')
-ylabel('|P(f)|')
-
-% ########################################################################
-% detrend
-% ########################################################################
-
-signal_dt = detrend(signal_co);
-
-% ########################################################################
-% filtering
-% ########################################################################
-
-% Nyquist frequency
-Fn = Fs/2;
-
-% create 50 Hz filter to counter the line interference
-
-f0 = 50;                % notch frequency
-
-freqRatio = f0/Fn;      % ratio of notch freq. to Nyquist freq.
-
-notchWidth = 0.1;       % width of the notch
-
-% Compute zeros
-notchZeros = [exp( sqrt(-1)*pi*freqRatio ), exp( -sqrt(-1)*pi*freqRatio )];
-
-% Compute poles
-notchPoles = (1-notchWidth) * notchZeros;
-% 
-% figure;
-% zplane(notchZeros.', notchPoles.');
-
-b = poly( notchZeros ); % Get moving average filter coefficients
-a = poly( notchPoles ); % Get autoregressive filter coefficients
-% 
-% figure;
-% freqz(b,a,32000,Fs)
-
-% apply notch filter
-signal_notch = filter(b,a,signal_dt);
-
-% signal_notch = notch50Hz(signal_dt);
-% create bandpass filter
-[b, a] = butter(4, [5 24]/Fn);
-% fvtool(b,a);
-
-% apply bandpass filter
-signal_filt = filtfilt(b, a,signal_notch);
-% signal_filt = sgolayfilt(signal_notch, 7, 41);
-%plot filtered signal
-
-figure;
-hold on;
-plot(time_co,signal_filt);
-title 'bit ecg: filtered';
-xlabel 'time [s]';
-ylabel 'voltage [mV] ';
-hold off;
-
+signal_filt = ecg_filter(signal,ntime,Fs,filepath);
+baseline_filt = ecg_filter(baseline,btime,Fs,filepath);
 % ########################################################################
 % normalize
 % ########################################################################
 
+% findpks
+
+[apks,alocs]=findpeaks(signal_filt, 'MinPeakHeight', 0.35 );
+
+figure;
+hold on;
+plot(signal_filt);
+plot(alocs,apks,'o');
+hold off;
+
+mpks = mean(apks);
+
+[npks,nlocs] = findpeaks(signal_filt, 'MinPeakHeight', mpks);
+
+figure;
+hold on;
+plot(signal_filt);
+plot(nlocs,npks,'o');
+hold off;
+
+nopks = ones(length(npks),1);
+nolocs = ones(length(npks),1);
+% validate peaks
+for ii = 1:length(npks)
+    if npks(ii) > 2*mpks
+        nopks(ii) = 0;
+        nolocs(ii) = 0;
+    end
+end
+
+
+epks = npks .* nopks;
+
+
+
+figure;
+hold on;
+plot(signal_filt);
+plot(nlocs,npks,'o');
+hold off;
+
 % cut artifacts that fake maxima
 signal_filt(550*Fs:end) = [];
-time_co(550*Fs:end) = [];
+ntime_co(550*Fs:end) = [];
 
 signal_min = min(signal_filt);
 signal_max = max(signal_filt);
