@@ -1,4 +1,4 @@
-function [ signal_filt ] = ecg_filter(signal,time,Fs,filepath )
+function [ signal_filt , time_co ] = ecg_filter(signal,time,Fs,filepath )
 
 %% PreProcessing Data
  
@@ -16,7 +16,7 @@ signal_adj = ((((signal./(2.^10))-0.5) .* 3.3)./ 1100) .* 1000;
 % ########################################################################
 
 % calculate number of samples to remove
-ct = 10;
+ct = 5;
 cSamples = ct*Fs;
 % remove cSamples from both ends
 signal_co = signal_adj(cSamples:(end-cSamples));

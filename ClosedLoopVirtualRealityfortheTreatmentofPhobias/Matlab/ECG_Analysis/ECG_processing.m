@@ -19,40 +19,39 @@ num_lines = 1;
 answer = inputdlg(prompt,dlg_title,num_lines);
 
 % answers
-%s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
-s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+%s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
 s2 = answer{1,1};
 signalname = strcat(s1,s2);
 
-%b1 ='F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
-b1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+b1 ='F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+%b1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
 b2 = answer{4,1};
 baselinename = strcat(b1,b2);
 
 Fs = str2double(answer{2,1});
 channel = str2double(answer(3,1));
-%filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
-filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
+filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
+%filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
 
 
 % load raw data
 % dlmread needs a filename, the delimiter, the number of rows of the
 % header, and the starting row to read
 
-
 % tab separated read
 % signal_data = dlmread(signalname,'\t', 3, 0);
- baseline_data = dlmread(baselinename,'\t', 3, 0);
+% baseline_data = dlmread(baselinename,'\t', 3, 0);
 
 % comma separated read
 signal_data = dlmread(signalname,',', 3, 0);
-%baseline_data = dlmread(baselinename,',', 3, 0);
+baseline_data = dlmread(baselinename,',', 3, 0);
 
 % the signal is extracted from the data matrix, channel number needed
 signal = signal_data(:,channel);
 nSamples = length(signal_data);
 
-baseline = baseline_data(:,6);
+baseline = baseline_data(:,7);
 bSamples = length(baseline_data);
 
 nSignalTime = nSamples/Fs;
@@ -62,52 +61,12 @@ bSignalTime = bSamples/Fs;  % baseline must be sampled with the same frequency
 ntime = linspace(0,nSignalTime,nSamples);
 btime = linspace(0,bSignalTime,bSamples);
 
-signal_filt = ecg_filter(signal,ntime,Fs,filepath);
-baseline_filt = ecg_filter(baseline,btime,Fs,filepath);
+[signal_filt, ntime_co] = ecg_filter(signal,ntime,Fs,filepath);
+[baseline_filt, btime_co] = ecg_filter(baseline,btime,Fs,filepath);
+
 % ########################################################################
 % normalize
 % ########################################################################
-
-% findpks
-
-[apks,alocs]=findpeaks(signal_filt, 'MinPeakHeight', 0.35 );
-
-figure;
-hold on;
-plot(signal_filt);
-plot(alocs,apks,'o');
-hold off;
-
-mpks = mean(apks);
-
-[npks,nlocs] = findpeaks(signal_filt, 'MinPeakHeight', mpks);
-
-figure;
-hold on;
-plot(signal_filt);
-plot(nlocs,npks,'o');
-hold off;
-
-nopks = ones(length(npks),1);
-nolocs = ones(length(npks),1);
-% validate peaks
-for ii = 1:length(npks)
-    if npks(ii) > 2*mpks
-        nopks(ii) = 0;
-        nolocs(ii) = 0;
-    end
-end
-
-
-epks = npks .* nopks;
-
-
-
-figure;
-hold on;
-plot(signal_filt);
-plot(nlocs,npks,'o');
-hold off;
 
 % cut artifacts that fake maxima
 signal_filt(550*Fs:end) = [];
@@ -130,7 +89,7 @@ hold on;
 plot(signal_norm);
 plot(locs,signal_norm(locs),'rv','MarkerFaceColor','r');
 %plot(locs,pks,'o');
-title 'R-spikes'
+title 'R-Peaks'
 xlabel 'samples'
 ylabel 'normalized amplitude'
 hold off;
@@ -138,46 +97,32 @@ hold off;
 %% RR-distance
 
 signal_diff = diff(locs);
-signal_diff = signal_diff ./Fs ;
-
+RR_int = signal_diff ./Fs ; % time
+RR_mean = mean(RR_int);     % time
 
 %% instantaneous HR
-iHR = zeros(1,length(signal_diff));
-for i = 1:length(signal_diff)
-iHR(i) = 60 / signal_diff(i);
+iHR = zeros(1,length(RR_int));
+for i = 1:length(RR_int)
+iHR(i) = 60 / RR_int(i);
 end
 
+iHR_mean = mean(iHR);
 figure;
 hold on;
 plot(iHR);
-title 'iHR'
+title 'iHR (bpm)'
 xlabel 'samples'
 ylabel 'iHR'
 hold off;
 
-% locs in time domain
-locs_time = locs ./ Fs;
-
-% calculate the distances between the R waves in Samples
-peakInterval = diff(locs);
-peakInterval_time = diff(locs_time);
-
-% create a vector with heartrate data
-heartrate_calc = zeros(1,length(peakInterval));
-
-% calculate the heartrate
-for u = 1:length(peakInterval)
-    
-    heartrate_calc(u) = (Fs/peakInterval(u))*60;
-end
 
 % create a vector heartrateSample
-heartrateSample  = zeros(1,length(peakInterval));
+HR_sample  = zeros(1,length(signal_diff));
 
 % position the calculated heartarte value to the right sample
-for v = 1:length(peakInterval)
+for v = 1:length(signal_diff)
     
-    heartrateSample(v) = ceil(locs(v) + (peakInterval(v)/2));
+    HR_sample(v) = ceil(locs(v) + (signal_diff(v)/2));
 end
 
 
@@ -188,9 +133,9 @@ end
  heart_int = zeros(1,length(signal_norm));
  
  
- for z = 1:max(heartrateSample)
+ for z = 1:max(HR_sample)
      
-    if (heartrateSample(counter) == z)
+    if (HR_sample(counter) == z)
      
        heart_int(z) = heartrate_calc(counter);
        counter = counter +1;
@@ -233,16 +178,18 @@ heartrate = heart_int;
 
 % Derive the HRV signal
 tHRV = locs_time(2:end);
-HRV = 1./peakInterval_time;
+HRV = 1./RR_int;
+
 
 % Plot the signals
 figure;
+hold on;
 plot(tHRV,HRV)
 xlabel('Time(s)')
 ylabel('HRV (Hz)')
 
 figure;
-hist(peakInterval_time);
+hist(RR_int);
 title 'histogram of the peak separations in seconds';
 grid on;
 xlabel('Sampling interval (s)');
