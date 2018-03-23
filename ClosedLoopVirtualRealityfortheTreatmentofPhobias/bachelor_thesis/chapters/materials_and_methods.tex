@@ -217,12 +217,12 @@ In total a sample 11 able-bodied individuals participated in our virtual reality
 
 \subsection{Procedure}
 At the start of the experiment the subjects had to answer a short questionnaire concerning personal information, their general attitude towards as well as their experiences with virtual reality and heights. Afterwards the participants were given a small set of directives for the experiment. They were asked to walk slowly at all times and not cover the motion sensors on the HMD with their hands. Further, they were told to wait for instructions before moving and to avoid unnecessary arm movement in order to minimize motion artifacts. We then proceeded by placing the electrodes on the subject's hands and connected them to the BITalino device. After the device was safely stored on the subject's body and the electrode cables were fixated the HMD was put on. We then adjusted the braces to each individual's head, ensuring optimal fit and thus concluding the subject preparation.\\
-For the baseline recording, which lasted 4 minutes, the subjects were sitting on a chair inside the tracking area, allowing them to familiarize themselves with the virtual environment while being measured. Immediately after, the participants were instructed to move to the starting position. The virtual exposure was conducted in a circular pattern. Each cycle was lead by a short waiting period, in which the virtual reality was altered. Once the alteration was completed the subjects were given a signal, upon which they should move to the opposite side of the room and return back to the default position. In addition they were asked to look down every time they crossed and to stand still at times, while doing so. In the beginning of the exposure routine the floor was gradually opened in front of the subject (see \ref{OpenImg}), with a delay of 10 seconds between each step. Once the floor was fully opened the default exposure setting of 1m depth and a bridge size of 1m was revealed and the first cycle executed.   
+For the baseline recording, which lasted 4 minutes, the subjects were sitting on a chair inside the tracking area, allowing them to familiarize themselves with the virtual environment while being measured. Immediately after, the participants were instructed to move to the starting position. The virtual exposure was conducted in a circular pattern. Each cycle was lead by a short waiting period, in which the virtual reality was altered. Once the alteration was completed the subjects were given a signal, upon which they should move to the opposite side of the room and return back to the default position. In addition they were asked to look down every time they crossed and to stand still at times, while doing so. In the beginning of the exposure routine the floor was gradually opened in front of the subject (see \ref{OpenImg}), with a delay of 10 seconds between each step. Once the floor was fully opened the default exposure setting of 1m depth and a bridge size of 1m was revealed and the first cycle executed. For the second cycle the platform was lowered to 10m depth and the bridge size was reduced by 50cm. In the third cycle we set the virtual environment to the maximum difficulty setting, with a depth of 40m and a bridge size of 25cm. In the next two cycles the two parameters remained constant. However, for each crossing the lighting was changed to a different color, including red, blue and green. For the last crossing the color was changed back to the white default color. Once the subject had returned to the starting position the floor was gradually closed, thus completing the exposure.
+To finalize the experiment the HMD as well as the BITalino were removed and the subjects were given a second questionnaire, in which we asked them to rate their experience.\\
 
-\subsubsection{Subject instruction}
-Additionally the infrared connection between the base stations of the Lighthouse-System and the HMD should be kept intact at all time
-\subsubsection{VR initialization}
-%https://docs.unity3d.com/Manual/VROverview.html
+
+%\subsubsection{VR initialization}
+%%https://docs.unity3d.com/Manual/VROverview.html
 
 \subsection{Virtual Reality Control}\label{VRControl}
 One of the major challenges, we were confronted with during this project, was to find a method that would allow for a reliable information transport between VRU and CMU. We have decided on a TCP/IP solution for this problem. This allowed for a loss-free data transmission between the two terminals. 
@@ -253,7 +253,7 @@ As mentioned earlier the server was built to accept data from any client. Howeve
 % \end{table}
 
 \subsection{Data Acquisition}
-We obtained high-resolution (100Hz) ECG and EDA measures for the entirety of the experiment, which lasted 12 minutes on average, using the BITalino (r)evolution. For EDA two electrodes were applied to the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands. The data was send to the CMU and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
+We obtained 100Hz ECG and EDA measures for the entirety of the experiment, which lasted 12 minutes on average, using the BITalino (r)evolution. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands. The data was send to the CMU and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
 
 \subsection{Data Processing}
 In this section all methods that were applied to the measured data in preparation for the feature extraction. This section is divided into two parts, general processing that was done to both data sets and individual processing methods for each ECG and EDA.
@@ -302,7 +302,7 @@ n = 2^{nextpow2(L)}
 
 \begin{align}\label{fft1}
 & Y(k) = \sum\limits_{j=1}^n X(j) W_{n}^{(j-1)(k-1)} \\
-& X(j) = \frac{1}{n} \sum\limits_{k=1}^n Y(k) W_{n}^{-(j-1)(k-1)} \\
+& X(j) = \frac{1}{n} \sum\limits_{k=1}^n Y(k) W_{n}^{-(j-1)(k-1)} 
 \end{align} 
 
 Where

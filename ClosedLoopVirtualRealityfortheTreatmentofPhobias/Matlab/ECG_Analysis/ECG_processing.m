@@ -19,20 +19,20 @@ num_lines = 1;
 answer = inputdlg(prompt,dlg_title,num_lines);
 
 % answers
-s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
-%s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+%s1 = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+s1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
 s2 = answer{1,1};
 signalname = strcat(s1,s2);
 
-b1 ='F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
-%b1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+%b1 ='F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
+b1 = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Raw Data Archive\';
 b2 = answer{4,1};
 baselinename = strcat(b1,b2);
 
 Fs = str2double(answer{2,1});
 channel = str2double(answer(3,1));
-filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
-%filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
+%filepath = 'F:\GitHubRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
+filepath = 'C:\Users\Dominik\Desktop\GitRepositories\Work-\ClosedLoopVirtualRealityfortheTreatmentofPhobias\Matlab\Save folder';
 
 
 % load raw data
@@ -63,6 +63,7 @@ btime = linspace(0,bSignalTime,bSamples);
 
 [signal_filt, ntime_co] = ecg_filter(signal,ntime,Fs,filepath);
 [baseline_filt, btime_co] = ecg_filter(baseline,btime,Fs,filepath);
+
 
 % ########################################################################
 % normalize

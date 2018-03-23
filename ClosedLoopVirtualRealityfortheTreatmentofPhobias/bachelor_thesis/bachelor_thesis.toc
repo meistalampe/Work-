@@ -54,19 +54,17 @@
 \contentsline {section}{\numberline {2.2}Methods}{43}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Participants}{43}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Procedure}{43}{subsection.2.2.2}
-\contentsline {subsubsection}{\nonumberline Subject instruction}{43}{section*.55}
-\contentsline {subsubsection}{\nonumberline VR initialization}{43}{section*.56}
-\contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{43}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{45}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Data Processing}{45}{subsection.2.2.5}
-\contentsline {subsubsection}{\nonumberline General Processing}{45}{section*.57}
-\contentsline {subsubsection}{\nonumberline ECG Processing}{47}{section*.60}
-\contentsline {subsubsection}{\nonumberline EDA Processing}{49}{section*.61}
+\contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{45}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{46}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Data Processing}{46}{subsection.2.2.5}
+\contentsline {subsubsection}{\nonumberline General Processing}{46}{section*.55}
+\contentsline {subsubsection}{\nonumberline ECG Processing}{48}{section*.58}
+\contentsline {subsubsection}{\nonumberline EDA Processing}{49}{section*.59}
 \contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{49}{subsection.2.2.6}
 \contentsline {chapter}{\numberline {3}Results}{50}{chapter.3}
 \contentsline {chapter}{\numberline {4}Discussion}{51}{chapter.4}
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{52}{chapter.5}
 \contentsline {chapter}{\numberline {A}Tables and Measurement Results}{53}{appendix.A}
 \contentsline {chapter}{List of Figures}{54}{appendix.A}
-\contentsline {chapter}{List of Tables}{56}{chapter*.62}
-\contentsline {chapter}{Bibliography}{57}{chapter*.63}
+\contentsline {chapter}{List of Tables}{56}{chapter*.60}
+\contentsline {chapter}{Bibliography}{57}{chapter*.61}
