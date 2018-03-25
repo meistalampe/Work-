@@ -2,10 +2,14 @@
 
 % filename:     EDA_processing
 % author:       dominik limbach
-% date:         08.02.18
+% date:         25.03.18
 
-% description:  this program does the following
-%              
+% description:  Fs= 100, channel = 6
+%               -load data
+%               -call eda_filt
+%               -call eda_feature
+%               -match histograms
+%               -save results
 
 %% Load Data
 clc;
@@ -69,8 +73,8 @@ btime = linspace(0,bSignalTime,bSamples);
 s3 = '_BL';
 [baseline_filt, btime_co, baseline_adj] = eda_filter(baseline,btime,Fs,filepath,s3);
 % cut artifacts that fake maxima
-% baseline_filt(22250:end) = [];
-% btime_co(22250:end) = [];
+%  baseline_filt(22500:end) = [];
+%  btime_co(22500:end) = [];
 
 [bsignal_ba,bmov_avg,bSCL_diff,bSCL_mean,bSCL_med,bP_int,bP_mean,bP_std,bPR_avg,bPR] = eda_feature(baseline_filt,btime_co,baseline_filt,Fs,s3,filepath);
 
@@ -78,8 +82,8 @@ s3 = '_VR';
 [signal_filt, ntime_co, signal_adj] = eda_filter(signal,ntime,Fs,filepath,s3);
 
 % % cut artifacts that fake maxima
-signal_filt(22250:end) = [];
-ntime_co(22250:end) = [];
+% signal_filt(24300:25300) = [];
+% ntime_co(24300:25300) = [];
 [nsignal_ba,nmov_avg,nSCL_diff,nSCL_mean,nSCL_med,nP_int,nP_mean,nP_std,nPR_avg,nPR] = eda_feature(signal_filt,ntime_co,baseline_filt,Fs,s3,filepath);
 %% EDA analysis
 if max(nP_int) >= max(bP_int)

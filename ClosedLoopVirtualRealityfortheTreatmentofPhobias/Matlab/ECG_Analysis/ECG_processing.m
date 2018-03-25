@@ -2,10 +2,14 @@
 
 % filename:     ECG_processing
 % author:       dominik limbach
-% date:         08.02.18
+% date:         25.03.18
 
-% description:  this program does the following
-%               
+% description:  Fs= 100, channel = 7
+%               -load data
+%               -call ecg_filt
+%               -call ecg_feature
+%               -match histograms
+%               -save results
 
 %% Load Data
 clc;
@@ -72,8 +76,8 @@ btime = linspace(0,bSignalTime,bSamples);
 s3 = '_VR';
 [signal_filt, ntime_co,signal_adj] = ecg_filter(signal,ntime,Fs,filepath,s3);
 % cut artifacts that fake maxima
-%  signal_filt(57000:end) = [];
-%  ntime_co(57000:end) = [];
+%    signal_filt(35900:end) = [];
+%    ntime_co(35900:end) = [];
 
 [niHR,niHR_mean,nHRV,ntHRV,nsignal_norm,nRR_int,nRR_mean,nHR,nHR_min,nHR_max] = ecg_features(signal_filt,Fs,filepath,s3);
 % ########################################################################

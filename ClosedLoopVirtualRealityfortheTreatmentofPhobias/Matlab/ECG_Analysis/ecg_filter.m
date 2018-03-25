@@ -70,13 +70,13 @@ b = poly( notchZeros ); % Get moving average filter coefficients
 a = poly( notchPoles ); % Get autoregressive filter coefficients
 % 
 % figure;
-% freqz(b,a,32000,Fs)
+freqz(b,a,32000,Fs)
 
 % apply notch filter
-% signal_dt=hp1Hz(signal_dt);
+%  
+% signal_notch = notch50Hz(signal_dt);
 signal_notch = filter(b,a,signal_dt);
 
-% % signal_notch = notch50Hz(signal_dt);
 % % create bandpass filter
 % [b, a] = butter(4, [5 20]/Fn, 'bandpass');
 % % fvtool(b,a);
@@ -84,12 +84,13 @@ signal_notch = filter(b,a,signal_dt);
 % % apply bandpass filter
 % signal_filt = filtfilt(b, a,signal_notch);
 
-Wp =  [1.5  20]/Fn;                             % Passband (Normalised)
+
+Wp =  [5  15]/Fn;                               % Passband (Normalised)
 Ws =  [0.5  45]/Fn;                             % Stopband (Normalised)
 Rp =  1;                                        % Passband Ripple (dB)
 Rs = 50;                                        % Stopband Ripple (dB)
 [n,Wn] = buttord(Wp, Ws, Rp, Rs);               % Filter Order
-[b,a]  = butter(n,Wn);                          % Transfer Function
+[b,a]  = butter(n,Wn,'bandpass');                          % Transfer Function
 [sos,g] = tf2sos(b,a);                          % Convert To Second-Order-Section For Stability
 
 signal_filt = filtfilt(sos, g, signal_notch);   % Filter Signal

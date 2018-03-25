@@ -57,14 +57,18 @@
 \contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{45}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{46}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Data Processing}{46}{subsection.2.2.5}
-\contentsline {subsubsection}{\nonumberline General Processing}{46}{section*.55}
-\contentsline {subsubsection}{\nonumberline ECG Processing}{48}{section*.58}
-\contentsline {subsubsection}{\nonumberline EDA Processing}{49}{section*.59}
-\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{49}{subsection.2.2.6}
-\contentsline {chapter}{\numberline {3}Results}{50}{chapter.3}
-\contentsline {chapter}{\numberline {4}Discussion}{51}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{52}{chapter.5}
-\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{53}{appendix.A}
-\contentsline {chapter}{List of Figures}{54}{appendix.A}
-\contentsline {chapter}{List of Tables}{56}{chapter*.60}
-\contentsline {chapter}{Bibliography}{57}{chapter*.61}
+\contentsline {subsubsection}{\nonumberline General Processing}{47}{section*.56}
+\contentsline {subsubsection}{\nonumberline ECG Processing}{49}{section*.59}
+\contentsline {subsubsection}{\nonumberline EDA Processing}{50}{section*.60}
+\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{51}{subsection.2.2.6}
+\contentsline {subsubsection}{\nonumberline Heart Rate and Heart Rate Variation}{51}{section*.61}
+\contentsline {subsubsection}{\nonumberline Skin Conductance Level}{53}{section*.64}
+\contentsline {subsubsection}{\nonumberline Skin Conductance Response}{54}{section*.65}
+\contentsline {subsubsection}{\nonumberline Statistical Methods}{55}{section*.67}
+\contentsline {chapter}{\numberline {3}Results}{56}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discussion}{57}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{58}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{59}{appendix.A}
+\contentsline {chapter}{List of Figures}{60}{appendix.A}
+\contentsline {chapter}{List of Tables}{62}{chapter*.68}
+\contentsline {chapter}{Bibliography}{63}{chapter*.69}

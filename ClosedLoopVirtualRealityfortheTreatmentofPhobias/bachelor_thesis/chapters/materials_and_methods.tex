@@ -253,7 +253,7 @@ As mentioned earlier the server was built to accept data from any client. Howeve
 % \end{table}
 
 \subsection{Data Acquisition}
-We obtained 100Hz ECG and EDA measures for the entirety of the experiment, using the BITalino (r)evolution. The sessions lasted approximately 11 minutes, consisting of a 4 minute baseline measurement and an exposure measurement, which lasted 7 minutes on average. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands(see \ref{epImg}). The data was transmitted to the CMU, which was located in close proximity to the experiment area (2-3m), using a Bluetooth connection, and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
+We obtained 100Hz ECG and EDA measures for the entirety of the experiment, using the BITalino (r)evolution. The sessions lasted approximately 11 minutes, consisting of a 5 minute baseline measurement and an exposure measurement, which lasted 7 minutes on average. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands(see \ref{epImg}). The data was transmitted to the CMU, which was located in close proximity to the experiment area (2-3m), using a Bluetooth connection, and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
 
 \begin{figure}[ht]
 \centering
@@ -265,7 +265,7 @@ We obtained 100Hz ECG and EDA measures for the entirety of the experiment, using
 \subsection{Data Processing}
 The present section covers all methods that were applied to the measured data in preparation for the feature extraction. We have divided these methods into two groups, the general processing, which was applied to both data sets and the individual processing, which includes specific modifications to each data set.
 
-\subsubsection{General Processing}
+\subsubsection{General Processing}\label{generalproc}
 %-load from txt
 The initial step was to import the text file, containing the saved data, into our Matlab program. The recorded raw data was then extracted and stored into a one-dimensional array, allowing for further editing. 
 %raw data adjustment
@@ -296,7 +296,7 @@ EDA (\mu S) = \frac{\frac{ADC}{2^{n}}}{0.132} \cdot VCC
 %\end{equation} 
 
 %-fft
-The adjusted signals had to be filtered to ensure quality feature extraction was possible. Therefore we have analyzed the signal in regard to its frequency components using a fast Fourier transform (FFT) algorithm \ref{fft1}. The discrete Fourier transform (DFT) was computed with the predefined Matlab function \ref{fft}, which returned the n-point DFT for a time domain signal vector X. To increase the performance of the fft we have specified the transform length n as the power of 2 value closest to the signal length L. We then defined the frequency domain (0Hz-50Hz) and plotted the unique frequencies P.
+The adjusted signals had to be filtered to ensure quality feature extraction was possible. Therefore we have analyzed the signal in regard to its frequency components using a fast Fourier transform (FFT) algorithm \ref{fft1}. The discrete Fourier transform (DFT) was computed with the predefined Matlab function \textit{fft} (see \ref{fft}), which returned the n-point DFT for a time domain signal vector X. To increase the performance of the fft we have specified the transform length n as the power of 2 value closest to the signal length L. We then defined the frequency domain (0Hz-50Hz) and plotted the unique frequencies P.
 
 \begin{equation}\label{fft}
 Y = fft(X,n) \\
@@ -313,7 +313,7 @@ W_{n} = e^{(-2\pi t)/n}
 \end{equation}
 is one of n roots of unity.\\
 
-The result was a frequency domain representation of the raw signal data, according to which the noise filters were designed. An example of a typical EDA measure is shown in figure \ref{rawEDAImg}. Using the FFT we were able to locate noise frequencies, such as the 50 Hz power line interference, and potential movement artifacts in the higher frequency areas (see figure \ref{fftEDAImg}).
+The result was a frequency domain representation of the raw signal data, according to which the noise filters were designed. An example of a typical EDA measure is shown in figure \ref{rawEDAImg}. Using the FFT we were able to locate noise frequencies, such as the 50 Hz power line interference, and potential movement artifacts in the higher frequency areas, in foresight of the later filtering of the data (see figure \ref{fftEDAImg}).
 
 \begin{figure}[ht]
 \centering
@@ -329,36 +329,107 @@ The result was a frequency domain representation of the raw signal data, accordi
 \label{fftEDAImg}
 \end{figure}
 
-Once the general preprocessing of the data was finished we continued by applying specific filtering methods to each signal in regard to the FFT results.
+Once the filters were applied we cut off the first and last 10 seconds of each signal to eliminate eventual distortions or artifacts caused by the removal of the BITalino device. This was done by removing an equivalent number of samples from, both the start and the end of the data array. The number of samples was calculated using the following equation, with N = number of samples, Fs = sampling frequency and t = removed time interval.
+%
+\begin{equation}\label{NumberSamples}
+N = Fs * t
+\end{equation} 
 
 \subsubsection{ECG Processing}
 %-filter
 Our main goal was to enhance the ECG signal for optimized feature extraction, particularly Heart rate (HR) and heart rate variation (HRV). %\cite{tan2013digital}.
-Therefore we had to reduce the noise in our signal. As the frequency analysis had shown a spike at 50 Hz, which was most likely caused by the power line interference, we applied a notch filter with a notch frequency f0 of 50Hz and a notch width of 0,1 Hz to eliminate the 50Hz hum from our signal.
-In addition to this we had to remove muscle noise, which most commonly occurs at approximately 40Hz, and the effects of a possible DC drift, while preserving the information bearing frequenciesfor QRS-detection \cite{tan2013digital}.
-After detrending, using the Matlab function \textit{detrend(X)} we used a Butterworth bandpass filter with a bandpass from 5 Hz to 26 Hz and filter order 4. This filter provided a magnitude response that is maximally flat in the passband and monotonic overall.  
+Therefore we had to reduce the noise in our signal by removing muscle noise, which most commonly occurs at approximately 40Hz, the effects of a possible DC drift and power line interference, while preserving the information bearing frequencies for QRS-detection of 5-15Hz \cite{PANTOM1985} \cite{tan2013digital}. First, we took measures to remove DC drift from our signal, using the inbuilt Matlab function \textit{detrend}. This function removed the best straight-line fit, which was created by computing the least-squares fit of a straight line or composite line for piecewise linear trends, from the data vector x and returned it in y (see \ref{detrend}). In the next step we analyzed the signal in regard to its frequency components using FFT (see \ref{generalproc}.
+
+\begin{equation}\label{detrend}
+y = detrend(x)
+\end{equation}
+
+Although the frequency analysis did only in few cases show a 50Hz spike, we applied a notch filter with a notch frequency f0 of 50Hz and a notch width of 0,1Hz to eliminate the 50Hz hum from our signal. We then used a bandpass filter to reduce the influences of muscle noise, baseline wander and T-wave interference. According to the well established Pan-Tompkins algorithm \cite{PANTOM1985} we chose a Butterworth filter with a passband (Wp) of 5-15Hz to maximize QRS energy. The best results were achieved in combination with a stopband og 0.5-45Hz (Ws) and a passband ripple (Rp) of 1dB as well as a stopband attenuation (Rs) of 50dB. The filter order was calculated using the Matlab function \textit{buttord} (see \ref{buttord}). It was designed to return the lowest order (n) of the digital Butterworth filter with no more than Rp dB of passband ripple and at least Rs dB of stopband attenuation. Ws and Wp, respectively the stopband and passband edge frequencies of the filter, were normalized from 0 to 1 by dividing them by the Nyquist frequency, with 1 corresponding to $\pi$ rad/sample. We then used the \textit{butter}  function (see \ref{butter}), a five step algorithm, to calculate the transfer function coefficients (b,a) for our digital bandpass filter of order n and the normalized cutoff frequencies Wn. Using yet another inbuilt function with the name \textit{tf2sos} (\ref{tf2}) we created a matrix (sos) in second-order section form with a gain (g) that is equivalent to the digital filter represented by the transfer function coefficient vectors (b,a), and therefore completed the filter building process. To apply the filter we have decided on the \textit{filtfilt} function that performed zero-phase digital filtering by processing the signal data, in both the forward and reverse directions. More information on the matter, or the single algorithm steps can be found on the Matlab Documentation page under the topics \textit{butter}, \textit{tf2sos}, \textit{filtfilt} \cite{MATDOC}.  
+
+\begin{equation}\label{buttord}
+[n,Wn] = buttord(Wp,Ws,Rp,Rs)
+\end{equation}
+
+\begin{equation}\label{butter}
+[b,a] = butter(n,Wn,ftype)
+\end{equation}
+
+\begin{equation}\label{tf2}
+[sos,g] = tf2sos(b,a)
+\end{equation}
 
 \subsubsection{EDA Processing}
-
 %-filter
-
-
-%-substract baseline
-
+Similar to the ECG filtering procedure we started by removing the power line interference, using the same notch filter that was described in the previous section. We then applied a digital low pass filter with a passband frequency of 1Hz as well as a stopband frequency of 3Hz, a Rp of 1dB and a Rs of 60dB. This yielded satisfying results with adequate signal information and minimum to no noise. 
 
 \subsection{Feature Extraction}
 %-time vector
 % first step visual inspection of the signal
-
-
-%- how many subjects did participate?\\
-%- which tasks did the patients fullfill? (cross the bridge etc.)\\
-%- duration of the experiment\\
-%
-%- description of the virtual environment, the procedure (baseline measurement,VRET in detail)\\ 
-%- pictures that show the VE in it's starting state as well as it's therapy state (descended floor)\\
-%- description of how the VR is controlled by the user(which parameters can be influenced)
-%
-%
+\subsubsection{Heart Rate and Heart Rate Variation}\label{HRHRV}
 %-ECG processing frequency domain methods PSD (in task force , reason which method to pick)
+Heart rate (HR) is the speed at which the heart beats and is typically measured in beats per minute (bpm). Therefore the most significant step in the process of computing the HR is to determine the exact number of contractions of the heart in a certain time interval. This was done by detecting the R-peak of every QRS complex. Upon an initial inspection of the filtered ECG data it became obvious that before we could attempt to locate the R-peaks in our signal we had to make further preparations. 
+We decided to normalize our signals to values between 0 and 1, using the equations below on every signal point ($signal_{ECG}$) inside the data array and therefore increasing the distance between R-peaks and P as well as T components. We subtracted the minimum value of our ECG signal ($signal_{min}$) and divided\footnote{$./$ is a form of division specific to Matlab, implying that the division is applied to each element of $signal_{ECG}$ individually.} the result by the magnitude of our ECG signal ($signal_{mag}$). 
+
+\begin{equation}
+signal_{mag} = |signal_{max} - signal_{min}|
+\end{equation}
+
+\begin{equation}
+signal_{norm} = (signal_{ECG} - signal_{min})./signal_{mag}
+\end{equation}
+
+This method yielded mostly positive results (see \ref{ecgfiltImg} and \ref{ecgnormImg}). However, on a small number of trials the effect of normalization was negated by high amplitude artifacts. To counteract this phenomena we applied an amplitude "cutoff" at 1mV as well as -0.2mV, by advising the value 1 to every amplitude above or equal to 1mV and accordingly the value -0.2 to every amplitude below or equal to -0.2mV\footnote{Please note that the main objective of normalization was solely the maximization the R-peak prominence, therefore neglecting authentic amplitude representation}.
+
+\newpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{images/ecgfiltered.png}
+\caption{Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. }
+\label{ecgfiltImg}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{images/ecgnorm.png}
+\caption{Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. }
+\label{ecgnormImg}
+\end{figure}
+
+We then used the \textit{findpeaks} \ref{fp} function to localize the R-peaks in our normalized signal. This function returned a vector with the local maxima (pks) of the input vector ($signal_{norm}$) together with an indices vector (locs) storing peak occurrences. 
+
+\begin{equation}\label{fp}
+[pks,locs] = findpeaks(signal_{norm},'MinPeakProminence',p,'MinPeakDistance',d)
+\end{equation}
+
+Additionally a threshold for peak prominence (p) of 0.25 was applied to guarantee only those peaks that have the relative importance of p were returned. Together with a minimal peak distance threshold (d) of 31, which caused the algorithm to ignore smaller peaks in an interval, equal to the highest permitted heart rate (193 bpm), around the detected R-peak, we reduced the false detection of P and T waves significantly. The maximum heart rate was calculated by subtracting the median age of our subject group of 27 from 220. 
+
+Peak indices were returned in units of samples and therefore had to be converted into units of seconds for further calculations. This was achieved, solving \ref{NumberSamples} for t. Afterwards we 
+determined RR-intervals by calculating differences between adjacent elements of the indices vector (locs). As a second instance of artifact filtering we only accepted RR-intervals in the range of 0.310 seconds and 1.2 seconds, representing the highest (193bpm) and the lowest (50bpm) heart rate that were accepted. The remaining RR-distances were used to calculate average HR, minimum HR and maximum HR, that were measured during the experiment as well as the baseline. According to \ref{instaHR} we proceeded by computing the instantaneous HR for the entirety of the measurement.\\
+
+In the final step of ECG feature extraction, we determined the HRV by calculating variations in HR between two adjacent data points along the RR-interval vector, using \ref{HRV}.
+
+\begin{equation}\label{HRV}
+HRV = 1./RR_{int}
+\end{equation}  
+
+
+\subsubsection{Skin Conductance Level}
+As mentioned earlier, EDA is highly susceptible to environmental influences, such as room temperature and humidity. To be able to estimate a subject's EDR correctly, we therefore included a baseline measurement into our experiment. By subtracting the mean value of the baseline measure we attempted to negate all situational effects on the EDA measurement. Differences in the tonic level were therefore computed as actual variations in SCL.  
+
+\subsubsection{Skin Conductance Response}
+in order to be able to extract the phasic component of the baseline adjusted EDA signal we attempted to filter all tonic components. We therefore applied three different methods, of which two were the inbuilt Matlab functions \textit{detrend}\footnote{This function was already described in an earlier section. Therefore it will not be explained at this point.} and \textit{medfilt1}, and self developed moving average filter. When \textit{medfilt1} is used a one-dimensional median filter of order n, that considers the signal to be 0 beyond its endpoints, is applied to the EDA signal. We, on the other hand, have designed an averaging filter that calculates the mean value inside a certain window, of width w, around the current data point, while moving along the signal vector. When close to the endpoints the window size is adapted accordingly and only original values are considered in the calculation. In figure \ref{filtcompImg} the results of each method are shown on a recorded and baseline adjusted EDA measurement. 
+
+\newpage
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{images/filtcomp.png}
+\caption{Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.}
+\label{filtcompImg}
+\end{figure}
+   
+After the application of our SCL negation method, we located peaks in the EDA signal, using the \textit{findpeaks} function together with a prominence threshold of 0.01 $\mu S$ and proceeded according to section \ref{HRHRV}, extracting the peak distances as well as average peaks per second, for both the exposure and the baseline measurements.
+
+\subsubsection{Statistical Methods}
+
+
 

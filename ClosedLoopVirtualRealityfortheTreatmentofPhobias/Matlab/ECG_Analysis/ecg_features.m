@@ -4,21 +4,22 @@ function [iHR,iHR_mean,HRV,tHRV,signal_norm,RR_int,RR_mean,aHR,aHR_min,aHR_max] 
 % ########################################################################
 % normalize
 % ########################################################################
-signal(signal >= 0.9) = 0.9;
-signal(signal <= -0.1) = -0.1;
+signal(signal >= 1) = 1;
+signal(signal <= -0.2) = -0.2;
 
 signal_min = min(signal);
 signal_max = max(signal);
 signal_mag = abs(signal_min-signal_max);
 signal_norm = (signal - signal_min)./signal_mag;
 
+
 % square
 % signal_square = signal_norm .^2;
 
 %% Feature extraction own
 
-[pks,locs] = findpeaks(signal_norm,'MinPeakProminence',0.4,'MinpeakDistance', 40);
-%[pks,locs] = findpeaks(signal_norm,'MinPeakHeight',0.25,'MinpeakDistance', 40);
+[pks,locs] = findpeaks(signal_norm,'MinPeakProminence',0.25,'MinpeakDistance', 31);
+%[pks,locs] = findpeaks(signal_norm,'MinPeakHeight',0.5,'MinpeakDistance', 45);
 
 figure;
 hold on;
@@ -45,14 +46,15 @@ RR_int = signal_diff ./Fs ; % time
 RR_max = 60/50;
 % HR max is set to MHR = 217 – (0.85 x Age)(miller et al 1993) , Age = med
 % age of all subjects = 27
-MHR = 217-(0.85 * 27);
+%MHR = 217-(0.85 * 27);
+MHR = 220-27;
 RR_min = 60/MHR;
 
 counter = 0;
 locs_time = locs./Fs;
 
 for i = 1:length(RR_int)
-    if RR_int(i) < RR_min || RR_int(i) > RR_max
+    if RR_int(i) <= RR_min || RR_int(i) >= RR_max
         RR_int(i) = -1;
         locs_time(i) = -1;
         counter = counter+1;        
@@ -66,7 +68,6 @@ RR_mean = mean(RR_int);     % time
 aHR = 60/ RR_mean;
 aHR_min = 60/ max(RR_int);
 aHR_max = 60/ min(RR_int);
-
 %% instantaneous HR
 iHR = zeros(1,length(RR_int));
 for i = 1:length(RR_int)
@@ -95,11 +96,11 @@ HRV = 1./RR_int;
 figure;
 hold on;
 plot(tHRV,HRV)
-title('Heart Rate Vatiation');
+title('Heart Rate Variation');
 xlabel('Time[s]')
 ylabel('HRV [Hz]')
 
-s1 = 'Heart Rate Vatiation';
+s1 = 'Heart Rate Variation';
 savename = strcat(s1,s3);
 savefig([filepath filesep savename]);
 saveas(gcf, [filepath filesep savename], 'png');
@@ -118,4 +119,3 @@ saveas(gcf, [filepath filesep savename], 'png');
 
 
 end
-

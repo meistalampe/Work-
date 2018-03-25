@@ -70,9 +70,11 @@ b = poly( notchZeros ); % Get moving average filter coefficients
 a = poly( notchPoles ); % Get autoregressive filter coefficients
 % 
 % figure;
-% freqz(b,a,32000,Fs)
+freqz(b,a,32000,Fs)
 
 % apply notch filter
+ 
+% signal_notch = notch50Hz(signal_adj);
 signal_notch = filter(b,a,signal_adj);
 
 signal_filt = eda_lp1Hz(signal_notch);

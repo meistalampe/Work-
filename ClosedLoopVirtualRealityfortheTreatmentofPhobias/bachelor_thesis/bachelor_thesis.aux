@@ -97,6 +97,7 @@
 \citation{boucsein2012electrodermal}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Recording Sites}{19}{section*.22}}
 \citation{boucsein2012electrodermal}
+\citation{EDAGUIDE}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Three electrode placements for recording EDA.\relax }}{20}{figure.caption.23}}
 \newlabel{PalmImg}{{1.6}{20}{Three electrode placements for recording EDA.\relax }{figure.caption.23}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Signal Evaluation}{20}{section*.24}}
@@ -132,6 +133,7 @@
 \citation{TASK1996}
 \citation{HANDBOOKPP}
 \citation{BERNTSON1997}
+\newlabel{instaHR}{{1.5}{29}{ECG Signal Components}{equation.1.2.5}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Heart Rate and Heart Period}{29}{section*.39}}
 \citation{TASK1996}
 \citation{RIVA2003}
@@ -193,36 +195,58 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Virtual Reality Control}{45}{subsection.2.2.3}}
 \newlabel{VRControl}{{2.2.3}{45}{Virtual Reality Control}{subsection.2.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Data Acquisition}{46}{subsection.2.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Example for electrode placement on a right handed subject.\relax }}{46}{figure.caption.55}}
+\newlabel{epImg}{{2.8}{46}{Example for electrode placement on a right handed subject.\relax }{figure.caption.55}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Data Processing}{46}{subsection.2.2.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline General Processing}{46}{section*.55}}
-\newlabel{transfECG}{{2.1}{46}{General Processing}{equation.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline General Processing}{47}{section*.56}}
+\newlabel{generalproc}{{2.2.5}{47}{General Processing}{section*.56}{}}
+\newlabel{transfECG}{{2.1}{47}{General Processing}{equation.2.2.1}{}}
 \newlabel{transfEDA}{{2.2}{47}{General Processing}{equation.2.2.2}{}}
-\newlabel{NumberSamples}{{2.3}{47}{General Processing}{equation.2.2.3}{}}
-\newlabel{fft}{{2.4}{47}{General Processing}{equation.2.2.4}{}}
-\newlabel{fft1}{{2.6}{47}{General Processing}{equation.2.2.6}{}}
+\newlabel{fft}{{2.3}{47}{General Processing}{equation.2.2.3}{}}
+\newlabel{fft1}{{2.4}{48}{General Processing}{equation.2.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Raw data of an EDA measurement.\relax }}{48}{figure.caption.57}}
+\newlabel{rawEDAImg}{{2.9}{48}{Raw data of an EDA measurement.\relax }{figure.caption.57}{}}
+\citation{PANTOM1985}
 \citation{tan2013digital}
-\citation{tan2013digital}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Raw data of an EDA measurement.\relax }}{48}{figure.caption.56}}
-\newlabel{rawEDAImg}{{2.8}{48}{Raw data of an EDA measurement.\relax }{figure.caption.56}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline ECG Processing}{48}{section*.58}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces FFT of an EDA raw data set.\relax }}{49}{figure.caption.57}}
-\newlabel{fftEDAImg}{{2.9}{49}{FFT of an EDA raw data set.\relax }{figure.caption.57}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\nonumberline EDA Processing}{49}{section*.59}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{49}{subsection.2.2.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Results}{50}{chapter.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces FFT of an EDA raw data set.\relax }}{49}{figure.caption.58}}
+\newlabel{fftEDAImg}{{2.10}{49}{FFT of an EDA raw data set.\relax }{figure.caption.58}{}}
+\newlabel{NumberSamples}{{2.7}{49}{General Processing}{equation.2.2.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline ECG Processing}{49}{section*.59}}
+\citation{PANTOM1985}
+\citation{MATDOC}
+\newlabel{detrend}{{2.8}{50}{ECG Processing}{equation.2.2.8}{}}
+\newlabel{buttord}{{2.9}{50}{ECG Processing}{equation.2.2.9}{}}
+\newlabel{butter}{{2.10}{50}{ECG Processing}{equation.2.2.10}{}}
+\newlabel{tf2}{{2.11}{50}{ECG Processing}{equation.2.2.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline EDA Processing}{50}{section*.60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}Feature Extraction}{51}{subsection.2.2.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Heart Rate and Heart Rate Variation}{51}{section*.61}}
+\newlabel{HRHRV}{{2.2.6}{51}{Heart Rate and Heart Rate Variation}{section*.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. \relax }}{52}{figure.caption.62}}
+\newlabel{ecgfiltImg}{{2.11}{52}{Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. \relax }{figure.caption.62}{}}
+\newlabel{fp}{{2.14}{52}{Heart Rate and Heart Rate Variation}{equation.2.2.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. \relax }}{53}{figure.caption.63}}
+\newlabel{ecgnormImg}{{2.12}{53}{Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. \relax }{figure.caption.63}{}}
+\newlabel{HRV}{{2.15}{53}{Heart Rate and Heart Rate Variation}{equation.2.2.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Skin Conductance Level}{53}{section*.64}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Skin Conductance Response}{54}{section*.65}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.\relax }}{55}{figure.caption.66}}
+\newlabel{filtcompImg}{{2.13}{55}{Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.\relax }{figure.caption.66}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\nonumberline Statistical Methods}{55}{section*.67}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Results}{56}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Discussion}{51}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Discussion}{57}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{52}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{58}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{53}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Tables and Measurement Results}{59}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{54}{appendix.A}}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{56}{chapter*.60}}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{60}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{62}{chapter*.68}}
 \bibstyle{unsrtnat}
 \bibdata{bibliography/bibliography}
 \bibcite{LAYTON2005}{{1}{2005}{{Layton}}{{}}}
@@ -234,27 +258,30 @@
 \bibcite{bologniadermatology}{{7}{}{{Bolognia et~al.}}{{Bolognia, Jean L.~Bolognia, Jorizzo, and Rapini}}}
 \bibcite{HANDBOOKPP}{{8}{2007}{{Cacioppo et~al.}}{{Cacioppo, Tassinary, and Berntson}}}
 \bibcite{boucsein2012electrodermal}{{9}{2012}{{Boucsein}}{{}}}
-\bibcite{ABDULLA2014}{{10}{2014}{{Abdullah}}{{}}}
-\bibcite{GOLDBERGER2017}{{11}{2017}{{Goldberger et~al.}}{{Goldberger, Goldberger, and Shvilkin}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{57}{chapter*.61}}
-\bibcite{TASK1996}{{12}{1996}{{of~the European Society of Cardiology the North American Society~of Pacing}}{{}}}
-\bibcite{BERNTSON1997}{{13}{1997}{{Bernston et~al.}}{{Bernston, Bigger, Eckberg, Grossman, Kaufmann, Malik, Nagaraja, Porges, Saul, Stone, and Van Der~Molen}}}
-\bibcite{RIVA2003}{{14}{2003}{{Riva}}{{}}}
-\bibcite{KESSLER2005}{{15}{2005}{{Kessler et~al.}}{{Kessler, Berglund, Demler, Jin, Merikangas, and Walters}}}
-\bibcite{DERUBEIS1998}{{16}{1998}{{DeRubeis and Crits-Christoph}}{{}}}
-\bibcite{ROTHBAUM1995}{{17}{1995}{{Rothbaum et~al.}}{{Rothbaum, Hodges, Kooper, Opdyke, Williford, and North}}}
-\bibcite{CAVANAGH2004}{{18}{2004}{{Cavanagh and Shapiro}}{{}}}
-\bibcite{GARCIA2007}{{19}{2007}{{Garcia-Palacios et~al.}}{{Garcia-Palacios, Botella, Hoffman, and Fabregat}}}
-\bibcite{HUPPERT2013}{{20}{2013}{{Huppert et~al.}}{{Huppert, Grill, and Brandt}}}
-\bibcite{ROTHBAUM2000}{{21}{2000}{{Rothbaum et~al.}}{{Rothbaum, Hodges, Smith, Lee, and Price}}}
-\bibcite{ROTHBAUM2001}{{22}{2001}{{Rothbaum et~al.}}{{Rothbaum, Hodges, Ready, Graap, and Alarcon}}}
-\bibcite{MEYER2011}{{23}{2011}{{Meyerbr\IeC {\"o}ker et~al.}}{{Meyerbr\IeC {\"o}ker, Morina, Kerkhof, and Emmelkamp}}}
-\bibcite{LEVY2016}{{24}{2016}{{Levy et~al.}}{{Levy, Leboucher, Rautureau, and Jouvent}}}
-\bibcite{NESSE1985}{{25}{1985}{{Nesse et~al.}}{{Nesse, Curtis, Thyer, McCann, Hubert-Smith, and Knopf}}}
-\bibcite{ALPERS2007}{{26}{2008}{{Alpers and Sell}}{{}}}
-\bibcite{DIEMER2016}{{27}{2016}{{Diemer et~al.}}{{Diemer, Lohkamp, M\IeC {\"u}hlberger, and Zwanzger}}}
-\bibcite{EMMELKAMP2001}{{28}{2001}{{Emmelkamp et~al.}}{{Emmelkamp, Bruynzeel, Drost, and Van Der~Mast}}}
-\bibcite{tan2013digital}{{29}{2013}{{Tan and Jiang}}{{}}}
+\bibcite{EDAGUIDE}{{10}{}{{EDA}}{{}}}
+\bibcite{ABDULLA2014}{{11}{2014}{{Abdullah}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{63}{chapter*.69}}
+\bibcite{GOLDBERGER2017}{{12}{2017}{{Goldberger et~al.}}{{Goldberger, Goldberger, and Shvilkin}}}
+\bibcite{TASK1996}{{13}{1996}{{of~the European Society of Cardiology the North American Society~of Pacing}}{{}}}
+\bibcite{BERNTSON1997}{{14}{1997}{{Bernston et~al.}}{{Bernston, Bigger, Eckberg, Grossman, Kaufmann, Malik, Nagaraja, Porges, Saul, Stone, and Van Der~Molen}}}
+\bibcite{RIVA2003}{{15}{2003}{{Riva}}{{}}}
+\bibcite{KESSLER2005}{{16}{2005}{{Kessler et~al.}}{{Kessler, Berglund, Demler, Jin, Merikangas, and Walters}}}
+\bibcite{DERUBEIS1998}{{17}{1998}{{DeRubeis and Crits-Christoph}}{{}}}
+\bibcite{ROTHBAUM1995}{{18}{1995}{{Rothbaum et~al.}}{{Rothbaum, Hodges, Kooper, Opdyke, Williford, and North}}}
+\bibcite{CAVANAGH2004}{{19}{2004}{{Cavanagh and Shapiro}}{{}}}
+\bibcite{GARCIA2007}{{20}{2007}{{Garcia-Palacios et~al.}}{{Garcia-Palacios, Botella, Hoffman, and Fabregat}}}
+\bibcite{HUPPERT2013}{{21}{2013}{{Huppert et~al.}}{{Huppert, Grill, and Brandt}}}
+\bibcite{ROTHBAUM2000}{{22}{2000}{{Rothbaum et~al.}}{{Rothbaum, Hodges, Smith, Lee, and Price}}}
+\bibcite{ROTHBAUM2001}{{23}{2001}{{Rothbaum et~al.}}{{Rothbaum, Hodges, Ready, Graap, and Alarcon}}}
+\bibcite{MEYER2011}{{24}{2011}{{Meyerbr\IeC {\"o}ker et~al.}}{{Meyerbr\IeC {\"o}ker, Morina, Kerkhof, and Emmelkamp}}}
+\bibcite{LEVY2016}{{25}{2016}{{Levy et~al.}}{{Levy, Leboucher, Rautureau, and Jouvent}}}
+\bibcite{NESSE1985}{{26}{1985}{{Nesse et~al.}}{{Nesse, Curtis, Thyer, McCann, Hubert-Smith, and Knopf}}}
+\bibcite{ALPERS2007}{{27}{2008}{{Alpers and Sell}}{{}}}
+\bibcite{DIEMER2016}{{28}{2016}{{Diemer et~al.}}{{Diemer, Lohkamp, M\IeC {\"u}hlberger, and Zwanzger}}}
+\bibcite{EMMELKAMP2001}{{29}{2001}{{Emmelkamp et~al.}}{{Emmelkamp, Bruynzeel, Drost, and Van Der~Mast}}}
+\bibcite{PANTOM1985}{{30}{1985}{{Pan and Tompkins}}{{}}}
+\bibcite{tan2013digital}{{31}{2013}{{Tan and Jiang}}{{}}}
+\bibcite{MATDOC}{{32}{1994-2017}{{Inc.}}{{}}}
 \global\csname @altsecnumformattrue\endcsname
 \global\@namedef{scr@dte@chapter@lastmaxnumwidth}{15.5939pt}
 \global\@namedef{scr@dte@section@lastmaxnumwidth}{19.71382pt}

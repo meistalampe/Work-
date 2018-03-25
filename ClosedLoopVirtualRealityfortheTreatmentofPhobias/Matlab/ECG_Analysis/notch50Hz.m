@@ -10,8 +10,8 @@ persistent Hd;
 if isempty(Hd)
     
     N  = 6;     % Order
-    F0 = 11.65;    % Center frequency
-    Q  = 2.5;   % Q-factor
+    F0 = 50;    % Center frequency
+    Q  = 0.1;   % Q-factor
     Fs = 100;  % Sampling Frequency
     
     h = fdesign.notch('N,F0,Q', N, F0, Q, Fs);

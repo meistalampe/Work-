@@ -1,9 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: bachelor_thesis.aux
 The style file: unsrtnat.bst
 Database file #1: bibliography/bibliography.bib
+Warning--entry type for "MATDOC" isn't style-file defined
+--line 10 of file bibliography/bibliography.bib
 Warning--entry type for "LAYTON2005" isn't style-file defined
---line 1 of file bibliography/bibliography.bib
+--line 26 of file bibliography/bibliography.bib
 Warning--empty year in DSMIV1994
 Warning--empty year in bologniadermatology
 Warning--empty year in bologniadermatology
-(There were 4 warnings)
+Warning--empty year in EDAGUIDE
+(There were 6 warnings)

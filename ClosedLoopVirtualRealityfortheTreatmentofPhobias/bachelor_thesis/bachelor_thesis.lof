@@ -19,8 +19,12 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of 4 different platform position.\relax }}{42}{figure.caption.51}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Comparison of the different widths of the bridge.\relax }}{43}{figure.caption.52}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Closed-loop virtual reality system. The grey line illustrates the closed loop information flow.\relax }}{44}{figure.caption.54}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Raw data of an EDA measurement.\relax }}{48}{figure.caption.56}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces FFT of an EDA raw data set.\relax }}{49}{figure.caption.57}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Example for electrode placement on a right handed subject.\relax }}{46}{figure.caption.55}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Raw data of an EDA measurement.\relax }}{48}{figure.caption.57}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces FFT of an EDA raw data set.\relax }}{49}{figure.caption.58}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. \relax }}{52}{figure.caption.62}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. \relax }}{53}{figure.caption.63}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.\relax }}{55}{figure.caption.66}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

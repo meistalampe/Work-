@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -67,6 +67,10 @@ W.~Boucsein.
   Springer US, 2012.
 \newblock ISBN 9781461411260.
 \newblock URL \url{https://books.google.de/books?id=6N6rnOEZEEoC}.
+
+\bibitem[EDA()]{EDAGUIDE}
+\emph{A Guide for Analysing Electrodermal Activity (EDA) and Skin Conductance
+  Responses (SCRs) for Psychological Experiments}.
 
 \bibitem[Abdullah(2014)]{ABDULLA2014}
 ABM Abdullah.
@@ -218,11 +222,21 @@ P.M.G. Emmelkamp, M.~Bruynzeel, L.~Drost, and C.A.P.G. Van Der~Mast.
   in vivo.
 \newblock \emph{CyberPsychology and Behavior}, 2001.
 
+\bibitem[Pan and Tompkins(1985)]{PANTOM1985}
+J.~Pan and W.J. Tompkins.
+\newblock A real-time qrs detection algorithm.
+\newblock \emph{IEEE Transactions On Biomedical Engineering}, 1985.
+
 \bibitem[Tan and Jiang(2013)]{tan2013digital}
 L.~Tan and J.~Jiang.
 \newblock \emph{Digital Signal Processing: Fundamentals and Applications}.
 \newblock Elsevier Science, 2013.
 \newblock ISBN 9780124159822.
 \newblock URL \url{https://books.google.de/books?id=M9-OhaJSwAEC}.
+
+\bibitem[Inc.(1994-2017)]{MATDOC}
+The~Mathworks Inc.
+\newblock Matlab documentation, 1994-2017.
+\newblock URL \url{https://de.mathworks.com/help/matlab/index.html}.
 
 \end{thebibliography}
