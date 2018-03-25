@@ -253,28 +253,34 @@ As mentioned earlier the server was built to accept data from any client. Howeve
 % \end{table}
 
 \subsection{Data Acquisition}
-We obtained 100Hz ECG and EDA measures for the entirety of the experiment, which lasted 12 minutes on average, using the BITalino (r)evolution. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands. The data was send to the CMU and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
+We obtained 100Hz ECG and EDA measures for the entirety of the experiment, using the BITalino (r)evolution. The sessions lasted approximately 11 minutes, consisting of a 4 minute baseline measurement and an exposure measurement, which lasted 7 minutes on average. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands(see \ref{epImg}). The data was transmitted to the CMU, which was located in close proximity to the experiment area (2-3m), using a Bluetooth connection, and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{images/ep.png}
+\caption{Example for electrode placement on a right handed subject.}
+\label{epImg}
+\end{figure}
 
 \subsection{Data Processing}
-In this section all methods that were applied to the measured data in preparation for the feature extraction. This section is divided into two parts, general processing that was done to both data sets and individual processing methods for each ECG and EDA.
+The present section covers all methods that were applied to the measured data in preparation for the feature extraction. We have divided these methods into two groups, the general processing, which was applied to both data sets and the individual processing, which includes specific modifications to each data set.
 
 \subsubsection{General Processing}
 %-load from txt
-The initial step was to import the text file, into which the data was saved, to the Matlab program. The recorded raw data was then extracted and stored into a one-dimensional array, allowing for further editing.
+The initial step was to import the text file, containing the saved data, into our Matlab program. The recorded raw data was then extracted and stored into a one-dimensional array, allowing for further editing. 
 %raw data adjustment
-The second step was raw data adjustment. We converted the sampled data into units of micro Siemens for EDA and milli Volt for ECG. The values were sampled from channels A1 and A2 of the BITalino device, for EDA and ECG respectively, and 10 bit coded (see \ref{BitImg}).
-The adjustment was achieved by applying the transfer functions given in the sensor's data sheet.
+The second step was raw data adjustment, where we converted the data, sampled as 10-bit values from channels A1 and A2 of the BITalino device (see \ref{bitImg}), for EDA and ECG respectively, into units of micro Siemens for EDA and milli Volt for ECG. The adjustment was achieved by applying the transfer functions given in the sensor's data sheet.
 
 \begin{equation}\label{transfECG}
 ECG(mV) = \frac{\frac{ADC}{2^{n}}-\frac{1}{2}}{G_{ECG}} \cdot VCC \cdot 1000 
 \end{equation}
 
-This process is shown in the equation above. To obtain the ECG data in units of mV from the sampled raw data (ADC), we had to include the operating voltage (VCC) of 3.3V and the sensor gain ($G_{ECG}$) of 1100 as well as the number of bits of the channel (n) into the calculations.
-Accordingly, we conducted adjustments to the EDA raw data, using the following transfer function. Again ADC, VCC and n were the sampled raw data, operating voltage and number of bits of the channel, respectively. 
+This process is shown in the equation above. To convert the sampled raw data (ADC) into units of mV, we had to include the operating voltage (VCC) of 3.3V and the sensor gain ($G_{ECG}$) of 1100 as well as the number of bits of the channel (n) into our calculations. According to this, we also made adjustments to the EDA raw data, resulting in units of micro Siemens (see \ref{transfEDA}). Again the sampled raw data, operating voltage and number of bits were used as ADC, VCC and n, respectively. 
  
 \begin{equation}\label{transfEDA}
 EDA (\mu S) = \frac{\frac{ADC}{2^{n}}}{0.132} \cdot VCC
 \end{equation}
+
 %\begin{equation}\label{transfEDA}
 %R(M\Omega) = 1-\frac{ADC}{2^{n}}
 %\end{equation}
@@ -283,21 +289,17 @@ EDA (\mu S) = \frac{\frac{ADC}{2^{n}}}{0.132} \cdot VCC
 %EDA(\mu S) = \frac{1}{R(M\Omega)}
 %\end{equation}
 %-cutoff
-To negate signal artifacts at the start of the measurement the first 20 seconds of data were cut off, by removing an equivalent number of samples from the array. The number of samples was calculated using the following equation, with N = number of samples, Fs = sampling frequency and t = removed time interval.
-
-\begin{equation}\label{NumberSamples}
-N = Fs * t
-\end{equation} 
+%To negate signal artifacts at the start of the measurement the first 20 seconds of data were cut off, by removing an equivalent number of samples from the array. The number of samples was calculated using the following equation, with N = number of samples, Fs = sampling frequency and t = removed time interval.
+%
+%\begin{equation}\label{NumberSamples}
+%N = Fs * t
+%\end{equation} 
 
 %-fft
-After cutting, the signals had to be filtered to ensure quality feature extraction was possible. Therefore we have analyzed the signal in regard to its frequency components using a fast Fourier transform (FFT) algorithm \ref{fft1}. The discrete Fourier transform (DFT) was computed with the predefined Matlab function \ref{fft}, which returned the n-point DFT for a time domain signal vector X. To increase the performance of the fft we have specified the transform length as the power of 2 value closest to the signal length L. We then defined the frequency domain (0Hz-500Hz) and plotted the unique frequencies P.
+The adjusted signals had to be filtered to ensure quality feature extraction was possible. Therefore we have analyzed the signal in regard to its frequency components using a fast Fourier transform (FFT) algorithm \ref{fft1}. The discrete Fourier transform (DFT) was computed with the predefined Matlab function \ref{fft}, which returned the n-point DFT for a time domain signal vector X. To increase the performance of the fft we have specified the transform length n as the power of 2 value closest to the signal length L. We then defined the frequency domain (0Hz-50Hz) and plotted the unique frequencies P.
 
 \begin{equation}\label{fft}
 Y = fft(X,n) \\
-\end{equation}
-
-\begin{equation}
-n = 2^{nextpow2(L)}
 \end{equation}
 
 \begin{align}\label{fft1}
@@ -331,10 +333,9 @@ Once the general preprocessing of the data was finished we continued by applying
 
 \subsubsection{ECG Processing}
 %-filter
-Our main goal was to enhance the ECG signal for optimized feature extraction, particularly heart rate (HR) and heart rate variation (HRV). We therefore have tried two different approaches of filtering. The first method involved a Savitzky-Golay FIR smoothing filter that was part of an algorithm specifically designed for the BITalino device and recommended by the producing company. Savitzky-Golay filter are usually used on signals that have a large frequency span even without noise. Considering that, frequencies from 0.01Hz to 250Hz are contained in a typical ECG signal it seemed appropriate to use it \cite{tan2013digital}.
-The second method was based on literature and the evaluation of the frequency analysis.
-As the frequency analysis had shown a spike at 50 Hz, which was most likely caused by the power line interference, we applied a notch filter with a notch frequency f0 of 50Hz and a notch width of 0,1 Hz to eliminate the 50Hz hum from our signal.
-In addition to this we had to remove muscle noise, which may occured at approximately 40Hz and removed the effects of a possible DC drift \cite{tan2013digital}.
+Our main goal was to enhance the ECG signal for optimized feature extraction, particularly Heart rate (HR) and heart rate variation (HRV). %\cite{tan2013digital}.
+Therefore we had to reduce the noise in our signal. As the frequency analysis had shown a spike at 50 Hz, which was most likely caused by the power line interference, we applied a notch filter with a notch frequency f0 of 50Hz and a notch width of 0,1 Hz to eliminate the 50Hz hum from our signal.
+In addition to this we had to remove muscle noise, which most commonly occurs at approximately 40Hz, and the effects of a possible DC drift, while preserving the information bearing frequenciesfor QRS-detection \cite{tan2013digital}.
 After detrending, using the Matlab function \textit{detrend(X)} we used a Butterworth bandpass filter with a bandpass from 5 Hz to 26 Hz and filter order 4. This filter provided a magnitude response that is maximally flat in the passband and monotonic overall.  
 
 \subsubsection{EDA Processing}

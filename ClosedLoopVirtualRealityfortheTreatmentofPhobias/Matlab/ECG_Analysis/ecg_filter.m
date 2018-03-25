@@ -1,4 +1,4 @@
-function [ signal_filt , time_co ] = ecg_filter(signal,time,Fs,filepath )
+function [signal_filt,time_co,signal_adj] = ecg_filter(signal,time,Fs,filepath,s3)
 
 %% PreProcessing Data
  
@@ -12,37 +12,16 @@ function [ signal_filt , time_co ] = ecg_filter(signal,time,Fs,filepath )
 signal_adj = ((((signal./(2.^10))-0.5) .* 3.3)./ 1100) .* 1000;
 
 % ########################################################################
-% cutoff
-% ########################################################################
-
-% calculate number of samples to remove
-ct = 5;
-cSamples = ct*Fs;
-% remove cSamples from both ends
-signal_co = signal_adj(cSamples:(end-cSamples));
-time_co = time(cSamples:(end-cSamples));
-
-% plot adjusted and cut signal
-
-figure;
-hold on;
-plot(time_co,signal_co);
-title('ECG Time Domain')
-xlabel('Time (t)')
-ylabel('X(t)')
-hold off;
-
-% ########################################################################
 % detrend
 % ########################################################################
 
-signal_dt = detrend(signal_co);
+signal_dt = detrend(signal_adj);
 
 % ########################################################################
 % fft
 % ########################################################################
 
-L = length(time_co);
+L = length(time);
 n = 2^nextpow2(L);
 % Convert the Signal to the frequency domain.
 Y = fft(signal_dt,n);
@@ -55,56 +34,13 @@ P = abs(Y/n);
 figure;
 plot(f,P(1:n/2+1)) 
 title('ECG in Frequency Domain')
-xlabel('Frequency (f)')
+xlabel('Frequency f')
 ylabel('|P(f)|')
 
-savefig([filepath filesep 'ECG in Frequency Domain']);
-saveas(gcf, [filepath filesep 'ECG in Frequency Domain'], 'png');
-
-% %own way, building the mean of a certain intervall and moving this intervall
-% % along the signal
-% % load signal into seperate variable 
-% mov_data = signal_co;
-% % number of samples to average
-% avg_samples = length(mov_data);
-% % initialize array for results 
-% mov_avg = zeros(1,avg_samples);
-% % array for tonic component
-% % gsr_scl = zeros(1,gsr_samples);
-% % array to store time interval mean
-% avg_mean = zeros(1,avg_samples);
-% % tDelta in seconds 
-% tDelta = 4;
-% % tDelta_mean is an array that holds a nummer of samples according to
-% % tDelta
-% tDelta_mean = Fs * tDelta;
-% % avg_mean is formed over an intervall of 2*tDelta, tDelta from 
-% % either side of current value 
-% tDelta_mod = mod(tDelta_mean,2);
-% if tDelta_mod == 0
-%     tDelta_mean = tDelta_mean+1;
-% end
-% 
-% for counter = 1:avg_samples
-%     if counter <= tDelta_mean
-%         avg_int = mov_data(1:counter+counter-1);
-%         avg_mean(counter) = mean(avg_int);
-%         
-%         mov_avg(counter) = mov_data(counter) - avg_mean(counter);
-%       
-%     elseif counter >= avg_samples-tDelta_mean
-%         avg_int = mov_data(counter-tDelta_mean:end);
-%         avg_mean(counter) = mean(avg_int);
-%         
-%         mov_avg(counter) = mov_data(counter) - avg_mean(counter);
-%     
-%     else 
-%         avg_int = mov_data((counter-tDelta_mean):counter + tDelta_mean);
-%         avg_mean(counter) = mean(avg_int);
-%         
-%         mov_avg(counter) =  mov_data(counter) - avg_mean(counter);
-%     end
-% end
+s1 = 'ECG in Frequency Domain';
+savename = strcat(s1,s3);
+savefig([filepath filesep savename]);
+saveas(gcf, [filepath filesep savename], 'png');
 
 % ########################################################################
 % filtering
@@ -137,28 +73,54 @@ a = poly( notchPoles ); % Get autoregressive filter coefficients
 % freqz(b,a,32000,Fs)
 
 % apply notch filter
+% signal_dt=hp1Hz(signal_dt);
 signal_notch = filter(b,a,signal_dt);
 
-% signal_notch = notch50Hz(signal_dt);
-% create bandpass filter
-[b, a] = butter(4, [5 24]/Fn, 'bandpass');
-% fvtool(b,a);
+% % signal_notch = notch50Hz(signal_dt);
+% % create bandpass filter
+% [b, a] = butter(4, [5 20]/Fn, 'bandpass');
+% % fvtool(b,a);
+% 
+% % apply bandpass filter
+% signal_filt = filtfilt(b, a,signal_notch);
 
-% apply bandpass filter
-signal_filt = filtfilt(b, a,signal_notch);
-% signal_filt = sgolayfilt(signal_notch, 7, 41);
+Wp =  [1.5  20]/Fn;                             % Passband (Normalised)
+Ws =  [0.5  45]/Fn;                             % Stopband (Normalised)
+Rp =  1;                                        % Passband Ripple (dB)
+Rs = 50;                                        % Stopband Ripple (dB)
+[n,Wn] = buttord(Wp, Ws, Rp, Rs);               % Filter Order
+[b,a]  = butter(n,Wn);                          % Transfer Function
+[sos,g] = tf2sos(b,a);                          % Convert To Second-Order-Section For Stability
+
+signal_filt = filtfilt(sos, g, signal_notch);   % Filter Signal
+
 %plot filtered signal
+
+% ########################################################################
+% cutoff
+% ########################################################################
+
+% calculate number of samples to remove
+ct = 10;
+cSamples = ct*Fs;
+% remove cSamples from both ends
+signal_co = signal_filt(cSamples:(end-cSamples));
+time_co = time(cSamples:(end-cSamples));
+
+% plot adjusted and cut signal
 
 figure;
 hold on;
-plot(time_co,signal_filt);
+plot(time_co,signal_co);
 title 'ECG filtered';
 xlabel 'time [s]';
 ylabel 'voltage [mV] ';
 hold off;
 
-savefig([filepath filesep 'ECG filtered']);
-saveas(gcf, [filepath filesep 'ECG filtered'], 'png');
+s1 = 'ECG filtered';
+savename = strcat(s1,s3);
+savefig([filepath filesep savename]);
+saveas(gcf, [filepath filesep savename], 'png');
 
 end
 
