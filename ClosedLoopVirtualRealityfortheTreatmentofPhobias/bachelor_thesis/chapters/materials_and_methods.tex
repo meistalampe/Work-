@@ -189,6 +189,21 @@ To display the virtual environment, a powerful computer(Intel(R) Core(TM) i7-377
 % The Lighthouse Tracking-System, created by the company Valve, allowed to track participant's motion during the exposure in an area of maximal 5 by 5 meter and to project their movement in the virtual environment., and all the sensors, which were attached to the HMD and the controller by HTC. 
 Two base stations of the Lighthouse system were positioned in opposing corners at a height of roughly 2 m. Due to limited space, the exposure area was restricted to an area of 3.5 by 3.5 meter. The program, which was used to remotely control the virtual environment, was written with the Matlab software version R2015a and run on a Laptop (Intel(R) Core(TM) i5 6200U, 2x2.3 GHz and 8 GB Ram). The virtual environment was run on the desktop computer, using Unity version 5.6.1f1 personal. Both machines were connected through a closed network. We have used the BITalino device to record the physiological data and send it to our Laptop via a Bluetooth connection. We have chosen this device primarily for the convenience of wireless data transmission, higher maneuverability and less distraction for the patient. 
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/IMG_5311.JPG}
+\caption{Photograph of the experimental setup, located in the Green Lab in the University Hospital Saarland in Homburg. View on the control desk.}
+\label{SetupVRImg}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/IMG_5310.JPG}
+\caption{Photograph of the experimental setup, located in the Green Lab in the University Hospital Saarland in Homburg. View on the exposure area}
+\label{SetupVR2Img}
+\end{figure}
+
 \subsubsection{Closed Loop Information Flow}
 The key concept of our system was the adaptability of the virtual experience to the therapist standards as well as the individual standard. To achieve our goal we built our system in a way that information is constantly exchanged between the single components.
 The setup is composed of four major components that can be divided into two groups according to their function. Either the information is delivered to the subject (VRU and HMD) or retrieved from the subject and presented to the user (CMU and BITalino) (see figure \ref{setupImg}).\\ 
@@ -231,26 +246,6 @@ We used Microsoft Visual Studio to create a server in form of a script that read
 
 As mentioned earlier the server was built to accept data from any client. However, one additional condition had to be met to guarantee the information could be understood by the server. The data had to be sent as an 8-bit coded array, containing all 12 variables in a specific order. During the development phase the data was sent from the CMU, using Matlab. Similar to the Unity server we have created a Matlab client that allowed the user to enter the desired values and then automatically built and sent the data array. In the experimental phase of the project, the VR was controlled using a web application connected to a server structure, which was also handling the capture of the physiological data \footnote{This application as well as the server have been created in the scope of mister Nayak's master thesis and therefore will not be described any further.}. 
 
-%
-%\begin{table}[h]
-% \caption{Data Array}
-% \begin{tabular}{|c|c|c|c|}
-% 	Position & Variable & Type & Values \\
-% 	1 &  &  & \\
-% 	2 &  &  & \\
-% 	3 &  &  & \\
-% 	4 &  &  & \\
-% 	5 &  &  & \\
-% 	6 &  &  & \\
-% 	7 &  &  & \\
-% 	8 &  &  & \\
-% 	9 &  &  & \\
-% 	10 &  &  & \\
-% 	11 &  &  & \\
-% 	12 &  &  & \\
-% \end{tabular}
-% \label{dataArray}
-% \end{table}
 
 \subsection{Data Acquisition}
 We obtained 100Hz ECG and EDA measures for the entirety of the experiment, using the BITalino (r)evolution. The sessions lasted approximately 11 minutes, consisting of a 5 minute baseline measurement and an exposure measurement, which lasted 7 minutes on average. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands(see \ref{epImg}). The data was transmitted to the CMU, which was located in close proximity to the experiment area (2-3m), using a Bluetooth connection, and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
@@ -397,11 +392,11 @@ This method yielded mostly positive results (see \ref{ecgfiltImg} and \ref{ecgno
 
 We then used the \textit{findpeaks} \ref{fp} function to localize the R-peaks in our normalized signal. This function returned a vector with the local maxima (pks) of the input vector ($signal_{norm}$) together with an indices vector (locs) storing peak occurrences. 
 
-\begin{equation}\label{fp}
+\begin{equation*}\label{fp}
 [pks,locs] = findpeaks(signal_{norm},'MinPeakProminence',p,'MinPeakDistance',d)
-\end{equation}
+\end{equation*}
 
-Additionally a threshold for peak prominence (p) of 0.25 was applied to guarantee only those peaks that have the relative importance of p were returned. Together with a minimal peak distance threshold (d) of 31, which caused the algorithm to ignore smaller peaks in an interval, equal to the highest permitted heart rate (193 bpm), around the detected R-peak, we reduced the false detection of P and T waves significantly. The maximum heart rate was calculated by subtracting the median age of our subject group of 27 from 220. 
+Additionally a threshold for peak prominence (p) of 0.25 was applied to guarantee only those peaks that have the relative importance of p were returned. Together with a minimal peak distance threshold (d) of 31, which caused the algorithm to ignore smaller peaks in an interval, equal to the highest permitted heart rate (193bpm), around the detected R-peak, we reduced the false detection of P and T waves significantly. The maximum heart rate was calculated by subtracting the median age of our subject group of 27 from 220. 
 
 Peak indices were returned in units of samples and therefore had to be converted into units of seconds for further calculations. This was achieved, solving \ref{NumberSamples} for t. Afterwards we 
 determined RR-intervals by calculating differences between adjacent elements of the indices vector (locs). As a second instance of artifact filtering we only accepted RR-intervals in the range of 0.310 seconds and 1.2 seconds, representing the highest (193bpm) and the lowest (50bpm) heart rate that were accepted. The remaining RR-distances were used to calculate average HR, minimum HR and maximum HR, that were measured during the experiment as well as the baseline. According to \ref{instaHR} we proceeded by computing the instantaneous HR for the entirety of the measurement.\\
@@ -412,12 +407,11 @@ In the final step of ECG feature extraction, we determined the HRV by calculatin
 HRV = 1./RR_{int}
 \end{equation}  
 
-
 \subsubsection{Skin Conductance Level}
 As mentioned earlier, EDA is highly susceptible to environmental influences, such as room temperature and humidity. To be able to estimate a subject's EDR correctly, we therefore included a baseline measurement into our experiment. By subtracting the mean value of the baseline measure we attempted to negate all situational effects on the EDA measurement. Differences in the tonic level were therefore computed as actual variations in SCL.  
 
 \subsubsection{Skin Conductance Response}
-in order to be able to extract the phasic component of the baseline adjusted EDA signal we attempted to filter all tonic components. We therefore applied three different methods, of which two were the inbuilt Matlab functions \textit{detrend}\footnote{This function was already described in an earlier section. Therefore it will not be explained at this point.} and \textit{medfilt1}, and self developed moving average filter. When \textit{medfilt1} is used a one-dimensional median filter of order n, that considers the signal to be 0 beyond its endpoints, is applied to the EDA signal. We, on the other hand, have designed an averaging filter that calculates the mean value inside a certain window, of width w, around the current data point, while moving along the signal vector. When close to the endpoints the window size is adapted accordingly and only original values are considered in the calculation. In figure \ref{filtcompImg} the results of each method are shown on a recorded and baseline adjusted EDA measurement. 
+In order to be able to extract the phasic component of the baseline adjusted EDA signal we attempted to filter all tonic components. We therefore applied three different methods, of which two were the inbuilt Matlab functions \textit{detrend}\footnote{This function was already described in an earlier section. Therefore it will not be explained at this point.} and \textit{medfilt1}, and self developed moving average filter. When \textit{medfilt1} is used a one-dimensional median filter of order n, that considers the signal to be 0 beyond its endpoints, is applied to the EDA signal. We, on the other hand, have designed an averaging filter that calculates the mean value inside a certain window, of width w, around the current data point, while moving along the signal vector. When close to the endpoints the window size is adapted accordingly and only original values are considered in the calculation. In figure \ref{filtcompImg} the results of each method are shown on a recorded and baseline adjusted EDA measurement. 
 
 \newpage
 \begin{figure}[ht]
@@ -430,6 +424,43 @@ in order to be able to extract the phasic component of the baseline adjusted EDA
 After the application of our SCL negation method, we located peaks in the EDA signal, using the \textit{findpeaks} function together with a prominence threshold of 0.01 $\mu S$ and proceeded according to section \ref{HRHRV}, extracting the peak distances as well as average peaks per second, for both the exposure and the baseline measurements.
 
 \subsubsection{Statistical Methods}
+In this final step of data evaluation we conducted three different statistical tests on the extracted features to evaluate the effect of our experiment on the subjects, including Shapiro-Wilk test, t-test and effect size. 
+Due to our small sample sizes we had to test for normality in our samples before we were able to conduct the latter two. Thus, we conducted the Shapiro-Wilk test, which tests the null hypothesis ($H0$) that a certain sample x, containing n values, came from a normally distributed population. The test statistic W was calculated using the equation \ref{ShapWilk}, with n being the sample size, $x(i)$ being the i-th in the size sorted sample and $\bar{x}$ being the arithmetic average of the sample x. 
+
+\begin{equation}\label{ShapWilk}
+W = \frac{(\sum\limits_{i=1}^n a_{i} \cdot x(i))^{2}}{\sum\limits_{i=1}^n (x_{i}-\bar{x} )^{2}}
+\end{equation}
+
+The coefficients $a_{i}$ as well as $W_{critical}$, were chosen in regard to the sample size n and the significance level $\alpha$. If W was found to be greater than the associated $W_{critical}$ the null hypothesis $H0$, and therefore normality, could be  confirmed \cite{SHAPIROWILK}.\\
+In the next step we conducted a two-sample t-test for paired samples, which is also called a paired difference test. This test is commonly used for a group of units, in our case the subjects, that has been tested twice. In our case we tested the null hypothesis \ref{H0} that the mean values of our paired samples would not differ. One pair was comprised of a subject's  baseline measurement as well as its exposure measurement. Therefore we calculated the t-value using the equation \ref{tt}, with $\bar{X_{D}}$ being the mean difference in all pairs and $s_{D}$ being the standard deviation of the differences.
+
+\begin{equation}
+H0: \mu_{D} = 0
+\end{equation}
+
+\begin{equation}\label{tt}
+t = \frac{\bar{X_{D}}-\mu_{0}}{\frac{s_{D}}{\sqrt{n}}}
+\end{equation}
+
+\begin{equation}\label{std}
+s = \sqrt{\frac{\sum\limits_{i=1}^n (x_{i}-\bar{x})^{2}}{n-1}}
+\end{equation}
+
+The final evaluation we performed a test on the effect size to determine the power of the two-sample t-test. "The population standardized mean difference was proposed by Cohen (1969) as an index of effect magnitude in connection with an assessment of the power of the two-sample t-test. We denote this population parameter by $\delta$ and its unbiased estimate by d" (see \cite{hedges2014statistical}, p.108). The Cohen's d, for samples of same size but different variances, is defined as the difference between the means of the two samples divided by the pool variance (see \ref{cohend}) \cite{gravetter2016essentials}.
+
+\begin{equation}\label{cohend}
+d = \frac{\bar{x_{1}} - \bar{x_{2}}}{\sqrt{\frac{s_{1}^{2} + s_{1}^{2}}{2}}} 
+\end{equation}
+
+According to Cohen small effects are indicated by a d value of 0.2, medium effects by 0.5 and large effects for d value above or equal to 0.8 .
 
 
 
+
+
+
+
+
+
+
+ 

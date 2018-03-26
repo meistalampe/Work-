@@ -108,7 +108,7 @@ ba_P_int = ba_P_int';
 na_P_int(na_P_int == 0) = NaN;
 na_P_int = na_P_int';
 
-% plot 
+% plot peak interval distribution
 
 figure;
 hold on;
@@ -135,13 +135,54 @@ savename = strcat(s1,s3);
 savefig([filepath filesep savename]);
 saveas(gcf, [filepath filesep savename], 'png')
 
+% plot scl magnitudes 
 
+figure;
+hold on;
+subplot(1,3,1);
+boxplot(bSCL_mean);
+grid on;
+title('Avg. SCL ')
+ylabel('avg. SCL [\mu S]')
+xlabel('Baseline')
+
+subplot(1,3,2); 
+boxplot(nSCL_mean);
+grid on;
+ylim([0 8]);
+xlabel('Exposure')
+title('Avg. SCL ')
+hold off;
+
+subplot(1,3,3); 
+boxplot(SCL_diff);
+grid on;
+ylim([0 8]);
+xlabel('Subject Group')
+title('avg. delta SCL ')
+hold off;
+
+s1 = 'Average SCL';
+s3 = '_VR';
+savename = strcat(s1,s3);
+savefig([filepath filesep savename]);
+saveas(gcf, [filepath filesep savename], 'png')
 
 % ########################################################################
 %statistics
 % ########################################################################
 
-%t test
-% 
-% [h,p] = ttest(bRR_sort,nRR_sort,'Alpha',0.05);
-% 
+% for peak intervals
+[nH,bH,Ht,dt,t,d,r,pv,bW,nW] = stat_test(nP_mean,bP_mean,subject_names);
+% for scl increases
+[scl_bH,scl_nH,scl_Ht,scl_dt,scl_t,scl_d,scl_r,scl_pv,bsclW,nsclW] = stat_test(bSCL_mean,nSCL_mean,subject_names);
+
+%% Saving Data
+
+% Saving workspace
+s2 = 'stat_results';
+saveFilename = 'EDA_';
+saveFilename = strcat(saveFilename,s2);
+
+save([filepath filesep saveFilename '.mat'], '-v7.3');
+fprintf('Done.\n');

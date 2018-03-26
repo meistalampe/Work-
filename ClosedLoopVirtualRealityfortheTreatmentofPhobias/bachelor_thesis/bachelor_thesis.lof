@@ -18,14 +18,22 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Comparison of the different stages of floor opening.\relax }}{41}{figure.caption.50}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of 4 different platform position.\relax }}{42}{figure.caption.51}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Comparison of the different widths of the bridge.\relax }}{43}{figure.caption.52}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Closed-loop virtual reality system. The grey line illustrates the closed loop information flow.\relax }}{44}{figure.caption.54}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Example for electrode placement on a right handed subject.\relax }}{46}{figure.caption.55}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Raw data of an EDA measurement.\relax }}{48}{figure.caption.57}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces FFT of an EDA raw data set.\relax }}{49}{figure.caption.58}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. \relax }}{52}{figure.caption.62}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. \relax }}{53}{figure.caption.63}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.\relax }}{55}{figure.caption.66}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Photograph of the experimental setup, located in the Green Lab in the University Hospital Saarland in Homburg. View on the control desk.\relax }}{44}{figure.caption.53}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Photograph of the experimental setup, located in the Green Lab in the University Hospital Saarland in Homburg. View on the exposure area\relax }}{45}{figure.caption.54}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Closed-loop virtual reality system. The grey line illustrates the closed loop information flow.\relax }}{46}{figure.caption.56}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Example for electrode placement on a right handed subject.\relax }}{47}{figure.caption.57}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Raw data of an EDA measurement.\relax }}{49}{figure.caption.59}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces FFT of an EDA raw data set.\relax }}{50}{figure.caption.60}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. \relax }}{53}{figure.caption.64}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. \relax }}{54}{figure.caption.65}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.\relax }}{56}{figure.caption.68}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Boxplot comparison of the average SCL in subject's baseline (left) and exposure measurement (middle) as well as the average difference in the SCL of the two measurements (right).\relax }}{58}{figure.caption.70}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Boxplot comparison of the peak interval distribution of subject's baseline and exposure EDA measurement.\relax }}{59}{figure.caption.71}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Histogram, illustrating the peak interval distribution of a subject's baseline and exposure EDA measurement.\relax }}{60}{figure.caption.72}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Boxplot comparison of the RR interval distribution of subject's baseline and exposure ECG measurement.\relax }}{61}{figure.caption.73}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Histogram, illustrating the RR interval distribution of a subject's baseline and exposure ECG measurement.\relax }}{62}{figure.caption.74}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Electrodermal measures, definitions and typical values.\relax }}{67}{figure.caption.78}

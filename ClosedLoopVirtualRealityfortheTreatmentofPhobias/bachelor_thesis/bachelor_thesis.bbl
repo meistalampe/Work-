@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -238,5 +238,27 @@ L.~Tan and J.~Jiang.
 The~Mathworks Inc.
 \newblock Matlab documentation, 1994-2017.
 \newblock URL \url{https://de.mathworks.com/help/matlab/index.html}.
+
+\bibitem[Shapiro and Wilk(1965)]{SHAPIROWILK}
+S.S. Shapiro and M.B. Wilk.
+\newblock An analysis of variance test for normality (complete samples).
+\newblock \emph{Biometrika}, 52\penalty0 (3-4):\penalty0 591--611, 1965.
+\newblock \doi{10.1093/biomet/52.3-4.591}.
+\newblock URL \url{http://dx.doi.org/10.1093/biomet/52.3-4.591}.
+
+\bibitem[Hedges and Olkin(2014)]{hedges2014statistical}
+L.V. Hedges and I.~Olkin.
+\newblock \emph{Statistical Methods for Meta-Analysis}.
+\newblock Elsevier Science, 2014.
+\newblock ISBN 9780080570655.
+\newblock URL \url{https://books.google.de/books?id=7GviBQAAQBAJ}.
+
+\bibitem[Gravetter et~al.(2016)Gravetter, Wallnau, and
+  Forzano]{gravetter2016essentials}
+F.J. Gravetter, L.B. Wallnau, and L.A.B. Forzano.
+\newblock \emph{Essentials of Statistics for The Behavioral Sciences}.
+\newblock Cengage Learning, 2016.
+\newblock ISBN 9781337098120.
+\newblock URL \url{https://books.google.de/books?id=LNq5DQAAQBAJ}.
 
 \end{thebibliography}
