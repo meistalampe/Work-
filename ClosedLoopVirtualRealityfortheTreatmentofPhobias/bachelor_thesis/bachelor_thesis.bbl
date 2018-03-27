@@ -1,264 +1,200 @@
-\begin{thebibliography}{35}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
 
-\bibitem[Layton(2005)]{LAYTON2005}
-J.~Layton.
-\newblock How fear works, 2005.
-\newblock URL
-  \url{<https://science.howstuffworks.com/life/inside-the-mind/emotions/fear.htm>}.
+\bibitem[\protect\astroncite{Abdullah}{2014}]{ABDULLA2014}
+Abdullah, A. (2014).
+\newblock {\em ECG in Medical Practice}.
+\newblock Jaypee Brothers,Medical Publishers Pvt. Limited.
 
-\bibitem[Fink(2010)]{FINK2010}
-G.~Fink.
-\newblock \emph{Stress Consequences: Mental, Neuropsychological and
-  Socioeconomic}.
-\newblock Elsevier Science, 2010.
-\newblock ISBN 9780123751751.
-\newblock URL \url{https://books.google.de/books?id=E20HsuKHxaEC}.
-
-\bibitem[DSM()]{DSMIV1994}
-\emph{Diagnostic and Statistical Manual of Mental Disorders}.
-
-\bibitem[Kapfhammer et~al.(2015)Kapfhammer, Huppert, Grill, Fitz, and
-  Brandt]{Kapfhammer2015}
-H.-P. Kapfhammer, D.~Huppert, E.~Grill, W.~Fitz, and T.~Brandt.
-\newblock Visual height intolerance and acrophobia: clinical characteristics
-  and comorbidity patterns.
-\newblock \emph{European Archives of Psychiatry and Clinical Neuroscience},
-  265\penalty0 (5):\penalty0 375--385, 2015.
-\newblock ISSN 1433-8491.
-\newblock \doi{10.1007/s00406-014-0548-y}.
-
-\bibitem[O'Donohue and Fisher(2012)]{o2012cognitive}
-W.T. O'Donohue and J.E. Fisher.
-\newblock \emph{Cognitive Behavior Therapy: Core Principles for Practice}.
-\newblock Wiley, 2012.
-\newblock ISBN 9781118228876.
-\newblock URL \url{https://books.google.de/books?id=qawT0W2MJI8C}.
-
-\bibitem[Boucsein(2013)]{boucsein2013electrodermal}
-W.~Boucsein.
-\newblock \emph{Electrodermal Activity}.
-\newblock The Springer Series in Behavioral Psychophysiology and Medicine.
-  Springer US, 2013.
-\newblock ISBN 9781475750935.
-\newblock URL \url{https://books.google.de/books?id=0hXrBwAAQBAJ}.
-
-\bibitem[Bolognia et~al.()Bolognia, Jean L.~Bolognia, Jorizzo, and
-  Rapini]{bologniadermatology}
-J.L. Bolognia, J.L.J.R.P.R. Jean L.~Bolognia, J.L. Jorizzo, and R.P. Rapini.
-\newblock \emph{Dermatology}.
-\newblock Elsevier Health Sciences.
-\newblock ISBN 9789997638991.
-\newblock URL \url{https://books.google.de/books?id=f2IwYiyh3YUC}.
-
-\bibitem[Cacioppo et~al.(2007)Cacioppo, Tassinary, and Berntson]{HANDBOOKPP}
-J.T. Cacioppo, L.G. Tassinary, and G.G Berntson.
-\newblock \emph{Handbook of Psychophysiology}.
-\newblock Cambridge University Press, 2007.
-
-\bibitem[Boucsein(2012)]{boucsein2012electrodermal}
-W.~Boucsein.
-\newblock \emph{Electrodermal Activity}.
-\newblock The Springer series in behavioral psychophysiology and medicine.
-  Springer US, 2012.
-\newblock ISBN 9781461411260.
-\newblock URL \url{https://books.google.de/books?id=6N6rnOEZEEoC}.
-
-\bibitem[EDA()]{EDAGUIDE}
-\emph{A Guide for Analysing Electrodermal Activity (EDA) and Skin Conductance
-  Responses (SCRs) for Psychological Experiments}.
-
-\bibitem[Abdullah(2014)]{ABDULLA2014}
-ABM Abdullah.
-\newblock \emph{ECG in Medical Practice}.
-\newblock Jaypee Brothers,Medical Publishers Pvt. Limited, 2014.
-\newblock ISBN 9789351520061.
-\newblock URL \url{https://books.google.de/books?id=cC2HAwAAQBAJ}.
-
-\bibitem[Goldberger et~al.(2017)Goldberger, Goldberger, and
-  Shvilkin]{GOLDBERGER2017}
-A.L. Goldberger, Z.D. Goldberger, and A.~Shvilkin.
-\newblock \emph{Clinical Electrocardiography: A Simplified Approach E-Book}.
-\newblock Elsevier Health Sciences, 2017.
-\newblock ISBN 9780323508773.
-\newblock URL \url{https://books.google.de/books?id=q59tDgAAQBAJ}.
-
-\bibitem[of~the European Society of Cardiology the North American Society~of
-  Pacing(1996)]{TASK1996}
-Electrophysiology Task~Force of~the European Society of Cardiology the North
-  American Society~of Pacing.
-\newblock Heart rate variability.
-\newblock \emph{Circulation}, 1996.
-
-\bibitem[Bernston et~al.(1997)Bernston, Bigger, Eckberg, Grossman, Kaufmann,
-  Malik, Nagaraja, Porges, Saul, Stone, and Van Der~Molen]{BERNTSON1997}
-G.G. Bernston, T.J. Bigger, D.L. Eckberg, P.~Grossman, P.G. Kaufmann, M.~Malik,
-  H.N. Nagaraja, S.W. Porges, J.P. Saul, P.H. Stone, and M.W. Van Der~Molen.
-\newblock Heart rate variability: Origins, methods, and interpretive caveats.
-\newblock \emph{Psychophysiology}, 34\penalty0 (6):\penalty0 623--648, 1997.
-\newblock ISSN 1469-8986.
-\newblock \doi{10.1111/j.1469-8986.1997.tb02140.x}.
-\newblock URL \url{http://dx.doi.org/10.1111/j.1469-8986.1997.tb02140.x}.
-
-\bibitem[Riva(2003)]{RIVA2003}
-G.~Riva.
-\newblock Virtual environments in clinical psychology.
-\newblock \emph{Psychotherapy: Theory, Research, Practice, Training},
-  40\penalty0 (1/2):\penalty0 68--76, 2003.
-\newblock \doi{https://doi.org/10.1037/0033-3204.40.1/2.68}.
-
-\bibitem[Kessler et~al.(2005)Kessler, Berglund, Demler, Jin, Merikangas, and
-  Walters]{KESSLER2005}
-R.C. Kessler, P.~Berglund, O.~Demler, R.~Jin, K.R. Merikangas, and E.E.
-  Walters.
-\newblock Lifetime prevalence and age-of-onset distributions of dsm-iv
-  disorders in the national comorbidity survey replication.
-\newblock \emph{Archives of General Psychiatry}, 62\penalty0 (6):\penalty0
-  593--602, 2005.
-\newblock \doi{10.1001/archpsyc.62.6.593}.
-\newblock URL \url{+ http://dx.doi.org/10.1001/archpsyc.62.6.593}.
-
-\bibitem[DeRubeis and Crits-Christoph(1998)]{DERUBEIS1998}
-R.~J. DeRubeis and P.~Crits-Christoph.
-\newblock Empirically supported individual andgroup psychological treatments
-  for adult mental disorders.
-\newblock \emph{Journal of Consulting and Clinical Psychology}, 66\penalty0
-  (1):\penalty0 37–52, 1998.
-\newblock \doi{http://dx.doi.org/10.1037/0022-006x.66.1.37}.
-
-\bibitem[Rothbaum et~al.(1995)Rothbaum, Hodges, Kooper, Opdyke, Williford, and
-  North]{ROTHBAUM1995}
-B.O. Rothbaum, L.F. Hodges, R.~Kooper, D.~Opdyke, J.S. Williford, and M.~North.
-\newblock Effectiveness of computer-generated (virtual reality) graded exposure
-  in the treatment of acrophobia.
-\newblock \emph{The American Journal of Psychiatry}, 152\penalty0 (4):\penalty0
-  626--628, 1995.
-\newblock \doi{https://doi.org/10.1176/ajp.152.4.626}.
-
-\bibitem[Cavanagh and Shapiro(2004)]{CAVANAGH2004}
-K.~Cavanagh and D.~A. Shapiro.
-\newblock Computer treatment for common mental health problems.
-\newblock \emph{Journal of Clinical Psychology}, 60\penalty0 (3):\penalty0
-  239--251, 2004.
-\newblock ISSN 1097-4679.
-\newblock \doi{10.1002/jclp.10261}.
-\newblock URL \url{http://dx.doi.org/10.1002/jclp.10261}.
-
-\bibitem[Garcia-Palacios et~al.(2007)Garcia-Palacios, Botella, Hoffman, and
-  Fabregat]{GARCIA2007}
-A.~Garcia-Palacios, C.~Botella, H.~Hoffman, and S.~Fabregat.
-\newblock Comparing acceptance and refusal rates of virtual reality exposure
-  vs. in vivo exposure by patients with specific phobias.
-\newblock \emph{CyberPsychology and Behavior}, 10\penalty0 (5):\penalty0
-  722--724, 2007.
-\newblock \doi{https://doi.org/10.1089/cpb.2007.9962}.
-
-\bibitem[Huppert et~al.(2013)Huppert, Grill, and Brandt]{HUPPERT2013}
-D.~Huppert, E.~Grill, and T.~Brandt.
-\newblock Down on heights? one in three has visual height intolerance.
-\newblock \emph{Journal of Neurology}, 260\penalty0 (2):\penalty0 597--604, Feb
-  2013.
-\newblock ISSN 1432-1459.
-\newblock \doi{10.1007/s00415-012-6685-1}.
-\newblock URL \url{https://doi.org/10.1007/s00415-012-6685-1}.
-
-\bibitem[Rothbaum et~al.(2000)Rothbaum, Hodges, Smith, Lee, and
-  Price]{ROTHBAUM2000}
-B.~O. Rothbaum, L.F Hodges, S.~Smith, J.~H. Lee, and L.~Price.
-\newblock A controlled study of virtual reality exposure therapy for the fear
-  of flying.
-\newblock \emph{Journal of Consulting and Clinical Psychology}, 68\penalty0
-  (6):\penalty0 1020--1026, 2000.
-\newblock \doi{http://dx.doi.org/10.1037/0022-006X.68.6.1020}.
-
-\bibitem[Rothbaum et~al.(2001)Rothbaum, Hodges, Ready, Graap, and
-  Alarcon]{ROTHBAUM2001}
-B.~O. Rothbaum, L.F Hodges, D.~Ready, K.~Graap, and R.~D. Alarcon.
-\newblock Virtual reality exposure therapy for vietnam veterans with
-  posttraumatic stress disorder.
-\newblock \emph{J Clin Psychiatry}, 62\penalty0 (8):\penalty0 617--622, 2001.
-
-\bibitem[Meyerbröker et~al.(2011)Meyerbröker, Morina, Kerkhof, and
-  Emmelkamp]{MEYER2011}
-K.~Meyerbröker, N.~Morina, G.~Kerkhof, and P.M. Emmelkamp.
-\newblock Virtual reality exposure treatment of agoraphobia: a comparison of
-  computer automatic virtual environment and head-mounted display.
-\newblock \emph{Stud Health Technol Inform}, 167:\penalty0 51--56, 2011.
-
-\bibitem[Levy et~al.(2016)Levy, Leboucher, Rautureau, and Jouvent]{LEVY2016}
-F.~Levy, P.~Leboucher, G.~Rautureau, and R.~Jouvent.
-\newblock E-virtual reality exposure therapy in acrophobia: A pilot study.
-\newblock \emph{Journal of Telemedicine and Telecare}, 2016.
-
-\bibitem[Nesse et~al.(1985)Nesse, Curtis, Thyer, McCann, Hubert-Smith, and
-  Knopf]{NESSE1985}
-M.R. Nesse, G.C. Curtis, B.A. Thyer, D.S. McCann, M.J. Hubert-Smith, and R.F.
-  Knopf.
-\newblock Endocrine and cardiovascular responses during phobic anxiety.
-\newblock \emph{Psychosomatic Medicine}, 1985.
-
-\bibitem[Alpers and Sell(2008)]{ALPERS2007}
-G.~W. Alpers and R.~Sell.
+\bibitem[\protect\astroncite{Alpers and Sell}{2008}]{ALPERS2007}
+Alpers, G.~W. and Sell, R. (2008).
 \newblock And yet they correlate: Psychophysiological activation predicts
   self-report outcomes of exposure therapy in claustrophobia.
-\newblock \emph{Journal of Anxiety Disorders}, 22:\penalty0 1101--1109, 2008.
+\newblock {\em Journal of Anxiety Disorders}, 22:1101--1109.
 
-\bibitem[Diemer et~al.(2016)Diemer, Lohkamp, Mühlberger, and
-  Zwanzger]{DIEMER2016}
-J.~Diemer, N.~Lohkamp, A.~Mühlberger, and P.~Zwanzger.
+\bibitem[\protect\astroncite{Association and on~DSM-IV.}{1994}]{DSMIV1994}
+Association, A.~P. and on~DSM-IV., A. P. A. T.~F. (1994).
+\newblock {\em Diagnostic and Statistical Manual of Mental Disorders: DSM-IV.}
+
+\bibitem[\protect\astroncite{Bernston et~al.}{1997}]{BERNTSON1997}
+Bernston, G., Bigger, T., Eckberg, D., Grossman, P., Kaufmann, P., Malik, M.,
+  Nagaraja, H., Porges, S., Saul, J., Stone, P., and Van Der~Molen, M. (1997).
+\newblock Heart rate variability: Origins, methods, and interpretive caveats.
+\newblock {\em Psychophysiology}, 34(6):623--648.
+
+\bibitem[\protect\astroncite{Bolognia et~al.}{}]{bologniadermatology}
+Bolognia, J., Bolognia, J., J.R.P.R., Jorizzo, J., and Rapini, R.
+\newblock {\em Dermatology}.
+\newblock Elsevier Health Sciences.
+
+\bibitem[\protect\astroncite{Boucsein}{2012}]{boucsein2012electrodermal}
+Boucsein, W. (2012).
+\newblock {\em Electrodermal Activity}.
+\newblock The Springer series in behavioral psychophysiology and medicine.
+  Springer US.
+
+\bibitem[\protect\astroncite{Boucsein}{2013}]{boucsein2013electrodermal}
+Boucsein, W. (2013).
+\newblock {\em Electrodermal Activity}.
+\newblock The Springer Series in Behavioral Psychophysiology and Medicine.
+  Springer US.
+
+\bibitem[\protect\astroncite{Braithwaite et~al.}{2013}]{EDAGUIDE}
+Braithwaite, J., Watson, D., Jones, R., and Rowe, M. (2013).
+\newblock A guide for analysing electrodermal activity (eda) and skin
+  conductance responses (scrs) for psychological experiments.
+\newblock Technical report, Selective Attention and Awareness Laboratory (SAAL)
+  Behavioural Brain Sciences Centre, University of Birmingham, UK.
+
+\bibitem[\protect\astroncite{Cacioppo et~al.}{2007}]{HANDBOOKPP}
+Cacioppo, J., Tassinary, L., and Berntson, G. (2007).
+\newblock {\em Handbook of Psychophysiology}.
+\newblock Cambridge University Press.
+
+\bibitem[\protect\astroncite{Cavanagh and Shapiro}{2004}]{CAVANAGH2004}
+Cavanagh, K. and Shapiro, D.~A. (2004).
+\newblock Computer treatment for common mental health problems.
+\newblock {\em Journal of Clinical Psychology}, 60(3):239--251.
+
+\bibitem[\protect\astroncite{DeRubeis and Crits-Christoph}{1998}]{DERUBEIS1998}
+DeRubeis, R.~J. and Crits-Christoph, P. (1998).
+\newblock Empirically supported individual andgroup psychological treatments
+  for adult mental disorders.
+\newblock {\em Journal of Consulting and Clinical Psychology}, 66(1):37–52.
+
+\bibitem[\protect\astroncite{Diemer et~al.}{2016}]{DIEMER2016}
+Diemer, J., Lohkamp, N., Mühlberger, A., and Zwanzger, P. (2016).
 \newblock Fear and physiological arousal during a virtual
   heightchallenge—effects in patients with acrophobia and healthy controls.
-\newblock \emph{Journal of Anxiety Disorders}, 37:\penalty0 30--39, 2016.
-\newblock \doi{http://dx.doi.org/10.1016/j.janxdis.2015.10.007}.
+\newblock {\em Journal of Anxiety Disorders}, 37:30--39.
 
-\bibitem[Emmelkamp et~al.(2001)Emmelkamp, Bruynzeel, Drost, and Van
-  Der~Mast]{EMMELKAMP2001}
-P.M.G. Emmelkamp, M.~Bruynzeel, L.~Drost, and C.A.P.G. Van Der~Mast.
+\bibitem[\protect\astroncite{Emmelkamp et~al.}{2001}]{EMMELKAMP2001}
+Emmelkamp, P., Bruynzeel, M., Drost, L., and Van Der~Mast, C. (2001).
 \newblock Virtual reality treatment in acrophobia: A comparison with exposure
   in vivo.
-\newblock \emph{CyberPsychology and Behavior}, 2001.
+\newblock {\em CyberPsychology and Behavior}.
 
-\bibitem[Pan and Tompkins(1985)]{PANTOM1985}
-J.~Pan and W.J. Tompkins.
+\bibitem[\protect\astroncite{Fink}{2010}]{FINK2010}
+Fink, G. (2010).
+\newblock {\em Stress Consequences: Mental, Neuropsychological and
+  Socioeconomic}.
+\newblock Elsevier Science.
+
+\bibitem[\protect\astroncite{Garcia-Palacios et~al.}{2007}]{GARCIA2007}
+Garcia-Palacios, A., Botella, C., Hoffman, H., and Fabregat, S. (2007).
+\newblock Comparing acceptance and refusal rates of virtual reality exposure
+  vs. in vivo exposure by patients with specific phobias.
+\newblock {\em CyberPsychology and Behavior}, 10(5):722--724.
+
+\bibitem[\protect\astroncite{Goldberger et~al.}{2017}]{GOLDBERGER2017}
+Goldberger, A., Goldberger, Z., and Shvilkin, A. (2017).
+\newblock {\em Clinical Electrocardiography: A Simplified Approach E-Book}.
+\newblock Elsevier Health Sciences.
+
+\bibitem[\protect\astroncite{Gravetter et~al.}{2016}]{gravetter2016essentials}
+Gravetter, F., Wallnau, L., and Forzano, L. (2016).
+\newblock {\em Essentials of Statistics for The Behavioral Sciences}.
+\newblock Cengage Learning.
+
+\bibitem[\protect\astroncite{Hedges and Olkin}{2014}]{hedges2014statistical}
+Hedges, L. and Olkin, I. (2014).
+\newblock {\em Statistical Methods for Meta-Analysis}.
+\newblock Elsevier Science.
+
+\bibitem[\protect\astroncite{Huppert et~al.}{2013}]{HUPPERT2013}
+Huppert, D., Grill, E., and Brandt, T. (2013).
+\newblock Down on heights? one in three has visual height intolerance.
+\newblock {\em Journal of Neurology}, 260(2):597--604.
+
+\bibitem[\protect\astroncite{Inc.}{2017}]{MATDOC}
+Inc., T.~M. (1994-2017).
+\newblock Matlab documentation.
+
+\bibitem[\protect\astroncite{Kapfhammer et~al.}{2015}]{Kapfhammer2015}
+Kapfhammer, H.-P., Huppert, D., Grill, E., Fitz, W., and Brandt, T. (2015).
+\newblock Visual height intolerance and acrophobia: clinical characteristics
+  and comorbidity patterns.
+\newblock {\em European Archives of Psychiatry and Clinical Neuroscience},
+  265(5):375--385.
+
+\bibitem[\protect\astroncite{Kessler et~al.}{2005}]{KESSLER2005}
+Kessler, R., Berglund, P., Demler, O., Jin, R., Merikangas, K., and Walters, E.
+  (2005).
+\newblock Lifetime prevalence and age-of-onset distributions of dsm-iv
+  disorders in the national comorbidity survey replication.
+\newblock {\em Archives of General Psychiatry}, 62(6):593--602.
+
+\bibitem[\protect\astroncite{Layton}{2005}]{LAYTON2005}
+Layton, J. (2005).
+\newblock How fear works.
+
+\bibitem[\protect\astroncite{Levy et~al.}{2016}]{LEVY2016}
+Levy, F., Leboucher, P., Rautureau, G., and Jouvent, R. (2016).
+\newblock E-virtual reality exposure therapy in acrophobia: A pilot study.
+\newblock {\em Journal of Telemedicine and Telecare}.
+
+\bibitem[\protect\astroncite{Meyerbröker et~al.}{2011}]{MEYER2011}
+Meyerbröker, K., Morina, N., Kerkhof, G., and Emmelkamp, P. (2011).
+\newblock Virtual reality exposure treatment of agoraphobia: a comparison of
+  computer automatic virtual environment and head-mounted display.
+\newblock {\em Stud Health Technol Inform}, 167:51--56.
+
+\bibitem[\protect\astroncite{Nesse et~al.}{1985}]{NESSE1985}
+Nesse, M., Curtis, G., Thyer, B., McCann, D., Hubert-Smith, M., and Knopf, R.
+  (1985).
+\newblock Endocrine and cardiovascular responses during phobic anxiety.
+\newblock {\em Psychosomatic Medicine}.
+
+\bibitem[\protect\astroncite{O'Donohue and Fisher}{2012}]{o2012cognitive}
+O'Donohue, W. and Fisher, J. (2012).
+\newblock {\em Cognitive Behavior Therapy: Core Principles for Practice}.
+\newblock Wiley.
+
+\bibitem[\protect\astroncite{of~the European Society of Cardiology the North
+  American Society~of Pacing}{1996}]{TASK1996}
+of~the European Society of Cardiology the North American Society~of Pacing, E.
+  T.~F. (1996).
+\newblock Heart rate variability.
+\newblock {\em Circulation}.
+
+\bibitem[\protect\astroncite{Pan and Tompkins}{1985}]{PANTOM1985}
+Pan, J. and Tompkins, W. (1985).
 \newblock A real-time qrs detection algorithm.
-\newblock \emph{IEEE Transactions On Biomedical Engineering}, 1985.
+\newblock {\em IEEE Transactions On Biomedical Engineering}.
 
-\bibitem[Tan and Jiang(2013)]{tan2013digital}
-L.~Tan and J.~Jiang.
-\newblock \emph{Digital Signal Processing: Fundamentals and Applications}.
-\newblock Elsevier Science, 2013.
-\newblock ISBN 9780124159822.
-\newblock URL \url{https://books.google.de/books?id=M9-OhaJSwAEC}.
+\bibitem[\protect\astroncite{Riva}{2003}]{RIVA2003}
+Riva, G. (2003).
+\newblock Virtual environments in clinical psychology.
+\newblock {\em Psychotherapy: Theory, Research, Practice, Training},
+  40(1/2):68--76.
 
-\bibitem[Inc.(1994-2017)]{MATDOC}
-The~Mathworks Inc.
-\newblock Matlab documentation, 1994-2017.
-\newblock URL \url{https://de.mathworks.com/help/matlab/index.html}.
+\bibitem[\protect\astroncite{Rothbaum et~al.}{1995}]{ROTHBAUM1995}
+Rothbaum, B., Hodges, L., Kooper, R., Opdyke, D., Williford, J., and North, M.
+  (1995).
+\newblock Effectiveness of computer-generated (virtual reality) graded exposure
+  in the treatment of acrophobia.
+\newblock {\em The American Journal of Psychiatry}, 152(4):626--628.
 
-\bibitem[Shapiro and Wilk(1965)]{SHAPIROWILK}
-S.S. Shapiro and M.B. Wilk.
+\bibitem[\protect\astroncite{Rothbaum et~al.}{2001}]{ROTHBAUM2001}
+Rothbaum, B.~O., Hodges, L., Ready, D., Graap, K., and Alarcon, R.~D. (2001).
+\newblock Virtual reality exposure therapy for vietnam veterans with
+  posttraumatic stress disorder.
+\newblock {\em J Clin Psychiatry}, 62(8):617--622.
+
+\bibitem[\protect\astroncite{Rothbaum et~al.}{2000}]{ROTHBAUM2000}
+Rothbaum, B.~O., Hodges, L., Smith, S., Lee, J.~H., and Price, L. (2000).
+\newblock A controlled study of virtual reality exposure therapy for the fear
+  of flying.
+\newblock {\em Journal of Consulting and Clinical Psychology},
+  68(6):1020--1026.
+
+\bibitem[\protect\astroncite{Shapiro and Wilk}{1965}]{SHAPIROWILK}
+Shapiro, S. and Wilk, M. (1965).
 \newblock An analysis of variance test for normality (complete samples).
-\newblock \emph{Biometrika}, 52\penalty0 (3-4):\penalty0 591--611, 1965.
-\newblock \doi{10.1093/biomet/52.3-4.591}.
-\newblock URL \url{http://dx.doi.org/10.1093/biomet/52.3-4.591}.
+\newblock {\em Biometrika}, 52(3-4):591--611.
 
-\bibitem[Hedges and Olkin(2014)]{hedges2014statistical}
-L.V. Hedges and I.~Olkin.
-\newblock \emph{Statistical Methods for Meta-Analysis}.
-\newblock Elsevier Science, 2014.
-\newblock ISBN 9780080570655.
-\newblock URL \url{https://books.google.de/books?id=7GviBQAAQBAJ}.
-
-\bibitem[Gravetter et~al.(2016)Gravetter, Wallnau, and
-  Forzano]{gravetter2016essentials}
-F.J. Gravetter, L.B. Wallnau, and L.A.B. Forzano.
-\newblock \emph{Essentials of Statistics for The Behavioral Sciences}.
-\newblock Cengage Learning, 2016.
-\newblock ISBN 9781337098120.
-\newblock URL \url{https://books.google.de/books?id=LNq5DQAAQBAJ}.
+\bibitem[\protect\astroncite{Tan and Jiang}{2013}]{tan2013digital}
+Tan, L. and Jiang, J. (2013).
+\newblock {\em Digital Signal Processing: Fundamentals and Applications}.
+\newblock Elsevier Science.
 
 \end{thebibliography}

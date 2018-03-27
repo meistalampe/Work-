@@ -30,9 +30,15 @@
 \BOOKMARK [1][-]{section.3.1}{Electrodermal Activity}{chapter.3}% 30
 \BOOKMARK [1][-]{section.3.2}{Electrocardiogram}{chapter.3}% 31
 \BOOKMARK [1][-]{section.3.3}{Statistical Results}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Discussion}{}% 33
-\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 34
-\BOOKMARK [0][-]{appendix.A}{Tables and Measurement Results}{}% 35
-\BOOKMARK [0][-]{figure.caption.78}{List of Figures}{}% 36
-\BOOKMARK [0][-]{chapter*.79}{List of Tables}{}% 37
-\BOOKMARK [0][-]{chapter*.80}{Bibliography}{}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Shapiro-Wilk Test}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.2}{Two-Sample T-test for paired Samples}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.3}{Effect Size}{section.3.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Discussion}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Data Acquisition Quality}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{Sympathetic Activation}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.3}{Statistic Evaluation and Feature Quality}{chapter.4}% 39
+\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 40
+\BOOKMARK [0][-]{appendix.A}{Tables and Measurement Results}{}% 41
+\BOOKMARK [0][-]{figure.caption.78}{List of Figures}{}% 42
+\BOOKMARK [0][-]{chapter*.79}{List of Tables}{}% 43
+\BOOKMARK [0][-]{chapter*.80}{Bibliography}{}% 44

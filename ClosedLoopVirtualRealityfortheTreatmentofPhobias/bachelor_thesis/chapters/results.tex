@@ -12,13 +12,13 @@ We have plotted the average SCL of all subjects during the baseline and exposure
 \end{figure}
 
 \newpage
-In figure \ref{SCLbpImg} the peak interval distributions of each subject were illustrated in the form of a boxplot for both the baseline and the exposure measurement. The median RR interval is indicated by a red, horizontal line inside the box. The lower and the upper quartile are displayed by the lower and upper edge of the box, respectively. Minimum and maximum value of the peak interval sample are indicated by the endpoints of the, so called,  whiskers (outliers are marked as red +).
+In figure \ref{EDAbpImg} the peak interval distributions of each subject were illustrated in the form of a boxplot for both the baseline and the exposure measurement. The median RR interval is indicated by a red, horizontal line inside the box. The lower and the upper quartile are displayed by the lower and upper edge of the box, respectively. Minimum and maximum value of the peak interval sample are indicated by the endpoints of the, so called, whiskers (outliers are marked as red +).
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{images/EDApid.png}
 \caption{Boxplot comparison of the peak interval distribution of subject's baseline and exposure EDA measurement.}
-\label{SCLbpImg}
+\label{EDAbpImg}
 \end{figure}
 
 \newpage
@@ -42,7 +42,6 @@ According to the illustration of EDA, the RR intervals of all subjects are prese
 \label{ECGbpImg}
 \end{figure}
 
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{images/ECGhisto.png}
@@ -51,8 +50,13 @@ According to the illustration of EDA, the RR intervals of all subjects are prese
 \end{figure}
 
 \newpage
-\begin{landscape}
+%\begin{landscape}
 \section{Statistical Results}
+
+\subsection{Shapiro-Wilk Test}
+Apart from one exception the null hypothesis has been confirmed for all samples. The null hypothesis has been rejected for the baseline peak interval sample. All tests were conducted with a significance level of 5\%.
+
+The parameter as well as the results of the Shapiro-Wilk test are shown in table \ref{shapirowilk}, including sample size (n), confidence level ($\alpha$), test statistic (W) as well as its critical value ($W_{critical}$), mean value ($\bar{x}$) for each sample (x), weight coefficients ($a_{i}$) and eventually the test result (H). The null hypothesis was confirmed for all W greater than $W_{critical}$. The confirmation of the null hypothesis is indicated through H=0, whereas its rejection is indicated by H=1.
 
 \begin{table}[h]
 \centering
@@ -77,12 +81,15 @@ ECG EP & 10 & 0.05 & 0.9650 & 0.842 & 0.6834 & 0.5739 0.3291 0.2141 0.1224 0.039
 \label{shapirowilk}
 \end{table}
 
+%
+%\thispagestyle{empty}
+%\clearpage
+%\end{landscape}
+%
+%\newpage
 
-\thispagestyle{empty}
-\clearpage
-\end{landscape}
-
-\newpage
+\subsection{Two-Sample T-test for paired Samples}
+The null hypothesis was confirmed for the EDA peak interval samples and rejected for SCL mean samples as well as ECG RR interval samples. In table \ref{ttest} all parameters of the t-test and its results are listed, including sample size (n), confidence level ($\alpha$), degrees of freedom (df), rejection value ($V_{out}$) as well as the mean difference (d) and eventually the test results t-value and H. The null hypothesis was rejected for t-values greater than ($V_{out}$). The confirmation of the null hypothesis is indicated through H=0, whereas its rejection is indicated by H=1.
 
 \begin{table}[h]
 \centering
@@ -100,6 +107,9 @@ ECG  & 10 & 0.05 & 9 & 1.833 & 0.0886 & 5.8845 & 1\\
 \end{tabular}
 \label{ttest}
 \end{table}
+
+\subsection{Effect Size}
+The effect size d, or Cohen's d, of the two-sample t-test as well as the correlation coefficient r are shown in table \ref{effecttest}. In addition all associated test parameter, including the samples, sample size (n), sample means and pool variance ($\sigma$) were listed.
 
 \begin{table}[h]
 \centering

@@ -68,8 +68,14 @@
 \contentsline {chapter}{\numberline {3}Results}{58}{chapter.3}
 \contentsline {section}{\numberline {3.1}Electrodermal Activity}{58}{section.3.1}
 \contentsline {section}{\numberline {3.2}Electrocardiogram}{61}{section.3.2}
-\contentsline {section}{\numberline {3.3}Statistical Results}{63}{section.3.3}
-\contentsline {chapter}{\numberline {4}Discussion}{65}{chapter.4}
+\contentsline {section}{\numberline {3.3}Statistical Results}{62}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Shapiro-Wilk Test}{62}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Two-Sample T-test for paired Samples}{63}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Effect Size}{63}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Discussion}{64}{chapter.4}
+\contentsline {section}{\numberline {4.1}Data Acquisition Quality}{64}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sympathetic Activation}{64}{section.4.2}
+\contentsline {section}{\numberline {4.3}Statistic Evaluation and Feature Quality}{65}{section.4.3}
 \contentsline {chapter}{\numberline {5}Conclusions}{66}{chapter.5}
 \contentsline {chapter}{\numberline {A}Tables and Measurement Results}{67}{appendix.A}
 \contentsline {chapter}{List of Figures}{68}{figure.caption.78}
