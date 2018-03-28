@@ -5,6 +5,11 @@ Abdullah, A. (2014).
 \newblock {\em ECG in Medical Practice}.
 \newblock Jaypee Brothers,Medical Publishers Pvt. Limited.
 
+\bibitem[\protect\astroncite{Agras et~al.}{1969}]{AGRAS1969}
+Agras, S., Sylvester, D., and Oliveau, D. (1969).
+\newblock The epidemiology of common fears and phobia.
+\newblock {\em Comprehensive Psychiatry}, 10(2):151 -- 156.
+
 \bibitem[\protect\astroncite{Alpers and Sell}{2008}]{ALPERS2007}
 Alpers, G.~W. and Sell, R. (2008).
 \newblock And yet they correlate: Psychophysiological activation predicts
@@ -15,11 +20,21 @@ Alpers, G.~W. and Sell, R. (2008).
 Association, A.~P. and on~DSM-IV., A. P. A. T.~F. (1994).
 \newblock {\em Diagnostic and Statistical Manual of Mental Disorders: DSM-IV.}
 
+\bibitem[\protect\astroncite{Ax}{1953}]{AX1953}
+Ax, A. (1953).
+\newblock The physiological differentiation between fear and anger in humans.
+\newblock {\em Psychosomatic Medicine}.
+
 \bibitem[\protect\astroncite{Bernston et~al.}{1997}]{BERNTSON1997}
 Bernston, G., Bigger, T., Eckberg, D., Grossman, P., Kaufmann, P., Malik, M.,
   Nagaraja, H., Porges, S., Saul, J., Stone, P., and Van Der~Molen, M. (1997).
 \newblock Heart rate variability: Origins, methods, and interpretive caveats.
 \newblock {\em Psychophysiology}, 34(6):623--648.
+
+\bibitem[\protect\astroncite{Bernston et~al.}{1995}]{BERNSTON1995}
+Bernston, G., Cacioppo, J., and Quigley, K. (1995).
+\newblock The metrics of cardiac chronotropism: Biometric perspectives.
+\newblock {\em Psychophysiology}.
 
 \bibitem[\protect\astroncite{Bolognia et~al.}{}]{bologniadermatology}
 Bolognia, J., Bolognia, J., J.R.P.R., Jorizzo, J., and Rapini, R.
@@ -45,6 +60,17 @@ Braithwaite, J., Watson, D., Jones, R., and Rowe, M. (2013).
 \newblock Technical report, Selective Attention and Awareness Laboratory (SAAL)
   Behavioural Brain Sciences Centre, University of Birmingham, UK.
 
+\bibitem[\protect\astroncite{Butler et~al.}{2006}]{BUTLER2006}
+Butler, A.~C., Chapman, J.~E., Forman, E.~M., and Beck, A.~T. (2006).
+\newblock The empirical status of cognitive-behavioral therapy: A review of
+  meta-analyses.
+\newblock {\em Clinical Psychology Review}, 26(1):17 -- 31.
+
+\bibitem[\protect\astroncite{Butler et~al.}{1984}]{BUTLER1984}
+Butler, G., Cullington, A., Munby, M., Amies, P., and Gelder, M. (1984).
+\newblock Exposure and anxiety management in the treatment of social phobia.
+\newblock {\em Journal of Consulting and Clinical Psychology}, 52(4).
+
 \bibitem[\protect\astroncite{Cacioppo et~al.}{2007}]{HANDBOOKPP}
 Cacioppo, J., Tassinary, L., and Berntson, G. (2007).
 \newblock {\em Handbook of Psychophysiology}.
@@ -54,6 +80,16 @@ Cacioppo, J., Tassinary, L., and Berntson, G. (2007).
 Cavanagh, K. and Shapiro, D.~A. (2004).
 \newblock Computer treatment for common mental health problems.
 \newblock {\em Journal of Clinical Psychology}, 60(3):239--251.
+
+\bibitem[\protect\astroncite{Choy et~al.}{2007}]{CHOY2007}
+Choy, Y., Fyer, A.~J., and Lipsitz, J.~D. (2007).
+\newblock Treatment of specific phobia in adults.
+\newblock {\em Clinical Psychology Review}, 27(3):266 -- 286.
+
+\bibitem[\protect\astroncite{Cohen}{1988}]{COHEN}
+Cohen, J. (1988).
+\newblock {\em Statistical Power Analysis for the Behavioral Sciences}.
+\newblock Lawrence Erlbaum Associates.
 
 \bibitem[\protect\astroncite{DeRubeis and Crits-Christoph}{1998}]{DERUBEIS1998}
 DeRubeis, R.~J. and Crits-Christoph, P. (1998).
@@ -73,11 +109,24 @@ Emmelkamp, P., Bruynzeel, M., Drost, L., and Van Der~Mast, C. (2001).
   in vivo.
 \newblock {\em CyberPsychology and Behavior}.
 
+\bibitem[\protect\astroncite{Emmelkamp et~al.}{2002}]{EMMELKAMP2002}
+Emmelkamp, P., Krijn, M., Hulsbosch, A.~M., de~Vries, S., Schuemie, M.~J., and
+  van~der Mast, C. (2002).
+\newblock Virtual reality treatment versus exposure in vivo: a comparative
+  evaluation in acrophobia.
+\newblock {\em Behaviour Research and Therapy}, 40(5):509 -- 516.
+
 \bibitem[\protect\astroncite{Fink}{2010}]{FINK2010}
 Fink, G. (2010).
 \newblock {\em Stress Consequences: Mental, Neuropsychological and
   Socioeconomic}.
 \newblock Elsevier Science.
+
+\bibitem[\protect\astroncite{Freedman et~al.}{1994}]{FREEDMAN1994}
+Freedman, L.~W., Scarpa-Scerbo, A., Dawson, M.~E., Raine, A., McClure, W.~O.,
+  and Venables, P.~H. (1994).
+\newblock The relationship of sweat gland count to electrodermal activity.
+\newblock {\em Psychophysiology}.
 
 \bibitem[\protect\astroncite{Garcia-Palacios et~al.}{2007}]{GARCIA2007}
 Garcia-Palacios, A., Botella, C., Hoffman, H., and Fabregat, S. (2007).
@@ -105,10 +154,6 @@ Huppert, D., Grill, E., and Brandt, T. (2013).
 \newblock Down on heights? one in three has visual height intolerance.
 \newblock {\em Journal of Neurology}, 260(2):597--604.
 
-\bibitem[\protect\astroncite{Inc.}{2017}]{MATDOC}
-Inc., T.~M. (1994-2017).
-\newblock Matlab documentation.
-
 \bibitem[\protect\astroncite{Kapfhammer et~al.}{2015}]{Kapfhammer2015}
 Kapfhammer, H.-P., Huppert, D., Grill, E., Fitz, W., and Brandt, T. (2015).
 \newblock Visual height intolerance and acrophobia: clinical characteristics
@@ -123,6 +168,32 @@ Kessler, R., Berglund, P., Demler, O., Jin, R., Merikangas, K., and Walters, E.
   disorders in the national comorbidity survey replication.
 \newblock {\em Archives of General Psychiatry}, 62(6):593--602.
 
+\bibitem[\protect\astroncite{Kessler et~al.}{1994}]{KESSLER1994}
+Kessler, R., McGonagle, K., Zhao, S., and et~al (1994).
+\newblock Lifetime and 12-month prevalence of dsm-iii-r psychiatric disorders
+  in the united states: Results from the national comorbidity survey.
+\newblock {\em Archives of General Psychiatry}, 51(1):8--19.
+
+\bibitem[\protect\astroncite{Lacey et~al.}{1963}]{LACEY1963}
+Lacey, J.~I., Kagan, J., Lacey, B.~C., and Moss, H.~A. (1963).
+\newblock The visceral level: Situational determinants and behavioral
+  correlates of autonomic response patterns. in p. h. knapp (ed.), expression
+  of the emotions in man.
+\newblock {\em New York: International Universities Press}.
+
+\bibitem[\protect\astroncite{Lang et~al.}{1993}]{LANG1993}
+Lang, P., Greenwald, M., Bradley, M., and Hamm, A. (1993).
+\newblock Looking at pictures: Affective, facial, visceral, and behavioral
+  reactions.
+\newblock {\em Psychophysiology}, 30(3):261--273.
+
+\bibitem[\protect\astroncite{Lang et~al.}{1998}]{LANG1998}
+Lang, P.~J., Bradley, M.~M., and Cuthbert, B.~N. (1998).
+\newblock International affective picture system (iaps): Technical manual and
+  affective ratings.
+\newblock Technical report, Center for Research in Psychophysiology, University
+  of Florida, Gainesville.
+
 \bibitem[\protect\astroncite{Layton}{2005}]{LAYTON2005}
 Layton, J. (2005).
 \newblock How fear works.
@@ -132,11 +203,22 @@ Levy, F., Leboucher, P., Rautureau, G., and Jouvent, R. (2016).
 \newblock E-virtual reality exposure therapy in acrophobia: A pilot study.
 \newblock {\em Journal of Telemedicine and Telecare}.
 
+\bibitem[\protect\astroncite{Matlab}{2017}]{MATDOC}
+Matlab (1994-2017).
+\newblock Documentation.
+
 \bibitem[\protect\astroncite{Meyerbröker et~al.}{2011}]{MEYER2011}
 Meyerbröker, K., Morina, N., Kerkhof, G., and Emmelkamp, P. (2011).
 \newblock Virtual reality exposure treatment of agoraphobia: a comparison of
   computer automatic virtual environment and head-mounted display.
 \newblock {\em Stud Health Technol Inform}, 167:51--56.
+
+\bibitem[\protect\astroncite{Montano et~al.}{1994}]{Montano1826}
+Montano, N., Ruscone, T., Porta, A., Lombardi, F., Pagani, M., and Malliani, A.
+  (1994).
+\newblock Power spectrum analysis of heart rate variability to assess the
+  changes in sympathovagal balance during graded orthostatic tilt.
+\newblock {\em Circulation}, 90(4):1826--1831.
 
 \bibitem[\protect\astroncite{Nesse et~al.}{1985}]{NESSE1985}
 Nesse, M., Curtis, G., Thyer, B., McCann, D., Hubert-Smith, M., and Knopf, R.
@@ -160,6 +242,11 @@ of~the European Society of Cardiology the North American Society~of Pacing, E.
 Pan, J. and Tompkins, W. (1985).
 \newblock A real-time qrs detection algorithm.
 \newblock {\em IEEE Transactions On Biomedical Engineering}.
+
+\bibitem[\protect\astroncite{Parker et~al.}{1984}]{PARKER1984}
+Parker, P., Celler, B., Potter, E.~K., and McCloskey, D. (1984).
+\newblock Vagal stimulation and cardiac slowing.
+\newblock {\em Journal of the Autonomic Nervous System}, 11(2):226 -- 231.
 
 \bibitem[\protect\astroncite{Riva}{2003}]{RIVA2003}
 Riva, G. (2003).
@@ -186,6 +273,13 @@ Rothbaum, B.~O., Hodges, L., Smith, S., Lee, J.~H., and Price, L. (2000).
   of flying.
 \newblock {\em Journal of Consulting and Clinical Psychology},
   68(6):1020--1026.
+
+\bibitem[\protect\astroncite{Scerbo et~al.}{1992}]{SCERBO1992}
+Scerbo, A.~S., Freedman, L.~W., Raine, A., Dawson, M.~E., and Venables, P.~H.
+  (1992).
+\newblock A major effect of recording site on measurement of electrodermal
+  activity.
+\newblock {\em Psychophysiology}.
 
 \bibitem[\protect\astroncite{Shapiro and Wilk}{1965}]{SHAPIROWILK}
 Shapiro, S. and Wilk, M. (1965).

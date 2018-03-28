@@ -30,6 +30,7 @@
 \usepackage[numbers, square]{natbib}
 \usepackage{pdflscape}
 \usepackage{natbib}
+\usepackage{float}
 %\usepackage{bibentry}
 %\nobibliography*
 \usepackage{microtype}
@@ -104,24 +105,24 @@
 \thispagestyle{empty}
 \clearpage
 
-\vspace*{\fill}
-\small
-\begin{center}
-
-Copyright \textcopyright \ \the\year \ Dominik Limbach, some rights reserved.
-	
-\begin{minipage}{0.85\textwidth}
-Permission is hereby granted, free of charge, to anyone obtaining a copy of this material, to freely copy and/or redistribute unchanged copies of this material according to the conditions of the Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 International. Any form of commercial use of this material - excerpt use in particular - requires the prior written consent of the author.
-\end{minipage}
-	
-\includegraphics[width=4cm]{images/cc_by_nc_nd}
-	
-\href{http://creativecommons.org/licenses/by-nc-nd/4.0/}{http://creativecommons.org/licenses/by-nc-nd/4.0/}
-
-\end{center}
-\normalsize
-\thispagestyle{empty}
-\clearpage
+%\vspace*{\fill}
+%\small
+%\begin{center}
+%
+%Copyright \textcopyright \ \the\year \ Dominik Limbach, some rights reserved.
+%	
+%\begin{minipage}{0.85\textwidth}
+%Permission is hereby granted, free of charge, to anyone obtaining a copy of this material, to freely copy and/or redistribute unchanged copies of this material according to the conditions of the Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 International. Any form of commercial use of this material - excerpt use in particular - requires the prior written consent of the author.
+%\end{minipage}
+%	
+%\includegraphics[width=4cm]{images/cc_by_nc_nd}
+%	
+%\href{http://creativecommons.org/licenses/by-nc-nd/4.0/}{http://creativecommons.org/licenses/by-nc-nd/4.0/}
+%
+%\end{center}
+%\normalsize
+%\thispagestyle{empty}
+%\clearpage
 
 \newpage
 
@@ -223,6 +224,7 @@ Dominik Limbach
 
 \newpage
 
+\nocite{*}
 \renewcommand{\bibname}{Bibliography}
 \addcontentsline{toc}{chapter}{Bibliography}
 %\bibliographystyle{unsrtnat}

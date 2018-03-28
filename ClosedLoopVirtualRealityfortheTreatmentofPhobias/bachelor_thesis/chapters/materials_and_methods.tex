@@ -61,12 +61,12 @@
 
 \section{Materials}
 % mention the SNNU and the lab where the study takes place
-All experiments and measurements were conducted within the facilities of Systems Neuroscience and Neurotechnology Unit, particularly the Green Lab, which is located at the Saarland University Hospital. 
+All experiments and measurements were conducted within the facilities of Systems Neuroscience and Neurotechnology Unit, particularly the Green Lab, which is located at the University Hospital Saarland. 
 
 \subsection{System Components}
 %In this section all the components that are necessary to run the virtual reality system are described.
 % It is to mention that the used parts were primarily selected in regard to their availability and the system as a whole was kept as cost-efficient as possible. The system can therefore be very appealing to a variety of users, in need of a low-budget treatment system, suited to be operated in limited spaces.
-The virtual reality system is comprised of a number of components, some of which were created in the scope of a different thesis\footnote{This is a reference to the master thesis of Santhosh Nayak, a fellow student, contributing to the project.}. Therefore, this section will focus on components that were built in the scope of the present thesis and delineate what is necessary to run the virtual reality system.
+The virtual reality system is comprised of a number of components, some of which were created in the scope of a different thesis\footnote{This is a reference to the master thesis of Santhosh Nayak, a fellow student, contributing to the project.}. Therefore, this section will focus only on components that were built in the scope of the present thesis and delineate what is necessary to run the virtual reality system.
   
 \subsection{Hardware}\label{Hardware}
 \subsubsection{HTC Vive}
@@ -88,13 +88,15 @@ To guarantee a satisfying experience a minimum room size of 2m x 1.5m with a max
 \subsubsection{BITalino}
 The BITalino (r)evolution Plugged kit is an innovative low-cost toolkit that was developed for rapid prototyping of wearable devices and biomedical signal acquisition. The main board, or BITalino Core, is comprised of for major components, the Microcontroller (MCU) Block, the Bluetooth Block, the Power Block with the device's own LiPo battery and the UC-E6 connectors. The MCU features 12 ports, which are divided into 8 analog and 4 digital ports. Of the 7 separately included BITalino sensors, which are connected via cable, only the EDA sensor and the ECG sensor were used. The data is recorded with one of the 4 preset sampling rates and then sent to the user's computer, via a Bluetooth connection. The BITalino is supported by a number of platforms, such Matlab and Unity, allowing for easy implementation in almost any data acquisition process.\\
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{images/BitOverview.png}
+\includegraphics[width=0.8\textwidth]{images/BitOverview.png}
 \caption{Graphical overview of the BITalino device including all functional blocks.}
 \label{bitImg}
 \end{figure}
 
+\newpage
+ 
 \textbf{Specifications}
 \begin{itemize}
 \item Analog Ports: 4 in (10-bit) + 2 in (6-bit) + 1 auxiliary in (battery) + 1 out (8-bit)
@@ -119,13 +121,12 @@ The BITalino (r)evolution Plugged kit is an innovative low-cost toolkit that was
 \subsubsection{VR Unit (VRU)}
 VRU is the expression given to the computer, which is used to run the Unity software and power the HMD while the system is in use. It is to mention that the performance of the HTC Vive, in some degree, is reliant on the CPU and GPU of the VRU. Therefore exceeding the minimum requirements, although involving higher cost, has proven to beneficial for the user experience, especially when the used virtual environment relies on realistic real-time lighting effects. On a monitor, which is connected to the VRU, the virtual world, as perceived by the HMD, is displayed for the user to see. However, while the system is in use, the software that is run on the VRU is controlled by a separate computer. Therefore it is essential that the VRU is able to connect to the internet. Alternatively a local network can suffice given one of the following conditions is met:\\[10pt]
 a) the CMU (see \ref{CMU}) is located in the same local network as the VRU\\
-b) the functions of VRU and CMU are handled by a single computer\footnote{If this variant is used, a Bluetooth adapter is required to connect to the BITalino device.}\\[10pt]
+b) the functions of VRU and CMU are handled by a single computer\footnote{If this variant is used, a Bluetooth adapter is required to connect to the BITalino device.}
  
 \subsubsection{Control and Measurement Unit (CMU)}\label{CMU}
 In the early design phase the CMU was conceptualized as a part of the VRU, but it was then separated in regard to its intended use as a mobile control device for the therapist during the therapy. However, in our experiment a Laptop served as CMU. The CMU enables the user to submit orders to the VRU, control the BITalino, as well as to view the preprocessed Data. To find detailed explanations to the functions mentioned above, see \ref{Methods}.
 
-%\subsubsection*{Conclusion}
-%In conclusion it can be said that the system at hand certainly is built to perform on a minimum budget but also be applicable to a number of clinical applications, particularly the treatment of phobias
+\newpage
 \subsection{Software}
 As mentioned in section \ref{CMU} the data acquisition is handled by a separate computer. However, all programs were designed to function on any device, capable of running the software in this section. 
 
@@ -138,14 +139,14 @@ Matlab is a software, which was created to solve mathematical problems. It was u
 \subsection{Virtual Environment}
 As mentioned earlier there are two major requirements that must be met to successfully treat phobias with virtual exposure, fear elicitation and emotional processing. To elicit fear in the subjects we have to ensure that adequate stimuli are offered in our virtual environment. We therefore have implemented three different ways to adapt the difficulty of our virtual height scenario. The virtual environment was designed around the concept of a descending floor inside a closed room. In the default configuration, which is shown in figure \ref{VRdefaultImg}, a neutral environment is provided.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{images/RoomDefault.png}
 \caption{A side view of the VR room in its default configuration.}
 \label{VRdefaultImg}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{images/RoomDefaultTop.png}
 \caption{A top view of the VR room in its default configuration.}
@@ -154,9 +155,9 @@ As mentioned earlier there are two major requirements that must be met to succes
 
 This configuration is used at the start of the session to conduct baseline measures and to allow for acclimation to the virtual reality. The first stimulus that is presented to the patient is the opening of the floor, which is shown in figure \ref{OpenImg}. Initially the floor was programmed to open completely. This was later adapted in regard to a recommendation by the psychiatry department. It was suggested that the ability to gradually move the floor to the side and therefore provide a form of minimal stimulation could be particularly useful in the treatment of very severe cases of acrophobia. Thus, two additional steps were implemented at the one third and two third mark of the full opening distance.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{images/OpenComparison.png}
+\includegraphics[width=0.8\textwidth]{images/OpenComparison.png}
 \caption{Comparison of the different stages of floor opening.}
 \label{OpenImg}
 \end{figure}
@@ -164,9 +165,9 @@ This configuration is used at the start of the session to conduct baseline measu
 The actual height challenge as well as the two remaining stimuli are revealed once the floor has been opened up. The patient is then confronted with a narrow bridge located above a descendable platform that is initially positioned 1m below floor-level (see \ref{OpenImg}, D). During therapy patients are asked to cross the bridge in order to confront their fear. A task, which in this state of the virtual environment, is considered to be of a lower difficulty. However, the difficulty can be adapted to each individual by alterations made to the strength of the primary stimulus, the depth. The platform can be lowered to a depth of up to 40m, enabling a degree of stimulation that could hardly be achieved in in-vivo exposure. But there are also precautions to be made to guarantee that the full extend of this stimulus can be perceived by the patients.
 For instance there are no natural light-sources in a closed room scenario. Therefore the virtual room has to be equipped with an operant lighting system. We have applied 4 ceiling lamps that each are featured with 2 different light-sources, a point and a spotlight. Point lights are located at a certain point inside the virtual space and send out light, which is equally distributed, in all directions. The intensity of the eradiated light is diminished with increasing distance to the source, eventually reaching zero at the a specific range, which was set to 13m. We have used point lights to simulate the natural patterns of light in close proximity to a big surface lamp. The glow of the light bulb itself was recreated by using a material property called emission, causing light to be emitted directly from an object's surface to which the material has been applied. Spotlights too have a specified location and range but are used to illuminate a constrained angle, resulting in a cone shaped region of illumination. In addition to the previously mentioned range specific intensity drop off, the intensity of the spotlight is reduced from the inside to the outside of the light cone, causing a fade effect in the outskirts region, the so called penumbra. We have used spotlights with a range of 13m and an angle of 165 degrees to light the room as well as the initial section of the pit. As the platform is lowered beyond this range it is obscured by shadows and becomes less visible. Therefore we have implemented additional light-sources that are activated and deactivated according to the current platform position. Thus, the platform is sufficiently illuminated at all times (see \ref{DepthImg}, C and D).
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{images/DepthComparison.png}
+\includegraphics[width=0.8\textwidth]{images/DepthComparison.png}
 \caption{Illustration of 4 different platform position.}
 \label{DepthImg}
 \end{figure}
@@ -174,9 +175,9 @@ For instance there are no natural light-sources in a closed room scenario. There
 In figure \ref{DepthImg} four different depths, subsidiary for four stimulus intensities, are displayed: A = 1m, B = 8m, C = 25m and D = 40m. It has to be mentioned that those depths only were chosen to illustrate different therapy difficulties whereas the depth can be freely changed in steps of 1m. Earlier we have talked about the immersion being disrupted by changing scenes during the session. To counter this phenomena, we have programmed the transition phase between difficulties to be smooth and gradually instead of the floor being abruptly teleported to the new target location. 
 The third available method of increasing the difficulty is an alteration to the width of the bridge. This also was implemented after a suggestion of the psychiatrists involved, improving the adaptability of our system. Similar to the opening of the floor we have decided for a total of four different widths, ranging from 25cm to 1m (see \ref{BridgeImg}).
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{images/BridgeComparison.png}
+\includegraphics[width=0.8\textwidth]{images/BridgeComparison.png}
 \caption{Comparison of the different widths of the bridge.}
 \label{BridgeImg}
 \end{figure}
@@ -189,17 +190,16 @@ To display the virtual environment, a powerful computer(Intel(R) Core(TM) i7-377
 % The Lighthouse Tracking-System, created by the company Valve, allowed to track participant's motion during the exposure in an area of maximal 5 by 5 meter and to project their movement in the virtual environment., and all the sensors, which were attached to the HMD and the controller by HTC. 
 Two base stations of the Lighthouse system were positioned in opposing corners at a height of roughly 2 m. Due to limited space, the exposure area was restricted to an area of 3.5 by 3.5 meter. The program, which was used to remotely control the virtual environment, was written with the Matlab software version R2015a and run on a Laptop (Intel(R) Core(TM) i5 6200U, 2x2.3 GHz and 8 GB Ram). The virtual environment was run on the desktop computer, using Unity version 5.6.1f1 personal. Both machines were connected through a closed network. We have used the BITalino device to record the physiological data and send it to our Laptop via a Bluetooth connection. We have chosen this device primarily for the convenience of wireless data transmission, higher maneuverability and less distraction for the patient. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{images/IMG_5311.JPG}
+\includegraphics[width=0.7\textwidth]{images/IMG_5311.JPG}
 \caption{Photograph of the experimental setup, located in the Green Lab in the University Hospital Saarland in Homburg. View on the control desk.}
 \label{SetupVRImg}
 \end{figure}
 
-
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{images/IMG_5310.JPG}
+\includegraphics[width=0.7\textwidth]{images/IMG_5310.JPG}
 \caption{Photograph of the experimental setup, located in the Green Lab in the University Hospital Saarland in Homburg. View on the exposure area}
 \label{SetupVR2Img}
 \end{figure}
@@ -208,9 +208,9 @@ Two base stations of the Lighthouse system were positioned in opposing corners a
 The key concept of our system was the adaptability of the virtual experience to the therapist standards as well as the individual standard. To achieve our goal we built our system in a way that information is constantly exchanged between the single components.
 The setup is composed of four major components that can be divided into two groups according to their function. Either the information is delivered to the subject (VRU and HMD) or retrieved from the subject and presented to the user (CMU and BITalino) (see figure \ref{setupImg}).\\ 
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/setup.png}
+\includegraphics[width=1\textwidth]{images/setup.png}
 \caption{Closed-loop virtual reality system. The grey line illustrates the closed loop information flow.}
 \label{setupImg}
 \end{figure}
@@ -232,25 +232,19 @@ In total a sample 11 able-bodied individuals participated in our virtual reality
 
 \subsection{Procedure}
 At the start of the experiment the subjects had to answer a short questionnaire concerning personal information, their general attitude towards as well as their experiences with virtual reality and heights. Afterwards the participants were given a small set of directives for the experiment. They were asked to walk slowly at all times and not cover the motion sensors on the HMD with their hands. Further, they were told to wait for instructions before moving and to avoid unnecessary arm movement in order to minimize motion artifacts. We then proceeded by placing the electrodes on the subject's hands and connected them to the BITalino device. After the device was safely stored on the subject's body and the electrode cables were fixated the HMD was put on. We then adjusted the braces to each individual's head, ensuring optimal fit and thus concluding the subject preparation.\\
-For the baseline recording, which lasted 4 minutes, the subjects were sitting on a chair inside the tracking area, allowing them to familiarize themselves with the virtual environment while being measured. Immediately after, the participants were instructed to move to the starting position. The virtual exposure was conducted in a circular pattern. Each cycle was lead by a short waiting period, in which the virtual reality was altered. Once the alteration was completed the subjects were given a signal, upon which they should move to the opposite side of the room and return back to the default position. In addition they were asked to look down every time they crossed and to stand still at times, while doing so. In the beginning of the exposure routine the floor was gradually opened in front of the subject (see \ref{OpenImg}), with a delay of 10 seconds between each step. Once the floor was fully opened the default exposure setting of 1m depth and a bridge size of 1m was revealed and the first cycle executed. For the second cycle the platform was lowered to 10m depth and the bridge size was reduced by 50cm. In the third cycle we set the virtual environment to the maximum difficulty setting, with a depth of 40m and a bridge size of 25cm. In the next two cycles the two parameters remained constant. However, for each crossing the lighting was changed to a different color, including red, blue and green. For the last crossing the color was changed back to the white default color. Once the subject had returned to the starting position the floor was gradually closed, thus completing the exposure.
-To finalize the experiment the HMD as well as the BITalino were removed and the subjects were given a second questionnaire, in which we asked them to rate their experience.\\
+For the baseline recording, which lasted 4 minutes, the subjects were sitting on a chair inside the tracking area, allowing them to familiarize themselves with the virtual environment while being measured. Immediately after, the participants were instructed to move to the starting position. The virtual exposure was conducted in a circular pattern. Each cycle was lead by a short waiting period, in which the virtual reality was altered. Once the alteration was completed the subjects were given a signal, upon which they should move to the opposite side of the room and return back to the default position. In addition they were asked to look down every time they crossed and to stand still at times, while doing so. In the beginning of the exposure routine the floor was gradually opened in front of the subject (see \ref{OpenImg}), with a delay of 10 seconds between each step. Once the floor was fully opened the default exposure setting of 1m depth and a bridge size of 1m was revealed and the first cycle executed. For the second cycle the platform was lowered to 10m depth and the bridge size was reduced by 50cm. In the third cycle we set the virtual environment to the maximum difficulty setting, with a depth of 40m and a bridge size of 25cm. In the next two cycles the two parameters remained constant. However, for each crossing the lighting was changed to a different color, including red, blue and green. For the last crossing the color was changed back to the white default color. Once the subject had returned to the starting position the floor was gradually closed, thus completing the exposure. To finalize the experiment the HMD as well as the BITalino were removed and the subjects were given a second questionnaire, in which we asked them to rate their experience.
 
-
-%\subsubsection{VR initialization}
 %%https://docs.unity3d.com/Manual/VROverview.html
-
 \subsection{Virtual Reality Control}\label{VRControl}
 One of the major challenges, we were confronted with during this project, was to find a method that would allow for a reliable information transport between VRU and CMU. We have decided on a TCP/IP solution for this problem. This allowed for a loss-free data transmission between the two terminals. 
 %The connection between server and client is established by assigning a specific port and IP-addresses.
-We used Microsoft Visual Studio to create a server in form of a script that reads incoming data streams, sent to the VRU's IP-address. The server was programmed to accept data from any client sending data to the specific port 8632. The data, contained in the stream, could only be read in sequential blocks. These blocks then had to be encoded into a sequence of bytes. Finally, by using specific converting methods for each data type, the information was extracted from the byte array and stored into the assigned variables. Since the script was attached to a game object inside the Unity environment we were able to make these variables accessible to the rest of the virtual reality and thus control certain game objects, such as the floor or the lighting. To control game objects or more precisely a certain aspect of them additional scripts were needed. These control scripts were designed to access the respective component of the game object we wanted to control and frequently update the component's variables with the values retrieved from the server script. For example if information was sent to lower the platform, the associated script would load the position variable of the transform component of the platform and override the current value with the new value, which was imported from the server script. Once this happened the changes to the game objects were immediately applied and therefore the virtual experience was altered.\\
-
+We used Microsoft Visual Studio to create a server in form of a script that reads incoming data streams, sent to the VRU's IP-address. The server was programmed to accept data from any client sending data to the specific port 8632. The data, contained in the stream, could only be read in sequential blocks. These blocks then had to be encoded into a sequence of bytes. Finally, by using specific converting methods for each data type, the information was extracted from the byte array and stored into the assigned variables. Since the script was attached to a game object inside the Unity environment we were able to make these variables accessible to the rest of the virtual reality and thus control certain game objects, such as the floor or the lighting. To control game objects or more precisely a certain aspect of them additional scripts were needed. These control scripts were designed to access the respective component of the game object we wanted to control and frequently update the component's variables with the values retrieved from the server script. For example if information was sent to lower the platform, the associated script would load the position variable of the transform component of the platform and override the current value with the new value, which was imported from the server script. Once this happened the changes to the game objects were immediately applied and therefore the virtual experience was altered.
 As mentioned earlier the server was built to accept data from any client. However, one additional condition had to be met to guarantee the information could be understood by the server. The data had to be sent as an 8-bit coded array, containing all 12 variables in a specific order. During the development phase the data was sent from the CMU, using Matlab. Similar to the Unity server we have created a Matlab client that allowed the user to enter the desired values and then automatically built and sent the data array. In the experimental phase of the project, the VR was controlled using a web application connected to a server structure, which was also handling the capture of the physiological data \footnote{This application as well as the server have been created in the scope of mister Nayak's master thesis and therefore will not be described any further.}. 
-
 
 \subsection{Data Acquisition}
 We obtained 100Hz ECG and EDA measures for the entirety of the experiment, using the BITalino (r)evolution. The sessions lasted approximately 11 minutes, consisting of a 5 minute baseline measurement and an exposure measurement, which lasted 7 minutes on average. For EDA two electrodes were placed on the distal phalanges of the non-dominant hand as well as three electrodes for ECG, which were placed on the palmar surface of both hands(see \ref{epImg}). The data was transmitted to the CMU, which was located in close proximity to the experiment area (2-3m), using a Bluetooth connection, and saved in text format (.csv). Afterwards the data was processed for further evaluation, using Matlab.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{images/ep.png}
 \caption{Example for electrode placement on a right handed subject.}
@@ -308,18 +302,18 @@ W_{n} = e^{(-2\pi t)/n}
 \end{equation}
 is one of n roots of unity.\\
 
-The result was a frequency domain representation of the raw signal data, according to which the noise filters were designed. An example of a typical EDA measure is shown in figure \ref{rawEDAImg}. Using the FFT we were able to locate noise frequencies, such as the 50 Hz power line interference, and potential movement artifacts in the higher frequency areas, in foresight of the later filtering of the data (see figure \ref{fftEDAImg}).
+The result was a frequency domain representation of the raw signal data, according to which the noise filters were designed. An example of a typical EDA measure is shown in figure \ref{rawEDAImg}. Using the FFT we were able to locate noise frequencies, such as the 50 Hz power line interference, and potential movement artifacts in the higher frequency areas, in foresight of the later filtering of the data (see figure \ref{fftEDAImg}).\\
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/rawEDA.png}
+\includegraphics[width=0.8\textwidth]{images/rawEDA.png}
 \caption{Raw data of an EDA measurement.}
 \label{rawEDAImg}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{images/fftEDA.png}
+\includegraphics[width=0.8\textwidth]{images/fftEDA.png}
 \caption{FFT of an EDA raw data set.}
 \label{fftEDAImg}
 \end{figure}
@@ -333,7 +327,7 @@ N = Fs * t
 \subsubsection{ECG Processing}
 %-filter
 Our main goal was to enhance the ECG signal for optimized feature extraction, particularly Heart rate (HR) and heart rate variation (HRV). %\cite{tan2013digital}.
-Therefore we had to reduce the noise in our signal by removing muscle noise, which most commonly occurs at approximately 40Hz, the effects of a possible DC drift and power line interference, while preserving the information bearing frequencies for QRS-detection of 5-15Hz \cite{PANTOM1985} \cite{tan2013digital}. First, we took measures to remove DC drift from our signal, using the inbuilt Matlab function \textit{detrend}. This function removed the best straight-line fit, which was created by computing the least-squares fit of a straight line or composite line for piecewise linear trends, from the data vector x and returned it in y (see \ref{detrend}). In the next step we analyzed the signal in regard to its frequency components using FFT (see \ref{generalproc}.
+Therefore we had to reduce the noise in our signal by removing muscle noise, which most commonly occurs at approximately 40Hz, the effects of a possible DC drift and power line interference, while preserving the information bearing frequencies for QRS-detection of 5-15Hz \cite{PANTOM1985} \cite{tan2013digital}. First, we took measures to remove DC drift from our signal, using the inbuilt Matlab function \textit{detrend}. This function removed the best straight-line fit, which was created by computing the least-squares fit of a straight line or composite line for piecewise linear trends, from the data vector x and returned it in y (see \ref{detrend}). In the next step we analyzed the signal in regard to its frequency components using FFT (see \ref{generalproc}).
 
 \begin{equation}\label{detrend}
 y = detrend(x)
@@ -353,6 +347,7 @@ Although the frequency analysis did only in few cases show a 50Hz spike, we appl
 [sos,g] = tf2sos(b,a)
 \end{equation}
 
+\newpage
 \subsubsection{EDA Processing}
 %-filter
 Similar to the ECG filtering procedure we started by removing the power line interference, using the same notch filter that was described in the previous section. We then applied a digital low pass filter with a passband frequency of 1Hz as well as a stopband frequency of 3Hz, a Rp of 1dB and a Rs of 60dB. This yielded satisfying results with adequate signal information and minimum to no noise. 
@@ -376,20 +371,21 @@ signal_{norm} = (signal_{ECG} - signal_{min})./signal_{mag}
 This method yielded mostly positive results (see \ref{ecgfiltImg} and \ref{ecgnormImg}). However, on a small number of trials the effect of normalization was negated by high amplitude artifacts. To counteract this phenomena we applied an amplitude "cutoff" at 1mV as well as -0.2mV, by advising the value 1 to every amplitude above or equal to 1mV and accordingly the value -0.2 to every amplitude below or equal to -0.2mV\footnote{Please note that the main objective of normalization was solely the maximization the R-peak prominence, therefore neglecting authentic amplitude representation}.
 
 \newpage
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{images/ecgfiltered.png}
+\includegraphics[width=0.7\textwidth]{images/ecgfiltered.png}
 \caption{Graph of a filtered ECG signal segment with amplitudes varying around 0.6mV. }
 \label{ecgfiltImg}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{images/ecgnorm.png}
+\includegraphics[width=0.7\textwidth]{images/ecgnorm.png}
 \caption{Graph of the same ECG signal segment after normalization with amplitudes varying around 0.7mV. }
 \label{ecgnormImg}
 \end{figure}
 
+\newpage
 We then used the \textit{findpeaks} \ref{fp} function to localize the R-peaks in our normalized signal. This function returned a vector with the local maxima (pks) of the input vector ($signal_{norm}$) together with an indices vector (locs) storing peak occurrences. 
 
 \begin{equation*}\label{fp}
@@ -407,6 +403,7 @@ In the final step of ECG feature extraction, we determined the HRV by calculatin
 HRV = 1./RR_{int}
 \end{equation}  
 
+\newpage
 \subsubsection{Skin Conductance Level}
 As mentioned earlier, EDA is highly susceptible to environmental influences, such as room temperature and humidity. To be able to estimate a subject's EDR correctly, we therefore included a baseline measurement into our experiment. By subtracting the mean value of the baseline measure we attempted to negate all situational effects on the EDA measurement. Differences in the tonic level were therefore computed as actual variations in SCL.  
 
@@ -414,7 +411,7 @@ As mentioned earlier, EDA is highly susceptible to environmental influences, suc
 In order to be able to extract the phasic component of the baseline adjusted EDA signal we attempted to filter all tonic components. We therefore applied three different methods, of which two were the inbuilt Matlab functions \textit{detrend}\footnote{This function was already described in an earlier section. Therefore it will not be explained at this point.} and \textit{medfilt1}, and self developed moving average filter. When \textit{medfilt1} is used a one-dimensional median filter of order n, that considers the signal to be 0 beyond its endpoints, is applied to the EDA signal. We, on the other hand, have designed an averaging filter that calculates the mean value inside a certain window, of width w, around the current data point, while moving along the signal vector. When close to the endpoints the window size is adapted accordingly and only original values are considered in the calculation. In figure \ref{filtcompImg} the results of each method are shown on a recorded and baseline adjusted EDA measurement. 
 
 \newpage
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{images/filtcomp.png}
 \caption{Graphical illustration of the results of SCL negation methods. From top to bottom: moving average filter, detrend function and one-dimensional medfilt function.}
