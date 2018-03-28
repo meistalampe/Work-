@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  28 MAR 2018 03:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.13)  28 MAR 2018 09:03
 entering extended mode
 **./bachelor_thesis.tex
 (bachelor_thesis.tex
@@ -962,7 +962,59 @@ e 64.
 Package glossaries Info: Writing glossary file bachelor_thesis.acn on input lin
 e 64.
 
-(glossary/glossary.tex) (bachelor_thesis.aux)
+(glossary/glossary.tex) (bachelor_thesis.aux
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+
+LaTeX Warning: Label `EDAtabImg' multiply defined.
+
+)
 \openout1 = `bachelor_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -980,8 +1032,7 @@ LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 67.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -1055,7 +1106,7 @@ LaTeX Info: Redefining \nameref on input line 67.
 \openout6 = `bachelor_thesis.out'.
 
 
-<images/logo.pdf, id=179, 495.8525pt x 449.68pt>
+<images/logo.pdf, id=187, 495.8525pt x 449.68pt>
 File: images/logo.pdf Graphic file (type pdf)
  <use images/logo.pdf>
 Package pdftex.def Info: images/logo.pdf used on input line 70.
@@ -1155,7 +1206,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (chapters/introduction.tex [6
 
 ] [7] [8] [9] [10]
-<images/skinLayers.png, id=311, 331.99031pt x 200.24812pt>
+<images/skinLayers.png, id=321, 331.99031pt x 200.24812pt>
 File: images/skinLayers.png Graphic file (type png)
 
 <use images/skinLayers.png>
@@ -1166,28 +1217,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
  []
 
-[11] <images/skinDermis.png, id=323, 475.17525pt x 410.7345pt>
+[11] <images/skinDermis.png, id=333, 475.17525pt x 410.7345pt>
 File: images/skinDermis.png Graphic file (type png)
 
 <use images/skinDermis.png>
 Package pdftex.def Info: images/skinDermis.png used on input line 115.
 (pdftex.def)             Requested size: 313.69029pt x 271.15454pt.
  [12 <./images/skinLayers.png>]
-<images/skinAnatomy.png, id=334, 572.1375pt x 444.91219pt>
+<images/skinAnatomy.png, id=344, 572.1375pt x 444.91219pt>
 File: images/skinAnatomy.png Graphic file (type png)
 
 <use images/skinAnatomy.png>
 Package pdftex.def Info: images/skinAnatomy.png used on input line 126.
 (pdftex.def)             Requested size: 313.69029pt x 243.93532pt.
  [13 <./images/skinDermis.png>] [14 <./images/skinAnatomy.png>] <images/symPath
-way.png, id=352, 529.98pt x 308.65312pt>
+way.png, id=362, 529.98pt x 308.65312pt>
 File: images/symPathway.png Graphic file (type png)
 
 <use images/symPathway.png>
 Package pdftex.def Info: images/symPathway.png used on input line 154.
 (pdftex.def)             Requested size: 313.69029pt x 182.68776pt.
  [15 <./images/symPathway.png>]
-<images/zns.png, id=361, 392.96812pt x 395.97937pt>
+<images/zns.png, id=371, 392.96812pt x 395.97937pt>
 File: images/zns.png Graphic file (type png)
  <use images/zns.png>
 Package pdftex.def Info: images/zns.png used on input line 166.
@@ -1198,40 +1249,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-[18] <images/electrodePlacement.png, id=398, 253.69781pt x 268.00125pt>
+[18] <images/electrodePlacement.png, id=408, 253.69781pt x 268.00125pt>
 File: images/electrodePlacement.png Graphic file (type png)
 
 <use images/electrodePlacement.png>
 Package pdftex.def Info: images/electrodePlacement.png used on input line 225.
 (pdftex.def)             Requested size: 224.06548pt x 236.70467pt.
  [19]
-<images/SCR.png, id=408, 292.84406pt x 173.14688pt>
+<images/SCR.png, id=418, 292.84406pt x 173.14688pt>
 File: images/SCR.png Graphic file (type png)
  <use images/SCR.png>
 Package pdftex.def Info: images/SCR.png used on input line 243.
 (pdftex.def)             Requested size: 313.69029pt x 185.4899pt.
 
 [20 <./images/electrodePlacement.png>] [21 <./images/SCR.png>] [22] [23]
-<images/CVS.png, id=442, 373.395pt x 478.03593pt>
+<images/CVS.png, id=452, 373.395pt x 478.03593pt>
 File: images/CVS.png Graphic file (type png)
  <use images/CVS.png>
 Package pdftex.def Info: images/CVS.png used on input line 289.
 (pdftex.def)             Requested size: 313.69029pt x 401.61308pt.
- [24 <./images/CVS.png>] <images/ecg.png, id=453, 470.50781pt x 225.84375pt>
+ [24 <./images/CVS.png>] <images/ecg.png, id=463, 470.50781pt x 225.84375pt>
 File: images/ecg.png Graphic file (type png)
 
 <use images/ecg.png>
 Package pdftex.def Info: images/ecg.png used on input line 304.
 (pdftex.def)             Requested size: 313.69029pt x 150.57016pt.
  [25]
-<images/cycleImg.png, id=460, 676.02562pt x 470.50781pt>
+<images/cycleImg.png, id=470, 676.02562pt x 470.50781pt>
 File: images/cycleImg.png Graphic file (type png)
 
 <use images/cycleImg.png>
 Package pdftex.def Info: images/cycleImg.png used on input line 314.
 (pdftex.def)             Requested size: 403.31511pt x 280.71304pt.
  [26 <./images/ecg.png>]
-<images/ecgcomp.png, id=473, 573.64313pt x 278.54062pt>
+<images/ecgcomp.png, id=483, 573.64313pt x 278.54062pt>
 File: images/ecgcomp.png Graphic file (type png)
 
 <use images/ecgcomp.png>
@@ -1271,7 +1322,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<images/BitOverview.png, id=561, 661.87276pt x 468.5505pt>
+<images/BitOverview.png, id=571, 661.87276pt x 468.5505pt>
 File: images/BitOverview.png Graphic file (type png)
 
 <use images/BitOverview.png>
@@ -1282,48 +1333,48 @@ Package pdftex.def Info: images/BitOverview.png used on input line 93.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [35] [36 <./images/BitOverview.png>] [37]
-<images/RoomDefault.png, id=586, 1060.71281pt x 689.57625pt>
+<images/RoomDefault.png, id=596, 1060.71281pt x 689.57625pt>
 File: images/RoomDefault.png Graphic file (type png)
 
 <use images/RoomDefault.png>
 Package pdftex.def Info: images/RoomDefault.png used on input line 144.
 (pdftex.def)             Requested size: 313.69029pt x 203.92828pt.
  [38]
-<images/RoomDefaultTop.png, id=594, 630.10406pt x 691.08188pt>
+<images/RoomDefaultTop.png, id=604, 630.10406pt x 691.08188pt>
 File: images/RoomDefaultTop.png Graphic file (type png)
 
 <use images/RoomDefaultTop.png>
 Package pdftex.def Info: images/RoomDefaultTop.png used on input line 151.
 (pdftex.def)             Requested size: 313.69029pt x 344.0427pt.
  [39 <./images/RoomDefault.png> <./images/RoomDefaultTop.png>] <images/OpenComp
-arison.png, id=603, 749.80125pt x 551.05875pt>
+arison.png, id=613, 749.80125pt x 551.05875pt>
 File: images/OpenComparison.png Graphic file (type png)
 
 <use images/OpenComparison.png>
 Package pdftex.def Info: images/OpenComparison.png used on input line 160.
 (pdftex.def)             Requested size: 358.50612pt x 263.47935pt.
  [40 <./images/OpenComparison.png>]
-<images/DepthComparison.png, id=612, 752.8125pt x 558.58687pt>
+<images/DepthComparison.png, id=622, 752.8125pt x 558.58687pt>
 File: images/DepthComparison.png Graphic file (type png)
 
 <use images/DepthComparison.png>
 Package pdftex.def Info: images/DepthComparison.png used on input line 170.
 (pdftex.def)             Requested size: 358.50612pt x 266.02191pt.
  [41 <./images/DepthComparison.png>]
-<images/BridgeComparison.png, id=621, 752.0597pt x 560.0925pt>
+<images/BridgeComparison.png, id=631, 752.0597pt x 560.0925pt>
 File: images/BridgeComparison.png Graphic file (type png)
 
 <use images/BridgeComparison.png>
 Package pdftex.def Info: images/BridgeComparison.png used on input line 180.
 (pdftex.def)             Requested size: 358.50612pt x 267.00388pt.
  [42 <./images/BridgeComparison.png>]
-<images/IMG_5311.JPG, id=628, 3276.24pt x 2457.18pt>
+<images/IMG_5311.JPG, id=638, 3276.24pt x 2457.18pt>
 File: images/IMG_5311.JPG Graphic file (type jpg)
  <use images/IMG_5311.JPG>
 Package pdftex.def Info: images/IMG_5311.JPG used on input line 195.
 (pdftex.def)             Requested size: 313.69029pt x 235.2342pt.
 
-<images/IMG_5310.JPG, id=629, 3276.24pt x 2457.18pt>
+<images/IMG_5310.JPG, id=639, 3276.24pt x 2457.18pt>
 File: images/IMG_5310.JPG Graphic file (type jpg)
  <use images/IMG_5310.JPG>
 Package pdftex.def Info: images/IMG_5310.JPG used on input line 202.
@@ -1334,14 +1385,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
 
-<images/setup.png, id=636, 867.24pt x 672.26157pt>
+<images/setup.png, id=646, 867.24pt x 672.26157pt>
 File: images/setup.png Graphic file (type png)
  <use images/setup.png>
 Package pdftex.def Info: images/setup.png used on input line 213.
 (pdftex.def)             Requested size: 448.13095pt x 347.38284pt.
 
 [44 <./images/IMG_5310.JPG>] [45 <./images/setup.png>] [46] [47]
-<images/ep.png, id=662, 693.34032pt x 452.4403pt>
+<images/ep.png, id=672, 693.34032pt x 452.4403pt>
 File: images/ep.png Graphic file (type png)
  <use images/ep.png>
 Package pdftex.def Info: images/ep.png used on input line 249.
@@ -1356,27 +1407,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
-<images/rawEDA.png, id=688, 420.06938pt x 316.93407pt>
+<images/rawEDA.png, id=698, 420.06938pt x 316.93407pt>
 File: images/rawEDA.png Graphic file (type png)
  <use images/rawEDA.png>
 Package pdftex.def Info: images/rawEDA.png used on input line 309.
 (pdftex.def)             Requested size: 358.50612pt x 270.48816pt.
 
-<images/fftEDA.png, id=689, 418.56375pt x 317.68687pt>
+<images/fftEDA.png, id=699, 418.56375pt x 317.68687pt>
 File: images/fftEDA.png Graphic file (type png)
  <use images/fftEDA.png>
 Package pdftex.def Info: images/fftEDA.png used on input line 316.
 (pdftex.def)             Requested size: 358.50612pt x 272.10014pt.
 
 [50 <./images/rawEDA.png>] [51 <./images/fftEDA.png>] [52] [53]
-<images/ecgfiltered.png, id=744, 423.08063pt x 318.43968pt>
+<images/ecgfiltered.png, id=754, 423.08063pt x 318.43968pt>
 File: images/ecgfiltered.png Graphic file (type png)
 
 <use images/ecgfiltered.png>
 Package pdftex.def Info: images/ecgfiltered.png used on input line 376.
 (pdftex.def)             Requested size: 313.69029pt x 236.11299pt.
 
-<images/ecgnorm.png, id=745, 423.08063pt x 319.1925pt>
+<images/ecgnorm.png, id=755, 423.08063pt x 319.1925pt>
 File: images/ecgnorm.png Graphic file (type png)
 
 <use images/ecgnorm.png>
@@ -1387,7 +1438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 397--399
 
  []
 
-[55] [56] <images/filtcomp.png, id=771, 459.96844pt x 368.87813pt>
+[55] [56] <images/filtcomp.png, id=781, 459.96844pt x 368.87813pt>
 File: images/filtcomp.png Graphic file (type png)
 
 <use images/filtcomp.png>
@@ -1399,7 +1450,7 @@ LaTeX Warning: Reference `H0' on page 58 undefined on input line 432.
 
 ) [58]
 chapter 3.
-(chapters/results.tex <images/avgSCL.png, id=799, 569.12625pt x 429.85594pt>
+(chapters/results.tex <images/avgSCL.png, id=809, 569.12625pt x 429.85594pt>
 File: images/avgSCL.png Graphic file (type png)
 
 <use images/avgSCL.png>
@@ -1408,27 +1459,27 @@ Package pdftex.def Info: images/avgSCL.png used on input line 9.
  [59
 
  <./images/avgSCL.png>]
-<images/EDApid.png, id=808, 515.67656pt x 495.35063pt>
+<images/EDApid.png, id=818, 515.67656pt x 495.35063pt>
 File: images/EDApid.png Graphic file (type png)
  <use images/EDApid.png>
 Package pdftex.def Info: images/EDApid.png used on input line 19.
 (pdftex.def)             Requested size: 448.13095pt x 430.48296pt.
 
 [60 <./images/EDApid.png>]
-<images/EDAhisto.png, id=816, 615.0478pt x 492.33937pt>
+<images/EDAhisto.png, id=826, 615.0478pt x 492.33937pt>
 File: images/EDAhisto.png Graphic file (type png)
 
 <use images/EDAhisto.png>
 Package pdftex.def Info: images/EDAhisto.png used on input line 29.
 (pdftex.def)             Requested size: 448.13095pt x 358.72862pt.
  [61 <./images/EDAhisto.png>]
-<images/ECGRRp.png, id=825, 533.74406pt x 496.85625pt>
+<images/ECGRRp.png, id=835, 533.74406pt x 496.85625pt>
 File: images/ECGRRp.png Graphic file (type png)
  <use images/ECGRRp.png>
 Package pdftex.def Info: images/ECGRRp.png used on input line 40.
 (pdftex.def)             Requested size: 448.13095pt x 417.17444pt.
 
-<images/ECGhisto.png, id=826, 633.11531pt x 491.58656pt>
+<images/ECGhisto.png, id=836, 633.11531pt x 491.58656pt>
 File: images/ECGhisto.png Graphic file (type png)
 
 <use images/ECGhisto.png>
@@ -1456,15 +1507,127 @@ chapter 5.
 
 ]
 chapter A.
-<images/tableEDA.png, id=869, 567.62062pt x 272.51813pt>
-File: images/tableEDA.png Graphic file (type png)
+<images/1ECG.png, id=879, 421.575pt x 316.0608pt>
+File: images/1ECG.png Graphic file (type png)
+ <use images/1ECG.png>
+Package pdftex.def Info: images/1ECG.png used on input line 10.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
 
-<use images/tableEDA.png>
-Package pdftex.def Info: images/tableEDA.png used on input line 8.
-(pdftex.def)             Requested size: 358.50612pt x 172.1281pt.
-) [68
+<images/2ECG.png, id=880, 421.575pt x 316.0608pt>
+File: images/2ECG.png Graphic file (type png)
+ <use images/2ECG.png>
+Package pdftex.def Info: images/2ECG.png used on input line 17.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
 
- <./images/tableEDA.png>]
+[68
+
+ <./images/1ECG.png (PNG copy)>]
+<images/3ECG.png, id=886, 421.575pt x 316.0608pt>
+File: images/3ECG.png Graphic file (type png)
+ <use images/3ECG.png>
+Package pdftex.def Info: images/3ECG.png used on input line 24.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/4ECG.png, id=887, 421.575pt x 316.0608pt>
+File: images/4ECG.png Graphic file (type png)
+ <use images/4ECG.png>
+Package pdftex.def Info: images/4ECG.png used on input line 31.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[69 <./images/2ECG.png (PNG copy)> <./images/3ECG.png (PNG copy)>]
+<images/5ECG.png, id=894, 421.575pt x 316.0608pt>
+File: images/5ECG.png Graphic file (type png)
+ <use images/5ECG.png>
+Package pdftex.def Info: images/5ECG.png used on input line 38.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/6ECG.png, id=895, 421.575pt x 316.0608pt>
+File: images/6ECG.png Graphic file (type png)
+ <use images/6ECG.png>
+Package pdftex.def Info: images/6ECG.png used on input line 45.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[70 <./images/4ECG.png (PNG copy)> <./images/5ECG.png (PNG copy)>]
+<images/7ECG.png, id=902, 421.575pt x 316.0608pt>
+File: images/7ECG.png Graphic file (type png)
+ <use images/7ECG.png>
+Package pdftex.def Info: images/7ECG.png used on input line 52.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/8ECG.png, id=903, 421.575pt x 316.0608pt>
+File: images/8ECG.png Graphic file (type png)
+ <use images/8ECG.png>
+Package pdftex.def Info: images/8ECG.png used on input line 59.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[71 <./images/6ECG.png (PNG copy)> <./images/7ECG.png (PNG copy)>]
+<images/9ECG.png, id=911, 421.575pt x 316.0608pt>
+File: images/9ECG.png Graphic file (type png)
+ <use images/9ECG.png>
+Package pdftex.def Info: images/9ECG.png used on input line 66.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/10ECG.png, id=912, 421.575pt x 316.0608pt>
+File: images/10ECG.png Graphic file (type png)
+ <use images/10ECG.png>
+Package pdftex.def Info: images/10ECG.png used on input line 73.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[72 <./images/8ECG.png (PNG copy)> <./images/9ECG.png (PNG copy)>]
+<images/1EDA.png, id=919, 421.575pt x 316.0608pt>
+File: images/1EDA.png Graphic file (type png)
+ <use images/1EDA.png>
+Package pdftex.def Info: images/1EDA.png used on input line 82.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[73 <./images/10ECG.png (PNG copy)>]
+<images/2EDA.png, id=925, 421.575pt x 316.0608pt>
+File: images/2EDA.png Graphic file (type png)
+ <use images/2EDA.png>
+Package pdftex.def Info: images/2EDA.png used on input line 89.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[74 <./images/1EDA.png (PNG copy)>]
+<images/3EDA.png, id=931, 421.575pt x 316.0608pt>
+File: images/3EDA.png Graphic file (type png)
+ <use images/3EDA.png>
+Package pdftex.def Info: images/3EDA.png used on input line 96.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/4EDA.png, id=932, 421.575pt x 316.0608pt>
+File: images/4EDA.png Graphic file (type png)
+ <use images/4EDA.png>
+Package pdftex.def Info: images/4EDA.png used on input line 103.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[75 <./images/2EDA.png (PNG copy)> <./images/3EDA.png (PNG copy)>]
+<images/5EDA.png, id=939, 421.575pt x 316.0608pt>
+File: images/5EDA.png Graphic file (type png)
+ <use images/5EDA.png>
+Package pdftex.def Info: images/5EDA.png used on input line 110.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/6EDA.png, id=940, 421.575pt x 316.0608pt>
+File: images/6EDA.png Graphic file (type png)
+ <use images/6EDA.png>
+Package pdftex.def Info: images/6EDA.png used on input line 117.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+[76 <./images/4EDA.png (PNG copy)> <./images/5EDA.png (PNG copy)>]
+<images/7EDA.png, id=947, 421.575pt x 316.0608pt>
+File: images/7EDA.png Graphic file (type png)
+ <use images/7EDA.png>
+Package pdftex.def Info: images/7EDA.png used on input line 124.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+
+<images/8EDA.png, id=948, 421.575pt x 316.0608pt>
+File: images/8EDA.png Graphic file (type png)
+ <use images/8EDA.png>
+Package pdftex.def Info: images/8EDA.png used on input line 132.
+(pdftex.def)             Requested size: 358.50612pt x 268.78316pt.
+)
+[77 <./images/6EDA.png (PNG copy)> <./images/7EDA.png (PNG copy)>] [78 <./image
+s/8EDA.png (PNG copy)>]
 Package tocbasic Info: character protrusion at lof deactivated on input line 21
 2.
  (bachelor_thesis.lof
@@ -1473,13 +1636,13 @@ Overfull \hbox (12.75331pt too wide) in paragraph at lines 5--5
 us lay-ers of glabrous skin.(Adapted 
  []
 
-[69
+[79
 
 ])
 \tf@lof=\write8
 \openout8 = `bachelor_thesis.lof'.
 
- [70]
+ [80] [81]
 Package tocbasic Info: character protrusion at lot deactivated on input line 21
 9.
  (bachelor_thesis.lot)
@@ -1488,29 +1651,32 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 21
 
 
 No file bachelor_thesis.gls.
-[71
+[82
 
-] (bachelor_thesis.bbl [72
+] (bachelor_thesis.bbl [83
 
-] [73] [74] [75])
+] [84] [85] [86])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
- [76]
+ [87]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (bachelor_thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
 Package rerunfilecheck Info: File `bachelor_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6420429E4EF968453C85E95F1708D12E;2835.
+(rerunfilecheck)             Checksum: 82B11963D6F7D55987C1DF5F648193E2;2979.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 18931 strings out of 493328
- 321034 string characters out of 3139118
- 575573 words of memory out of 3000000
- 21673 multiletter control sequences out of 15000+200000
+ 19048 strings out of 493328
+ 322912 string characters out of 3139118
+ 575602 words of memory out of 3000000
+ 21743 multiletter control sequences out of 15000+200000
  73069 words of font info for 115 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,11n,77p,8828b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1531,9 +1697,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9
 ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/lm/lmsy8.pfb>
-Output written on bachelor_thesis.pdf (78 pages, 16537548 bytes).
+Output written on bachelor_thesis.pdf (89 pages, 17282011 bytes).
 PDF statistics:
- 1108 PDF objects out of 1200 (max. 8388607)
- 277 named destinations out of 1000 (max. 500000)
- 19462 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1220 PDF objects out of 1440 (max. 8388607)
+ 307 named destinations out of 1000 (max. 500000)
+ 19563 words of extra memory for PDF output out of 20736 (max. 10000000)
 

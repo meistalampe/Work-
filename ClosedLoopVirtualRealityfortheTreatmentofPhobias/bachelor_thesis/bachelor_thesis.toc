@@ -78,6 +78,8 @@
 \contentsline {section}{\numberline {4.3}Statistic Evaluation and Feature Quality}{66}{section.4.3}
 \contentsline {chapter}{\numberline {5}Conclusions}{67}{chapter.5}
 \contentsline {chapter}{\numberline {A}Tables and Measurement Results}{68}{appendix.A}
-\contentsline {chapter}{List of Figures}{69}{figure.caption.78}
-\contentsline {chapter}{List of Tables}{71}{chapter*.79}
-\contentsline {chapter}{Bibliography}{72}{chapter*.80}
+\contentsline {section}{\numberline {A.1}ECG Measurement Results}{68}{section.A.1}
+\contentsline {section}{\numberline {A.2}EDA Measurement Results}{74}{section.A.2}
+\contentsline {chapter}{List of Figures}{79}{figure.caption.95}
+\contentsline {chapter}{List of Tables}{82}{chapter*.96}
+\contentsline {chapter}{Bibliography}{83}{chapter*.97}
